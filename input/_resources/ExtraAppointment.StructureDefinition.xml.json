@@ -1,0 +1,45 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.pt/fhir/core/StructureDefinition/ExtraAppointment",
+  "version": "1.1",
+  "name": "ExtraAppointment",
+  "status": "draft",
+  "experimental": false,
+  "date": "2023-01-10T14:47:31.988906+00:00",
+  "description": "Extension to identify if the appointment will occur in extra scheduling",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Appointment"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.pt/fhir/core/StructureDefinition/ExtraAppointment"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x].id",
+        "path": "Extension.value[x].id",
+        "max": "0"
+      }
+    ]
+  }
+}

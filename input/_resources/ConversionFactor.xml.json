@@ -1,0 +1,57 @@
+{
+  "resourceType": "StructureDefinition",
+  "meta": {
+    "lastUpdated": "2022-02-18T17:53:25.547+00:00"
+  },
+  "url": "http://hl7.pt/fhir/core/StructureDefinition/ConversionFactor",
+  "version": "1.0",
+  "name": "ConversionFactor",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-02-18",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "MedicationKnowledge"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.id",
+        "path": "Extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.pt/fhir/core/StructureDefinition/ConversionFactor"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x].id",
+        "path": "Extension.value[x].id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.value[x].comparator",
+        "path": "Extension.value[x].comparator",
+        "max": "0"
+      }
+    ]
+  }
+}

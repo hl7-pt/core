@@ -1,0 +1,148 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.pt/fhir/core/StructureDefinition/PT_DeviceDefinition",
+  "version": "1.0",
+  "name": "PT_DeviceDefinition",
+  "status": "draft",
+  "experimental": false,
+  "date": "2023-03-07T15:44:35.2774536+00:00",
+  "description": "A generic DeviceDefinition resource for Portugal",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "DeviceDefinition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DeviceDefinition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DeviceDefinition.id",
+        "path": "DeviceDefinition.id",
+        "max": "0"
+      },
+      {
+        "id": "DeviceDefinition.implicitRules",
+        "path": "DeviceDefinition.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "DeviceDefinition.language",
+        "path": "DeviceDefinition.language",
+        "max": "0"
+      },
+      {
+        "id": "DeviceDefinition.text",
+        "path": "DeviceDefinition.text",
+        "max": "0"
+      },
+      {
+        "id": "DeviceDefinition.extension",
+        "path": "DeviceDefinition.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "DeviceDefinition.extension:regulatoryIdentifier",
+        "path": "DeviceDefinition.extension",
+        "sliceName": "regulatoryIdentifier",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/RegulatoryIdentifier-DeviceDefinition"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "DeviceDefinition.extension:packaging",
+        "path": "DeviceDefinition.extension",
+        "sliceName": "packaging",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/Packaging-DeviceDefinition"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "DeviceDefinition.extension:guideline",
+        "path": "DeviceDefinition.extension",
+        "sliceName": "guideline",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/Guideline-DeviceDefinition"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "DeviceDefinition.extension:chargeItem",
+        "path": "DeviceDefinition.extension",
+        "sliceName": "chargeItem",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/ChargeItem-DeviceDefinition"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "DeviceDefinition.udiDeviceIdentifier.extension",
+        "path": "DeviceDefinition.udiDeviceIdentifier.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "DeviceDefinition.udiDeviceIdentifier.extension:marketDistribution",
+        "path": "DeviceDefinition.udiDeviceIdentifier.extension",
+        "sliceName": "marketDistribution",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/MarketDistribution-DeviceDefiniton"
+            ]
+          }
+        ],
+        "isModifier": false
+      }
+    ]
+  }
+}

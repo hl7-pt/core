@@ -1,0 +1,726 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "52d49cef-b06f-4aa7-859d-26a002df32c1",
+  "meta": {
+    "lastUpdated": "2022-11-08T10:46:58.910888+00:00"
+  },
+  "url": "http://hl7.pt/fhir/core/StructureDefinition/PT_RelatedPerson",
+  "version": "1.1",
+  "name": "PT_RelatedPerson",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-11-08T10:47:34.3124993+00:00",
+  "description": "A generic RelatedPerson resource for Portugal",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "RelatedPerson",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "RelatedPerson.meta",
+        "path": "RelatedPerson.meta",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.implicitRules",
+        "path": "RelatedPerson.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.language",
+        "path": "RelatedPerson.language",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.text",
+        "path": "RelatedPerson.text",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.contained",
+        "path": "RelatedPerson.contained",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.identifier.id",
+        "path": "RelatedPerson.identifier.id",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.identifier.type",
+        "path": "RelatedPerson.identifier.type",
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "IdentifierType"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
+              "valueBoolean": true
+            }
+          ],
+          "strength": "extensible",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0203"
+        }
+      },
+      {
+        "id": "RelatedPerson.identifier.type.id",
+        "path": "RelatedPerson.identifier.type.id",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.identifier.type.coding.id",
+        "path": "RelatedPerson.identifier.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.identifier.type.coding.version",
+        "path": "RelatedPerson.identifier.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.identifier.type.coding.code",
+        "path": "RelatedPerson.identifier.type.coding.code",
+        "example": [
+          {
+            "label": "Code",
+            "valueCode": "HC"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-33.5"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.identifier.type.coding.display",
+        "path": "RelatedPerson.identifier.type.coding.display",
+        "example": [
+          {
+            "label": "Display",
+            "valueString": "Health Card Number"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.identifier.type.coding.userSelected",
+        "path": "RelatedPerson.identifier.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.identifier.type.text",
+        "path": "RelatedPerson.identifier.type.text",
+        "example": [
+          {
+            "label": "Text",
+            "valueString": "NNU - Número de Utente"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.identifier.system",
+        "path": "RelatedPerson.identifier.system",
+        "example": [
+          {
+            "label": "Coding System - Example",
+            "valueUri": "https://www.spms.min-saude.pt/rnu/"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "SystemExample",
+            "map": "if NNU -> system SPMS"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.identifier.value",
+        "path": "RelatedPerson.identifier.value",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-33.1"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.identifier.period.id",
+        "path": "RelatedPerson.identifier.period.id",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.identifier.period.start",
+        "path": "RelatedPerson.identifier.period.start",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-33.7"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.identifier.period.end",
+        "path": "RelatedPerson.identifier.period.end",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-33.8"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.identifier.assigner.id",
+        "path": "RelatedPerson.identifier.assigner.id",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.identifier.assigner.reference",
+        "path": "RelatedPerson.identifier.assigner.reference",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.identifier.assigner.type",
+        "path": "RelatedPerson.identifier.assigner.type",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.identifier.assigner.identifier",
+        "path": "RelatedPerson.identifier.assigner.identifier",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.identifier.assigner.display",
+        "path": "RelatedPerson.identifier.assigner.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-33.4"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.patient.id",
+        "path": "RelatedPerson.patient.id",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.patient.type",
+        "path": "RelatedPerson.patient.type",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.patient.identifier",
+        "path": "RelatedPerson.patient.identifier",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.patient.display",
+        "path": "RelatedPerson.patient.display",
+        "max": "0",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "PID-3 c/ SNS; PID-18.1; PID-3 c/ SONHO"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.relationship",
+        "path": "RelatedPerson.relationship",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-3; NK1-7"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.relationship.id",
+        "path": "RelatedPerson.relationship.id",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.relationship.coding.id",
+        "path": "RelatedPerson.relationship.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.relationship.coding.system",
+        "path": "RelatedPerson.relationship.coding.system",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-3.3; NK1-7.3"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.relationship.coding.version",
+        "path": "RelatedPerson.relationship.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.relationship.coding.code",
+        "path": "RelatedPerson.relationship.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-3.1; NK1-7.1"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.relationship.coding.display",
+        "path": "RelatedPerson.relationship.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-3.2; NK1-7.2"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.relationship.coding.userSelected",
+        "path": "RelatedPerson.relationship.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.relationship.text",
+        "path": "RelatedPerson.relationship.text",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "Translation to [PT] of the display field"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.name",
+        "path": "RelatedPerson.name",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-2"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.name.id",
+        "path": "RelatedPerson.name.id",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.name.text",
+        "path": "RelatedPerson.name.text",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-2.2 + NK1-2.3 + NK1-2.1"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.name.family",
+        "path": "RelatedPerson.name.family",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-2.1"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.name.given",
+        "path": "RelatedPerson.name.given",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "value"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "RelatedPerson.name.given:firstName",
+        "path": "RelatedPerson.name.given",
+        "sliceName": "firstName",
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-2.2"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.name.given:firstName.id",
+        "path": "RelatedPerson.name.given.id",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.name.given:middleName",
+        "path": "RelatedPerson.name.given",
+        "sliceName": "middleName",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-2.3"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.name.given:middleName.id",
+        "path": "RelatedPerson.name.given.id",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.name.prefix",
+        "path": "RelatedPerson.name.prefix",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.name.suffix",
+        "path": "RelatedPerson.name.suffix",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.name.period.id",
+        "path": "RelatedPerson.name.period.id",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.name.period.start",
+        "path": "RelatedPerson.name.period.start",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-2.10.1 / NK1-2.12.1"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.name.period.end",
+        "path": "RelatedPerson.name.period.end",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-2.10.2 / NK1-2.13.1"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.telecom",
+        "path": "RelatedPerson.telecom",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-5; NK1-6 (Business)"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.telecom.id",
+        "path": "RelatedPerson.telecom.id",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.telecom.system",
+        "path": "RelatedPerson.telecom.system",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-5.3; NK1-6.3"
+          }
+        ]
+      },
+    
+      {
+        "id": "RelatedPerson.telecom.use",
+        "path": "RelatedPerson.telecom.use",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-5.2; NK1-6.2"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.telecom.period",
+        "path": "RelatedPerson.telecom.period",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.gender",
+        "path": "RelatedPerson.gender",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-15"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.birthDate",
+        "path": "RelatedPerson.birthDate",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-16"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.address",
+        "path": "RelatedPerson.address",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-4"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.address.id",
+        "path": "RelatedPerson.address.id",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.address.extension",
+        "path": "RelatedPerson.address.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "RelatedPerson.address.extension:Parish",
+        "path": "RelatedPerson.address.extension",
+        "sliceName": "Parish",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/Address"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.address.type",
+        "path": "RelatedPerson.address.type",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.address.text",
+        "path": "RelatedPerson.address.text",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.address.line",
+        "path": "RelatedPerson.address.line",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-4.1"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.address.city",
+        "path": "RelatedPerson.address.city",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-4.3"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.address.district",
+        "path": "RelatedPerson.address.district",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-4.8"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.address.state",
+        "path": "RelatedPerson.address.state",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-4.4"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.address.postalCode",
+        "path": "RelatedPerson.address.postalCode",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-5.5"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.address.country",
+        "path": "RelatedPerson.address.country",
+        "binding": {
+          "strength": "preferred",
+          "description": "This value set defines the ISO 3166 Part 1 2-letter codes",
+          "valueSet": "http://hl7.org/fhir/ValueSet/iso3166-1-2"
+        },
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-4.6"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.address.period.id",
+        "path": "RelatedPerson.address.period.id",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.address.period.start",
+        "path": "RelatedPerson.address.period.start",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-4.12.1 / NK1-4.13.1"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.address.period.end",
+        "path": "RelatedPerson.address.period.end",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-4.12.2 / NK1-4.14.1"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.photo",
+        "path": "RelatedPerson.photo",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.period.id",
+        "path": "RelatedPerson.period.id",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.period.start",
+        "path": "RelatedPerson.period.start",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-8"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.period.end",
+        "path": "RelatedPerson.period.end",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-9"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.communication.id",
+        "path": "RelatedPerson.communication.id",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.communication.language",
+        "path": "RelatedPerson.communication.language",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-20"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.communication.language.id",
+        "path": "RelatedPerson.communication.language.id",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.communication.language.coding.id",
+        "path": "RelatedPerson.communication.language.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.communication.language.coding.system",
+        "path": "RelatedPerson.communication.language.coding.system",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-20.3"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.communication.language.coding.version",
+        "path": "RelatedPerson.communication.language.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.communication.language.coding.code",
+        "path": "RelatedPerson.communication.language.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-20.1"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.communication.language.coding.display",
+        "path": "RelatedPerson.communication.language.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NK1-20.2"
+          }
+        ]
+      },
+      {
+        "id": "RelatedPerson.communication.language.coding.userSelected",
+        "path": "RelatedPerson.communication.language.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "RelatedPerson.communication.language.text",
+        "path": "RelatedPerson.communication.language.text",
+        "max": "0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,576 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "4d7bbcc0-ea7b-4fbe-b998-07e5fdc77d94",
+  "meta": {
+    "lastUpdated": "2021-12-20T11:51:50.104+00:00"
+  },
+  "url": "http://hl7.pt/fhir/core/StructureDefinition/PT_MessageHeader",
+  "version": "1.0",
+  "name": "PT_MessageHeader",
+  "status": "draft",
+  "experimental": false,
+  "date": "2021-11-12T12:02:37.8328535Z",
+  "description": "A generic Message Header resource for Portugal",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "MessageHeader",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MessageHeader",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MessageHeader.id",
+        "path": "MessageHeader.id",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "MSH-10"
+          }
+        ]
+      },
+      {
+        "id": "MessageHeader.meta",
+        "path": "MessageHeader.meta"
+      },
+      {
+        "id": "MessageHeader.meta.id",
+        "path": "MessageHeader.meta.id",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.meta.versionId",
+        "path": "MessageHeader.meta.versionId",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "MSH-12"
+          }
+        ]
+      },
+      {
+        "id": "MessageHeader.meta.lastUpdated",
+        "path": "MessageHeader.meta.lastUpdated",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "EVN-2"
+          }
+        ]
+      },
+      {
+        "id": "MessageHeader.meta.source",
+        "path": "MessageHeader.meta.source",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.meta.profile",
+        "path": "MessageHeader.meta.profile",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.meta.security",
+        "path": "MessageHeader.meta.security",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.meta.tag",
+        "path": "MessageHeader.meta.tag",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.implicitRules",
+        "path": "MessageHeader.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.language",
+        "path": "MessageHeader.language",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.text",
+        "path": "MessageHeader.text",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.contained",
+        "path": "MessageHeader.contained",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.event[x]",
+        "path": "MessageHeader.event[x]",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "MessageHeader.event[x].id",
+        "path": "MessageHeader.event[x].id",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.event[x].system",
+        "path": "MessageHeader.event[x].system",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.event[x].version",
+        "path": "MessageHeader.event[x].version",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.event[x].display",
+        "path": "MessageHeader.event[x].display",
+        "mapping": [
+          {
+            "identity": "HL7v.2x",
+            "map": "MSH-9.1 + MSH-9.2"
+          }
+        ]
+      },
+      {
+        "id": "MessageHeader.event[x].userSelected",
+        "path": "MessageHeader.event[x].userSelected",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.destination.id",
+        "path": "MessageHeader.destination.id",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.destination.name",
+        "path": "MessageHeader.destination.name",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "MSH-5"
+          }
+        ]
+      },
+      {
+        "id": "MessageHeader.destination.target",
+        "path": "MessageHeader.destination.target",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.destination.endpoint",
+        "path": "MessageHeader.destination.endpoint",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "MSH-6"
+          }
+        ]
+      },
+      {
+        "id": "MessageHeader.destination.receiver",
+        "path": "MessageHeader.destination.receiver",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.sender",
+        "path": "MessageHeader.sender",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization",
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_Practitioner",
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_PractitionerRole"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MessageHeader.sender.id",
+        "path": "MessageHeader.sender.id",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.sender.reference",
+        "path": "MessageHeader.sender.reference",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.sender.type",
+        "path": "MessageHeader.sender.type",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.sender.identifier",
+        "path": "MessageHeader.sender.identifier",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.sender.display",
+        "path": "MessageHeader.sender.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "EVN-7"
+          }
+        ]
+      },
+      {
+        "id": "MessageHeader.enterer",
+        "path": "MessageHeader.enterer",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_Practitioner",
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_PractitionerRole"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "EVN-5; ORC-10"
+          }
+        ]
+      },
+      {
+        "id": "MessageHeader.enterer.id",
+        "path": "MessageHeader.enterer.id",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.enterer.reference",
+        "path": "MessageHeader.enterer.reference",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "EVN-5; EVN-5.1"
+          }
+        ]
+      },
+      {
+        "id": "MessageHeader.enterer.type",
+        "path": "MessageHeader.enterer.type",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.enterer.identifier.id",
+        "path": "MessageHeader.enterer.identifier.id",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.enterer.identifier.use",
+        "path": "MessageHeader.enterer.identifier.use",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.enterer.identifier.type",
+        "path": "MessageHeader.enterer.identifier.type",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0203"
+        }
+      },
+      {
+        "id": "MessageHeader.enterer.identifier.type.id",
+        "path": "MessageHeader.enterer.identifier.type.id",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.enterer.identifier.type.coding.id",
+        "path": "MessageHeader.enterer.identifier.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.enterer.identifier.type.coding.version",
+        "path": "MessageHeader.enterer.identifier.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.enterer.identifier.type.coding.code",
+        "path": "MessageHeader.enterer.identifier.type.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "EVN-5.13"
+          }
+        ]
+      },
+      {
+        "id": "MessageHeader.enterer.identifier.type.coding.userSelected",
+        "path": "MessageHeader.enterer.identifier.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.enterer.identifier.type.text",
+        "path": "MessageHeader.enterer.identifier.type.text",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.enterer.identifier.system",
+        "path": "MessageHeader.enterer.identifier.system",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.enterer.identifier.value",
+        "path": "MessageHeader.enterer.identifier.value",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "EVN-5.1"
+          }
+        ]
+      },
+      {
+        "id": "MessageHeader.enterer.identifier.period",
+        "path": "MessageHeader.enterer.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.enterer.identifier.assigner",
+        "path": "MessageHeader.enterer.identifier.assigner",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "EVN-5.9"
+          }
+        ]
+      },
+      {
+        "id": "MessageHeader.enterer.display",
+        "path": "MessageHeader.enterer.display",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.author",
+        "path": "MessageHeader.author",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.source.id",
+        "path": "MessageHeader.source.id",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.source.name",
+        "path": "MessageHeader.source.name",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "MSH-3"
+          }
+        ]
+      },
+      {
+        "id": "MessageHeader.source.software",
+        "path": "MessageHeader.source.software",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.source.version",
+        "path": "MessageHeader.source.version",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.source.contact",
+        "path": "MessageHeader.source.contact",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.source.endpoint",
+        "path": "MessageHeader.source.endpoint",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "MSH-4"
+          }
+        ]
+      },
+      {
+        "id": "MessageHeader.responsible",
+        "path": "MessageHeader.responsible",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.reason",
+        "path": "MessageHeader.reason",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "EVN-4"
+          }
+        ]
+      },
+      {
+        "id": "MessageHeader.reason.id",
+        "path": "MessageHeader.reason.id",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.reason.coding",
+        "path": "MessageHeader.reason.coding",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.reason.coding.id",
+        "path": "MessageHeader.reason.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.reason.coding.version",
+        "path": "MessageHeader.reason.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.reason.coding.code",
+        "path": "MessageHeader.reason.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "EVN-4"
+          }
+        ]
+      },
+      {
+        "id": "MessageHeader.reason.coding.userSelected",
+        "path": "MessageHeader.reason.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.reason.text",
+        "path": "MessageHeader.reason.text",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.response.id",
+        "path": "MessageHeader.response.id",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.response.identifier",
+        "path": "MessageHeader.response.identifier",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "MSA-2"
+          }
+        ]
+      },
+      {
+        "id": "MessageHeader.response.code",
+        "path": "MessageHeader.response.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "MSA-1"
+          }
+        ]
+      },
+      {
+        "id": "MessageHeader.response.details",
+        "path": "MessageHeader.response.details",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_OperationOutcome"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "MSA-3; ERR-3"
+          }
+        ]
+      },
+      {
+        "id": "MessageHeader.response.details.id",
+        "path": "MessageHeader.response.details.id",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.response.details.reference",
+        "path": "MessageHeader.response.details.reference",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ERR-3.1"
+          }
+        ]
+      },
+      {
+        "id": "MessageHeader.response.details.type",
+        "path": "MessageHeader.response.details.type",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.response.details.identifier.id",
+        "path": "MessageHeader.response.details.identifier.id",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.response.details.identifier.use",
+        "path": "MessageHeader.response.details.identifier.use",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.response.details.identifier.type",
+        "path": "MessageHeader.response.details.identifier.type",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.response.details.identifier.system",
+        "path": "MessageHeader.response.details.identifier.system",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ERR-3.3"
+          }
+        ]
+      },
+      {
+        "id": "MessageHeader.response.details.identifier.value",
+        "path": "MessageHeader.response.details.identifier.value",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ERR-3.1"
+          }
+        ]
+      },
+      {
+        "id": "MessageHeader.response.details.identifier.period",
+        "path": "MessageHeader.response.details.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.response.details.identifier.assigner",
+        "path": "MessageHeader.response.details.identifier.assigner",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.response.details.display",
+        "path": "MessageHeader.response.details.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ERR-8"
+          }
+        ]
+      },
+      {
+        "id": "MessageHeader.focus",
+        "path": "MessageHeader.focus",
+        "max": "0"
+      },
+      {
+        "id": "MessageHeader.definition",
+        "path": "MessageHeader.definition",
+        "max": "0"
+      }
+    ]
+  }
+}

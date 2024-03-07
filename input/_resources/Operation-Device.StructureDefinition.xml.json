@@ -1,0 +1,275 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Operation-Device",
+  "url": "http://hl7.pt/fhir/core/StructureDefinition/Operation-Device",
+  "version": "1.0",
+  "name": "Operation",
+  "status": "draft",
+  "experimental": false,
+  "date": "2023-03-02T19:59:05.0729171+00:00",
+  "description": "The status of the device itself - whether it is switched on, or activated, etc. - Extension created based on what exists in FHIR Version 5",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Device"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.id",
+        "path": "Extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "Extension.extension:status",
+        "path": "Extension.extension",
+        "sliceName": "status",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:status.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:status.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "status"
+      },
+      {
+        "id": "Extension.extension:status.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "The operational status of the device.",
+          "valueSet": "http://hl7.org/fhir/device-operationstatus"
+        }
+      },
+      {
+        "id": "Extension.extension:status.value[x].id",
+        "path": "Extension.extension.value[x].id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:status.value[x].coding.id",
+        "path": "Extension.extension.value[x].coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:statusReason",
+        "path": "Extension.extension",
+        "sliceName": "statusReason",
+        "min": 0
+      },
+      {
+        "id": "Extension.extension:statusReason.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:statusReason.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "statusReason"
+      },
+      {
+        "id": "Extension.extension:statusReason.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "The availability status reason of the device.",
+          "valueSet": "http://hl7.org/fhir/device-operation-status-reason"
+        }
+      },
+      {
+        "id": "Extension.extension:statusReason.value[x].id",
+        "path": "Extension.extension.value[x].id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:statusReason.value[x].coding.id",
+        "path": "Extension.extension.value[x].coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:operator",
+        "path": "Extension.extension",
+        "sliceName": "operator",
+        "min": 0
+      },
+      {
+        "id": "Extension.extension:operator.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:operator.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "operator"
+      },
+      {
+        "id": "Extension.extension:operator.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_Patient",
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_Practitioner",
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_RelatedPerson"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:operator.value[x].id",
+        "path": "Extension.extension.value[x].id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:mode",
+        "path": "Extension.extension",
+        "sliceName": "mode",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:mode.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:mode.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "mode"
+      },
+      {
+        "id": "Extension.extension:mode.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "The operation mode of the device.",
+          "valueSet": "http://hl7.org/fhir/device-operation-mode"
+        }
+      },
+      {
+        "id": "Extension.extension:mode.value[x].id",
+        "path": "Extension.extension.value[x].id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:mode.value[x].coding.id",
+        "path": "Extension.extension.value[x].coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:cycle",
+        "path": "Extension.extension",
+        "sliceName": "cycle",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:cycle.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:cycle.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "cycle"
+      },
+      {
+        "id": "Extension.extension:cycle.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Count"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:cycle.value[x].id",
+        "path": "Extension.extension.value[x].id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:duration",
+        "path": "Extension.extension",
+        "sliceName": "duration",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:duration.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:duration.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "duration"
+      },
+      {
+        "id": "Extension.extension:duration.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Duration"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:duration.value[x].id",
+        "path": "Extension.extension.value[x].id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.pt/fhir/core/StructureDefinition/Operation-Device"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

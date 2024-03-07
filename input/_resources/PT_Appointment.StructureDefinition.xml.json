@@ -1,0 +1,304 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.pt/fhir/core/StructureDefinition/PT_Appointment",
+  "version": "1.0",
+  "name": "PT_Appointment",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-08-04T15:46:01.7830761+00:00",
+  "description": "A generic Appointment resource for Portugal",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Appointment",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Appointment",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Appointment.extension",
+        "path": "Appointment.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "Appointment.extension:ExtraAppointment",
+        "path": "Appointment.extension",
+        "sliceName": "ExtraAppointment",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/ExtraAppointment"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Appointment.identifier.value",
+        "path": "Appointment.identifier.value",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SCH-1, SCH-2, SCH-4, SCH-5, SCH-26"
+          }
+        ]
+      },
+      {
+        "id": "Appointment.identifier.period",
+        "path": "Appointment.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.identifier.assigner",
+        "path": "Appointment.identifier.assigner",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.status",
+        "path": "Appointment.status",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SCH-25"
+          }
+        ]
+      },
+      {
+        "id": "Appointment.cancelationReason",
+        "path": "Appointment.cancelationReason",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IF status = cancelled"
+          }
+        ]
+      },
+      {
+        "id": "Appointment.cancelationReason.coding.version",
+        "path": "Appointment.cancelationReason.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.cancelationReason.coding.code",
+        "path": "Appointment.cancelationReason.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SCH-6"
+          }
+        ]
+      },
+      {
+        "id": "Appointment.cancelationReason.coding.userSelected",
+        "path": "Appointment.cancelationReason.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.appointmentType.coding.system",
+        "path": "Appointment.appointmentType.coding.system",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.appointmentType.coding.code",
+        "path": "Appointment.appointmentType.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SCH-7"
+          }
+        ]
+      },
+      {
+        "id": "Appointment.appointmentType.coding.userSelected",
+        "path": "Appointment.appointmentType.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.reasonCode.coding.version",
+        "path": "Appointment.reasonCode.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.reasonCode.coding.code",
+        "path": "Appointment.reasonCode.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SCH-6"
+          }
+        ]
+      },
+      {
+        "id": "Appointment.reasonCode.coding.userSelected",
+        "path": "Appointment.reasonCode.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.priority",
+        "path": "Appointment.priority",
+        "mapping": [
+          {
+            "identity": "HL7v2.4",
+            "map": "SCH-11.6"
+          },
+          {
+            "identity": "HL7v2.5",
+            "map": "TQ1-9"
+          }
+        ]
+      },
+      {
+        "id": "Appointment.description",
+        "path": "Appointment.description",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.start",
+        "path": "Appointment.start",
+        "mapping": [
+          {
+            "identity": "HL7v2.4",
+            "map": "SCH-11.4, AIS-4.1"
+          },
+          {
+            "identity": "HL7v2.5",
+            "map": "TQ1-7"
+          }
+        ]
+      },
+      {
+        "id": "Appointment.end",
+        "path": "Appointment.end",
+        "mapping": [
+          {
+            "identity": "HL7v2.4",
+            "map": "SCH-11.5"
+          },
+          {
+            "identity": "HL7v2.5",
+            "map": "TQ1-8"
+          }
+        ]
+      },
+      {
+        "id": "Appointment.minutesDuration",
+        "path": "Appointment.minutesDuration",
+        "mapping": [
+          {
+            "identity": "HL7v2.4",
+            "map": "SCH-9+SCH-10 (if minutes); SCH-11.3"
+          },
+          {
+            "identity": "HL7v2.5",
+            "map": "TQ1-6.1+TQ1-6.2 (if minutes)"
+          }
+        ]
+      },
+      {
+        "id": "Appointment.slot.type",
+        "path": "Appointment.slot.type",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.slot.identifier",
+        "path": "Appointment.slot.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.slot.display",
+        "path": "Appointment.slot.display",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.comment",
+        "path": "Appointment.comment",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SCH-11.7 / SCH-11.8, NTE-3"
+          }
+        ]
+      },
+      {
+        "id": "Appointment.patientInstruction",
+        "path": "Appointment.patientInstruction",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SCH-11.7 / SCH-11.8, NTE-3"
+          }
+        ]
+      },
+      {
+        "id": "Appointment.basedOn.type",
+        "path": "Appointment.basedOn.type",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.basedOn.identifier",
+        "path": "Appointment.basedOn.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.basedOn.display",
+        "path": "Appointment.basedOn.display",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.participant.actor.reference",
+        "path": "Appointment.participant.actor.reference",
+        "mapping": [
+          {
+            "identity": "HL7v2.x-Practitioner",
+            "map": "Practitioner/ SCH-12 / SCH-20; AIP-3"
+          },
+          {
+            "identity": "HL7v2.x-Patient",
+            "map": "Patient/PID"
+          },
+          {
+            "identity": "HL7v2.x-Location",
+            "map": "Location/AIL-3"
+          }
+        ]
+      },
+      {
+        "id": "Appointment.participant.actor.type",
+        "path": "Appointment.participant.actor.type",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.participant.actor.identifier",
+        "path": "Appointment.participant.actor.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.participant.actor.display",
+        "path": "Appointment.participant.actor.display",
+        "max": "0"
+      },
+      {
+        "id": "Appointment.participant.status",
+        "path": "Appointment.participant.status",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "AIL-12, AIP-12"
+          }
+        ]
+      }
+    ]
+  }
+}

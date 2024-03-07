@@ -1,0 +1,184 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.pt/fhir/core/StructureDefinition/PT_InventoryReport_Basic",
+  "version": "1.1",
+  "name": "PT_InventoryReport_Basic",
+  "status": "draft",
+  "experimental": false,
+  "date": "2023-01-19T14:15:18.04356+00:00",
+  "description": "Creation of the InventoryReport resource present in the R5 version of FHIR through the Basic resource",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Basic",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Basic",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Basic.extension",
+        "path": "Basic.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 3
+      },
+      {
+        "id": "Basic.extension:status",
+        "path": "Basic.extension",
+        "sliceName": "status",
+        "min": 1,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/Status-InventoryReport"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Basic.extension:countType",
+        "path": "Basic.extension",
+        "sliceName": "countType",
+        "min": 1,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/CountType-InventoryReport"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Basic.extension:operationType",
+        "path": "Basic.extension",
+        "sliceName": "operationType",
+        "min": 0,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/OperationType-InventoryReport"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Basic.extension:operationTypeReason",
+        "path": "Basic.extension",
+        "sliceName": "operationTypeReason",
+        "min": 0,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/OperationTypeReason-InventoryReport"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Basic.extension:reportedDateTime",
+        "path": "Basic.extension",
+        "sliceName": "reportedDateTime",
+        "min": 1,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/ReportedDateTime-InventoryReport"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Basic.extension:reporter",
+        "path": "Basic.extension",
+        "sliceName": "reporter",
+        "min": 0,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/Reporter-InventoryReport"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Basic.extension:reportingPeriod",
+        "path": "Basic.extension",
+        "sliceName": "reportingPeriod",
+        "min": 0,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/ReportingPeriod-InventoryReport"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Basic.extension:inventoryListing",
+        "path": "Basic.extension",
+        "sliceName": "inventoryListing",
+        "min": 0,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/InventoryListing-InventoryReport"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Basic.extension:note",
+        "path": "Basic.extension",
+        "sliceName": "note",
+        "min": 0,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/Note-InventoryReport"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Basic.subject",
+        "path": "Basic.subject",
+        "max": "0"
+      },
+      {
+        "id": "Basic.created",
+        "path": "Basic.created",
+        "max": "0"
+      },
+      {
+        "id": "Basic.author",
+        "path": "Basic.author",
+        "max": "0"
+      }
+    ]
+  }
+}

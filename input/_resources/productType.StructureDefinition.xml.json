@@ -1,0 +1,54 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.pt/fhir/core/StructureDefinition/ProductType",
+  "version": "1.0",
+  "name": "ProductType",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-10-13T16:20:27.5544908+00:00",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "MedicationRequest"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.pt/fhir/core/StructureDefinition/ProductType"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x].coding.system",
+        "path": "Extension.value[x].coding.system",
+        "fixedUri": "https://snomed.info/sct"
+      },
+      {
+        "id": "Extension.value[x].coding.version",
+        "path": "Extension.value[x].coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Extension.value[x].coding.userSelected",
+        "path": "Extension.value[x].coding.userSelected",
+        "max": "0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "resourceType": "StructureDefinition",
+  "meta": {
+    "lastUpdated": "2022-01-07T10:57:03.761+00:00"
+  },
+  "url": "http://hl7.pt/fhir/core/StructureDefinition/EconomicInsufficiency",
+  "version": "1.0",
+  "name": "EconomicInsufficiency",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-01-07",
+  "description": "Extension for Economic Insufficiency in Portugal",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Coverage"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.id",
+        "path": "Extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "Extension.extension:boolean",
+        "path": "Extension.extension",
+        "sliceName": "boolean",
+        "min": 0
+      },
+      {
+        "id": "Extension.extension:boolean.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:boolean.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "boolean"
+      },
+      {
+        "id": "Extension.extension:boolean.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ZID-7"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:boolean.value[x].id",
+        "path": "Extension.extension.value[x].id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:period",
+        "path": "Extension.extension",
+        "sliceName": "period",
+        "min": 0
+      },
+      {
+        "id": "Extension.extension:period.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:period.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "period"
+      },
+      {
+        "id": "Extension.extension:period.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Period"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:period.value[x].id",
+        "path": "Extension.extension.value[x].id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:period.value[x].start",
+        "path": "Extension.extension.value[x].start",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ZID-8"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:period.value[x].end",
+        "path": "Extension.extension.value[x].end",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ZID-9"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.pt/fhir/core/StructureDefinition/EconomicInsufficiency"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

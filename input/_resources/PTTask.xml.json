@@ -1,0 +1,810 @@
+{
+  "resourceType": "StructureDefinition",
+  "meta": {
+    "lastUpdated": "2023-03-07T12:02:24.9263795+00:00"
+  },
+  "url": "http://hl7.pt/fhir/core/StructureDefinition/PT_Task",
+  "version": "1.1",
+  "name": "PT_Task",
+  "status": "draft",
+  "experimental": false,
+  "date": "2023-03-07T12:02:35.3976323+00:00",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Task",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Task",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Task.meta",
+        "path": "Task.meta"
+      },
+      {
+        "id": "Task.meta.id",
+        "path": "Task.meta.id",
+        "max": "0"
+      },
+      {
+        "id": "Task.meta.versionId",
+        "path": "Task.meta.versionId",
+        "max": "0"
+      },
+      {
+        "id": "Task.meta.source",
+        "path": "Task.meta.source",
+        "max": "0"
+      },
+      {
+        "id": "Task.meta.security",
+        "path": "Task.meta.security",
+        "max": "0"
+      },
+      {
+        "id": "Task.meta.tag",
+        "path": "Task.meta.tag",
+        "max": "0"
+      },
+      {
+        "id": "Task.implicitRules",
+        "path": "Task.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "Task.language",
+        "path": "Task.language",
+        "max": "0"
+      },
+      {
+        "id": "Task.text",
+        "path": "Task.text",
+        "max": "0"
+      },
+      {
+        "id": "Task.contained",
+        "path": "Task.contained",
+        "max": "0"
+      },
+      {
+        "id": "Task.extension",
+        "path": "Task.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "Task.extension:requestedPeriod",
+        "path": "Task.extension",
+        "sliceName": "requestedPeriod",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/RequestedPeriod"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Task.identifier",
+        "path": "Task.identifier",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC-2, ORC-3, ORC-8"
+          }
+        ]
+      },
+      {
+        "id": "Task.identifier.id",
+        "path": "Task.identifier.id",
+        "max": "0"
+      },
+      {
+        "id": "Task.identifier.type",
+        "path": "Task.identifier.type",
+        "max": "0"
+      },
+      {
+        "id": "Task.identifier.system",
+        "path": "Task.identifier.system",
+        "max": "0"
+      },
+      {
+        "id": "Task.identifier.value",
+        "path": "Task.identifier.value",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC-2.1, ORC-3.1, ORC-8.1"
+          }
+        ]
+      },
+      {
+        "id": "Task.identifier.period",
+        "path": "Task.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "Task.identifier.assigner.id",
+        "path": "Task.identifier.assigner.id",
+        "max": "0"
+      },
+      {
+        "id": "Task.identifier.assigner.reference",
+        "path": "Task.identifier.assigner.reference",
+        "max": "0"
+      },
+      {
+        "id": "Task.identifier.assigner.type",
+        "path": "Task.identifier.assigner.type",
+        "max": "0"
+      },
+      {
+        "id": "Task.identifier.assigner.identifier",
+        "path": "Task.identifier.assigner.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Task.identifier.assigner.display",
+        "path": "Task.identifier.assigner.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC-2.2, ORC-3.2, ORC-8.2"
+          }
+        ]
+      },
+      {
+        "id": "Task.instantiatesCanonical",
+        "path": "Task.instantiatesCanonical",
+        "max": "0"
+      },
+      {
+        "id": "Task.instantiatesUri",
+        "path": "Task.instantiatesUri",
+        "max": "0"
+      },
+      {
+        "id": "Task.basedOn",
+        "path": "Task.basedOn",
+        "max": "0"
+      },
+      {
+        "id": "Task.groupIdentifier",
+        "path": "Task.groupIdentifier",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC-4, RXE-15"
+          }
+        ]
+      },
+      {
+        "id": "Task.groupIdentifier.id",
+        "path": "Task.groupIdentifier.id",
+        "max": "0"
+      },
+      {
+        "id": "Task.groupIdentifier.type",
+        "path": "Task.groupIdentifier.type",
+        "max": "0"
+      },
+      {
+        "id": "Task.groupIdentifier.system",
+        "path": "Task.groupIdentifier.system",
+        "max": "0"
+      },
+      {
+        "id": "Task.groupIdentifier.value",
+        "path": "Task.groupIdentifier.value",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC-4.1, RXE-15.1"
+          }
+        ]
+      },
+      {
+        "id": "Task.groupIdentifier.period",
+        "path": "Task.groupIdentifier.period",
+        "max": "0"
+      },
+      {
+        "id": "Task.groupIdentifier.assigner.id",
+        "path": "Task.groupIdentifier.assigner.id",
+        "max": "0"
+      },
+      {
+        "id": "Task.groupIdentifier.assigner.reference",
+        "path": "Task.groupIdentifier.assigner.reference",
+        "max": "0"
+      },
+      {
+        "id": "Task.groupIdentifier.assigner.type",
+        "path": "Task.groupIdentifier.assigner.type",
+        "max": "0"
+      },
+      {
+        "id": "Task.groupIdentifier.assigner.identifier",
+        "path": "Task.groupIdentifier.assigner.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Task.groupIdentifier.assigner.display",
+        "path": "Task.groupIdentifier.assigner.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC-4.2"
+          }
+        ]
+      },
+      {
+        "id": "Task.status",
+        "path": "Task.status",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC-1"
+          }
+        ]
+      },
+      {
+        "id": "Task.statusReason",
+        "path": "Task.statusReason",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC-16"
+          }
+        ]
+      },
+      {
+        "id": "Task.statusReason.id",
+        "path": "Task.statusReason.id",
+        "max": "0"
+      },
+      {
+        "id": "Task.statusReason.coding.id",
+        "path": "Task.statusReason.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Task.statusReason.coding.system",
+        "path": "Task.statusReason.coding.system",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC-16.3"
+          }
+        ]
+      },
+      {
+        "id": "Task.statusReason.coding.version",
+        "path": "Task.statusReason.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Task.statusReason.coding.code",
+        "path": "Task.statusReason.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC-16.1"
+          }
+        ]
+      },
+      {
+        "id": "Task.statusReason.coding.display",
+        "path": "Task.statusReason.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC-16.2"
+          }
+        ]
+      },
+      {
+        "id": "Task.statusReason.coding.userSelected",
+        "path": "Task.statusReason.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Task.statusReason.text",
+        "path": "Task.statusReason.text",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "Translation to [PT] of display field"
+          }
+        ]
+      },
+      {
+        "id": "Task.businessStatus",
+        "path": "Task.businessStatus",
+        "max": "0"
+      },
+      {
+        "id": "Task.intent",
+        "path": "Task.intent",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "MSH-9 -> OMP^O09 = order; RDE^O11 = original-order"
+          }
+        ]
+      },
+      {
+        "id": "Task.priority",
+        "path": "Task.priority",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC-7.6, RXE-1.6"
+          },
+          {
+            "identity": "HL7v2.5",
+            "map": "TQ1-9"
+          }
+        ]
+      },
+      {
+        "id": "Task.code.id",
+        "path": "Task.code.id",
+        "max": "0"
+      },
+      {
+        "id": "Task.code.coding.id",
+        "path": "Task.code.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Task.code.coding.version",
+        "path": "Task.code.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Task.code.coding.code",
+        "path": "Task.code.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "before status = \"completed\" -> code = approve; after status = \"completed\" -> code = fulfill"
+          }
+        ]
+      },
+      {
+        "id": "Task.code.coding.userSelected",
+        "path": "Task.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Task.code.text",
+        "path": "Task.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Task.focus",
+        "path": "Task.focus",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_MedicationRequest"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Task.focus.id",
+        "path": "Task.focus.id",
+        "max": "0"
+      },
+      {
+        "id": "Task.focus.reference",
+        "path": "Task.focus.reference",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "MedicationRequest/ORC-2.1, ORC-3.1, ORC-8.1"
+          }
+        ]
+      },
+      {
+        "id": "Task.focus.type",
+        "path": "Task.focus.type",
+        "max": "0"
+      },
+      {
+        "id": "Task.focus.identifier",
+        "path": "Task.focus.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Task.focus.display",
+        "path": "Task.focus.display",
+        "max": "0"
+      },
+      {
+        "id": "Task.for",
+        "path": "Task.for",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Task.for.id",
+        "path": "Task.for.id",
+        "max": "0"
+      },
+      {
+        "id": "Task.for.reference",
+        "path": "Task.for.reference",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "Patient/PID-3 c/ SNS, PID-18.1, PID-3 c/ SONHO"
+          }
+        ]
+      },
+      {
+        "id": "Task.for.type",
+        "path": "Task.for.type",
+        "max": "0"
+      },
+      {
+        "id": "Task.for.identifier",
+        "path": "Task.for.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Task.for.display",
+        "path": "Task.for.display",
+        "max": "0"
+      },
+      {
+        "id": "Task.encounter",
+        "path": "Task.encounter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_Encounter"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Task.encounter.id",
+        "path": "Task.encounter.id",
+        "max": "0"
+      },
+      {
+        "id": "Task.encounter.reference",
+        "path": "Task.encounter.reference",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "Encounter/PV1-19, PV1-50"
+          }
+        ]
+      },
+      {
+        "id": "Task.encounter.type",
+        "path": "Task.encounter.type",
+        "max": "0"
+      },
+      {
+        "id": "Task.encounter.identifier",
+        "path": "Task.encounter.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Task.encounter.display",
+        "path": "Task.encounter.display",
+        "max": "0"
+      },
+      {
+        "id": "Task.authoredOn",
+        "path": "Task.authoredOn",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC-15"
+          }
+        ]
+      },
+      {
+        "id": "Task.lastModified",
+        "path": "Task.lastModified",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC-9"
+          }
+        ]
+      },
+      {
+        "id": "Task.requester",
+        "path": "Task.requester",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_Practitioner"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Task.requester.id",
+        "path": "Task.requester.id",
+        "max": "0"
+      },
+      {
+        "id": "Task.requester.reference",
+        "path": "Task.requester.reference",
+        "mapping": [
+          {
+            "identity": "Practitioner-HL7v2.x",
+            "map": "Practitioner/ORC-12, RXO-14, RXE-13"
+          }
+        ]
+      },
+      {
+        "id": "Task.requester.type",
+        "path": "Task.requester.type",
+        "max": "0"
+      },
+      {
+        "id": "Task.requester.identifier",
+        "path": "Task.requester.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Task.requester.display",
+        "path": "Task.requester.display",
+        "max": "0"
+      },
+      {
+        "id": "Task.performerType",
+        "path": "Task.performerType",
+        "max": "0"
+      },
+      {
+        "id": "Task.owner",
+        "path": "Task.owner",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Task.owner.id",
+        "path": "Task.owner.id",
+        "max": "0"
+      },
+      {
+        "id": "Task.owner.reference",
+        "path": "Task.owner.reference",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "Organization/MSH-6"
+          }
+        ]
+      },
+      {
+        "id": "Task.owner.type",
+        "path": "Task.owner.type",
+        "max": "0"
+      },
+      {
+        "id": "Task.owner.identifier",
+        "path": "Task.owner.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Task.owner.display",
+        "path": "Task.owner.display",
+        "max": "0"
+      },
+      {
+        "id": "Task.reasonCode",
+        "path": "Task.reasonCode",
+        "max": "0"
+      },
+      {
+        "id": "Task.reasonReference",
+        "path": "Task.reasonReference",
+        "max": "0"
+      },
+      {
+        "id": "Task.insurance",
+        "path": "Task.insurance",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_Coverage"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Task.insurance.id",
+        "path": "Task.insurance.id",
+        "max": "0"
+      },
+      {
+        "id": "Task.insurance.reference",
+        "path": "Task.insurance.reference",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "Coverage/IN1-2, IN1-3"
+          }
+        ]
+      },
+      {
+        "id": "Task.insurance.type",
+        "path": "Task.insurance.type",
+        "max": "0"
+      },
+      {
+        "id": "Task.insurance.identifier",
+        "path": "Task.insurance.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Task.insurance.display",
+        "path": "Task.insurance.display",
+        "max": "0"
+      },
+      {
+        "id": "Task.note.id",
+        "path": "Task.note.id",
+        "max": "0"
+      },
+      {
+        "id": "Task.note.author[x]",
+        "path": "Task.note.author[x]",
+        "max": "0"
+      },
+      {
+        "id": "Task.note.time",
+        "path": "Task.note.time",
+        "max": "0"
+      },
+      {
+        "id": "Task.restriction",
+        "path": "Task.restriction",
+        "max": "0"
+      },
+      {
+        "id": "Task.input.id",
+        "path": "Task.input.id",
+        "max": "0"
+      },
+      {
+        "id": "Task.input.type.id",
+        "path": "Task.input.type.id",
+        "max": "0"
+      },
+      {
+        "id": "Task.input.type.coding",
+        "path": "Task.input.type.coding",
+        "binding": {
+          "strength": "example",
+          "description": "This example value set defines a set of codes that can be used to indicate the role of a Practitioner.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/practitioner-role"
+        }
+      },
+      {
+        "id": "Task.input.type.coding.id",
+        "path": "Task.input.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Task.input.type.coding.version",
+        "path": "Task.input.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Task.input.type.coding.code",
+        "path": "Task.input.type.coding.code",
+        "example": [
+          {
+            "label": "Code",
+            "valueCode": "pharmacist"
+          }
+        ]
+      },
+      {
+        "id": "Task.input.type.coding.display",
+        "path": "Task.input.type.coding.display",
+        "example": [
+          {
+            "label": "Display",
+            "valueString": "Pharmacist"
+          }
+        ]
+      },
+      {
+        "id": "Task.input.type.coding.userSelected",
+        "path": "Task.input.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Task.input.type.text",
+        "path": "Task.input.type.text",
+        "example": [
+          {
+            "label": "Text",
+            "valueString": "[PT] Validação realizada pelo Farmacêutico"
+          }
+        ]
+      },
+      {
+        "id": "Task.input.value[x]",
+        "path": "Task.input.value[x]",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "Task.input.value[x].id",
+        "path": "Task.input.value[x].id",
+        "max": "0"
+      },
+      {
+        "id": "Task.input.value[x].reference",
+        "path": "Task.input.value[x].reference",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "Practitioner/ORC-11"
+          }
+        ]
+      },
+      {
+        "id": "Task.input.value[x].type",
+        "path": "Task.input.value[x].type",
+        "max": "0"
+      },
+      {
+        "id": "Task.input.value[x].identifier",
+        "path": "Task.input.value[x].identifier",
+        "max": "0"
+      },
+      {
+        "id": "Task.input.value[x].display",
+        "path": "Task.input.value[x].display",
+        "max": "0"
+      }
+    ]
+  }
+}

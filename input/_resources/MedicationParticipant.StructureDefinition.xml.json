@@ -1,0 +1,216 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.pt/fhir/core/StructureDefinition/MedicationParticipant",
+  "version": "1.0",
+  "name": "MedicationParticipant",
+  "status": "draft",
+  "date": "2023-01-10T11:15:44.1843212+00:00",
+  "description": "Extension that indicates which participants may be part of the drug flow described in the form",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "MedicationKnowledge"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.id",
+        "path": "Extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "Extension.extension:type",
+        "path": "Extension.extension",
+        "sliceName": "type",
+        "short": "The type of participant for the action.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:type.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:type.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "type"
+      },
+      {
+        "id": "Extension.extension:type.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "The type of participant for the action.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/action-participant-type"
+        }
+      },
+      {
+        "id": "Extension.extension:type.value[x].id",
+        "path": "Extension.extension.value[x].id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:typeReference",
+        "path": "Extension.extension",
+        "sliceName": "typeReference",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:typeReference.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:typeReference.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "typeReference"
+      },
+      {
+        "id": "Extension.extension:typeReference.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/HealthcareService",
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_Location",
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_Organization",
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_Practitioner",
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_PractitionerRole"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:typeReference.value[x].id",
+        "path": "Extension.extension.value[x].id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:role",
+        "path": "Extension.extension",
+        "sliceName": "role",
+        "short": "The role the participant play",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:role.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:role.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "role"
+      },
+      {
+        "id": "Extension.extension:role.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "example",
+          "description": "Set of codes that can be used to indicate the role of a Practitioner.",
+          "valueSet": "http://hl7.org/fhir/ValueSet/practitioner-role"
+        }
+      },
+      {
+        "id": "Extension.extension:role.value[x].id",
+        "path": "Extension.extension.value[x].id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:role.value[x].coding.id",
+        "path": "Extension.extension.value[x].coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:function",
+        "path": "Extension.extension",
+        "sliceName": "function",
+        "short": "Indicates how the actor is involved - e.g. prescriber, author, reviewer, witness, etc.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:function.id",
+        "path": "Extension.extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:function.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "function"
+      },
+      {
+        "id": "Extension.extension:function.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "example": [
+          {
+            "label": "Examples of function",
+            "valueCodeableConcept": {
+              "text": "Prescriber, author, reviewer, witness, etc."
+            }
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:function.value[x].id",
+        "path": "Extension.extension.value[x].id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:function.value[x].coding.id",
+        "path": "Extension.extension.value[x].coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "http://hl7.pt/fhir/core/StructureDefinition/MedicationParticipant"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

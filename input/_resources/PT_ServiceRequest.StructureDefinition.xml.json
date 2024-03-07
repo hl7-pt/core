@@ -1,0 +1,921 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.pt/fhir/core/StructureDefinition/PT_ServiceRequest",
+  "version": "1.3",
+  "name": "PT_ServiceRequest",
+  "status": "draft",
+  "date": "2023-09-01T13:24:34.6850843+00:00",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "ServiceRequest",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ServiceRequest",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ServiceRequest.meta",
+        "path": "ServiceRequest.meta"
+      },
+      {
+        "id": "ServiceRequest.meta.id",
+        "path": "ServiceRequest.meta.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.meta.versionId",
+        "path": "ServiceRequest.meta.versionId",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.meta.source",
+        "path": "ServiceRequest.meta.source",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.meta.security",
+        "path": "ServiceRequest.meta.security",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.meta.tag",
+        "path": "ServiceRequest.meta.tag",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.implicitRules",
+        "path": "ServiceRequest.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.language",
+        "path": "ServiceRequest.language",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.text",
+        "path": "ServiceRequest.text",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.contained",
+        "path": "ServiceRequest.contained",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.extension:patientTransportNeed",
+        "path": "ServiceRequest.extension",
+        "sliceName": "patientTransportNeed",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/PatientTransportNeed"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "OBR.41"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.extension:statusReason",
+        "path": "ServiceRequest.extension",
+        "sliceName": "statusReason",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/request-statusReason"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "ServiceRequest.identifier",
+        "path": "ServiceRequest.identifier",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC2; ORC3"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.identifier.type.id",
+        "path": "ServiceRequest.identifier.type.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.identifier.type.coding.id",
+        "path": "ServiceRequest.identifier.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.identifier.type.coding.version",
+        "path": "ServiceRequest.identifier.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.identifier.type.coding.userSelected",
+        "path": "ServiceRequest.identifier.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.identifier.period",
+        "path": "ServiceRequest.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.identifier.assigner.id",
+        "path": "ServiceRequest.identifier.assigner.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.identifier.assigner.reference",
+        "path": "ServiceRequest.identifier.assigner.reference",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.identifier.assigner.type",
+        "path": "ServiceRequest.identifier.assigner.type",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.identifier.assigner.identifier",
+        "path": "ServiceRequest.identifier.assigner.identifier",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.instantiatesCanonical",
+        "path": "ServiceRequest.instantiatesCanonical",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.instantiatesUri",
+        "path": "ServiceRequest.instantiatesUri",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.basedOn",
+        "path": "ServiceRequest.basedOn",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_Careplan"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC.8"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.basedOn.id",
+        "path": "ServiceRequest.basedOn.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.basedOn.type",
+        "path": "ServiceRequest.basedOn.type",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.basedOn.identifier",
+        "path": "ServiceRequest.basedOn.identifier",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.basedOn.display",
+        "path": "ServiceRequest.basedOn.display",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.replaces",
+        "path": "ServiceRequest.replaces",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.replaces.type",
+        "path": "ServiceRequest.replaces.type",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.replaces.identifier",
+        "path": "ServiceRequest.replaces.identifier",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.replaces.display",
+        "path": "ServiceRequest.replaces.display",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.requisition",
+        "path": "ServiceRequest.requisition",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC.4"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.requisition.id",
+        "path": "ServiceRequest.requisition.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.requisition.type.id",
+        "path": "ServiceRequest.requisition.type.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.requisition.type.coding.id",
+        "path": "ServiceRequest.requisition.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.requisition.type.coding.version",
+        "path": "ServiceRequest.requisition.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.requisition.type.coding.userSelected",
+        "path": "ServiceRequest.requisition.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.requisition.system",
+        "path": "ServiceRequest.requisition.system",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.requisition.period.id",
+        "path": "ServiceRequest.requisition.period.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.requisition.assigner",
+        "path": "ServiceRequest.requisition.assigner",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.status",
+        "path": "ServiceRequest.status",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC1;ORC.5"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.category",
+        "path": "ServiceRequest.category",
+        "max": "1",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC.4.4"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.category.id",
+        "path": "ServiceRequest.category.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.category.coding",
+        "path": "ServiceRequest.category.coding",
+        "binding": {
+          "strength": "required",
+          "description": "SNOMED",
+          "valueSet": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "ServiceRequest.category.coding.id",
+        "path": "ServiceRequest.category.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.category.coding.userSelected",
+        "path": "ServiceRequest.category.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.priority",
+        "path": "ServiceRequest.priority",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC.7.6; OBR.5"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.doNotPerform",
+        "path": "ServiceRequest.doNotPerform",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC.1",
+            "comment": "When ORC.1='CA'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.doNotPerform.extension:notPerformReason",
+        "path": "ServiceRequest.doNotPerform.extension",
+        "sliceName": "notPerformReason",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/NotPerformReason"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC.16",
+            "comment": "When ORC.1='CA'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.doNotPerform.extension:notPerformDecider",
+        "path": "ServiceRequest.doNotPerform.extension",
+        "sliceName": "notPerformDecider",
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/NotPerformDecider"
+            ]
+          }
+        ],
+        "isModifier": false,
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC.12",
+            "comment": "When ORC.1='CA'"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.code",
+        "path": "ServiceRequest.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "OBR.4"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.code.id",
+        "path": "ServiceRequest.code.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.code.coding",
+        "path": "ServiceRequest.code.coding",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "ServiceRequest.code.coding.id",
+        "path": "ServiceRequest.code.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.code.coding.userSelected",
+        "path": "ServiceRequest.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.orderDetail",
+        "path": "ServiceRequest.orderDetail",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NTE.3",
+            "comment": "NTE ao nivel do ORC"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.orderDetail.coding.id",
+        "path": "ServiceRequest.orderDetail.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.orderDetail.coding.userSelected",
+        "path": "ServiceRequest.orderDetail.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.quantity[x]",
+        "path": "ServiceRequest.quantity[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC.7.1"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.quantity[x].value",
+        "path": "ServiceRequest.quantity[x].value",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "OCR.7.1.1"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.quantity[x].unit",
+        "path": "ServiceRequest.quantity[x].unit",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC.7.1.2"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.quantity[x].code",
+        "path": "ServiceRequest.quantity[x].code",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.subject",
+        "path": "ServiceRequest.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_Patient"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "PID.3"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.subject.id",
+        "path": "ServiceRequest.subject.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.subject.type",
+        "path": "ServiceRequest.subject.type",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.subject.identifier",
+        "path": "ServiceRequest.subject.identifier",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.subject.display",
+        "path": "ServiceRequest.subject.display",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.encounter",
+        "path": "ServiceRequest.encounter",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_Encounter"
+            ]
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "PV1.19; PV1.50"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.encounter.id",
+        "path": "ServiceRequest.encounter.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.encounter.type",
+        "path": "ServiceRequest.encounter.type",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.encounter.identifier",
+        "path": "ServiceRequest.encounter.identifier",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.encounter.display",
+        "path": "ServiceRequest.encounter.display",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.occurrence[x]",
+        "path": "ServiceRequest.occurrence[x]",
+        "type": [
+          {
+            "code": "Timing"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.occurrence[x].event",
+        "path": "ServiceRequest.occurrence[x].event",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "OBR.6"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.occurrence[x].repeat.count",
+        "path": "ServiceRequest.occurrence[x].repeat.count",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "OBR.12"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.asNeeded[x]",
+        "path": "ServiceRequest.asNeeded[x]",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.authoredOn",
+        "path": "ServiceRequest.authoredOn",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC.15"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.requester",
+        "path": "ServiceRequest.requester",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Device",
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_Practitioner",
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_PractitionerRole"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.requester.id",
+        "path": "ServiceRequest.requester.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.requester.reference",
+        "path": "ServiceRequest.requester.reference",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC.12"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.requester.type",
+        "path": "ServiceRequest.requester.type",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.requester.identifier",
+        "path": "ServiceRequest.requester.identifier",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.requester.display",
+        "path": "ServiceRequest.requester.display",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.performerType",
+        "path": "ServiceRequest.performerType",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.performer",
+        "path": "ServiceRequest.performer",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Organization",
+              "http://hl7.org/fhir/StructureDefinition/CareTeam",
+              "http://hl7.org/fhir/StructureDefinition/HealthcareService",
+              "http://hl7.org/fhir/StructureDefinition/PT_Patient",
+              "http://hl7.org/fhir/StructureDefinition/Device",
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_Practitioner",
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_PractitionerRole"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.performer.id",
+        "path": "ServiceRequest.performer.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.performer.type",
+        "path": "ServiceRequest.performer.type",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.performer.identifier",
+        "path": "ServiceRequest.performer.identifier",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.performer.display",
+        "path": "ServiceRequest.performer.display",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.locationCode.coding.id",
+        "path": "ServiceRequest.locationCode.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.locationCode.coding.userSelected",
+        "path": "ServiceRequest.locationCode.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.locationReference",
+        "path": "ServiceRequest.locationReference",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_Location"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.reasonCode",
+        "path": "ServiceRequest.reasonCode",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC.16"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.reasonCode.id",
+        "path": "ServiceRequest.reasonCode.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.reasonCode.coding",
+        "path": "ServiceRequest.reasonCode.coding",
+        "binding": {
+          "strength": "required",
+          "description": "SNOME",
+          "valueSet": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "ServiceRequest.reasonCode.coding.id",
+        "path": "ServiceRequest.reasonCode.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.reasonCode.coding.userSelected",
+        "path": "ServiceRequest.reasonCode.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.reasonReference",
+        "path": "ServiceRequest.reasonReference",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Observation",
+              "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+              "http://hl7.org/fhir/StructureDefinition/DocumentReference",
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_Condition"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.reasonReference.id",
+        "path": "ServiceRequest.reasonReference.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.reasonReference.type",
+        "path": "ServiceRequest.reasonReference.type",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.reasonReference.identifier",
+        "path": "ServiceRequest.reasonReference.identifier",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.reasonReference.display",
+        "path": "ServiceRequest.reasonReference.display",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.insurance",
+        "path": "ServiceRequest.insurance",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.insurance.id",
+        "path": "ServiceRequest.insurance.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.insurance.type",
+        "path": "ServiceRequest.insurance.type",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.insurance.identifier",
+        "path": "ServiceRequest.insurance.identifier",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.insurance.display",
+        "path": "ServiceRequest.insurance.display",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.supportingInfo.id",
+        "path": "ServiceRequest.supportingInfo.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.supportingInfo.type",
+        "path": "ServiceRequest.supportingInfo.type",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.supportingInfo.identifier",
+        "path": "ServiceRequest.supportingInfo.identifier",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.supportingInfo.display",
+        "path": "ServiceRequest.supportingInfo.display",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.specimen",
+        "path": "ServiceRequest.specimen",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_Specimen"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.specimen.id",
+        "path": "ServiceRequest.specimen.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.bodySite.id",
+        "path": "ServiceRequest.bodySite.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.bodySite.coding.id",
+        "path": "ServiceRequest.bodySite.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.bodySite.coding.version",
+        "path": "ServiceRequest.bodySite.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.bodySite.coding.userSelected",
+        "path": "ServiceRequest.bodySite.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.note.id",
+        "path": "ServiceRequest.note.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.note.author[x]",
+        "path": "ServiceRequest.note.author[x]",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.note.author[x].id",
+        "path": "ServiceRequest.note.author[x].id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.note.author[x].type",
+        "path": "ServiceRequest.note.author[x].type",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.note.author[x].identifier",
+        "path": "ServiceRequest.note.author[x].identifier",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.note.author[x].display",
+        "path": "ServiceRequest.note.author[x].display",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.note.time",
+        "path": "ServiceRequest.note.time",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.note.text",
+        "path": "ServiceRequest.note.text",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NTE.3",
+            "comment": "NTE ao nivel do MSH"
+          }
+        ]
+      },
+      {
+        "id": "ServiceRequest.relevantHistory.id",
+        "path": "ServiceRequest.relevantHistory.id",
+        "max": "0"
+      },
+      {
+        "id": "ServiceRequest.relevantHistory.type",
+        "path": "ServiceRequest.relevantHistory.type",
+        "max": "0"
+      }
+    ]
+  }
+}

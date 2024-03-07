@@ -1,0 +1,710 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "http://hl7.pt/fhir/core/StructureDefinition/PT_DocumentReference",
+  "version": "1.0",
+  "name": "PT_DocumentReference",
+  "status": "draft",
+  "experimental": false,
+  "date": "2023-02-07T11:18:35.1668762+00:00",
+  "description": "A generic DocumentReference resource for Portugal",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "DocumentReference",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DocumentReference",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DocumentReference.meta",
+        "path": "DocumentReference.meta"
+      },
+      {
+        "id": "DocumentReference.meta.id",
+        "path": "DocumentReference.meta.id",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.meta.versionId",
+        "path": "DocumentReference.meta.versionId",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.meta.lastUpdated",
+        "path": "DocumentReference.meta.lastUpdated",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "TXA-8; OBX-14"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.meta.source",
+        "path": "DocumentReference.meta.source",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.meta.security",
+        "path": "DocumentReference.meta.security",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.meta.tag",
+        "path": "DocumentReference.meta.tag",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.implicitRules",
+        "path": "DocumentReference.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.language",
+        "path": "DocumentReference.language",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.text",
+        "path": "DocumentReference.text",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.contained",
+        "path": "DocumentReference.contained",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.masterIdentifier",
+        "path": "DocumentReference.masterIdentifier",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "TXA-12; OBX-4"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.masterIdentifier.id",
+        "path": "DocumentReference.masterIdentifier.id",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.masterIdentifier.type",
+        "path": "DocumentReference.masterIdentifier.type",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.masterIdentifier.system",
+        "path": "DocumentReference.masterIdentifier.system",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.masterIdentifier.value",
+        "path": "DocumentReference.masterIdentifier.value",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "TXA-12.1; OBX-4"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.masterIdentifier.period",
+        "path": "DocumentReference.masterIdentifier.period",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.masterIdentifier.assigner.id",
+        "path": "DocumentReference.masterIdentifier.assigner.id",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.masterIdentifier.assigner.reference",
+        "path": "DocumentReference.masterIdentifier.assigner.reference",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.masterIdentifier.assigner.type",
+        "path": "DocumentReference.masterIdentifier.assigner.type",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.masterIdentifier.assigner.identifier",
+        "path": "DocumentReference.masterIdentifier.assigner.identifier",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.masterIdentifier.assigner.display",
+        "path": "DocumentReference.masterIdentifier.assigner.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "TXA-12.2"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.identifier",
+        "path": "DocumentReference.identifier",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "TXA-16; OBX-3"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.identifier.id",
+        "path": "DocumentReference.identifier.id",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.identifier.type",
+        "path": "DocumentReference.identifier.type",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.identifier.system",
+        "path": "DocumentReference.identifier.system",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "OBX-3.3"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.identifier.value",
+        "path": "DocumentReference.identifier.value",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "TXA-16; OBX-3.1"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.identifier.period",
+        "path": "DocumentReference.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.identifier.assigner",
+        "path": "DocumentReference.identifier.assigner",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.status",
+        "path": "DocumentReference.status",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "TXA-19; OBX-11"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.docStatus",
+        "path": "DocumentReference.docStatus",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "TXA-17; OBX-11"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.type",
+        "path": "DocumentReference.type",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "TXA-2; OBX-3"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.type.id",
+        "path": "DocumentReference.type.id",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.type.coding.id",
+        "path": "DocumentReference.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.type.coding.system",
+        "path": "DocumentReference.type.coding.system",
+        "fixedUri": "https://loinc.org/",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "OBX-3.3"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.type.coding.version",
+        "path": "DocumentReference.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.type.coding.code",
+        "path": "DocumentReference.type.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "TXA-2; OBX-3.1"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.type.coding.display",
+        "path": "DocumentReference.type.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "OBX-3.2"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.type.coding.userSelected",
+        "path": "DocumentReference.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.type.text",
+        "path": "DocumentReference.type.text",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "Translation to [PT] of the display field"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.subject",
+        "path": "DocumentReference.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.subject.id",
+        "path": "DocumentReference.subject.id",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.subject.reference",
+        "path": "DocumentReference.subject.reference",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "Patient/PID-3 c/ SNS, PID-18.1, PID-3 c/ SONHO"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.subject.type",
+        "path": "DocumentReference.subject.type",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.subject.identifier",
+        "path": "DocumentReference.subject.identifier",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.subject.display",
+        "path": "DocumentReference.subject.display",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.author",
+        "path": "DocumentReference.author",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_Practitioner"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.author.id",
+        "path": "DocumentReference.author.id",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.author.reference",
+        "path": "DocumentReference.author.reference",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "Practitioner/TXA-9; OBX-16"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.author.type",
+        "path": "DocumentReference.author.type",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.author.identifier",
+        "path": "DocumentReference.author.identifier",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.author.display",
+        "path": "DocumentReference.author.display",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.authenticator",
+        "path": "DocumentReference.authenticator",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_Practitioner"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.authenticator.id",
+        "path": "DocumentReference.authenticator.id",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.authenticator.reference",
+        "path": "DocumentReference.authenticator.reference",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "Practitioner/TXA-10"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.authenticator.type",
+        "path": "DocumentReference.authenticator.type",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.authenticator.identifier",
+        "path": "DocumentReference.authenticator.identifier",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.authenticator.display",
+        "path": "DocumentReference.authenticator.display",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.relatesTo.id",
+        "path": "DocumentReference.relatesTo.id",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.relatesTo.target.id",
+        "path": "DocumentReference.relatesTo.target.id",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.relatesTo.target.reference",
+        "path": "DocumentReference.relatesTo.target.reference",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "DocumentReference/TXA-13; OBX-4 (older)"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.relatesTo.target.type",
+        "path": "DocumentReference.relatesTo.target.type",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.relatesTo.target.identifier",
+        "path": "DocumentReference.relatesTo.target.identifier",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.relatesTo.target.display",
+        "path": "DocumentReference.relatesTo.target.display",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.securityLabel",
+        "path": "DocumentReference.securityLabel",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "TXA-18"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.securityLabel.id",
+        "path": "DocumentReference.securityLabel.id",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.securityLabel.coding.id",
+        "path": "DocumentReference.securityLabel.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.securityLabel.coding.version",
+        "path": "DocumentReference.securityLabel.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.securityLabel.coding.code",
+        "path": "DocumentReference.securityLabel.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "TXA-18"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.securityLabel.coding.userSelected",
+        "path": "DocumentReference.securityLabel.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.content.id",
+        "path": "DocumentReference.content.id",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.content.attachment.id",
+        "path": "DocumentReference.content.attachment.id",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.content.attachment.contentType",
+        "path": "DocumentReference.content.attachment.contentType",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "TXA-3; OBX-2"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.content.attachment.language",
+        "path": "DocumentReference.content.attachment.language",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.content.attachment.data",
+        "path": "DocumentReference.content.attachment.data",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "OBX-5"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.content.attachment.size",
+        "path": "DocumentReference.content.attachment.size",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.content.attachment.hash",
+        "path": "DocumentReference.content.attachment.hash",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.content.attachment.title",
+        "path": "DocumentReference.content.attachment.title",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "OBX-3.2"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.content.attachment.creation",
+        "path": "DocumentReference.content.attachment.creation",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "TXA-6; OBX-14"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.content.format",
+        "path": "DocumentReference.content.format",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "TXA-3; OBX-2"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.content.format.id",
+        "path": "DocumentReference.content.format.id",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.content.format.version",
+        "path": "DocumentReference.content.format.version",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.content.format.code",
+        "path": "DocumentReference.content.format.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "TXA-3; OBX-2"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.content.format.userSelected",
+        "path": "DocumentReference.content.format.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.context.id",
+        "path": "DocumentReference.context.id",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.context.encounter",
+        "path": "DocumentReference.context.encounter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_Encounter"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.context.encounter.id",
+        "path": "DocumentReference.context.encounter.id",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.context.encounter.reference",
+        "path": "DocumentReference.context.encounter.reference",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "Encounter/PV1-19; PV1-50"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.context.encounter.type",
+        "path": "DocumentReference.context.encounter.type",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.context.encounter.identifier",
+        "path": "DocumentReference.context.encounter.identifier",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.context.encounter.display",
+        "path": "DocumentReference.context.encounter.display",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.context.period",
+        "path": "DocumentReference.context.period",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "TXA-4; OBX-14"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.context.period.id",
+        "path": "DocumentReference.context.period.id",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.context.period.start",
+        "path": "DocumentReference.context.period.start",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "TXA-4.1; OBX-14"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.context.period.end",
+        "path": "DocumentReference.context.period.end",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.context.sourcePatientInfo",
+        "path": "DocumentReference.context.sourcePatientInfo",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.context.sourcePatientInfo.id",
+        "path": "DocumentReference.context.sourcePatientInfo.id",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.context.sourcePatientInfo.reference",
+        "path": "DocumentReference.context.sourcePatientInfo.reference",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "Patient/PID-3 c/ SNS, PID-18.1, PID-3 c/ SONHO"
+          }
+        ]
+      },
+      {
+        "id": "DocumentReference.context.sourcePatientInfo.type",
+        "path": "DocumentReference.context.sourcePatientInfo.type",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.context.sourcePatientInfo.identifier",
+        "path": "DocumentReference.context.sourcePatientInfo.identifier",
+        "max": "0"
+      },
+      {
+        "id": "DocumentReference.context.sourcePatientInfo.display",
+        "path": "DocumentReference.context.sourcePatientInfo.display",
+        "max": "0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1965 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "17e19b6f-8e82-4c55-948e-85e02764fc9b",
+  "meta": {
+    "lastUpdated": "2022-12-16T08:22:26.5554099+00:00"
+  },
+  "url": "http://hl7.pt/fhir/core/StructureDefinition/PT_MedicationRequest",
+  "version": "1.4",
+  "name": "PT_MedicationRequest",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-12-16T12:26:45.013628+00:00",
+  "description": "A generic MedicationRequest resource for Portugal",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "MedicationRequest",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/MedicationRequest",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "MedicationRequest.meta",
+        "path": "MedicationRequest.meta"
+      },
+      {
+        "id": "MedicationRequest.meta.id",
+        "path": "MedicationRequest.meta.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.meta.versionId",
+        "path": "MedicationRequest.meta.versionId",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.meta.source",
+        "path": "MedicationRequest.meta.source",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.meta.security",
+        "path": "MedicationRequest.meta.security",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.meta.tag",
+        "path": "MedicationRequest.meta.tag",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.implicitRules",
+        "path": "MedicationRequest.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.language",
+        "path": "MedicationRequest.language",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.text",
+        "path": "MedicationRequest.text",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.contained",
+        "path": "MedicationRequest.contained",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.extension",
+        "path": "MedicationRequest.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "MedicationRequest.extension:statusChanged",
+        "path": "MedicationRequest.extension",
+        "sliceName": "statusChanged",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/StatusChanged"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.extension:Diet",
+        "path": "MedicationRequest.extension",
+        "sliceName": "Diet",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/Diet"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.extension:DispenserInstruction",
+        "path": "MedicationRequest.extension",
+        "sliceName": "DispenserInstruction",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/DispenserInstruction"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.extension:OrderType",
+        "path": "MedicationRequest.extension",
+        "sliceName": "OrderType",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/OrderType"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.extension:ProductType",
+        "path": "MedicationRequest.extension",
+        "sliceName": "ProductType",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/ProductType"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "MedicationRequest.extension:device",
+        "path": "MedicationRequest.extension",
+        "sliceName": "device",
+        "min": 0,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/Device"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "MedicationRequest.identifier.id",
+        "path": "MedicationRequest.identifier.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.identifier.type",
+        "path": "MedicationRequest.identifier.type",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.identifier.value",
+        "path": "MedicationRequest.identifier.value",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC-2.1; ORC-3.1"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.identifier.period",
+        "path": "MedicationRequest.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.identifier.assigner.id",
+        "path": "MedicationRequest.identifier.assigner.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.identifier.assigner.reference",
+        "path": "MedicationRequest.identifier.assigner.reference",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.identifier.assigner.type",
+        "path": "MedicationRequest.identifier.assigner.type",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.identifier.assigner.identifier",
+        "path": "MedicationRequest.identifier.assigner.identifier",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.identifier.assigner.display",
+        "path": "MedicationRequest.identifier.assigner.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC-2.2; ORC-3.2"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.status",
+        "path": "MedicationRequest.status",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC-1"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.status.id",
+        "path": "MedicationRequest.status.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.statusReason",
+        "path": "MedicationRequest.statusReason",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC-16"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.statusReason.id",
+        "path": "MedicationRequest.statusReason.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.statusReason.coding.id",
+        "path": "MedicationRequest.statusReason.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.statusReason.coding.system",
+        "path": "MedicationRequest.statusReason.coding.system",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC-16.3"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.statusReason.coding.version",
+        "path": "MedicationRequest.statusReason.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.statusReason.coding.code",
+        "path": "MedicationRequest.statusReason.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC-16.1"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.statusReason.coding.display",
+        "path": "MedicationRequest.statusReason.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC-16.2"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.statusReason.coding.userSelected",
+        "path": "MedicationRequest.statusReason.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.statusReason.text",
+        "path": "MedicationRequest.statusReason.text",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.intent",
+        "path": "MedicationRequest.intent",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "OMP^O09 = order"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.category",
+        "path": "MedicationRequest.category",
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "MedicationRequestCategory"
+            }
+          ],
+          "strength": "preferred",
+          "description": "FHIR Value set/code system definition for HL7 v2 table 0482 (Order Type)",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0482"
+        },
+        "mapping": [
+          {
+            "identity": "HL7v2.5",
+            "map": "ORC-29"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.category.id",
+        "path": "MedicationRequest.category.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.category.coding.id",
+        "path": "MedicationRequest.category.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.category.coding.system",
+        "path": "MedicationRequest.category.coding.system",
+        "mapping": [
+          {
+            "identity": "HL7v2.5",
+            "map": "ORC-29.3"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.category.coding.version",
+        "path": "MedicationRequest.category.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.category.coding.code",
+        "path": "MedicationRequest.category.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.5",
+            "map": "ORC-29.1"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.category.coding.display",
+        "path": "MedicationRequest.category.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.5",
+            "map": "ORC-29.2"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.category.coding.userSelected",
+        "path": "MedicationRequest.category.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.category.text",
+        "path": "MedicationRequest.category.text",
+        "mapping": [
+          {
+            "identity": "HL7v2.5",
+            "map": "Translation to [PT] of the display field"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.priority",
+        "path": "MedicationRequest.priority",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC-7.6; RXE-1.6"
+          },
+          {
+            "identity": "HL7v2.5",
+            "map": "TQ1-9"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.doNotPerform",
+        "path": "MedicationRequest.doNotPerform",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.reported[x]",
+        "path": "MedicationRequest.reported[x]",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.medication[x]",
+        "path": "MedicationRequest.medication[x]",
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ],
+        "binding": {
+          "strength": "example"
+        }
+      },
+      {
+        "id": "MedicationRequest.medication[x].id",
+        "path": "MedicationRequest.medication[x].id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.medication[x].reference",
+        "path": "MedicationRequest.medication[x].reference",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "Medication/RXO-1, RXO-24, RXC-2, RXC-7, RXE-2, RXE-31"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.medication[x].type",
+        "path": "MedicationRequest.medication[x].type",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.medication[x].identifier",
+        "path": "MedicationRequest.medication[x].identifier",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.medication[x].display",
+        "path": "MedicationRequest.medication[x].display",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.subject",
+        "path": "MedicationRequest.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.subject.id",
+        "path": "MedicationRequest.subject.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.subject.reference",
+        "path": "MedicationRequest.subject.reference",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "Patient/PID-3 c/ SNS, PID-18.1, PID-3 c/ SONHO"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.subject.type",
+        "path": "MedicationRequest.subject.type",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.subject.identifier",
+        "path": "MedicationRequest.subject.identifier",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.subject.display",
+        "path": "MedicationRequest.subject.display",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.encounter",
+        "path": "MedicationRequest.encounter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_Encounter"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.encounter.id",
+        "path": "MedicationRequest.encounter.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.encounter.reference",
+        "path": "MedicationRequest.encounter.reference",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "Encounter/PV1-19.1, PV1-50.1"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.encounter.type",
+        "path": "MedicationRequest.encounter.type",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.encounter.identifier",
+        "path": "MedicationRequest.encounter.identifier",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.encounter.display",
+        "path": "MedicationRequest.encounter.display",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.supportingInformation",
+        "path": "MedicationRequest.supportingInformation",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Observation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.supportingInformation.id",
+        "path": "MedicationRequest.supportingInformation.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.supportingInformation.reference",
+        "path": "MedicationRequest.supportingInformation.reference",
+        "mapping": [
+          {
+            "identity": "Observation-HL7v2.x",
+            "map": "Observation/OBX-3"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.supportingInformation.type",
+        "path": "MedicationRequest.supportingInformation.type",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.supportingInformation.identifier",
+        "path": "MedicationRequest.supportingInformation.identifier",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.supportingInformation.display",
+        "path": "MedicationRequest.supportingInformation.display",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.authoredOn",
+        "path": "MedicationRequest.authoredOn",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC-9.1, RXE-32"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.requester",
+        "path": "MedicationRequest.requester",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_Practitioner",
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.requester.id",
+        "path": "MedicationRequest.requester.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.requester.reference",
+        "path": "MedicationRequest.requester.reference",
+        "mapping": [
+          {
+            "identity": "Practitioner-HL7v2.x",
+            "map": "Practitioner/ORC-12, RXO-14, RXE-13"
+          },
+          {
+            "identity": "Organization-HL7v2.x",
+            "map": "Organization/ORC-21"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.requester.type",
+        "path": "MedicationRequest.requester.type",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.requester.identifier",
+        "path": "MedicationRequest.requester.identifier",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.requester.display",
+        "path": "MedicationRequest.requester.display",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.performer",
+        "path": "MedicationRequest.performer",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.performerType",
+        "path": "MedicationRequest.performerType",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.recorder",
+        "path": "MedicationRequest.recorder",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_Practitioner"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.recorder.id",
+        "path": "MedicationRequest.recorder.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.recorder.reference",
+        "path": "MedicationRequest.recorder.reference",
+        "mapping": [
+          {
+            "identity": "Practitioner-HL7v2.x",
+            "map": "Practitioner/ORC-10"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.recorder.type",
+        "path": "MedicationRequest.recorder.type",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.recorder.identifier",
+        "path": "MedicationRequest.recorder.identifier",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.recorder.display",
+        "path": "MedicationRequest.recorder.display",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.reasonCode",
+        "path": "MedicationRequest.reasonCode",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-20, RXE-27"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.reasonCode.id",
+        "path": "MedicationRequest.reasonCode.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.reasonCode.coding.id",
+        "path": "MedicationRequest.reasonCode.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.reasonCode.coding.system",
+        "path": "MedicationRequest.reasonCode.coding.system",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-20.3, RXE-27.3"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.reasonCode.coding.version",
+        "path": "MedicationRequest.reasonCode.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.reasonCode.coding.code",
+        "path": "MedicationRequest.reasonCode.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-20.1, RXE-27.1"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.reasonCode.coding.display",
+        "path": "MedicationRequest.reasonCode.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-20.2, RXE-27.2"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.reasonCode.coding.userSelected",
+        "path": "MedicationRequest.reasonCode.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.instantiatesCanonical",
+        "path": "MedicationRequest.instantiatesCanonical",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.instantiatesUri",
+        "path": "MedicationRequest.instantiatesUri",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.groupIdentifier.id",
+        "path": "MedicationRequest.groupIdentifier.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.groupIdentifier.type",
+        "path": "MedicationRequest.groupIdentifier.type",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.groupIdentifier.system",
+        "path": "MedicationRequest.groupIdentifier.system",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.groupIdentifier.value",
+        "path": "MedicationRequest.groupIdentifier.value",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC-4.1, RXE-15"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.groupIdentifier.period",
+        "path": "MedicationRequest.groupIdentifier.period",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.groupIdentifier.assigner.id",
+        "path": "MedicationRequest.groupIdentifier.assigner.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.groupIdentifier.assigner.reference",
+        "path": "MedicationRequest.groupIdentifier.assigner.reference",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.groupIdentifier.assigner.type",
+        "path": "MedicationRequest.groupIdentifier.assigner.type",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.groupIdentifier.assigner.identifier",
+        "path": "MedicationRequest.groupIdentifier.assigner.identifier",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.groupIdentifier.assigner.display",
+        "path": "MedicationRequest.groupIdentifier.assigner.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC-4.2"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.insurance",
+        "path": "MedicationRequest.insurance",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_Coverage"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.note.id",
+        "path": "MedicationRequest.note.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.note.author[x]",
+        "path": "MedicationRequest.note.author[x]",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.note.time",
+        "path": "MedicationRequest.note.time",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.note.text",
+        "path": "MedicationRequest.note.text",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NTE-3"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.id",
+        "path": "MedicationRequest.dosageInstruction.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.text",
+        "path": "MedicationRequest.dosageInstruction.text",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC-7.7, RXO-6.2, RXE-1.7, RXE-21.2"
+          },
+          {
+            "identity": "HL7v2.5",
+            "map": "TQ1-10"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.additionalInstruction",
+        "path": "MedicationRequest.dosageInstruction.additionalInstruction",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-7, RXE-7"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.additionalInstruction.id",
+        "path": "MedicationRequest.dosageInstruction.additionalInstruction.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.additionalInstruction.coding.id",
+        "path": "MedicationRequest.dosageInstruction.additionalInstruction.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.additionalInstruction.coding.system",
+        "path": "MedicationRequest.dosageInstruction.additionalInstruction.coding.system",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-7.3, RXE-7.3"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.additionalInstruction.coding.version",
+        "path": "MedicationRequest.dosageInstruction.additionalInstruction.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.additionalInstruction.coding.code",
+        "path": "MedicationRequest.dosageInstruction.additionalInstruction.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-7.1, RXE-7.1"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.additionalInstruction.coding.display",
+        "path": "MedicationRequest.dosageInstruction.additionalInstruction.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-7.2, RXE-7.2"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.additionalInstruction.coding.userSelected",
+        "path": "MedicationRequest.dosageInstruction.additionalInstruction.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.additionalInstruction.text",
+        "path": "MedicationRequest.dosageInstruction.additionalInstruction.text",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "If only available - RXO-7.2, RXE-7.2"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.id",
+        "path": "MedicationRequest.dosageInstruction.timing.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.event",
+        "path": "MedicationRequest.dosageInstruction.timing.event",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "value"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.event:start",
+        "path": "MedicationRequest.dosageInstruction.timing.event",
+        "sliceName": "start",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC-7.4, RXE-1.4"
+          },
+          {
+            "identity": "HL7v2.5",
+            "map": "TQ1-7"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.event:start.id",
+        "path": "MedicationRequest.dosageInstruction.timing.event.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.event:end",
+        "path": "MedicationRequest.dosageInstruction.timing.event",
+        "sliceName": "end",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC-7.5, RXE-1.5"
+          },
+          {
+            "identity": "HL7v2.5",
+            "map": "TQ1-8"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.event:end.id",
+        "path": "MedicationRequest.dosageInstruction.timing.event.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.repeat.id",
+        "path": "MedicationRequest.dosageInstruction.timing.repeat.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.repeat.duration",
+        "path": "MedicationRequest.dosageInstruction.timing.repeat.duration",
+        "mapping": [
+          {
+            "identity": "HL7v2.5",
+            "map": "TQ1-6.1"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.repeat.durationUnit",
+        "path": "MedicationRequest.dosageInstruction.timing.repeat.durationUnit",
+        "mapping": [
+          {
+            "identity": "HL7v2.5",
+            "map": "TQ1-6.2"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.repeat.period",
+        "path": "MedicationRequest.dosageInstruction.timing.repeat.period",
+        "mapping": [
+          {
+            "identity": "HL7v2.5",
+            "map": "TQ1-3.5"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.repeat.periodUnit",
+        "path": "MedicationRequest.dosageInstruction.timing.repeat.periodUnit",
+        "mapping": [
+          {
+            "identity": "HL7v2.5",
+            "map": "TQ1-3.6"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.repeat.timeOfDay",
+        "path": "MedicationRequest.dosageInstruction.timing.repeat.timeOfDay",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC-7.2.2, RXE-1.2.2"
+          },
+          {
+            "identity": "HL7v2.5",
+            "map": "TQ1-4"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.repeat.when",
+        "path": "MedicationRequest.dosageInstruction.timing.repeat.when",
+        "mapping": [
+          {
+            "identity": "HL7v2.5",
+            "map": "TQ1-3.8"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.code",
+        "path": "MedicationRequest.dosageInstruction.timing.code",
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "TimingAbbreviation"
+            }
+          ],
+          "strength": "preferred",
+          "description": "FHIR Value set/code system definition for HL7 v2 table 0335 ( Repeat pattern)",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0335"
+        },
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC-7.2, RXE-1.2"
+          },
+          {
+            "identity": "HL7v2.5",
+            "map": "TQ1-3.1"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.code.id",
+        "path": "MedicationRequest.dosageInstruction.timing.code.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.code.coding.id",
+        "path": "MedicationRequest.dosageInstruction.timing.code.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.code.coding.system",
+        "path": "MedicationRequest.dosageInstruction.timing.code.coding.system",
+        "fixedUri": "http://snomed.info/sct",
+        "mapping": [
+          {
+            "identity": "HL7v2.5",
+            "map": "TQ1-3.1.3"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.code.coding.version",
+        "path": "MedicationRequest.dosageInstruction.timing.code.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.code.coding.code",
+        "path": "MedicationRequest.dosageInstruction.timing.code.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC-7.2.1, RXE-1.2.1"
+          },
+          {
+            "identity": "HL7v2.5",
+            "map": "TQ1-3.1.1"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.code.coding.display",
+        "path": "MedicationRequest.dosageInstruction.timing.code.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.5",
+            "map": "TQ1-3.1.2"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.code.coding.userSelected",
+        "path": "MedicationRequest.dosageInstruction.timing.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.timing.code.text",
+        "path": "MedicationRequest.dosageInstruction.timing.code.text",
+        "mapping": [
+          {
+            "identity": "HL7v2.5",
+            "map": "Translation to [PT] of the display field"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.asNeeded[x]",
+        "path": "MedicationRequest.dosageInstruction.asNeeded[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "display": "Catálogo CPHA"
+            }
+          ]
+        }
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.site",
+        "path": "MedicationRequest.dosageInstruction.site",
+        "mapping": [
+          {
+            "identity": "HL7v2.4",
+            "map": "RXR-2"
+          },
+          {
+            "identity": "HL7v2.5",
+            "map": "RXR-2, RXR-6"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.site.id",
+        "path": "MedicationRequest.dosageInstruction.site.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.site.coding.id",
+        "path": "MedicationRequest.dosageInstruction.site.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.site.coding.system",
+        "path": "MedicationRequest.dosageInstruction.site.coding.system",
+        "fixedUri": "http://snomed.info/sct",
+        "mapping": [
+          {
+            "identity": "HL7v2.4",
+            "map": "RXR-2.3"
+          },
+          {
+            "identity": "HL7v2.5",
+            "map": "RXR-2.3, RXR-6.3"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.site.coding.version",
+        "path": "MedicationRequest.dosageInstruction.site.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.site.coding.code",
+        "path": "MedicationRequest.dosageInstruction.site.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.4",
+            "map": "RXR-2.1"
+          },
+          {
+            "identity": "HL7v2.5",
+            "map": "RXR-2.1, RXR-6.1"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.site.coding.display",
+        "path": "MedicationRequest.dosageInstruction.site.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.4",
+            "map": "RXR-2.2"
+          },
+          {
+            "identity": "HL7v2.5",
+            "map": "RXR-2.2, RXR-6.2"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.site.coding.userSelected",
+        "path": "MedicationRequest.dosageInstruction.site.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.site.text",
+        "path": "MedicationRequest.dosageInstruction.site.text",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "Translation to [PT] of the display field"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.route",
+        "path": "MedicationRequest.dosageInstruction.route",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXR-1"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.route.id",
+        "path": "MedicationRequest.dosageInstruction.route.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.route.coding.id",
+        "path": "MedicationRequest.dosageInstruction.route.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.route.coding.system",
+        "path": "MedicationRequest.dosageInstruction.route.coding.system",
+        "fixedUri": "https://www.edqm.eu/",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXR-1.3"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.route.coding.version",
+        "path": "MedicationRequest.dosageInstruction.route.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.route.coding.code",
+        "path": "MedicationRequest.dosageInstruction.route.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXR-1.1"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.route.coding.display",
+        "path": "MedicationRequest.dosageInstruction.route.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXR-1.2"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.route.coding.userSelected",
+        "path": "MedicationRequest.dosageInstruction.route.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.route.text",
+        "path": "MedicationRequest.dosageInstruction.route.text",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "Translation to [PT] of the display field"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.method",
+        "path": "MedicationRequest.dosageInstruction.method",
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "MedicationAdministrationMethod"
+            }
+          ],
+          "strength": "preferred",
+          "description": "FHIR Value set/code system definition for HL7 v2 table 0165 ( ADMINISTRATION METHOD)",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0165"
+        },
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXR-4"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.method.id",
+        "path": "MedicationRequest.dosageInstruction.method.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.method.coding.id",
+        "path": "MedicationRequest.dosageInstruction.method.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.method.coding.system",
+        "path": "MedicationRequest.dosageInstruction.method.coding.system",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXR-4.3"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.method.coding.version",
+        "path": "MedicationRequest.dosageInstruction.method.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.method.coding.code",
+        "path": "MedicationRequest.dosageInstruction.method.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXR-4.1"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.method.coding.display",
+        "path": "MedicationRequest.dosageInstruction.method.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXR-4.2"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.method.coding.userSelected",
+        "path": "MedicationRequest.dosageInstruction.method.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.method.text",
+        "path": "MedicationRequest.dosageInstruction.method.text",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "Translation to [PT] of the display field"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.id",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseQuantity",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]",
+        "sliceName": "doseQuantity",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseQuantity.id",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseQuantity.value",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].value",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-2.1, RXE-3"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseQuantity.unit",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].unit",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-4.2, RXE-5.2"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseQuantity.system",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].system",
+        "fixedUri": "https://ucum.org/",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXC-4.3, RXE-5.3"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseQuantity.code",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-4.1, RXE-5.1"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]",
+        "sliceName": "doseRange",
+        "type": [
+          {
+            "code": "Range"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange.id",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange.low.id",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].low.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange.low.value",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].low.value",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-2.1, RXE-3"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange.low.unit",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].low.unit",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-4.2, RXE-5.2"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange.low.system",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].low.system",
+        "fixedUri": "https://ucum.org/",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-4.3, RXE-5.3"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange.low.code",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].low.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-4.1, RXE-5.1"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange.high.id",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].high.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange.high.value",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].high.value",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-3.1, RXE-4"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange.high.unit",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].high.unit",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-4.2, RXE-5.2"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange.high.system",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].high.system",
+        "fixedUri": "https://ucum.org/",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-4.3, RXE-5.3"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.dose[x]:doseRange.high.code",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.dose[x].high.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-4.1, RXE-5.1"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.rate[x]",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.rate[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.rate[x].id",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.rate[x].id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.rate[x].value",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.rate[x].value",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-21, RXE-23"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.rate[x].unit",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.rate[x].unit",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-22.2, RXE-24.2"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.rate[x].system",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.rate[x].system",
+        "fixedUri": "https://ucum.org/",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-22.3, RXE-24.3"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.doseAndRate.rate[x].code",
+        "path": "MedicationRequest.dosageInstruction.doseAndRate.rate[x].code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-22.1, RXE-24.1"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.maxDosePerPeriod",
+        "path": "MedicationRequest.dosageInstruction.maxDosePerPeriod",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-23, RXE-19"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.maxDosePerPeriod.id",
+        "path": "MedicationRequest.dosageInstruction.maxDosePerPeriod.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.maxDosePerAdministration",
+        "path": "MedicationRequest.dosageInstruction.maxDosePerAdministration",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.maxDosePerAdministration.id",
+        "path": "MedicationRequest.dosageInstruction.maxDosePerAdministration.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.maxDosePerAdministration.value",
+        "path": "MedicationRequest.dosageInstruction.maxDosePerAdministration.value",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-23.1, RXE-19.1"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.maxDosePerAdministration.system",
+        "path": "MedicationRequest.dosageInstruction.maxDosePerAdministration.system",
+        "fixedUri": "https://ucum.org/"
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.maxDosePerAdministration.code",
+        "path": "MedicationRequest.dosageInstruction.maxDosePerAdministration.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-23.2, RXE-19.2"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dosageInstruction.maxDosePerLifetime",
+        "path": "MedicationRequest.dosageInstruction.maxDosePerLifetime",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.id",
+        "path": "MedicationRequest.dispenseRequest.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.initialFill.id",
+        "path": "MedicationRequest.dispenseRequest.initialFill.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.initialFill.quantity.id",
+        "path": "MedicationRequest.dispenseRequest.initialFill.quantity.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.initialFill.quantity.value",
+        "path": "MedicationRequest.dispenseRequest.initialFill.quantity.value",
+        "mapping": [
+          {
+            "identity": "HL7v2.4",
+            "map": "RXE-10"
+          },
+          {
+            "identity": "HL7v2.5",
+            "map": "RXE-39"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.initialFill.quantity.unit",
+        "path": "MedicationRequest.dispenseRequest.initialFill.quantity.unit",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXE-11.2"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.initialFill.quantity.system",
+        "path": "MedicationRequest.dispenseRequest.initialFill.quantity.system",
+        "fixedUri": "https://ucum.org/",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXE-11.3"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.initialFill.quantity.code",
+        "path": "MedicationRequest.dispenseRequest.initialFill.quantity.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXE-11.1"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.dispenseInterval.id",
+        "path": "MedicationRequest.dispenseRequest.dispenseInterval.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.dispenseInterval.value",
+        "path": "MedicationRequest.dispenseRequest.dispenseInterval.value",
+        "mapping": [
+          {
+            "identity": "HL7v2.5",
+            "map": "RXO-28 (days)"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.dispenseInterval.comparator",
+        "path": "MedicationRequest.dispenseRequest.dispenseInterval.comparator",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.numberOfRepeatsAllowed",
+        "path": "MedicationRequest.dispenseRequest.numberOfRepeatsAllowed",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-13, RXE-12"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.quantity.id",
+        "path": "MedicationRequest.dispenseRequest.quantity.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.quantity.value",
+        "path": "MedicationRequest.dispenseRequest.quantity.value",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-11"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.quantity.unit",
+        "path": "MedicationRequest.dispenseRequest.quantity.unit",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-12.2"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.quantity.system",
+        "path": "MedicationRequest.dispenseRequest.quantity.system",
+        "fixedUri": "https://ucum.org/",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-12.3"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.quantity.code",
+        "path": "MedicationRequest.dispenseRequest.quantity.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-12.1"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.performer",
+        "path": "MedicationRequest.dispenseRequest.performer",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.performer.id",
+        "path": "MedicationRequest.dispenseRequest.performer.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.performer.reference",
+        "path": "MedicationRequest.dispenseRequest.performer.reference",
+        "mapping": [
+          {
+            "identity": "Organization-HL7v2.5",
+            "map": "Organization/RXE-40"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.performer.type",
+        "path": "MedicationRequest.dispenseRequest.performer.type",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.performer.identifier",
+        "path": "MedicationRequest.dispenseRequest.performer.identifier",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.dispenseRequest.performer.display",
+        "path": "MedicationRequest.dispenseRequest.performer.display",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.substitution.id",
+        "path": "MedicationRequest.substitution.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.substitution.allowed[x]",
+        "path": "MedicationRequest.substitution.allowed[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-9, RXE-9"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.substitution.allowed[x].id",
+        "path": "MedicationRequest.substitution.allowed[x].id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.substitution.allowed[x].coding.id",
+        "path": "MedicationRequest.substitution.allowed[x].coding.id",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.substitution.allowed[x].coding.version",
+        "path": "MedicationRequest.substitution.allowed[x].coding.version",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.substitution.allowed[x].coding.code",
+        "path": "MedicationRequest.substitution.allowed[x].coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-9, RXE-9"
+          }
+        ]
+      },
+      {
+        "id": "MedicationRequest.substitution.allowed[x].coding.userSelected",
+        "path": "MedicationRequest.substitution.allowed[x].coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "MedicationRequest.priorPrescription",
+        "path": "MedicationRequest.priorPrescription",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.pt/fhir/core/StructureDefinition/PT_MedicationRequest"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
