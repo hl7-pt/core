@@ -1,5 +1,6 @@
 {
   "resourceType": "StructureDefinition",
+  "id":"conditionPersistence",
   "meta": {
     "lastUpdated": "2022-01-07T15:19:39.306+00:00"
   },
