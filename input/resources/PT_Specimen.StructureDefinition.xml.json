@@ -1,0 +1,800 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://hl7.pt/fhir/StructureDefinition/PT_Specimen",
+  "version": "1.1",
+  "name": "PT_Specimen",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-11-08T10:47:34.3124993+00:00",
+  "description": "A generic Specimen resource for Portugal",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Specimen",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Specimen",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Specimen.meta",
+        "path": "Specimen.meta"
+      },
+      {
+        "id": "Specimen.meta.id",
+        "path": "Specimen.meta.id",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.meta.versionId",
+        "path": "Specimen.meta.versionId",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.meta.source",
+        "path": "Specimen.meta.source",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.meta.security",
+        "path": "Specimen.meta.security",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.meta.tag",
+        "path": "Specimen.meta.tag",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.implicitRules",
+        "path": "Specimen.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.language",
+        "path": "Specimen.language",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.text",
+        "path": "Specimen.text",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.identifier.id",
+        "path": "Specimen.identifier.id",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.identifier.value",
+        "path": "Specimen.identifier.value",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SPM-2.1.1"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.identifier.period",
+        "path": "Specimen.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.identifier.assigner.id",
+        "path": "Specimen.identifier.assigner.id",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.identifier.assigner.reference",
+        "path": "Specimen.identifier.assigner.reference",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.identifier.assigner.type",
+        "path": "Specimen.identifier.assigner.type",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.identifier.assigner.identifier",
+        "path": "Specimen.identifier.assigner.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.identifier.assigner.display",
+        "path": "Specimen.identifier.assigner.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SPM-2.1.2"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.accessionIdentifier",
+        "path": "Specimen.accessionIdentifier",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SAC-1 or SAC-2"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.status",
+        "path": "Specimen.status",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SPM-20"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.type",
+        "path": "Specimen.type",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SPM-4, SPM-5 (Modifier)"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.type.id",
+        "path": "Specimen.type.id",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.type.coding.id",
+        "path": "Specimen.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.type.coding.system",
+        "path": "Specimen.type.coding.system",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SPM-4.3, SPM-5.3"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.type.coding.version",
+        "path": "Specimen.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.type.coding.code",
+        "path": "Specimen.type.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SPM-4.1, SPM-5.1"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.type.coding.display",
+        "path": "Specimen.type.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SPM-4.2, SPM-5.2"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.type.coding.userSelected",
+        "path": "Specimen.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.subject.id",
+        "path": "Specimen.subject.id",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.subject.reference",
+        "path": "Specimen.subject.reference",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "Patient/PID-3"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.subject.type",
+        "path": "Specimen.subject.type",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.subject.identifier",
+        "path": "Specimen.subject.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.subject.display",
+        "path": "Specimen.subject.display",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.receivedTime",
+        "path": "Specimen.receivedTime",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SPM-18"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.parent.id",
+        "path": "Specimen.parent.id",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.parent.reference",
+        "path": "Specimen.parent.reference",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "Specimen/SPM-3"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.parent.type",
+        "path": "Specimen.parent.type",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.parent.identifier",
+        "path": "Specimen.parent.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.parent.display",
+        "path": "Specimen.parent.display",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.request.id",
+        "path": "Specimen.request.id",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.request.reference",
+        "path": "Specimen.request.reference",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ServiceRequest/ORC or OBR"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.request.type",
+        "path": "Specimen.request.type",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.request.identifier",
+        "path": "Specimen.request.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.request.display",
+        "path": "Specimen.request.display",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.collection.id",
+        "path": "Specimen.collection.id",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.collection.collected[x]",
+        "path": "Specimen.collection.collected[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SPM-17"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.collection.collected[x].id",
+        "path": "Specimen.collection.collected[x].id",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.collection.quantity",
+        "path": "Specimen.collection.quantity",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SPM-12"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.collection.quantity.id",
+        "path": "Specimen.collection.quantity.id",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.collection.quantity.value",
+        "path": "Specimen.collection.quantity.value",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SPM-12.1"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.collection.quantity.unit",
+        "path": "Specimen.collection.quantity.unit",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SPM-12.2.2"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.collection.quantity.system",
+        "path": "Specimen.collection.quantity.system",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SPM-12.2.3"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.collection.quantity.code",
+        "path": "Specimen.collection.quantity.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SPM-12.2.1"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.collection.method",
+        "path": "Specimen.collection.method",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SPM-7"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.collection.method.id",
+        "path": "Specimen.collection.method.id",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.collection.method.coding.id",
+        "path": "Specimen.collection.method.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.collection.method.coding.system",
+        "path": "Specimen.collection.method.coding.system",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SPM-7.3"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.collection.method.coding.version",
+        "path": "Specimen.collection.method.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.collection.method.coding.code",
+        "path": "Specimen.collection.method.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SPM-7.1"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.collection.method.coding.display",
+        "path": "Specimen.collection.method.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SPM-7.2"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.collection.method.coding.userSelected",
+        "path": "Specimen.collection.method.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.collection.bodySite",
+        "path": "Specimen.collection.bodySite",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SPM-8/10, SPM-9 (Modifier)"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.collection.bodySite.id",
+        "path": "Specimen.collection.bodySite.id",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.collection.bodySite.coding.id",
+        "path": "Specimen.collection.bodySite.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.collection.bodySite.coding.system",
+        "path": "Specimen.collection.bodySite.coding.system",
+        "fixedUri": "https://snomed.info/sct",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SPM-8/10.3, SPM-9.3"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.collection.bodySite.coding.version",
+        "path": "Specimen.collection.bodySite.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.collection.bodySite.coding.code",
+        "path": "Specimen.collection.bodySite.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SPM-8/10.1, SPM-9.1"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.collection.bodySite.coding.display",
+        "path": "Specimen.collection.bodySite.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SPM-8/10.2, SPM-9.2"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.collection.bodySite.coding.userSelected",
+        "path": "Specimen.collection.bodySite.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.processing",
+        "path": "Specimen.processing",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.container.id",
+        "path": "Specimen.container.id",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.container.identifier",
+        "path": "Specimen.container.identifier",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SAC-3"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.container.identifier.id",
+        "path": "Specimen.container.identifier.id",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.container.identifier.value",
+        "path": "Specimen.container.identifier.value",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SAC-3.1"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.container.identifier.period",
+        "path": "Specimen.container.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.container.identifier.assigner.id",
+        "path": "Specimen.container.identifier.assigner.id",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.container.identifier.assigner.reference",
+        "path": "Specimen.container.identifier.assigner.reference",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.container.identifier.assigner.type",
+        "path": "Specimen.container.identifier.assigner.type",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.container.identifier.assigner.identifier",
+        "path": "Specimen.container.identifier.assigner.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.container.identifier.assigner.display",
+        "path": "Specimen.container.identifier.assigner.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SAC-3.2"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.container.type",
+        "path": "Specimen.container.type",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SPM-27"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.container.type.id",
+        "path": "Specimen.container.type.id",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.container.type.coding.id",
+        "path": "Specimen.container.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.container.type.coding.system",
+        "path": "Specimen.container.type.coding.system",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SPM-27.3"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.container.type.coding.version",
+        "path": "Specimen.container.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.container.type.coding.code",
+        "path": "Specimen.container.type.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SPM-27.1"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.container.type.coding.display",
+        "path": "Specimen.container.type.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SPM-27.2"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.container.type.coding.userSelected",
+        "path": "Specimen.container.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.container.capacity.id",
+        "path": "Specimen.container.capacity.id",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.container.capacity.value",
+        "path": "Specimen.container.capacity.value",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SAC-16 + SAC-17, SAC-21"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.container.capacity.unit",
+        "path": "Specimen.container.capacity.unit",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SAC-20.2"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.container.capacity.system",
+        "path": "Specimen.container.capacity.system",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SAC-20.3"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.container.capacity.code",
+        "path": "Specimen.container.capacity.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SAC-20.1"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.container.specimenQuantity.id",
+        "path": "Specimen.container.specimenQuantity.id",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.container.specimenQuantity.value",
+        "path": "Specimen.container.specimenQuantity.value",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SAC-23"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.container.specimenQuantity.unit",
+        "path": "Specimen.container.specimenQuantity.unit",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SAC-24.2"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.container.specimenQuantity.system",
+        "path": "Specimen.container.specimenQuantity.system",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SAC-24.3"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.container.specimenQuantity.code",
+        "path": "Specimen.container.specimenQuantity.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SAC-24.1"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.container.additive[x]",
+        "path": "Specimen.container.additive[x]",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SAC-27"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.condition",
+        "path": "Specimen.condition",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SPM-24"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.condition.id",
+        "path": "Specimen.condition.id",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.condition.coding.id",
+        "path": "Specimen.condition.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.condition.coding.system",
+        "path": "Specimen.condition.coding.system",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SPM-24.3"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.condition.coding.version",
+        "path": "Specimen.condition.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.condition.coding.code",
+        "path": "Specimen.condition.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SPM-24.1"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.condition.coding.display",
+        "path": "Specimen.condition.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "SPM-24.2"
+          }
+        ]
+      },
+      {
+        "id": "Specimen.condition.coding.userSelected",
+        "path": "Specimen.condition.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.note.id",
+        "path": "Specimen.note.id",
+        "max": "0"
+      },
+      {
+        "id": "Specimen.note.text",
+        "path": "Specimen.note.text",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "OBX"
+          }
+        ]
+      }
+    ]
+  }
+}

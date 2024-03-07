@@ -1,0 +1,593 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://hl7.pt/fhir/StructureDefinition/PT_CarePlan",
+  "version": "1.2",
+  "name": "PT_CarePlan",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-07-01T15:28:30.3911673+00:00",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "CarePlan",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/CarePlan",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "CarePlan.meta",
+        "path": "CarePlan.meta"
+      },
+      {
+        "id": "CarePlan.meta.id",
+        "path": "CarePlan.meta.id",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.meta.versionId",
+        "path": "CarePlan.meta.versionId",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.meta.source",
+        "path": "CarePlan.meta.source",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.meta.security",
+        "path": "CarePlan.meta.security",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.meta.tag",
+        "path": "CarePlan.meta.tag",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.implicitRules",
+        "path": "CarePlan.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.language",
+        "path": "CarePlan.language",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.text",
+        "path": "CarePlan.text",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.contained",
+        "path": "CarePlan.contained",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.identifier.id",
+        "path": "CarePlan.identifier.id",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.identifier.type.id",
+        "path": "CarePlan.identifier.type.id",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.identifier.type.coding",
+        "path": "CarePlan.identifier.type.coding",
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "CarePlan.identifier.type.coding.id",
+        "path": "CarePlan.identifier.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.identifier.type.coding.display",
+        "path": "CarePlan.identifier.type.coding.display",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.identifier.type.coding.userSelected",
+        "path": "CarePlan.identifier.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.identifier.type.text",
+        "path": "CarePlan.identifier.type.text",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.identifier.assigner.id",
+        "path": "CarePlan.identifier.assigner.id",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.identifier.assigner.reference",
+        "path": "CarePlan.identifier.assigner.reference",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.identifier.assigner.type",
+        "path": "CarePlan.identifier.assigner.type",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.identifier.assigner.identifier",
+        "path": "CarePlan.identifier.assigner.identifier",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.instantiatesUri",
+        "path": "CarePlan.instantiatesUri",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.basedOn",
+        "path": "CarePlan.basedOn",
+        "max": "1"
+      },
+      {
+        "id": "CarePlan.basedOn.id",
+        "path": "CarePlan.basedOn.id",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.basedOn.type",
+        "path": "CarePlan.basedOn.type",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.basedOn.identifier",
+        "path": "CarePlan.basedOn.identifier",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.basedOn.display",
+        "path": "CarePlan.basedOn.display",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.replaces",
+        "path": "CarePlan.replaces",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.partOf",
+        "path": "CarePlan.partOf",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.partOf.id",
+        "path": "CarePlan.partOf.id",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.partOf.type",
+        "path": "CarePlan.partOf.type",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.partOf.identifier",
+        "path": "CarePlan.partOf.identifier",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.partOf.display",
+        "path": "CarePlan.partOf.display",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.category",
+        "path": "CarePlan.category",
+        "max": "1"
+      },
+      {
+        "id": "CarePlan.category.id",
+        "path": "CarePlan.category.id",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.category.coding",
+        "path": "CarePlan.category.coding",
+        "binding": {
+          "strength": "required",
+          "description": "SNOMED",
+          "valueSet": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "CarePlan.category.coding.id",
+        "path": "CarePlan.category.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.category.coding.version",
+        "path": "CarePlan.category.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.category.coding.userSelected",
+        "path": "CarePlan.category.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.title",
+        "path": "CarePlan.title",
+        "min": 1
+      },
+      {
+        "id": "CarePlan.subject",
+        "path": "CarePlan.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.pt/fhir/StructureDefinition/PT_Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.subject.type",
+        "path": "CarePlan.subject.type",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.subject.identifier",
+        "path": "CarePlan.subject.identifier",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.subject.display",
+        "path": "CarePlan.subject.display",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.encounter",
+        "path": "CarePlan.encounter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.pt/fhir/StructureDefinition/PT_Encounter"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.encounter.id",
+        "path": "CarePlan.encounter.id",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.encounter.type",
+        "path": "CarePlan.encounter.type",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.encounter.identifier",
+        "path": "CarePlan.encounter.identifier",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.encounter.display",
+        "path": "CarePlan.encounter.display",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.author",
+        "path": "CarePlan.author",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Device",
+              "http://hl7.org/fhir/StructureDefinition/Organization",
+              "http://hl7.org/fhir/StructureDefinition/CareTeam",
+              "https://hl7.pt/fhir/StructureDefinition/PT_Practitioner",
+              "https://hl7.pt/fhir/StructureDefinition/PT_PractitionerRole"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.author.id",
+        "path": "CarePlan.author.id",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.author.type",
+        "path": "CarePlan.author.type",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.author.identifier",
+        "path": "CarePlan.author.identifier",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.author.display",
+        "path": "CarePlan.author.display",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.contributor",
+        "path": "CarePlan.contributor",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.careTeam.id",
+        "path": "CarePlan.careTeam.id",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.careTeam.type",
+        "path": "CarePlan.careTeam.type",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.careTeam.identifier",
+        "path": "CarePlan.careTeam.identifier",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.careTeam.display",
+        "path": "CarePlan.careTeam.display",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.addresses",
+        "path": "CarePlan.addresses",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.pt/fhir/StructureDefinition/PT_Condition"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.addresses.id",
+        "path": "CarePlan.addresses.id",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.addresses.type",
+        "path": "CarePlan.addresses.type",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.addresses.identifier",
+        "path": "CarePlan.addresses.identifier",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.addresses.display",
+        "path": "CarePlan.addresses.display",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.supportingInfo",
+        "path": "CarePlan.supportingInfo",
+        "max": "1"
+      },
+      {
+        "id": "CarePlan.supportingInfo.id",
+        "path": "CarePlan.supportingInfo.id",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.supportingInfo.type",
+        "path": "CarePlan.supportingInfo.type",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.supportingInfo.identifier",
+        "path": "CarePlan.supportingInfo.identifier",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.supportingInfo.display",
+        "path": "CarePlan.supportingInfo.display",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.goal",
+        "path": "CarePlan.goal",
+        "max": "1"
+      },
+      {
+        "id": "CarePlan.goal.id",
+        "path": "CarePlan.goal.id",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.goal.type",
+        "path": "CarePlan.goal.type",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.goal.identifier",
+        "path": "CarePlan.goal.identifier",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.goal.display",
+        "path": "CarePlan.goal.display",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.activity.id",
+        "path": "CarePlan.activity.id",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.activity.outcomeCodeableConcept",
+        "path": "CarePlan.activity.outcomeCodeableConcept",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.activity.outcomeReference.type",
+        "path": "CarePlan.activity.outcomeReference.type",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.activity.outcomeReference.identifier",
+        "path": "CarePlan.activity.outcomeReference.identifier",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.activity.outcomeReference.display",
+        "path": "CarePlan.activity.outcomeReference.display",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.activity.progress",
+        "path": "CarePlan.activity.progress",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.activity.reference.id",
+        "path": "CarePlan.activity.reference.id",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.activity.reference.type",
+        "path": "CarePlan.activity.reference.type",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.activity.reference.identifier",
+        "path": "CarePlan.activity.reference.identifier",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.activity.reference.display",
+        "path": "CarePlan.activity.reference.display",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.activity.detail.id",
+        "path": "CarePlan.activity.detail.id",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.activity.detail.kind",
+        "path": "CarePlan.activity.detail.kind",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.activity.detail.instantiatesCanonical",
+        "path": "CarePlan.activity.detail.instantiatesCanonical",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.activity.detail.instantiatesUri",
+        "path": "CarePlan.activity.detail.instantiatesUri",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.activity.detail.code",
+        "path": "CarePlan.activity.detail.code",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.activity.detail.reasonCode",
+        "path": "CarePlan.activity.detail.reasonCode",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.activity.detail.reasonReference",
+        "path": "CarePlan.activity.detail.reasonReference",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.activity.detail.goal",
+        "path": "CarePlan.activity.detail.goal",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.activity.detail.statusReason",
+        "path": "CarePlan.activity.detail.statusReason",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.activity.detail.doNotPerform",
+        "path": "CarePlan.activity.detail.doNotPerform",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.activity.detail.scheduled[x]",
+        "path": "CarePlan.activity.detail.scheduled[x]",
+        "type": [
+          {
+            "code": "Timing"
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.activity.detail.scheduled[x].code",
+        "path": "CarePlan.activity.detail.scheduled[x].code",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.activity.detail.location",
+        "path": "CarePlan.activity.detail.location",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.activity.detail.performer",
+        "path": "CarePlan.activity.detail.performer",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.activity.detail.product[x]",
+        "path": "CarePlan.activity.detail.product[x]",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.activity.detail.dailyAmount",
+        "path": "CarePlan.activity.detail.dailyAmount",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.activity.detail.quantity",
+        "path": "CarePlan.activity.detail.quantity",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.activity.detail.description",
+        "path": "CarePlan.activity.detail.description",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.note.id",
+        "path": "CarePlan.note.id",
+        "max": "0"
+      },
+      {
+        "id": "CarePlan.note.author[x]",
+        "path": "CarePlan.note.author[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference"
+          }
+        ]
+      },
+      {
+        "id": "CarePlan.note.time",
+        "path": "CarePlan.note.time",
+        "min": 1
+      }
+    ]
+  }
+}

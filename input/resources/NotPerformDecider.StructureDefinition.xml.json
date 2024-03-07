@@ -1,0 +1,60 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://hl7.pt/fhir/StructureDefinition/NotPerformDecider",
+  "version": "1.0",
+  "name": "NotPerformDecider",
+  "status": "draft",
+  "date": "2022-07-27T09:59:59.2941297+00:00",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "ServiceRequest"
+    },
+    {
+      "type": "element",
+      "expression": "ServiceRequest.doNotPerform"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://hl7.pt/fhir/StructureDefinition/NotPerformDecider"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.pt/fhir/StructureDefinition/PT_Practitioner"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x].reference.id",
+        "path": "Extension.value[x].reference.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.value[x].identifier",
+        "path": "Extension.value[x].identifier",
+        "max": "0"
+      },
+      {
+        "id": "Extension.value[x].display",
+        "path": "Extension.value[x].display",
+        "max": "0"
+      }
+    ]
+  }
+}

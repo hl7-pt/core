@@ -1,0 +1,118 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "device-operation-status-reason",
+  "meta": {
+    "lastUpdated": "2022-12-14T07:12:54.019+11:00",
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system <code>http://hl7.org/fhir/device-operation-status-reason</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">3::6728<a name=\"device-operation-status-reason-3.58.586728\"> </a></td><td>Check air supply</td><td>Checking of ventilator air supply is necessary.</td></tr><tr><td style=\"white-space:nowrap\">3::6678<a name=\"device-operation-status-reason-3.58.586678\"> </a></td><td>Battery needs replacement</td><td>Advisory: Replace Battery (a full charge is now a too small fraction of the original capacity or this is not a rechargeable battery that is close to empty.)</td></tr><tr><td style=\"white-space:nowrap\">3::462<a name=\"device-operation-status-reason-3.58.58462\"> </a></td><td>CO2 failure</td><td>Failure occurred in a CO2 measuring device</td></tr><tr><td style=\"white-space:nowrap\">3::6708<a name=\"device-operation-status-reason-3.58.586708\"> </a></td><td>Time adjustment check</td><td>Advisory: Check time (system asks user to check the time)</td></tr><tr><td style=\"white-space:nowrap\">3::694<a name=\"device-operation-status-reason-3.58.58694\"> </a></td><td>Patient ID change</td><td>Advisory: The ID of the patient connected to the device has changed</td></tr><tr><td style=\"white-space:nowrap\">3::724<a name=\"device-operation-status-reason-3.58.58724\"> </a></td><td>Infusion volume complete</td><td>Advisory: Infusion of the specified volume has been completed</td></tr><tr><td style=\"white-space:nowrap\">3::120<a name=\"device-operation-status-reason-3.58.58120\"> </a></td><td>Unplugged</td><td>A component (sensor, module) has become unplugged</td></tr><tr><td style=\"white-space:nowrap\">3::132<a name=\"device-operation-status-reason-3.58.58132\"> </a></td><td>Inoperable</td><td>Device has become inoperable</td></tr><tr><td style=\"white-space:nowrap\">3::410<a name=\"device-operation-status-reason-3.58.58410\"> </a></td><td>Alarm limit</td><td>Alarm limit exceeded</td></tr></table></div>"
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "oo"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "trial-use"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 2
+    }
+  ],
+  "url": "http://hl7.org/fhir/device-operation-status-reason",
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.4.642.4.2050"
+    }
+  ],
+  "version": "5.0.0-snapshot3",
+  "name": "FHIRDeviceOperationStatusReason",
+  "title": "FHIRDeviceOperationStatusReason",
+  "status": "active",
+  "experimental": false,
+  "date": "2023-03-01T15:22:55.0474333+00:00",
+  "publisher": "HL7 (FHIR Project)",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://hl7.org/fhir"
+        },
+        {
+          "system": "email",
+          "value": "fhir@lists.hl7.org"
+        }
+      ]
+    }
+  ],
+  "description": "The availability status reason of the device.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "code": "001",
+          "display": "World"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "valueSet": "http://hl7.org/fhir/ValueSet/device-operation-status-reason",
+  "content": "complete",
+  "concept": [
+    {
+      "code": "3::6728",
+      "display": "Check air supply",
+      "definition": "Checking of ventilator air supply is necessary."
+    },
+    {
+      "code": "3::6678",
+      "display": "Battery needs replacement",
+      "definition": "Advisory: Replace Battery (a full charge is now a too small fraction of the original capacity or this is not a rechargeable battery that is close to empty.)"
+    },
+    {
+      "code": "3::462",
+      "display": "CO2 failure",
+      "definition": "Failure occurred in a CO2 measuring device"
+    },
+    {
+      "code": "3::6708",
+      "display": "Time adjustment check",
+      "definition": "Advisory: Check time (system asks user to check the time)"
+    },
+    {
+      "code": "3::694",
+      "display": "Patient ID change",
+      "definition": "Advisory: The ID of the patient connected to the device has changed"
+    },
+    {
+      "code": "3::724",
+      "display": "Infusion volume complete",
+      "definition": "Advisory: Infusion of the specified volume has been completed"
+    },
+    {
+      "code": "3::120",
+      "display": "Unplugged",
+      "definition": "A component (sensor, module) has become unplugged"
+    },
+    {
+      "code": "3::132",
+      "display": "Inoperable",
+      "definition": "Device has become inoperable"
+    },
+    {
+      "code": "3::410",
+      "display": "Alarm limit",
+      "definition": "Alarm limit exceeded"
+    }
+  ]
+}

@@ -1,0 +1,403 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://hl7.pt/fhir/StructureDefinition/PT_NutritionOrder",
+  "version": "1.1",
+  "name": "PT_NutritionOrder",
+  "status": "draft",
+  "date": "2022-09-14T10:57:40.7701575+00:00",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "NutritionOrder",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/NutritionOrder",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "NutritionOrder.meta",
+        "path": "NutritionOrder.meta"
+      },
+      {
+        "id": "NutritionOrder.meta.id",
+        "path": "NutritionOrder.meta.id",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.implicitRules",
+        "path": "NutritionOrder.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.text",
+        "path": "NutritionOrder.text",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.contained",
+        "path": "NutritionOrder.contained",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.identifier",
+        "path": "NutritionOrder.identifier",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC.2; ORC.3"
+          }
+        ]
+      },
+      {
+        "id": "NutritionOrder.identifier.type.coding.version",
+        "path": "NutritionOrder.identifier.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.identifier.type.coding.userSelected",
+        "path": "NutritionOrder.identifier.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.identifier.period",
+        "path": "NutritionOrder.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.instantiatesUri",
+        "path": "NutritionOrder.instantiatesUri",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.instantiates",
+        "path": "NutritionOrder.instantiates",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.patient",
+        "path": "NutritionOrder.patient",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.pt/fhir/StructureDefinition/PT_Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "NutritionOrder.patient.id",
+        "path": "NutritionOrder.patient.id",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.patient.type",
+        "path": "NutritionOrder.patient.type",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.patient.identifier",
+        "path": "NutritionOrder.patient.identifier",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.patient.display",
+        "path": "NutritionOrder.patient.display",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.encounter",
+        "path": "NutritionOrder.encounter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.pt/fhir/StructureDefinition/PT_Encounter"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "NutritionOrder.encounter.id",
+        "path": "NutritionOrder.encounter.id",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.encounter.type",
+        "path": "NutritionOrder.encounter.type",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.encounter.identifier",
+        "path": "NutritionOrder.encounter.identifier",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.encounter.display",
+        "path": "NutritionOrder.encounter.display",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.orderer",
+        "path": "NutritionOrder.orderer",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.pt/fhir/StructureDefinition/PT_Practitioner",
+              "https://hl7.pt/fhir/StructureDefinition/PT_PractitionerRole"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "NutritionOrder.orderer.id",
+        "path": "NutritionOrder.orderer.id",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.orderer.type",
+        "path": "NutritionOrder.orderer.type",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.orderer.identifier",
+        "path": "NutritionOrder.orderer.identifier",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.orderer.display",
+        "path": "NutritionOrder.orderer.display",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.allergyIntolerance",
+        "path": "NutritionOrder.allergyIntolerance",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.pt/fhir/StructureDefinition/PT_AllergyIntolerance"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "NutritionOrder.allergyIntolerance.id",
+        "path": "NutritionOrder.allergyIntolerance.id",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.allergyIntolerance.type",
+        "path": "NutritionOrder.allergyIntolerance.type",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.allergyIntolerance.identifier",
+        "path": "NutritionOrder.allergyIntolerance.identifier",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.allergyIntolerance.display",
+        "path": "NutritionOrder.allergyIntolerance.display",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.foodPreferenceModifier.coding.id",
+        "path": "NutritionOrder.foodPreferenceModifier.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.foodPreferenceModifier.coding.system",
+        "path": "NutritionOrder.foodPreferenceModifier.coding.system",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ODS.3.3",
+            "comment": "when ODS1='P'"
+          }
+        ]
+      },
+      {
+        "id": "NutritionOrder.foodPreferenceModifier.coding.version",
+        "path": "NutritionOrder.foodPreferenceModifier.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.foodPreferenceModifier.coding.code",
+        "path": "NutritionOrder.foodPreferenceModifier.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ODS.3.1",
+            "comment": "When ODS='P'"
+          }
+        ]
+      },
+      {
+        "id": "NutritionOrder.foodPreferenceModifier.coding.display",
+        "path": "NutritionOrder.foodPreferenceModifier.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ODS.3.2",
+            "comment": "When ODS.1='P'"
+          }
+        ]
+      },
+      {
+        "id": "NutritionOrder.oralDiet.id",
+        "path": "NutritionOrder.oralDiet.id",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.oralDiet.type.id",
+        "path": "NutritionOrder.oralDiet.type.id",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.oralDiet.type.coding.id",
+        "path": "NutritionOrder.oralDiet.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.oralDiet.type.coding.system",
+        "path": "NutritionOrder.oralDiet.type.coding.system",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ODS.3.3",
+            "comment": "When ODS.1='D'"
+          }
+        ]
+      },
+      {
+        "id": "NutritionOrder.oralDiet.type.coding.version",
+        "path": "NutritionOrder.oralDiet.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.oralDiet.type.coding.code",
+        "path": "NutritionOrder.oralDiet.type.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ODS.3.1",
+            "comment": "When ODS.1='D'"
+          }
+        ]
+      },
+      {
+        "id": "NutritionOrder.oralDiet.type.coding.display",
+        "path": "NutritionOrder.oralDiet.type.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ODS.3.2",
+            "comment": "When ODS.1='D'"
+          }
+        ]
+      },
+      {
+        "id": "NutritionOrder.oralDiet.type.coding.userSelected",
+        "path": "NutritionOrder.oralDiet.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.oralDiet.schedule.id",
+        "path": "NutritionOrder.oralDiet.schedule.id",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.supplement.id",
+        "path": "NutritionOrder.supplement.id",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.supplement.type.coding.id",
+        "path": "NutritionOrder.supplement.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.supplement.type.coding.system",
+        "path": "NutritionOrder.supplement.type.coding.system",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ODS.3.3",
+            "comment": "When ODS.1='S'"
+          }
+        ]
+      },
+      {
+        "id": "NutritionOrder.supplement.type.coding.version",
+        "path": "NutritionOrder.supplement.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.supplement.type.coding.code",
+        "path": "NutritionOrder.supplement.type.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ODS.3.1",
+            "comment": "When ODS.1='S'"
+          }
+        ]
+      },
+      {
+        "id": "NutritionOrder.supplement.type.coding.display",
+        "path": "NutritionOrder.supplement.type.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ODS.3.2",
+            "comment": "When ODS.1='S'"
+          }
+        ]
+      },
+      {
+        "id": "NutritionOrder.supplement.type.coding.userSelected",
+        "path": "NutritionOrder.supplement.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.enteralFormula.id",
+        "path": "NutritionOrder.enteralFormula.id",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.note.id",
+        "path": "NutritionOrder.note.id",
+        "max": "0"
+      },
+      {
+        "id": "NutritionOrder.note.author[x]",
+        "path": "NutritionOrder.note.author[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.pt/fhir/StructureDefinition/PT_Practitioner",
+              "https://hl7.pt/fhir/StructureDefinition/PT_Patient",
+              "https://hl7.pt/fhir/StructureDefinition/PT_RelatedPerson",
+              "https://hl7.pt/fhir/StructureDefinition/PT_Organization"
+            ]
+          },
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "NutritionOrder.note.text",
+        "path": "NutritionOrder.note.text",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NTE.3"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "resourceType": "StructureDefinition",
+  "meta": {
+    "lastUpdated": "2022-02-04T15:19:41.372+00:00"
+  },
+  "url": "https://hl7.pt/fhir/StructureDefinition/DispenserInstruction",
+  "version": "1.0",
+  "name": "DispenserInstruction",
+  "status": "draft",
+  "date": "2022-02-04",
+  "description": "Extension indicating whether medication is provided or not",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "MedicationRequest"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.id",
+        "path": "Extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://hl7.pt/fhir/StructureDefinition/DispenserInstruction"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ORC-25"
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x].id",
+        "path": "Extension.value[x].id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.value[x].system",
+        "path": "Extension.value[x].system",
+        "max": "0"
+      },
+      {
+        "id": "Extension.value[x].version",
+        "path": "Extension.value[x].version",
+        "max": "0"
+      },
+      {
+        "id": "Extension.value[x].userSelected",
+        "path": "Extension.value[x].userSelected",
+        "max": "0"
+      }
+    ]
+  }
+}

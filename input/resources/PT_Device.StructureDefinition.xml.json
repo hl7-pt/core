@@ -1,0 +1,510 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://hl7.pt/fhir/StructureDefinition/PT_Device",
+  "version": "1.0",
+  "name": "PT_Device",
+  "status": "draft",
+  "date": "2023-03-02T20:00:15.3589724+00:00",
+  "description": "A generic Device resource for Portugal",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Device",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Device",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Device.meta",
+        "path": "Device.meta"
+      },
+      {
+        "id": "Device.meta.id",
+        "path": "Device.meta.id",
+        "max": "0"
+      },
+      {
+        "id": "Device.meta.versionId",
+        "path": "Device.meta.versionId",
+        "max": "0"
+      },
+      {
+        "id": "Device.meta.source",
+        "path": "Device.meta.source",
+        "max": "0"
+      },
+      {
+        "id": "Device.implicitRules",
+        "path": "Device.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "Device.language",
+        "path": "Device.language",
+        "max": "0"
+      },
+      {
+        "id": "Device.text",
+        "path": "Device.text",
+        "max": "0"
+      },
+      {
+        "id": "Device.extension",
+        "path": "Device.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "Device.extension:displayName",
+        "path": "Device.extension",
+        "sliceName": "displayName",
+        "min": 0,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.pt/fhir/StructureDefinition/DisplayName-Device"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Device.extension:availabilityStatus",
+        "path": "Device.extension",
+        "sliceName": "availabilityStatus",
+        "min": 0,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.pt/fhir/StructureDefinition/AvailabilityStatus-Device"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Device.extension:category",
+        "path": "Device.extension",
+        "sliceName": "category",
+        "min": 0,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.pt/fhir/StructureDefinition/Category-Device"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Device.extension:operation",
+        "path": "Device.extension",
+        "sliceName": "operation",
+        "min": 0,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.pt/fhir/StructureDefinition/Operation-Device"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Device.extension:association",
+        "path": "Device.extension",
+        "sliceName": "association",
+        "min": 0,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.pt/fhir/StructureDefinition/Association-Device"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Device.extension:isBackup",
+        "path": "Device.extension",
+        "sliceName": "isBackup",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.pt/fhir/StructureDefinition/IsBackup"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Device.statusReason",
+        "path": "Device.statusReason",
+        "max": "0"
+      },
+      {
+        "id": "Device.statusReason.id",
+        "path": "Device.statusReason.id",
+        "max": "0"
+      },
+      {
+        "id": "Device.statusReason.coding.id",
+        "path": "Device.statusReason.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Device.statusReason.coding.version",
+        "path": "Device.statusReason.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Device.statusReason.coding.userSelected",
+        "path": "Device.statusReason.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Device.distinctIdentifier",
+        "path": "Device.distinctIdentifier",
+        "max": "0"
+      },
+      {
+        "id": "Device.deviceName.id",
+        "path": "Device.deviceName.id",
+        "max": "0"
+      },
+      {
+        "id": "Device.type.id",
+        "path": "Device.type.id",
+        "max": "0"
+      },
+      {
+        "id": "Device.type.coding.id",
+        "path": "Device.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Device.type.coding.version",
+        "path": "Device.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Device.type.coding.userSelected",
+        "path": "Device.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Device.property.extension",
+        "path": "Device.property.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "Device.property.extension:valueRange",
+        "path": "Device.property.extension",
+        "sliceName": "valueRange",
+        "min": 0,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.pt/fhir/StructureDefinition/ValueRange"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Device.property.extension:valueBoolean",
+        "path": "Device.property.extension",
+        "sliceName": "valueBoolean",
+        "min": 0,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.pt/fhir/StructureDefinition/ValueBoolean"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "Device.property.type",
+        "path": "Device.property.type",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "coding.code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Device.property.type:Age",
+        "path": "Device.property.type",
+        "sliceName": "Age"
+      },
+      {
+        "id": "Device.property.type:Age.id",
+        "path": "Device.property.type.id",
+        "max": "0"
+      },
+      {
+        "id": "Device.property.type:Age.coding.id",
+        "path": "Device.property.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Device.property.type:Age.coding.system",
+        "path": "Device.property.type.coding.system",
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Device.property.type:Age.coding.version",
+        "path": "Device.property.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Device.property.type:Age.coding.code",
+        "path": "Device.property.type.coding.code",
+        "fixedCode": "30525-0"
+      },
+      {
+        "id": "Device.property.type:Age.coding.display",
+        "path": "Device.property.type.coding.display",
+        "fixedString": "Age"
+      },
+      {
+        "id": "Device.property.type:Age.coding.userSelected",
+        "path": "Device.property.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Device.property.type:BodyHeight",
+        "path": "Device.property.type",
+        "sliceName": "BodyHeight"
+      },
+      {
+        "id": "Device.property.type:BodyHeight.id",
+        "path": "Device.property.type.id",
+        "max": "0"
+      },
+      {
+        "id": "Device.property.type:BodyHeight.coding.id",
+        "path": "Device.property.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Device.property.type:BodyHeight.coding.system",
+        "path": "Device.property.type.coding.system",
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Device.property.type:BodyHeight.coding.version",
+        "path": "Device.property.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Device.property.type:BodyHeight.coding.code",
+        "path": "Device.property.type.coding.code",
+        "fixedCode": "8302-2"
+      },
+      {
+        "id": "Device.property.type:BodyHeight.coding.display",
+        "path": "Device.property.type.coding.display",
+        "fixedString": "Body height"
+      },
+      {
+        "id": "Device.property.type:BodyHeight.coding.userSelected",
+        "path": "Device.property.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Device.property.type:BodyWeight",
+        "path": "Device.property.type",
+        "sliceName": "BodyWeight"
+      },
+      {
+        "id": "Device.property.type:BodyWeight.id",
+        "path": "Device.property.type.id",
+        "max": "0"
+      },
+      {
+        "id": "Device.property.type:BodyWeight.coding.id",
+        "path": "Device.property.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Device.property.type:BodyWeight.coding.system",
+        "path": "Device.property.type.coding.system",
+        "fixedUri": "http://loinc.org"
+      },
+      {
+        "id": "Device.property.type:BodyWeight.coding.version",
+        "path": "Device.property.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Device.property.type:BodyWeight.coding.code",
+        "path": "Device.property.type.coding.code",
+        "fixedCode": "29463-7"
+      },
+      {
+        "id": "Device.property.type:BodyWeight.coding.display",
+        "path": "Device.property.type.coding.display",
+        "fixedString": "Body weight"
+      },
+      {
+        "id": "Device.property.type:BodyWeight.coding.userSelected",
+        "path": "Device.property.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Device.property.type:Overbooking",
+        "path": "Device.property.type",
+        "sliceName": "Overbooking"
+      },
+      {
+        "id": "Device.property.type:Overbooking.id",
+        "path": "Device.property.type.id",
+        "max": "0"
+      },
+      {
+        "id": "Device.property.type:Overbooking.coding.id",
+        "path": "Device.property.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Device.property.type:Overbooking.coding.system",
+        "path": "Device.property.type.coding.system",
+        "fixedUri": "http://terminology.hl7.org/CodeSystem/v2-0278"
+      },
+      {
+        "id": "Device.property.type:Overbooking.coding.version",
+        "path": "Device.property.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Device.property.type:Overbooking.coding.code",
+        "path": "Device.property.type.coding.code",
+        "fixedCode": "Overbook"
+      },
+      {
+        "id": "Device.property.type:Overbooking.coding.display",
+        "path": "Device.property.type.coding.display",
+        "fixedString": "Overbook"
+      },
+      {
+        "id": "Device.property.type:Overbooking.coding.userSelected",
+        "path": "Device.property.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Device.patient.id",
+        "path": "Device.patient.id",
+        "max": "0"
+      },
+      {
+        "id": "Device.patient.type",
+        "path": "Device.patient.type",
+        "max": "0"
+      },
+      {
+        "id": "Device.patient.identifier",
+        "path": "Device.patient.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Device.patient.display",
+        "path": "Device.patient.display",
+        "max": "0"
+      },
+      {
+        "id": "Device.owner.id",
+        "path": "Device.owner.id",
+        "max": "0"
+      },
+      {
+        "id": "Device.owner.type",
+        "path": "Device.owner.type",
+        "max": "0"
+      },
+      {
+        "id": "Device.owner.identifier",
+        "path": "Device.owner.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Device.owner.display",
+        "path": "Device.owner.display",
+        "max": "0"
+      },
+      {
+        "id": "Device.location.id",
+        "path": "Device.location.id",
+        "max": "0"
+      },
+      {
+        "id": "Device.location.type",
+        "path": "Device.location.type",
+        "max": "0"
+      },
+      {
+        "id": "Device.location.identifier",
+        "path": "Device.location.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Device.location.display",
+        "path": "Device.location.display",
+        "max": "0"
+      },
+      {
+        "id": "Device.parent.id",
+        "path": "Device.parent.id",
+        "max": "0"
+      },
+      {
+        "id": "Device.parent.type",
+        "path": "Device.parent.type",
+        "max": "0"
+      },
+      {
+        "id": "Device.parent.identifier",
+        "path": "Device.parent.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Device.parent.display",
+        "path": "Device.parent.display",
+        "max": "0"
+      }
+    ]
+  }
+}

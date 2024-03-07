@@ -1,0 +1,56 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "DisplayName-Device",
+  "url": "https://hl7.pt/fhir/StructureDefinition/DisplayName-Device",
+  "version": "1.0",
+  "name": "DisplayName",
+  "status": "draft",
+  "experimental": false,
+  "date": "2023-03-02T19:59:05.0729171+00:00",
+  "description": "The name used to display by default when the device is referenced. - Extension created based on what exists in FHIR Version 5",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Device"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "max": "1"
+      },
+      {
+        "id": "Extension.id",
+        "path": "Extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://hl7.pt/fhir/StructureDefinition/DisplayName-Device"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x].id",
+        "path": "Extension.value[x].id",
+        "max": "0"
+      }
+    ]
+  }
+}

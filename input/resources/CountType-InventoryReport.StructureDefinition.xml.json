@@ -1,0 +1,53 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "CountType-InventoryReport",
+  "url": "https://hl7.pt/fhir/StructureDefinition/CountType-InventoryReport",
+  "version": "1.0",
+  "name": "CountType",
+  "status": "draft",
+  "experimental": false,
+  "date": "2023-01-16T17:09:42.6652842+00:00",
+  "description": "Whether the report is about the current inventory count (snapshot) or a differential change in inventory (change).",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Basic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://hl7.pt/fhir/StructureDefinition/CountType-InventoryReport"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "code"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "description": "The type of count.",
+          "valueSet": "http://hl7.org/fhir/inventoryreport-counttype"
+        }
+      }
+    ]
+  }
+}

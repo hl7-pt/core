@@ -1,0 +1,649 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "c56e2fb3-2322-4e99-931c-50d99668edfa",
+  "meta": {
+    "lastUpdated": "2022-02-03T15:24:32.035+00:00"
+  },
+  "url": "https://hl7.pt/fhir/StructureDefinition/PT_Medication",
+  "version": "1.0",
+  "name": "PT_Medication",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-02-03T15:23:15.7369988+00:00",
+  "description": "A generic Medication resource for Portugal",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Medication",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Medication",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Medication.meta",
+        "path": "Medication.meta"
+      },
+      {
+        "id": "Medication.meta.id",
+        "path": "Medication.meta.id",
+        "max": "0"
+      },
+      {
+        "id": "Medication.meta.versionId",
+        "path": "Medication.meta.versionId",
+        "max": "0"
+      },
+      {
+        "id": "Medication.meta.source",
+        "path": "Medication.meta.source",
+        "max": "0"
+      },
+      {
+        "id": "Medication.meta.profile",
+        "path": "Medication.meta.profile",
+        "max": "0"
+      },
+      {
+        "id": "Medication.implicitRules",
+        "path": "Medication.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "Medication.language",
+        "path": "Medication.language",
+        "max": "0"
+      },
+      {
+        "id": "Medication.text",
+        "path": "Medication.text",
+        "max": "0"
+      },
+      {
+        "id": "Medication.contained",
+        "path": "Medication.contained",
+        "max": "0"
+      },
+      {
+        "id": "Medication.identifier.id",
+        "path": "Medication.identifier.id",
+        "max": "0"
+      },
+      {
+        "id": "Medication.identifier.type",
+        "path": "Medication.identifier.type",
+        "max": "0"
+      },
+      {
+        "id": "Medication.identifier.system",
+        "path": "Medication.identifier.system",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "value"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Medication.identifier.system:GLINTT",
+        "path": "Medication.identifier.system",
+        "sliceName": "GLINTT",
+        "fixedUri": "https://glintt.com/[HOSPITAL]",
+        "mapping": [
+          {
+            "identity": "HL7v2.4",
+            "map": "RXO-1.3 / RXO-1.6, RXC-2.3, RXE-2.3, RXD-2.3, RXG-4.3, RXA-5.3"
+          },
+          {
+            "identity": "HL7v2.4-Supplementary",
+            "map": "RXO-24.3, RXC-7.3, RXE-31.3, RXD-25.3"
+          }
+        ]
+      },
+      {
+        "id": "Medication.identifier.system:GLINTT.id",
+        "path": "Medication.identifier.system.id",
+        "max": "0"
+      },
+      {
+        "id": "Medication.identifier.system:CHNM",
+        "path": "Medication.identifier.system",
+        "sliceName": "CHNM",
+        "fixedUri": "https://infarmed.pt/chnm",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-1.3 / RXO-1.6, RXC-2.3, RXE-2.3, RXE-37.3, RXD-2.3, RXG-4.3, RXA-5.3"
+          },
+          {
+            "identity": "HL7v2.x-Supplementary",
+            "map": "RXO-24.3, RXC-7.3, RXE-31.3, RXD-25.3"
+          }
+        ]
+      },
+      {
+        "id": "Medication.identifier.system:CHNM.id",
+        "path": "Medication.identifier.system.id",
+        "max": "0"
+      },
+      {
+        "id": "Medication.identifier.system:ATC",
+        "path": "Medication.identifier.system",
+        "sliceName": "ATC",
+        "fixedUri": "https://whocc.no/atc/",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-1.3 / RXO-1.6, RXC-2.3, RXE-2.3, RXE-37.3, RXD-2.3, RXG-4.3, RXA-5.3"
+          },
+          {
+            "identity": "HL7v2.x-Supplementary",
+            "map": "RXO-24.3, RXC-7.3, RXE-31.3, RXD-25.3"
+          }
+        ]
+      },
+      {
+        "id": "Medication.identifier.system:ATC.id",
+        "path": "Medication.identifier.system.id",
+        "max": "0"
+      },
+      {
+        "id": "Medication.identifier.value",
+        "path": "Medication.identifier.value",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-1.1 / RXO-1.4, RXC-2.1, RXE-2.1, RXE-37.1, RXD-2.1, RXG-4.1, RXA-5.1"
+          },
+          {
+            "identity": "HL7v2.x-Supplementary",
+            "map": "RXO-24.1, RXC-7.1, RXE-31.1, RXD-25.1"
+          }
+        ]
+      },
+      {
+        "id": "Medication.identifier.period",
+        "path": "Medication.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "Medication.identifier.assigner",
+        "path": "Medication.identifier.assigner",
+        "max": "0"
+      },
+      {
+        "id": "Medication.code",
+        "path": "Medication.code",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "coding.system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Medication.code.id",
+        "path": "Medication.code.id",
+        "max": "0"
+      },
+      {
+        "id": "Medication.code.coding",
+        "path": "Medication.code.coding",
+        "max": "0"
+      },
+      {
+        "id": "Medication.code.text",
+        "path": "Medication.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Medication.code:GLINTT",
+        "path": "Medication.code",
+        "sliceName": "GLINTT"
+      },
+      {
+        "id": "Medication.code:GLINTT.id",
+        "path": "Medication.code.id",
+        "max": "0"
+      },
+      {
+        "id": "Medication.code:GLINTT.coding.id",
+        "path": "Medication.code.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Medication.code:GLINTT.coding.system",
+        "path": "Medication.code.coding.system",
+        "fixedUri": "https://glintt.com/[HOSPITAL]",
+        "mapping": [
+          {
+            "identity": "HL7v2.4",
+            "map": "RXO-1.3 / RXO-1.6, RXC-2.3, RXE-2.3, RXD-2.3, RXG-4.3, RXA-5.3"
+          },
+          {
+            "identity": "HL7v2.4-Supplementary",
+            "map": "RXO-24.3, RXC-7.3, RXE-31.3, RXD-25.3"
+          }
+        ]
+      },
+      {
+        "id": "Medication.code:GLINTT.coding.version",
+        "path": "Medication.code.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Medication.code:GLINTT.coding.code",
+        "path": "Medication.code.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.4",
+            "map": "RXO-1.1 / RXO-1.4, RXC-2.1, RXE-2.1, RXD-2.1, RXG-4.1, RXA-5.1"
+          },
+          {
+            "identity": "HL7v2.4-Supplementary",
+            "map": "RXO-24.1, RXC-7.1, RXE-31.1, RXD-25.1"
+          }
+        ]
+      },
+      {
+        "id": "Medication.code:GLINTT.coding.display",
+        "path": "Medication.code.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.4",
+            "map": "RXO-1.2 / RXO-1.5, RXC-2.2, RXE-2.2, RXD-2.2, RXG-4.2, RXA-5.2"
+          },
+          {
+            "identity": "HL7v2.4-Supplementary",
+            "map": "RXO-24.2, RXC-7.2, RXE-31.2, RXD-25.2"
+          }
+        ]
+      },
+      {
+        "id": "Medication.code:GLINTT.coding.userSelected",
+        "path": "Medication.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Medication.code:GLINTT.text",
+        "path": "Medication.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Medication.code:CHNM",
+        "path": "Medication.code",
+        "sliceName": "CHNM"
+      },
+      {
+        "id": "Medication.code:CHNM.id",
+        "path": "Medication.code.id",
+        "max": "0"
+      },
+      {
+        "id": "Medication.code:CHNM.coding.id",
+        "path": "Medication.code.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Medication.code:CHNM.coding.system",
+        "path": "Medication.code.coding.system",
+        "fixedUri": "https://infarmed.pt/chnm",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-1.3 / RXO-1.6, RXC-2.3, RXE-2.3, RXE-37.3, RXD-2.3, RXG-4.3, RXA-5.3"
+          },
+          {
+            "identity": "HL7v2.x-Supplementary",
+            "map": "RXO-24.3, RXC-7.3, RXE-31.3, RXD-25.3"
+          }
+        ]
+      },
+      {
+        "id": "Medication.code:CHNM.coding.version",
+        "path": "Medication.code.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Medication.code:CHNM.coding.code",
+        "path": "Medication.code.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-1.1 / RXO-1.4, RXC-2.1, RXE-2.1, RXE-37.1, RXD-2.1, RXG-4.1, RXA-5.1"
+          },
+          {
+            "identity": "HL7v2.x-Supplementary",
+            "map": "RXO-24.1, RXC-7.1, RXE-31.1, RXD-25.1"
+          }
+        ]
+      },
+      {
+        "id": "Medication.code:CHNM.coding.display",
+        "path": "Medication.code.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-1.2 / RXO-1.5, RXC-2.2, RXE-2.2, RXE-37.2, RXD-2.2, RXG-4.2, RXA-5.2"
+          },
+          {
+            "identity": "HL7v2.x-Supplementary",
+            "map": "RXO-24.2, RXC-7.2, RXE-31.2, RXD-25.2"
+          }
+        ]
+      },
+      {
+        "id": "Medication.code:CHNM.coding.userSelected",
+        "path": "Medication.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Medication.code:CHNM.text",
+        "path": "Medication.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Medication.code:ATC",
+        "path": "Medication.code",
+        "sliceName": "ATC"
+      },
+      {
+        "id": "Medication.code:ATC.id",
+        "path": "Medication.code.id",
+        "max": "0"
+      },
+      {
+        "id": "Medication.code:ATC.coding.id",
+        "path": "Medication.code.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Medication.code:ATC.coding.system",
+        "path": "Medication.code.coding.system",
+        "fixedUri": "https://whocc.no/atc/",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-1.3 / RXO-1.6, RXC-2.3, RXE-2.3, RXE-37.3, RXD-2.3, RXG-4.3, RXA-5.3"
+          },
+          {
+            "identity": "HL7v2.x-Supplementary",
+            "map": "RXO-24.3, RXC-7.3, RXE-31.3, RXD-25.3"
+          }
+        ]
+      },
+      {
+        "id": "Medication.code:ATC.coding.version",
+        "path": "Medication.code.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Medication.code:ATC.coding.code",
+        "path": "Medication.code.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-1.1 / RXO-1.4, RXC-2.1, RXE-2.1, RXE-37.1, RXD-2.1, RXG-4.1, RXA-5.1"
+          },
+          {
+            "identity": "HL7v2.x-Supplementary",
+            "map": "RXO-24.1, RXC-7.1, RXE-31.1, RXD-25.1"
+          }
+        ]
+      },
+      {
+        "id": "Medication.code:ATC.coding.display",
+        "path": "Medication.code.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-1.2 / RXO-1.5, RXC-2.2, RXE-2.2, RXE-37.2, RXD-2.2, RXG-4.2, RXA-5.2"
+          },
+          {
+            "identity": "HL7v2.x-Supplementary",
+            "map": "RXO-24.2, RXC-7.2, RXE-31.2, RXD-25.2"
+          }
+        ]
+      },
+      {
+        "id": "Medication.code:ATC.coding.userSelected",
+        "path": "Medication.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Medication.code:ATC.text",
+        "path": "Medication.code.text",
+        "max": "0"
+      },
+      {
+        "id": "Medication.manufacturer",
+        "path": "Medication.manufacturer",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.pt/fhir/StructureDefinition/PT_Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Medication.manufacturer.id",
+        "path": "Medication.manufacturer.id",
+        "max": "0"
+      },
+      {
+        "id": "Medication.manufacturer.reference",
+        "path": "Medication.manufacturer.reference",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "Organization/RXD-20, RXG-21, RXA-17"
+          }
+        ]
+      },
+      {
+        "id": "Medication.manufacturer.type",
+        "path": "Medication.manufacturer.type",
+        "max": "0"
+      },
+      {
+        "id": "Medication.manufacturer.identifier",
+        "path": "Medication.manufacturer.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Medication.manufacturer.display",
+        "path": "Medication.manufacturer.display",
+        "max": "0"
+      },
+      {
+        "id": "Medication.form.id",
+        "path": "Medication.form.id",
+        "max": "0"
+      },
+      {
+        "id": "Medication.form.coding.id",
+        "path": "Medication.form.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Medication.form.coding.system",
+        "path": "Medication.form.coding.system",
+        "fixedUri": "https://www.edqm.eu/",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-5.3, RXE-6.3, RXD-6.3, RXG-8.3, RXA-8.3"
+          }
+        ]
+      },
+      {
+        "id": "Medication.form.coding.version",
+        "path": "Medication.form.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Medication.form.coding.code",
+        "path": "Medication.form.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-5.1, RXE-6.1, RXD-6.1, RXG-8.1, RXA-8.1"
+          }
+        ]
+      },
+      {
+        "id": "Medication.form.coding.display",
+        "path": "Medication.form.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-5.2, RXE-6.2, RXD-6.2, RXG-8.2, RXA-8.2"
+          }
+        ]
+      },
+      {
+        "id": "Medication.form.coding.userSelected",
+        "path": "Medication.form.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Medication.form.text",
+        "path": "Medication.form.text",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "Translation to [PT] of the display field"
+          }
+        ]
+      },
+      {
+        "id": "Medication.ingredient.id",
+        "path": "Medication.ingredient.id",
+        "max": "0"
+      },
+      {
+        "id": "Medication.ingredient.item[x]",
+        "path": "Medication.ingredient.item[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Medication.ingredient.item[x].id",
+        "path": "Medication.ingredient.item[x].id",
+        "max": "0"
+      },
+      {
+        "id": "Medication.ingredient.item[x].coding.id",
+        "path": "Medication.ingredient.item[x].coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Medication.ingredient.item[x].coding.system",
+        "path": "Medication.ingredient.item[x].coding.system",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-1.3 / RXO-1.6, RXC-2.3, RXE-2.3, RXE-37.3, RXD-2.3, RXG-4.3, RXA-5.3"
+          },
+          {
+            "identity": "HL7v2.4-Supplementary",
+            "map": "RXO-24.3, RXC-7.3, RXE-31.3, RXD-25.3"
+          }
+        ]
+      },
+      {
+        "id": "Medication.ingredient.item[x].coding.version",
+        "path": "Medication.ingredient.item[x].coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Medication.ingredient.item[x].coding.code",
+        "path": "Medication.ingredient.item[x].coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-1.1 / RXO-1.4, RXC-2.1, RXE-2.1, RXE-37.1, RXD-2.1, RXG-4.1, RXA-5.1"
+          },
+          {
+            "identity": "HL7v2.x-Supplementary",
+            "map": "RXO-24.1, RXC-7.1, RXE-31.1, RXD-25.1"
+          }
+        ]
+      },
+      {
+        "id": "Medication.ingredient.item[x].coding.display",
+        "path": "Medication.ingredient.item[x].coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-1.2 / RXO-1.5, RXC-2.2, RXE-2.2, RXE-37.2, RXD-2.2, RXG-4.2, RXA-5.2"
+          },
+          {
+            "identity": "HL7v2.x-Supplementary",
+            "map": "RXO-24.2, RXC-7.2, RXE-31.2, RXD-25.2"
+          }
+        ]
+      },
+      {
+        "id": "Medication.ingredient.item[x].coding.userSelected",
+        "path": "Medication.ingredient.item[x].coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Medication.ingredient.item[x].text",
+        "path": "Medication.ingredient.item[x].text",
+        "max": "0"
+      },
+      {
+        "id": "Medication.ingredient.strength",
+        "path": "Medication.ingredient.strength",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXO-1 (dose/form) - If the dose is not sent on the RXO-1, it will be the RXO-18 + RXO-19; RXC-2 (dose/form) - If the dose is not sent on the RXC-2, it will be the RXC-5 + RXC-6; RXE-2 (dose/form) - If the dose is not sent on the RXE-2, it will be the RXE-25 + RXE-26; RXD-2 (dose/form) - If the dose is not sent on the RXD-2, it will be the RXD-16 + RXD-17; RXG-4 (dose/form) - If the dose is not sent on the RXG-4, it will be the RXG-17 + RXG-18; RXA-5 (dose/form) - If the dose is not sent on the RXA-5, it will be the RXA-13 + RXA-14"
+          }
+        ]
+      },
+      {
+        "id": "Medication.ingredient.strength.id",
+        "path": "Medication.ingredient.strength.id",
+        "max": "0"
+      },
+      {
+        "id": "Medication.batch.id",
+        "path": "Medication.batch.id",
+        "max": "0"
+      },
+      {
+        "id": "Medication.batch.lotNumber",
+        "path": "Medication.batch.lotNumber",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXD-18, RXG-19, RXA-15"
+          }
+        ]
+      },
+      {
+        "id": "Medication.batch.expirationDate",
+        "path": "Medication.batch.expirationDate",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "RXD-19, RXG-20, RXA-16"
+          }
+        ]
+      }
+    ]
+  }
+}

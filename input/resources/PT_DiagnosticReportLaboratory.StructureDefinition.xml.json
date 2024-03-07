@@ -1,0 +1,599 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://hl7.pt/fhir/StructureDefinition/PT_DiagnosticReportLaboratory",
+  "version": "1.0",
+  "name": "PT_DiagnosticReportLaboratory",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-11-25T12:00:31.5442919+00:00",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "DiagnosticReport",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DiagnosticReport.id",
+        "path": "DiagnosticReport.id",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.meta",
+        "path": "DiagnosticReport.meta"
+      },
+      {
+        "id": "DiagnosticReport.meta.id",
+        "path": "DiagnosticReport.meta.id",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.meta.source",
+        "path": "DiagnosticReport.meta.source",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.implicitRules",
+        "path": "DiagnosticReport.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.language",
+        "path": "DiagnosticReport.language",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.text",
+        "path": "DiagnosticReport.text",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.contained",
+        "path": "DiagnosticReport.contained",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.identifier",
+        "path": "DiagnosticReport.identifier",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "OBR-2, OBR-3"
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.identifier.id",
+        "path": "DiagnosticReport.identifier.id",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.identifier.type.id",
+        "path": "DiagnosticReport.identifier.type.id",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.identifier.type.coding.id",
+        "path": "DiagnosticReport.identifier.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.identifier.type.coding.version",
+        "path": "DiagnosticReport.identifier.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.identifier.type.coding.code",
+        "path": "DiagnosticReport.identifier.type.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "OBR-2 = PLAC"
+          },
+          {
+            "identity": "HL7v2.x",
+            "map": "OBR-3 = FILL"
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.identifier.type.coding.userSelected",
+        "path": "DiagnosticReport.identifier.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.identifier.value",
+        "path": "DiagnosticReport.identifier.value",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "OBR-2.1; OBR-3.1"
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.identifier.period",
+        "path": "DiagnosticReport.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.identifier.assigner.id",
+        "path": "DiagnosticReport.identifier.assigner.id",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.identifier.assigner.display",
+        "path": "DiagnosticReport.identifier.assigner.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "OBR-2.2; OBR-3.2"
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.basedOn",
+        "path": "DiagnosticReport.basedOn",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.pt/fhir/StructureDefinition/PT_CarePlan",
+              "https://hl7.pt/fhir/StructureDefinition/PT_ServiceRequest"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.basedOn.id",
+        "path": "DiagnosticReport.basedOn.id",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.basedOn.reference",
+        "path": "DiagnosticReport.basedOn.reference",
+        "mapping": [
+          {
+            "identity": "HL7v2.x-ServiceRequest",
+            "map": "ServiceRequest/ORC-2, ORC-4, SCH-1"
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.basedOn.type",
+        "path": "DiagnosticReport.basedOn.type",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.basedOn.identifier",
+        "path": "DiagnosticReport.basedOn.identifier",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.basedOn.display",
+        "path": "DiagnosticReport.basedOn.display",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.status",
+        "path": "DiagnosticReport.status",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "OBR-25"
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.category",
+        "path": "DiagnosticReport.category",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "OBR-24"
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.category.id",
+        "path": "DiagnosticReport.category.id",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.category.coding.id",
+        "path": "DiagnosticReport.category.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.category.coding.version",
+        "path": "DiagnosticReport.category.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.category.coding.userSelected",
+        "path": "DiagnosticReport.category.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.code",
+        "path": "DiagnosticReport.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "OBR-4"
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.code.id",
+        "path": "DiagnosticReport.code.id",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.code.coding.id",
+        "path": "DiagnosticReport.code.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.code.coding.system",
+        "path": "DiagnosticReport.code.coding.system",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "OBR-4.3"
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.code.coding.code",
+        "path": "DiagnosticReport.code.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "OBR-4.1"
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.code.coding.display",
+        "path": "DiagnosticReport.code.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "OBR-4.2"
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.code.coding.userSelected",
+        "path": "DiagnosticReport.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.subject",
+        "path": "DiagnosticReport.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.pt/fhir/StructureDefinition/PT_Patient",
+              "https://hl7.pt/fhir/StructureDefinition/PT_Location",
+              "http://hl7.org/fhir/StructureDefinition/Group",
+              "http://hl7.org/fhir/StructureDefinition/Device"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.subject.id",
+        "path": "DiagnosticReport.subject.id",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.subject.reference",
+        "path": "DiagnosticReport.subject.reference",
+        "mapping": [
+          {
+            "identity": "HL7v2.x-Patient",
+            "map": "Patient/PID-3"
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.subject.type",
+        "path": "DiagnosticReport.subject.type",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.subject.identifier",
+        "path": "DiagnosticReport.subject.identifier",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.subject.display",
+        "path": "DiagnosticReport.subject.display",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.encounter",
+        "path": "DiagnosticReport.encounter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.pt/fhir/StructureDefinition/PT_Encounter"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.encounter.id",
+        "path": "DiagnosticReport.encounter.id",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.encounter.reference",
+        "path": "DiagnosticReport.encounter.reference",
+        "mapping": [
+          {
+            "identity": "HL7v2.x-Encounter",
+            "map": "Encounter/PV1-19"
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.encounter.type",
+        "path": "DiagnosticReport.encounter.type",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.encounter.identifier",
+        "path": "DiagnosticReport.encounter.identifier",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.encounter.display",
+        "path": "DiagnosticReport.encounter.display",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.effective[x]",
+        "path": "DiagnosticReport.effective[x]",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "OBR-7, OBR-8"
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.issued",
+        "path": "DiagnosticReport.issued",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "OBR-22"
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.performer",
+        "path": "DiagnosticReport.performer",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.pt/fhir/StructureDefinition/PT_Practitioner",
+              "https://hl7.pt/fhir/StructureDefinition/PT_Organization",
+              "http://hl7.org/fhir/StructureDefinition/CareTeam"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.performer.id",
+        "path": "DiagnosticReport.performer.id",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.performer.reference",
+        "path": "DiagnosticReport.performer.reference",
+        "mapping": [
+          {
+            "identity": "HL7v2.x-Practitioner",
+            "map": "Practitioner/OBR-34, OBR-35"
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.performer.identifier",
+        "path": "DiagnosticReport.performer.identifier",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.performer.display",
+        "path": "DiagnosticReport.performer.display",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.resultsInterpreter",
+        "path": "DiagnosticReport.resultsInterpreter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.pt/fhir/StructureDefinition/PT_Practitioner",
+              "https://hl7.pt/fhir/StructureDefinition/PT_Organization",
+              "http://hl7.org/fhir/StructureDefinition/CareTeam"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.resultsInterpreter.id",
+        "path": "DiagnosticReport.resultsInterpreter.id",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.resultsInterpreter.reference",
+        "path": "DiagnosticReport.resultsInterpreter.reference",
+        "mapping": [
+          {
+            "identity": "HL7v2.x-Practitioner",
+            "map": "Practitioner/OBR-32, OBR-33"
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.resultsInterpreter.identifier",
+        "path": "DiagnosticReport.resultsInterpreter.identifier",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.resultsInterpreter.display",
+        "path": "DiagnosticReport.resultsInterpreter.display",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.specimen",
+        "path": "DiagnosticReport.specimen",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.pt/fhir/StructureDefinition/PT_Specimen"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.specimen.id",
+        "path": "DiagnosticReport.specimen.id",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.specimen.reference",
+        "path": "DiagnosticReport.specimen.reference",
+        "mapping": [
+          {
+            "identity": "HL7v2.5-Specimen",
+            "map": "Specimen/SPM-2"
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.specimen.type",
+        "path": "DiagnosticReport.specimen.type",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.specimen.identifier",
+        "path": "DiagnosticReport.specimen.identifier",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.specimen.display",
+        "path": "DiagnosticReport.specimen.display",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.result",
+        "path": "DiagnosticReport.result",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.pt/fhir/StructureDefinition/PT_ObservationLaboratory"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.result.id",
+        "path": "DiagnosticReport.result.id",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.result.reference",
+        "path": "DiagnosticReport.result.reference",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "Observation/OBX-3, OBX-4"
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.result.type",
+        "path": "DiagnosticReport.result.type",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.result.identifier",
+        "path": "DiagnosticReport.result.identifier",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.result.display",
+        "path": "DiagnosticReport.result.display",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.imagingStudy",
+        "path": "DiagnosticReport.imagingStudy",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.media.id",
+        "path": "DiagnosticReport.media.id",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.presentedForm.id",
+        "path": "DiagnosticReport.presentedForm.id",
+        "max": "0"
+      },
+      {
+        "id": "DiagnosticReport.presentedForm.contentType",
+        "path": "DiagnosticReport.presentedForm.contentType",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "TXA-3, OBX-2"
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.presentedForm.data",
+        "path": "DiagnosticReport.presentedForm.data",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "OBX-5"
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.presentedForm.title",
+        "path": "DiagnosticReport.presentedForm.title",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "OBX-3.2"
+          }
+        ]
+      },
+      {
+        "id": "DiagnosticReport.presentedForm.creation",
+        "path": "DiagnosticReport.presentedForm.creation",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "TXA-6, OBX-14"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,507 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://hl7.pt/fhir/StructureDefinition/PT_RequestGroup",
+  "version": "1.1",
+  "name": "PT_RequestGroup",
+  "status": "draft",
+  "experimental": false,
+  "date": "2023-01-16T17:20:13.3776524+00:00",
+  "description": "A generic RequestGroup resource for Portugal",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "RequestGroup",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/RequestGroup",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "RequestGroup.meta",
+        "path": "RequestGroup.meta"
+      },
+      {
+        "id": "RequestGroup.meta.id",
+        "path": "RequestGroup.meta.id",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.meta.versionId",
+        "path": "RequestGroup.meta.versionId",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.meta.source",
+        "path": "RequestGroup.meta.source",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.meta.profile",
+        "path": "RequestGroup.meta.profile",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.meta.security",
+        "path": "RequestGroup.meta.security",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.meta.tag",
+        "path": "RequestGroup.meta.tag",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.implicitRules",
+        "path": "RequestGroup.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.language",
+        "path": "RequestGroup.language",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.text",
+        "path": "RequestGroup.text",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.contained",
+        "path": "RequestGroup.contained",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.extension",
+        "path": "RequestGroup.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "RequestGroup.extension:CycleAndDaysOfCycle",
+        "path": "RequestGroup.extension",
+        "sliceName": "CycleAndDaysOfCycle",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.pt/fhir/StructureDefinition/CycleAndDaysOfCycle"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "RequestGroup.identifier.id",
+        "path": "RequestGroup.identifier.id",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.identifier.type.id",
+        "path": "RequestGroup.identifier.type.id",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.identifier.type.coding.id",
+        "path": "RequestGroup.identifier.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.identifier.type.coding.version",
+        "path": "RequestGroup.identifier.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.identifier.type.coding.userSelected",
+        "path": "RequestGroup.identifier.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.identifier.period",
+        "path": "RequestGroup.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.instantiatesUri",
+        "path": "RequestGroup.instantiatesUri",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.basedOn",
+        "path": "RequestGroup.basedOn",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Resource",
+              "https://hl7.pt/fhir/StructureDefinition/PT_CarePlan"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "RequestGroup.basedOn.id",
+        "path": "RequestGroup.basedOn.id",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.basedOn.type",
+        "path": "RequestGroup.basedOn.type",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.basedOn.identifier",
+        "path": "RequestGroup.basedOn.identifier",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.basedOn.display",
+        "path": "RequestGroup.basedOn.display",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.replaces.id",
+        "path": "RequestGroup.replaces.id",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.replaces.type",
+        "path": "RequestGroup.replaces.type",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.replaces.identifier",
+        "path": "RequestGroup.replaces.identifier",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.replaces.display",
+        "path": "RequestGroup.replaces.display",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.groupIdentifier.id",
+        "path": "RequestGroup.groupIdentifier.id",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.groupIdentifier.type.id",
+        "path": "RequestGroup.groupIdentifier.type.id",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.groupIdentifier.type.coding.id",
+        "path": "RequestGroup.groupIdentifier.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.groupIdentifier.type.coding.version",
+        "path": "RequestGroup.groupIdentifier.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.groupIdentifier.type.coding.userSelected",
+        "path": "RequestGroup.groupIdentifier.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.groupIdentifier.type.text",
+        "path": "RequestGroup.groupIdentifier.type.text",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.groupIdentifier.period",
+        "path": "RequestGroup.groupIdentifier.period",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.code.id",
+        "path": "RequestGroup.code.id",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.code.coding.id",
+        "path": "RequestGroup.code.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.code.coding.version",
+        "path": "RequestGroup.code.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.code.coding.userSelected",
+        "path": "RequestGroup.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.subject",
+        "path": "RequestGroup.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Group",
+              "https://hl7.pt/fhir/StructureDefinition/PT_Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "RequestGroup.subject.id",
+        "path": "RequestGroup.subject.id",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.subject.type",
+        "path": "RequestGroup.subject.type",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.subject.identifier",
+        "path": "RequestGroup.subject.identifier",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.subject.display",
+        "path": "RequestGroup.subject.display",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.encounter",
+        "path": "RequestGroup.encounter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Encounter",
+              "https://hl7.pt/fhir/StructureDefinition/PT_Encounter"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "RequestGroup.encounter.id",
+        "path": "RequestGroup.encounter.id",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.encounter.type",
+        "path": "RequestGroup.encounter.type",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.encounter.identifier",
+        "path": "RequestGroup.encounter.identifier",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.encounter.display",
+        "path": "RequestGroup.encounter.display",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.author",
+        "path": "RequestGroup.author",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Device",
+              "https://hl7.pt/fhir/StructureDefinition/PT_Practitioner",
+              "https://hl7.pt/fhir/StructureDefinition/PT_PractitionerRole"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "RequestGroup.author.id",
+        "path": "RequestGroup.author.id",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.author.type",
+        "path": "RequestGroup.author.type",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.author.identifier",
+        "path": "RequestGroup.author.identifier",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.author.display",
+        "path": "RequestGroup.author.display",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.reasonCode",
+        "path": "RequestGroup.reasonCode",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.reasonCode.id",
+        "path": "RequestGroup.reasonCode.id",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.reasonCode.coding.id",
+        "path": "RequestGroup.reasonCode.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.reasonCode.coding.version",
+        "path": "RequestGroup.reasonCode.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.reasonCode.coding.userSelected",
+        "path": "RequestGroup.reasonCode.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.reasonReference",
+        "path": "RequestGroup.reasonReference",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Observation",
+              "http://hl7.org/fhir/StructureDefinition/DiagnosticReport",
+              "https://hl7.pt/fhir/StructureDefinition/PT_Condition",
+              "https://hl7.pt/fhir/StructureDefinition/PT_DocumentReference"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "RequestGroup.reasonReference.id",
+        "path": "RequestGroup.reasonReference.id",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.reasonReference.type",
+        "path": "RequestGroup.reasonReference.type",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.reasonReference.identifier",
+        "path": "RequestGroup.reasonReference.identifier",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.reasonReference.display",
+        "path": "RequestGroup.reasonReference.display",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.note.id",
+        "path": "RequestGroup.note.id",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.note.author[x]",
+        "path": "RequestGroup.note.author[x]",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.note.time",
+        "path": "RequestGroup.note.time",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.action.extension",
+        "path": "RequestGroup.action.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "RequestGroup.action.extension:CycleAndDaysOfCycle",
+        "path": "RequestGroup.action.extension",
+        "sliceName": "CycleAndDaysOfCycle",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.pt/fhir/StructureDefinition/CycleAndDaysOfCycle"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "RequestGroup.action.relatedAction.id",
+        "path": "RequestGroup.action.relatedAction.id",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.action.participant.id",
+        "path": "RequestGroup.action.participant.id",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.action.participant.type",
+        "path": "RequestGroup.action.participant.type",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.action.participant.identifier",
+        "path": "RequestGroup.action.participant.identifier",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.action.participant.display",
+        "path": "RequestGroup.action.participant.display",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.action.type.id",
+        "path": "RequestGroup.action.type.id",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.action.resource",
+        "path": "RequestGroup.action.resource",
+        "definition": "The resource that is the target of the action (e.g. MedicationRequest)."
+      },
+      {
+        "id": "RequestGroup.action.resource.id",
+        "path": "RequestGroup.action.resource.id",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.action.resource.type",
+        "path": "RequestGroup.action.resource.type",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.action.resource.identifier",
+        "path": "RequestGroup.action.resource.identifier",
+        "max": "0"
+      },
+      {
+        "id": "RequestGroup.action.resource.display",
+        "path": "RequestGroup.action.resource.display",
+        "max": "0"
+      }
+    ]
+  }
+}

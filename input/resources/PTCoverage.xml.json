@@ -1,0 +1,715 @@
+{
+  "resourceType": "StructureDefinition",
+  "meta": {
+    "lastUpdated": "2022-11-08T10:46:36.3860422+00:00"
+  },
+  "url": "https://hl7.pt/fhir/StructureDefinition/PT_Coverage",
+  "version": "1.1",
+  "name": "PT_Coverage",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-11-08T10:47:34.3124993+00:00",
+  "description": "A generic Coverage resource for Portugal",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Coverage",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Coverage",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Coverage.meta",
+        "path": "Coverage.meta"
+      },
+      {
+        "id": "Coverage.meta.id",
+        "path": "Coverage.meta.id",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.meta.versionId",
+        "path": "Coverage.meta.versionId",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.meta.source",
+        "path": "Coverage.meta.source",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.meta.profile",
+        "path": "Coverage.meta.profile",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.meta.security",
+        "path": "Coverage.meta.security",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.meta.tag",
+        "path": "Coverage.meta.tag",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.implicitRules",
+        "path": "Coverage.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.language",
+        "path": "Coverage.language",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.text",
+        "path": "Coverage.text",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.contained",
+        "path": "Coverage.contained",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.extension",
+        "path": "Coverage.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "Coverage.extension:EconomicInsufficiency",
+        "path": "Coverage.extension",
+        "sliceName": "EconomicInsufficiency",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.pt/fhir/StructureDefinition/EconomicInsufficiency"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Coverage.identifier",
+        "path": "Coverage.identifier",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IN1-2"
+          }
+        ]
+      },
+      {
+        "id": "Coverage.identifier.id",
+        "path": "Coverage.identifier.id",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.identifier.type",
+        "path": "Coverage.identifier.type",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.identifier.system",
+        "path": "Coverage.identifier.system",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IN1-2.3"
+          }
+        ]
+      },
+      {
+        "id": "Coverage.identifier.value",
+        "path": "Coverage.identifier.value",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IN1-2.1"
+          }
+        ]
+      },
+      {
+        "id": "Coverage.identifier.period",
+        "path": "Coverage.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.identifier.assigner.id",
+        "path": "Coverage.identifier.assigner.id",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.identifier.assigner.reference",
+        "path": "Coverage.identifier.assigner.reference",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.identifier.assigner.type",
+        "path": "Coverage.identifier.assigner.type",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.identifier.assigner.identifier",
+        "path": "Coverage.identifier.assigner.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.status",
+        "path": "Coverage.status",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IN1-45, but if this HL7 field is not sent, pay attention to the period element. When you only have period.start, should be \"active\". When it has passed (period.end), should be \"cancelled\"."
+          }
+        ]
+      },
+      {
+        "id": "Coverage.type",
+        "path": "Coverage.type",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IN1-15"
+          }
+        ]
+      },
+      {
+        "id": "Coverage.type.id",
+        "path": "Coverage.type.id",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.type.coding.id",
+        "path": "Coverage.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.type.coding.version",
+        "path": "Coverage.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.type.coding.code",
+        "path": "Coverage.type.coding.code",
+        "example": [
+          {
+            "label": "Code Example 1",
+            "valueCode": "EHCPOL"
+          },
+          {
+            "label": "Code Example 2",
+            "valueCode": "SUBSIDIZ"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IN1-15.1"
+          }
+        ]
+      },
+      {
+        "id": "Coverage.type.coding.display",
+        "path": "Coverage.type.coding.display",
+        "example": [
+          {
+            "label": "Display Example 1",
+            "valueString": "Extended Healthcare"
+          },
+          {
+            "label": "Display Example 2",
+            "valueString": "Subsidized Health Program"
+          }
+        ]
+      },
+      {
+        "id": "Coverage.type.coding.userSelected",
+        "path": "Coverage.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.type.text",
+        "path": "Coverage.type.text",
+        "example": [
+          {
+            "label": "Text Example 1",
+            "valueString": "Apólice de Seguro Privado"
+          },
+          {
+            "label": "Text Example 2",
+            "valueString": "Programa de Saúde do Governo"
+          }
+        ]
+      },
+      {
+        "id": "Coverage.policyHolder",
+        "path": "Coverage.policyHolder",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.pt/fhir/StructureDefinition/PT_Patient",
+              "https://hl7.pt/fhir/StructureDefinition/PT_RelatedPerson",
+              "https://hl7.pt/fhir/StructureDefinition/PT_Organization"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Coverage.policyHolder.id",
+        "path": "Coverage.policyHolder.id",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.policyHolder.reference",
+        "path": "Coverage.policyHolder.reference",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.policyHolder.type",
+        "path": "Coverage.policyHolder.type",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.policyHolder.identifier",
+        "path": "Coverage.policyHolder.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.policyHolder.display",
+        "path": "Coverage.policyHolder.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x-Patient",
+            "map": "Patient/PID-3 c/ SNS; PID-18.1; PID-3 c/ SONHO"
+          },
+          {
+            "identity": "HL7v2.x-RelatedPerson",
+            "map": "RelatedPerson/NK1-33.1"
+          },
+          {
+            "identity": "HL7v2.x-Organization",
+            "map": "Organization/IN1-3.1; IN2-25; [ORG-2.1; MSH-6; ORC-17.1; ORC-21.3 or ORC-21.10]"
+          }
+        ]
+      },
+      {
+        "id": "Coverage.subscriber",
+        "path": "Coverage.subscriber",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.pt/fhir/StructureDefinition/PT_Patient",
+              "https://hl7.pt/fhir/StructureDefinition/PT_RelatedPerson"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Coverage.subscriber.id",
+        "path": "Coverage.subscriber.id",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.subscriber.reference",
+        "path": "Coverage.subscriber.reference",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.subscriber.type",
+        "path": "Coverage.subscriber.type",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.subscriber.identifier",
+        "path": "Coverage.subscriber.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.subscriber.display",
+        "path": "Coverage.subscriber.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x-Patient",
+            "map": "Patient/PID-3 c/ SNS; PID-18.1; PID-3 c/ SONHO"
+          },
+          {
+            "identity": "HL7v2.x-RelatedPerson",
+            "map": "RelatedPerson/NK1-33.1"
+          }
+        ]
+      },
+      {
+        "id": "Coverage.beneficiary",
+        "path": "Coverage.beneficiary",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.pt/fhir/StructureDefinition/PT_Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Coverage.beneficiary.id",
+        "path": "Coverage.beneficiary.id",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.beneficiary.type",
+        "path": "Coverage.beneficiary.type",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.beneficiary.identifier",
+        "path": "Coverage.beneficiary.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.beneficiary.display",
+        "path": "Coverage.beneficiary.display",
+        "max": "0",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "Patient/PID-3 c/ SNS; PID-18.1; PID-3 c/ SONHO"
+          }
+        ]
+      },
+      {
+        "id": "Coverage.dependent",
+        "path": "Coverage.dependent",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.relationship.id",
+        "path": "Coverage.relationship.id",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.relationship.coding.id",
+        "path": "Coverage.relationship.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.relationship.coding.system",
+        "path": "Coverage.relationship.coding.system",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IN1-17.3"
+          }
+        ]
+      },
+      {
+        "id": "Coverage.relationship.coding.version",
+        "path": "Coverage.relationship.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.relationship.coding.code",
+        "path": "Coverage.relationship.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IN1-17.1"
+          }
+        ]
+      },
+      {
+        "id": "Coverage.relationship.coding.display",
+        "path": "Coverage.relationship.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IN1-17.2"
+          }
+        ]
+      },
+      {
+        "id": "Coverage.relationship.coding.userSelected",
+        "path": "Coverage.relationship.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.relationship.text",
+        "path": "Coverage.relationship.text",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "Translation to [PT] of the display field"
+          }
+        ]
+      },
+      {
+        "id": "Coverage.period.id",
+        "path": "Coverage.period.id",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.period.start",
+        "path": "Coverage.period.start",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IN1-12"
+          }
+        ]
+      },
+      {
+        "id": "Coverage.period.end",
+        "path": "Coverage.period.end",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IN1-13"
+          }
+        ]
+      },
+      {
+        "id": "Coverage.payor",
+        "path": "Coverage.payor",
+        "definition": "The program or plan underwriter or payor including both insurance and non-insurance agreements, such as patient-pay agreements.\r\nPT - it is necessary to create a list of responsible entities ​​for a correct mapping",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.pt/fhir/StructureDefinition/PT_Organization",
+              "https://hl7.pt/fhir/StructureDefinition/PT_RelatedPerson",
+              "https://hl7.pt/fhir/StructureDefinition/PT_Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Coverage.payor.id",
+        "path": "Coverage.payor.id",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.payor.type",
+        "path": "Coverage.payor.type",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.payor.identifier",
+        "path": "Coverage.payor.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.payor.display",
+        "path": "Coverage.payor.display",
+        "max": "0",
+        "mapping": [
+          {
+            "identity": "HL7v2.x-Organization",
+            "map": "Organization/IN1-3.1; IN2-25"
+          },
+          {
+            "identity": "HL7v2.x-RelatedPerson",
+            "map": "RelatedPerson/NK1-33.1"
+          },
+          {
+            "identity": "HL7v2.x-Patient",
+            "map": "Patient/PID-3 c/ SNS; PID-18.1; PID-3 c/ SONHO"
+          }
+        ]
+      },
+      {
+        "id": "Coverage.class",
+        "path": "Coverage.class",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ZID-2; ZID-3; ZID-6"
+          }
+        ]
+      },
+      {
+        "id": "Coverage.class.id",
+        "path": "Coverage.class.id",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.class.type.id",
+        "path": "Coverage.class.type.id",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.class.type.coding.id",
+        "path": "Coverage.class.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.class.type.coding.system",
+        "path": "Coverage.class.type.coding.system",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ZID-2.3; ZID-3.3; ZID-6.3"
+          }
+        ]
+      },
+      {
+        "id": "Coverage.class.type.coding.version",
+        "path": "Coverage.class.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.class.type.coding.code",
+        "path": "Coverage.class.type.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ZID-2.1; ZID-3.1; ZID-6.1"
+          }
+        ]
+      },
+      {
+        "id": "Coverage.class.type.coding.display",
+        "path": "Coverage.class.type.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ZID-2.2; ZID-3.2; ZID-6.2"
+          }
+        ]
+      },
+      {
+        "id": "Coverage.class.type.coding.userSelected",
+        "path": "Coverage.class.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.class.type.text",
+        "path": "Coverage.class.type.text",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "if necessary - Translation to [PT] of the display field"
+          }
+        ]
+      },
+      {
+        "id": "Coverage.class.value",
+        "path": "Coverage.class.value",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ZID-2.4; ZID-3.4; ZID-6.4"
+          }
+        ]
+      },
+      {
+        "id": "Coverage.class.name",
+        "path": "Coverage.class.name",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "ZID-2.5; ZID-3.5; ZID-6.5"
+          }
+        ]
+      },
+      {
+        "id": "Coverage.order",
+        "path": "Coverage.order",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IN1-1 = 1 (priority)"
+          }
+        ]
+      },
+      {
+        "id": "Coverage.network",
+        "path": "Coverage.network",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.costToBeneficiary",
+        "path": "Coverage.costToBeneficiary",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IN1-37"
+          }
+        ]
+      },
+      {
+        "id": "Coverage.costToBeneficiary.id",
+        "path": "Coverage.costToBeneficiary.id",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.costToBeneficiary.type",
+        "path": "Coverage.costToBeneficiary.type",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IN1-37.2"
+          }
+        ]
+      },
+      {
+        "id": "Coverage.costToBeneficiary.type.id",
+        "path": "Coverage.costToBeneficiary.type.id",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.costToBeneficiary.type.coding.id",
+        "path": "Coverage.costToBeneficiary.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.costToBeneficiary.type.coding.version",
+        "path": "Coverage.costToBeneficiary.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.costToBeneficiary.type.coding.code",
+        "path": "Coverage.costToBeneficiary.type.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IN1-37.2.1"
+          }
+        ]
+      },
+      {
+        "id": "Coverage.costToBeneficiary.type.coding.userSelected",
+        "path": "Coverage.costToBeneficiary.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Coverage.costToBeneficiary.value[x]",
+        "path": "Coverage.costToBeneficiary.value[x]",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IN1-37.1.1"
+          }
+        ]
+      },
+      {
+        "id": "Coverage.subrogation",
+        "path": "Coverage.subrogation",
+        "max": "0"
+      }
+    ]
+  }
+}

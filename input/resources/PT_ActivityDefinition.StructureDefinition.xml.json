@@ -1,0 +1,436 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://hl7.pt/fhir/StructureDefinition/PT_ActivityDefinition",
+  "version": "1.2",
+  "name": "PT_ActivityDefinition",
+  "status": "draft",
+  "date": "2022-09-14T10:57:40.7701575+00:00",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "ActivityDefinition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ActivityDefinition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ActivityDefinition.meta",
+        "path": "ActivityDefinition.meta"
+      },
+      {
+        "id": "ActivityDefinition.meta.id",
+        "path": "ActivityDefinition.meta.id",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.meta.versionId",
+        "path": "ActivityDefinition.meta.versionId",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.meta.source",
+        "path": "ActivityDefinition.meta.source",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.meta.profile",
+        "path": "ActivityDefinition.meta.profile",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.meta.security",
+        "path": "ActivityDefinition.meta.security",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.meta.tag",
+        "path": "ActivityDefinition.meta.tag"
+      },
+      {
+        "id": "ActivityDefinition.meta.tag.id",
+        "path": "ActivityDefinition.meta.tag.id",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.meta.tag.version",
+        "path": "ActivityDefinition.meta.tag.version",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.meta.tag.userSelected",
+        "path": "ActivityDefinition.meta.tag.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.implicitRules",
+        "path": "ActivityDefinition.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.language",
+        "path": "ActivityDefinition.language",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.text",
+        "path": "ActivityDefinition.text",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.contained",
+        "path": "ActivityDefinition.contained",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.identifier.id",
+        "path": "ActivityDefinition.identifier.id",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.identifier.type.coding.id",
+        "path": "ActivityDefinition.identifier.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.identifier.type.coding.version",
+        "path": "ActivityDefinition.identifier.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.identifier.type.coding.userSelected",
+        "path": "ActivityDefinition.identifier.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.identifier.type.text",
+        "path": "ActivityDefinition.identifier.type.text",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.identifier.period.id",
+        "path": "ActivityDefinition.identifier.period.id",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.subtitle",
+        "path": "ActivityDefinition.subtitle",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.contact",
+        "path": "ActivityDefinition.contact",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.contact.id",
+        "path": "ActivityDefinition.contact.id",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.contact.name",
+        "path": "ActivityDefinition.contact.name",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.useContext.id",
+        "path": "ActivityDefinition.useContext.id",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.useContext.code.id",
+        "path": "ActivityDefinition.useContext.code.id",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.useContext.code.userSelected",
+        "path": "ActivityDefinition.useContext.code.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.jurisdiction.id",
+        "path": "ActivityDefinition.jurisdiction.id",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.jurisdiction.coding.id",
+        "path": "ActivityDefinition.jurisdiction.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.jurisdiction.coding.userSelected",
+        "path": "ActivityDefinition.jurisdiction.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.copyright",
+        "path": "ActivityDefinition.copyright",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.effectivePeriod.id",
+        "path": "ActivityDefinition.effectivePeriod.id",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.topic.id",
+        "path": "ActivityDefinition.topic.id",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.topic.coding.id",
+        "path": "ActivityDefinition.topic.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.topic.coding.version",
+        "path": "ActivityDefinition.topic.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.topic.coding.userSelected",
+        "path": "ActivityDefinition.topic.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.topic.text",
+        "path": "ActivityDefinition.topic.text",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.author",
+        "path": "ActivityDefinition.author",
+        "max": "1"
+      },
+      {
+        "id": "ActivityDefinition.author.telecom",
+        "path": "ActivityDefinition.author.telecom",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.editor",
+        "path": "ActivityDefinition.editor",
+        "max": "1"
+      },
+      {
+        "id": "ActivityDefinition.editor.telecom",
+        "path": "ActivityDefinition.editor.telecom",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.reviewer",
+        "path": "ActivityDefinition.reviewer",
+        "max": "1"
+      },
+      {
+        "id": "ActivityDefinition.reviewer.telecom",
+        "path": "ActivityDefinition.reviewer.telecom",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.endorser",
+        "path": "ActivityDefinition.endorser",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.endorser.telecom",
+        "path": "ActivityDefinition.endorser.telecom",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.relatedArtifact.id",
+        "path": "ActivityDefinition.relatedArtifact.id",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.profile",
+        "path": "ActivityDefinition.profile",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.code.id",
+        "path": "ActivityDefinition.code.id",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.code.coding.id",
+        "path": "ActivityDefinition.code.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.code.coding.version",
+        "path": "ActivityDefinition.code.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.code.coding.userSelected",
+        "path": "ActivityDefinition.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.location.id",
+        "path": "ActivityDefinition.location.id",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.location.type",
+        "path": "ActivityDefinition.location.type",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.location.identifier",
+        "path": "ActivityDefinition.location.identifier",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.location.display",
+        "path": "ActivityDefinition.location.display",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.participant.extension",
+        "path": "ActivityDefinition.participant.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "ActivityDefinition.participant.extension:TypeReference",
+        "path": "ActivityDefinition.participant.extension",
+        "sliceName": "TypeReference",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.pt/fhir/StructureDefinition/TypeReference"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "ActivityDefinition.participant.role.id",
+        "path": "ActivityDefinition.participant.role.id",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.participant.role.coding.id",
+        "path": "ActivityDefinition.participant.role.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.participant.role.coding.version",
+        "path": "ActivityDefinition.participant.role.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.participant.role.coding.userSelected",
+        "path": "ActivityDefinition.participant.role.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.quantity.id",
+        "path": "ActivityDefinition.quantity.id",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.dosage.id",
+        "path": "ActivityDefinition.dosage.id",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.dosage.timing.repeat.id",
+        "path": "ActivityDefinition.dosage.timing.repeat.id",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.dosage.timing.code.id",
+        "path": "ActivityDefinition.dosage.timing.code.id",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.dosage.timing.code.coding.id",
+        "path": "ActivityDefinition.dosage.timing.code.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.dosage.timing.code.coding.version",
+        "path": "ActivityDefinition.dosage.timing.code.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.dosage.timing.code.coding.userSelected",
+        "path": "ActivityDefinition.dosage.timing.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.dosage.route.id",
+        "path": "ActivityDefinition.dosage.route.id",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.dosage.route.coding.id",
+        "path": "ActivityDefinition.dosage.route.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.dosage.route.coding.userSelected",
+        "path": "ActivityDefinition.dosage.route.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.dosage.route.text",
+        "path": "ActivityDefinition.dosage.route.text",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.dosage.doseAndRate.type.id",
+        "path": "ActivityDefinition.dosage.doseAndRate.type.id",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.dosage.doseAndRate.type.coding.id",
+        "path": "ActivityDefinition.dosage.doseAndRate.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.dosage.doseAndRate.type.coding.version",
+        "path": "ActivityDefinition.dosage.doseAndRate.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.dosage.doseAndRate.type.coding.userSelected",
+        "path": "ActivityDefinition.dosage.doseAndRate.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.bodySite.id",
+        "path": "ActivityDefinition.bodySite.id",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.bodySite.coding.id",
+        "path": "ActivityDefinition.bodySite.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.bodySite.coding.version",
+        "path": "ActivityDefinition.bodySite.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "ActivityDefinition.bodySite.coding.userSelected",
+        "path": "ActivityDefinition.bodySite.coding.userSelected",
+        "max": "0"
+      }
+    ]
+  }
+}

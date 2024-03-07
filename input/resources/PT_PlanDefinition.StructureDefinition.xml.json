@@ -1,0 +1,440 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://hl7.pt/fhir/StructureDefinition/PT_PlanDefinition",
+  "version": "1.2",
+  "name": "PT_PlanDefinition",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-07-01T15:36:15.8090853+00:00",
+  "description": "A generic PlanDefiniton resource for Portugal",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "PlanDefinition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/PlanDefinition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "PlanDefinition.meta",
+        "path": "PlanDefinition.meta"
+      },
+      {
+        "id": "PlanDefinition.meta.id",
+        "path": "PlanDefinition.meta.id",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.meta.versionId",
+        "path": "PlanDefinition.meta.versionId",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.meta.source",
+        "path": "PlanDefinition.meta.source",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.meta.profile",
+        "path": "PlanDefinition.meta.profile",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.meta.security",
+        "path": "PlanDefinition.meta.security",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.meta.tag",
+        "path": "PlanDefinition.meta.tag",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.implicitRules",
+        "path": "PlanDefinition.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.language",
+        "path": "PlanDefinition.language",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.text",
+        "path": "PlanDefinition.text",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.contained",
+        "path": "PlanDefinition.contained",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.identifier.id",
+        "path": "PlanDefinition.identifier.id",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.identifier.type.id",
+        "path": "PlanDefinition.identifier.type.id",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.identifier.type.coding.id",
+        "path": "PlanDefinition.identifier.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.identifier.type.coding.version",
+        "path": "PlanDefinition.identifier.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.identifier.type.coding.userSelected",
+        "path": "PlanDefinition.identifier.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.identifier.period",
+        "path": "PlanDefinition.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.identifier.assigner",
+        "path": "PlanDefinition.identifier.assigner",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.subtitle",
+        "path": "PlanDefinition.subtitle",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.type.id",
+        "path": "PlanDefinition.type.id",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.type.coding.id",
+        "path": "PlanDefinition.type.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.type.coding.version",
+        "path": "PlanDefinition.type.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.type.coding.userSelected",
+        "path": "PlanDefinition.type.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.subject[x]",
+        "path": "PlanDefinition.subject[x]",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.contact",
+        "path": "PlanDefinition.contact",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.copyright",
+        "path": "PlanDefinition.copyright",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.topic.id",
+        "path": "PlanDefinition.topic.id",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.topic.coding.id",
+        "path": "PlanDefinition.topic.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.topic.coding.version",
+        "path": "PlanDefinition.topic.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.topic.coding.userSelected",
+        "path": "PlanDefinition.topic.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.endorser",
+        "path": "PlanDefinition.endorser",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.library",
+        "path": "PlanDefinition.library",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.goal.documentation",
+        "path": "PlanDefinition.goal.documentation",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.goal.target",
+        "path": "PlanDefinition.goal.target",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.extension",
+        "path": "PlanDefinition.action.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "PlanDefinition.action.extension:CycleAndDaysOfCycle",
+        "path": "PlanDefinition.action.extension",
+        "sliceName": "CycleAndDaysOfCycle",
+        "min": 0,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.pt/fhir/StructureDefinition/CycleAndDaysOfCycle"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "PlanDefinition.action.textEquivalent",
+        "path": "PlanDefinition.action.textEquivalent",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.code.id",
+        "path": "PlanDefinition.action.code.id",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.code.coding.version",
+        "path": "PlanDefinition.action.code.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.code.coding.userSelected",
+        "path": "PlanDefinition.action.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.subject[x]",
+        "path": "PlanDefinition.action.subject[x]",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.trigger",
+        "path": "PlanDefinition.action.trigger",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.condition",
+        "path": "PlanDefinition.action.condition",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.input",
+        "path": "PlanDefinition.action.input",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.output",
+        "path": "PlanDefinition.action.output",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.timing[x]",
+        "path": "PlanDefinition.action.timing[x]",
+        "type": [
+          {
+            "code": "Timing"
+          }
+        ]
+      },
+      {
+        "id": "PlanDefinition.action.timing[x].id",
+        "path": "PlanDefinition.action.timing[x].id",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.timing[x].repeat.id",
+        "path": "PlanDefinition.action.timing[x].repeat.id",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.timing[x].repeat.countMax",
+        "path": "PlanDefinition.action.timing[x].repeat.countMax",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.timing[x].code.coding.id",
+        "path": "PlanDefinition.action.timing[x].code.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.timing[x].code.coding.version",
+        "path": "PlanDefinition.action.timing[x].code.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.timing[x].code.coding.userSelected",
+        "path": "PlanDefinition.action.timing[x].code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.groupingBehavior",
+        "path": "PlanDefinition.action.groupingBehavior",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.selectionBehavior",
+        "path": "PlanDefinition.action.selectionBehavior",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.requiredBehavior",
+        "path": "PlanDefinition.action.requiredBehavior",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.precheckBehavior",
+        "path": "PlanDefinition.action.precheckBehavior",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.cardinalityBehavior",
+        "path": "PlanDefinition.action.cardinalityBehavior",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.definition[x]",
+        "path": "PlanDefinition.action.definition[x]",
+        "max": "0",
+        "type": [
+          {
+            "code": "canonical",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/ActivityDefinition",
+              "http://hl7.org/fhir/StructureDefinition/PlanDefinition"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "PlanDefinition.action.definition[x].id",
+        "path": "PlanDefinition.action.definition[x].id",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.transform",
+        "path": "PlanDefinition.action.transform",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.dynamicValue",
+        "path": "PlanDefinition.action.dynamicValue",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.action",
+        "path": "PlanDefinition.action.action",
+        "contentReference": "http://hl7.org/fhir/StructureDefinition/PlanDefinition#PlanDefinition.action"
+      },
+      {
+        "id": "PlanDefinition.action.action.extension",
+        "path": "PlanDefinition.action.action.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "PlanDefinition.action.action.extension:CycleAndDaysOfCycle",
+        "path": "PlanDefinition.action.action.extension",
+        "sliceName": "CycleAndDaysOfCycle",
+        "min": 0,
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.pt/fhir/StructureDefinition/CycleAndDaysOfCycle"
+            ]
+          }
+        ],
+        "isModifier": false
+      },
+      {
+        "id": "PlanDefinition.action.action.code.id",
+        "path": "PlanDefinition.action.action.code.id",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.action.code.coding.id",
+        "path": "PlanDefinition.action.action.code.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.action.code.coding.version",
+        "path": "PlanDefinition.action.action.code.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.action.code.coding.userSelected",
+        "path": "PlanDefinition.action.action.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.action.reason.id",
+        "path": "PlanDefinition.action.action.reason.id",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.action.reason.coding.id",
+        "path": "PlanDefinition.action.action.reason.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.action.reason.coding.version",
+        "path": "PlanDefinition.action.action.reason.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.action.reason.coding.userSelected",
+        "path": "PlanDefinition.action.action.reason.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.action.documentation.id",
+        "path": "PlanDefinition.action.action.documentation.id",
+        "max": "0"
+      },
+      {
+        "id": "PlanDefinition.action.action.action",
+        "path": "PlanDefinition.action.action.action",
+        "contentReference": "http://hl7.org/fhir/StructureDefinition/PlanDefinition#PlanDefinition.action"
+      }
+    ]
+  }
+}

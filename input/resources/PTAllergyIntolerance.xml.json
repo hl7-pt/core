@@ -1,0 +1,1260 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "d20e6bbe-dfd8-4df7-8060-9446ceb892f0",
+  "meta": {
+    "lastUpdated": "2022-07-04T13:55:06.0787894+00:00"
+  },
+  "url": "https://hl7.pt/fhir/StructureDefinition/PT_AllergyIntolerance",
+  "version": "1.1",
+  "name": "PT_AllergyIntolerance",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-07-04T13:55:17.7853146+00:00",
+  "description": "A generic AllergiesIntolerance resource for Portugal",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "AllergyIntolerance",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/AllergyIntolerance",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "AllergyIntolerance.meta",
+        "path": "AllergyIntolerance.meta"
+      },
+      {
+        "id": "AllergyIntolerance.meta.id",
+        "path": "AllergyIntolerance.meta.id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.meta.versionId",
+        "path": "AllergyIntolerance.meta.versionId",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.meta.source",
+        "path": "AllergyIntolerance.meta.source",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.meta.profile",
+        "path": "AllergyIntolerance.meta.profile",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.meta.security",
+        "path": "AllergyIntolerance.meta.security",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.meta.tag",
+        "path": "AllergyIntolerance.meta.tag",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.implicitRules",
+        "path": "AllergyIntolerance.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.language",
+        "path": "AllergyIntolerance.language",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.text",
+        "path": "AllergyIntolerance.text",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.contained",
+        "path": "AllergyIntolerance.contained",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.identifier.id",
+        "path": "AllergyIntolerance.identifier.id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.identifier.type",
+        "path": "AllergyIntolerance.identifier.type",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.identifier.system",
+        "path": "AllergyIntolerance.identifier.system",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.identifier.value",
+        "path": "AllergyIntolerance.identifier.value",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-7"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.identifier.period",
+        "path": "AllergyIntolerance.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.identifier.assigner.id",
+        "path": "AllergyIntolerance.identifier.assigner.id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.identifier.assigner.reference",
+        "path": "AllergyIntolerance.identifier.assigner.reference",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-19"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.identifier.assigner.type",
+        "path": "AllergyIntolerance.identifier.assigner.type",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.identifier.assigner.identifier",
+        "path": "AllergyIntolerance.identifier.assigner.identifier",
+        "max": "0",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-19"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.identifier.assigner.display",
+        "path": "AllergyIntolerance.identifier.assigner.display",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.clinicalStatus.id",
+        "path": "AllergyIntolerance.clinicalStatus.id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.clinicalStatus.coding.id",
+        "path": "AllergyIntolerance.clinicalStatus.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.clinicalStatus.coding.system",
+        "path": "AllergyIntolerance.clinicalStatus.coding.system",
+        "example": [
+          {
+            "label": "System",
+            "valueUri": "http://snomed.info/sct"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-17.3"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.clinicalStatus.coding.version",
+        "path": "AllergyIntolerance.clinicalStatus.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.clinicalStatus.coding.code",
+        "path": "AllergyIntolerance.clinicalStatus.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-17.1"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.clinicalStatus.coding.display",
+        "path": "AllergyIntolerance.clinicalStatus.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-17.2"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.clinicalStatus.coding.userSelected",
+        "path": "AllergyIntolerance.clinicalStatus.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.clinicalStatus.text",
+        "path": "AllergyIntolerance.clinicalStatus.text",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-17.2"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.verificationStatus.id",
+        "path": "AllergyIntolerance.verificationStatus.id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.verificationStatus.coding.id",
+        "path": "AllergyIntolerance.verificationStatus.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.verificationStatus.coding.system",
+        "path": "AllergyIntolerance.verificationStatus.coding.system",
+        "example": [
+          {
+            "label": "System",
+            "valueUri": "http://snomed.info/sct"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-17.6"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.verificationStatus.coding.version",
+        "path": "AllergyIntolerance.verificationStatus.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.verificationStatus.coding.code",
+        "path": "AllergyIntolerance.verificationStatus.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-17.4"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.verificationStatus.coding.display",
+        "path": "AllergyIntolerance.verificationStatus.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-17.5"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.verificationStatus.coding.userSelected",
+        "path": "AllergyIntolerance.verificationStatus.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.verificationStatus.text",
+        "path": "AllergyIntolerance.verificationStatus.text",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-17.5"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.type",
+        "path": "AllergyIntolerance.type",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-9"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.category",
+        "path": "AllergyIntolerance.category",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-2; AL1-2"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.code",
+        "path": "AllergyIntolerance.code",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "AllergyIntolerance.code.id",
+        "path": "AllergyIntolerance.code.id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.code.coding",
+        "path": "AllergyIntolerance.code.coding",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.code.coding.id",
+        "path": "AllergyIntolerance.code.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.code.coding.system",
+        "path": "AllergyIntolerance.code.coding.system",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-3.3; AL1-3.3"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.code.coding.version",
+        "path": "AllergyIntolerance.code.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.code.coding.code",
+        "path": "AllergyIntolerance.code.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-3.1; AL1-3.1"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.code.coding.display",
+        "path": "AllergyIntolerance.code.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-3.2; Al1-3.2"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.code.coding.userSelected",
+        "path": "AllergyIntolerance.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.code.text",
+        "path": "AllergyIntolerance.code.text",
+        "max": "0",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "Translation to [PT] of the display field (with mapping IAM-3.2; Al1-3.2)"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.code:DCIPT",
+        "path": "AllergyIntolerance.code",
+        "sliceName": "DCIPT"
+      },
+      {
+        "id": "AllergyIntolerance.code:DCIPT.id",
+        "path": "AllergyIntolerance.code.id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.code:DCIPT.coding.id",
+        "path": "AllergyIntolerance.code.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.code:DCIPT.coding.system",
+        "path": "AllergyIntolerance.code.coding.system",
+        "fixedUri": "https://infarmed.pt/valueset/dcipt-codes",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-3.3; AL1-3.3"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.code:DCIPT.coding.version",
+        "path": "AllergyIntolerance.code.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.code:DCIPT.coding.code",
+        "path": "AllergyIntolerance.code.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-3.1; AL1-3.1"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.code:DCIPT.coding.display",
+        "path": "AllergyIntolerance.code.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-3.2; Al1-3.2"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.code:DCIPT.coding.userSelected",
+        "path": "AllergyIntolerance.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.code:DCIPT.text",
+        "path": "AllergyIntolerance.code.text",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.code:ATC",
+        "path": "AllergyIntolerance.code",
+        "sliceName": "ATC"
+      },
+      {
+        "id": "AllergyIntolerance.code:ATC.id",
+        "path": "AllergyIntolerance.code.id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.code:ATC.coding.id",
+        "path": "AllergyIntolerance.code.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.code:ATC.coding.system",
+        "path": "AllergyIntolerance.code.coding.system",
+        "fixedUri": "https://www.whocc.no/atc",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-3.3; AL1-3.3"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.code:ATC.coding.version",
+        "path": "AllergyIntolerance.code.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.code:ATC.coding.code",
+        "path": "AllergyIntolerance.code.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-3.1; AL1-3.1"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.code:ATC.coding.display",
+        "path": "AllergyIntolerance.code.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-3.2; Al1-3.2"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.code:ATC.coding.userSelected",
+        "path": "AllergyIntolerance.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.code:ATC.text",
+        "path": "AllergyIntolerance.code.text",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.code:SNOMED",
+        "path": "AllergyIntolerance.code",
+        "sliceName": "SNOMED"
+      },
+      {
+        "id": "AllergyIntolerance.code:SNOMED.id",
+        "path": "AllergyIntolerance.code.id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.code:SNOMED.coding.id",
+        "path": "AllergyIntolerance.code.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.code:SNOMED.coding.system",
+        "path": "AllergyIntolerance.code.coding.system",
+        "fixedUri": "https://snomed.info/sct",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-3.3; AL1-3.3"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.code:SNOMED.coding.version",
+        "path": "AllergyIntolerance.code.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.code:SNOMED.coding.code",
+        "path": "AllergyIntolerance.code.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-3.1; AL1-3.1"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.code:SNOMED.coding.display",
+        "path": "AllergyIntolerance.code.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-3.2; Al1-3.2"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.code:SNOMED.coding.userSelected",
+        "path": "AllergyIntolerance.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.code:SNOMED.text",
+        "path": "AllergyIntolerance.code.text",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.code:INFARMED",
+        "path": "AllergyIntolerance.code",
+        "sliceName": "INFARMED"
+      },
+      {
+        "id": "AllergyIntolerance.code:INFARMED.id",
+        "path": "AllergyIntolerance.code.id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.code:INFARMED.coding.id",
+        "path": "AllergyIntolerance.code.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.code:INFARMED.coding.system",
+        "path": "AllergyIntolerance.code.coding.system",
+        "fixedUri": "https://extranet.infarmed.pt/INFOMED-fo/",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-3.3; AL1-3.3"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.code:INFARMED.coding.version",
+        "path": "AllergyIntolerance.code.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.code:INFARMED.coding.code",
+        "path": "AllergyIntolerance.code.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-3.1; AL1-3.1"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.code:INFARMED.coding.display",
+        "path": "AllergyIntolerance.code.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-3.2; Al1-3.2"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.code:INFARMED.coding.userSelected",
+        "path": "AllergyIntolerance.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.code:INFARMED.text",
+        "path": "AllergyIntolerance.code.text",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.patient",
+        "path": "AllergyIntolerance.patient",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.pt/fhir/StructureDefinition/PT_Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.patient.id",
+        "path": "AllergyIntolerance.patient.id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.patient.reference",
+        "path": "AllergyIntolerance.patient.reference",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "PID-3 c/ SNS; PID-18.1; PID-3 c/ SONHO"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.patient.type",
+        "path": "AllergyIntolerance.patient.type",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.patient.identifier",
+        "path": "AllergyIntolerance.patient.identifier",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.encounter",
+        "path": "AllergyIntolerance.encounter",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.onset[x]",
+        "path": "AllergyIntolerance.onset[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-11"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.onset[x].id",
+        "path": "AllergyIntolerance.onset[x].id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.recordedDate",
+        "path": "AllergyIntolerance.recordedDate",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-13"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.recorder",
+        "path": "AllergyIntolerance.recorder",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.pt/fhir/StructureDefinition/PT_Patient",
+              "https://hl7.pt/fhir/StructureDefinition/PT_Practitioner",
+              "https://hl7.pt/fhir/StructureDefinition/PT_PractitionerRole"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.recorder.id",
+        "path": "AllergyIntolerance.recorder.id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.recorder.reference",
+        "path": "AllergyIntolerance.recorder.reference",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-18"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.recorder.type",
+        "path": "AllergyIntolerance.recorder.type",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.recorder.identifier",
+        "path": "AllergyIntolerance.recorder.identifier",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.asserter",
+        "path": "AllergyIntolerance.asserter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/RelatedPerson",
+              "https://hl7.pt/fhir/StructureDefinition/PT_Practitioner",
+              "https://hl7.pt/fhir/StructureDefinition/PT_PractitionerRole",
+              "https://hl7.pt/fhir/StructureDefinition/PT_Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.asserter.id",
+        "path": "AllergyIntolerance.asserter.id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.asserter.reference",
+        "path": "AllergyIntolerance.asserter.reference",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-15"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.asserter.type",
+        "path": "AllergyIntolerance.asserter.type",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.asserter.identifier.id",
+        "path": "AllergyIntolerance.asserter.identifier.id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.asserter.identifier.type",
+        "path": "AllergyIntolerance.asserter.identifier.type",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.asserter.identifier.system",
+        "path": "AllergyIntolerance.asserter.identifier.system",
+        "example": [
+          {
+            "label": "System",
+            "valueUri": "http://snomed.info/sct; CPARA"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-15.3"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.asserter.identifier.value",
+        "path": "AllergyIntolerance.asserter.identifier.value",
+        "mapping": [
+          {
+            "identity": "Hl7v2.x",
+            "map": "IAM-15.1"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.asserter.identifier.period",
+        "path": "AllergyIntolerance.asserter.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.asserter.identifier.assigner",
+        "path": "AllergyIntolerance.asserter.identifier.assigner",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.asserter.display",
+        "path": "AllergyIntolerance.asserter.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-15.2"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.lastOccurrence",
+        "path": "AllergyIntolerance.lastOccurrence",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-20"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.note",
+        "path": "AllergyIntolerance.note",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.id",
+        "path": "AllergyIntolerance.reaction.id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance",
+        "path": "AllergyIntolerance.reaction.substance",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "system"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance.id",
+        "path": "AllergyIntolerance.reaction.substance.id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance.coding",
+        "path": "AllergyIntolerance.reaction.substance.coding",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance.coding.id",
+        "path": "AllergyIntolerance.reaction.substance.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance.coding.system",
+        "path": "AllergyIntolerance.reaction.substance.coding.system",
+        "example": [
+          {
+            "label": "System",
+            "valueUri": "http://snomed.info/sct"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "HL7v.2x",
+            "map": "IAM-3.3; IAM-3.6"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance.coding.version",
+        "path": "AllergyIntolerance.reaction.substance.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance.coding.code",
+        "path": "AllergyIntolerance.reaction.substance.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-3.1; IAM-3.4"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance.coding.display",
+        "path": "AllergyIntolerance.reaction.substance.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-3.2; IAM-3.5"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance.coding.userSelected",
+        "path": "AllergyIntolerance.reaction.substance.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance.text",
+        "path": "AllergyIntolerance.reaction.substance.text",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:DCIPT",
+        "path": "AllergyIntolerance.reaction.substance",
+        "sliceName": "DCIPT"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:DCIPT.id",
+        "path": "AllergyIntolerance.reaction.substance.id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:DCIPT.coding.id",
+        "path": "AllergyIntolerance.reaction.substance.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:DCIPT.coding.system",
+        "path": "AllergyIntolerance.reaction.substance.coding.system",
+        "fixedUri": "https://infarmed.pt/valueset/dcipt-codes",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-3.3; AL1-3.3"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:DCIPT.coding.version",
+        "path": "AllergyIntolerance.reaction.substance.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:DCIPT.coding.code",
+        "path": "AllergyIntolerance.reaction.substance.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-3.1; AL1-3.1"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:DCIPT.coding.display",
+        "path": "AllergyIntolerance.reaction.substance.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-3.2; Al1-3.2"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:DCIPT.coding.userSelected",
+        "path": "AllergyIntolerance.reaction.substance.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:DCIPT.text",
+        "path": "AllergyIntolerance.reaction.substance.text",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:ATC",
+        "path": "AllergyIntolerance.reaction.substance",
+        "sliceName": "ATC"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:ATC.id",
+        "path": "AllergyIntolerance.reaction.substance.id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:ATC.coding.id",
+        "path": "AllergyIntolerance.reaction.substance.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:ATC.coding.system",
+        "path": "AllergyIntolerance.reaction.substance.coding.system",
+        "fixedUri": "https://www.whocc.no/atc",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-3.3; AL1-3.3"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:ATC.coding.version",
+        "path": "AllergyIntolerance.reaction.substance.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:ATC.coding.code",
+        "path": "AllergyIntolerance.reaction.substance.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-3.1; AL1-3.1"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:ATC.coding.display",
+        "path": "AllergyIntolerance.reaction.substance.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-3.2; Al1-3.2"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:ATC.coding.userSelected",
+        "path": "AllergyIntolerance.reaction.substance.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:ATC.text",
+        "path": "AllergyIntolerance.reaction.substance.text",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:SNOMED",
+        "path": "AllergyIntolerance.reaction.substance",
+        "sliceName": "SNOMED"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:SNOMED.id",
+        "path": "AllergyIntolerance.reaction.substance.id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:SNOMED.coding.id",
+        "path": "AllergyIntolerance.reaction.substance.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:SNOMED.coding.system",
+        "path": "AllergyIntolerance.reaction.substance.coding.system",
+        "fixedUri": "https://snomed.info/sct",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-3.3; AL1-3.3"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:SNOMED.coding.version",
+        "path": "AllergyIntolerance.reaction.substance.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:SNOMED.coding.code",
+        "path": "AllergyIntolerance.reaction.substance.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-3.1; AL1-3.1"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:SNOMED.coding.display",
+        "path": "AllergyIntolerance.reaction.substance.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-3.2; Al1-3.2"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:SNOMED.coding.userSelected",
+        "path": "AllergyIntolerance.reaction.substance.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:SNOMED.text",
+        "path": "AllergyIntolerance.reaction.substance.text",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:INFARMED",
+        "path": "AllergyIntolerance.reaction.substance",
+        "sliceName": "INFARMED"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:INFARMED.id",
+        "path": "AllergyIntolerance.reaction.substance.id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:INFARMED.coding.id",
+        "path": "AllergyIntolerance.reaction.substance.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:INFARMED.coding.system",
+        "path": "AllergyIntolerance.reaction.substance.coding.system",
+        "fixedUri": "https://extranet.infarmed.pt/INFOMED-fo/",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-3.3; AL1-3.3"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:INFARMED.coding.version",
+        "path": "AllergyIntolerance.reaction.substance.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:INFARMED.coding.code",
+        "path": "AllergyIntolerance.reaction.substance.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-3.1; AL1-3.1"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:INFARMED.coding.display",
+        "path": "AllergyIntolerance.reaction.substance.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-3.2; Al1-3.2"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:INFARMED.coding.userSelected",
+        "path": "AllergyIntolerance.reaction.substance.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.substance:INFARMED.text",
+        "path": "AllergyIntolerance.reaction.substance.text",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.manifestation.id",
+        "path": "AllergyIntolerance.reaction.manifestation.id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.manifestation.coding.id",
+        "path": "AllergyIntolerance.reaction.manifestation.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.manifestation.coding.system",
+        "path": "AllergyIntolerance.reaction.manifestation.coding.system",
+        "example": [
+          {
+            "label": "System",
+            "valueUri": "http://snomed.info/sct"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-5.3"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.reaction.manifestation.coding.version",
+        "path": "AllergyIntolerance.reaction.manifestation.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.manifestation.coding.code",
+        "path": "AllergyIntolerance.reaction.manifestation.coding.code",
+        "mapping": [
+          {
+            "identity": "Hl7v2.x",
+            "map": "IAM-5.1"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.reaction.manifestation.coding.display",
+        "path": "AllergyIntolerance.reaction.manifestation.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-5.2"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.reaction.manifestation.coding.userSelected",
+        "path": "AllergyIntolerance.reaction.manifestation.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.manifestation.text",
+        "path": "AllergyIntolerance.reaction.manifestation.text",
+        "mapping": [
+          {
+            "identity": "Hl7v2.x",
+            "map": "IAM-5.2"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.reaction.description",
+        "path": "AllergyIntolerance.reaction.description",
+        "max": "0"
+      },
+      {
+        "id": "AllergyIntolerance.reaction.onset",
+        "path": "AllergyIntolerance.reaction.onset",
+        "mapping": [
+          {
+            "identity": "Hl7v2.x",
+            "map": "IAM-11; AL1-6"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.reaction.severity",
+        "path": "AllergyIntolerance.reaction.severity",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "IAM-4"
+          }
+        ]
+      },
+      {
+        "id": "AllergyIntolerance.reaction.note",
+        "path": "AllergyIntolerance.reaction.note",
+        "max": "0"
+      }
+    ]
+  }
+}

@@ -1,0 +1,362 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "InventoryListing-InventoryReport",
+  "url": "https://hl7.pt/fhir/StructureDefinition/InventoryListing-InventoryReport",
+  "version": "1.0",
+  "name": "InventoryListing",
+  "status": "draft",
+  "experimental": false,
+  "date": "2023-01-16T17:09:42.6652842+00:00",
+  "description": "An inventory listing section (grouped by any of the attributes).",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Basic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "Extension.extension:location",
+        "path": "Extension.extension",
+        "sliceName": "location",
+        "short": "Location of the inventory items.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:location.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "location"
+      },
+      {
+        "id": "Extension.extension:location.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.pt/fhir/StructureDefinition/PT_Location"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:itemStatus",
+        "path": "Extension.extension",
+        "sliceName": "itemStatus",
+        "short": "The status of the items.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:itemStatus.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "itemStatus"
+      },
+      {
+        "id": "Extension.extension:itemStatus.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:countingDateTime",
+        "path": "Extension.extension",
+        "sliceName": "countingDateTime",
+        "short": "The date and time when the items were counted.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:countingDateTime.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "countingDateTime"
+      },
+      {
+        "id": "Extension.extension:countingDateTime.value[x]",
+        "path": "Extension.extension.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:items",
+        "path": "Extension.extension",
+        "sliceName": "items",
+        "short": "The item or items in this listing.",
+        "min": 0
+      },
+      {
+        "id": "Extension.extension:items.extension",
+        "path": "Extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 2
+      },
+      {
+        "id": "Extension.extension:items.extension:category",
+        "path": "Extension.extension.extension",
+        "sliceName": "category",
+        "short": "The category of the item or items.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:items.extension:category.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "category"
+      },
+      {
+        "id": "Extension.extension:items.extension:category.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:items.extension:quantity",
+        "path": "Extension.extension.extension",
+        "sliceName": "quantity",
+        "short": "The quantity of the item or items.",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:items.extension:quantity.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "quantity"
+      },
+      {
+        "id": "Extension.extension:items.extension:quantity.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "min": 1,
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:items.extension:item",
+        "path": "Extension.extension.extension",
+        "sliceName": "item",
+        "short": "The code or reference to the item type.",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:items.extension:item.extension",
+        "path": "Extension.extension.extension.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "Extension.extension:items.extension:item.extension:concept",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "concept",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:items.extension:item.extension:concept.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "concept"
+      },
+      {
+        "id": "Extension.extension:items.extension:item.extension:concept.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:items.extension:item.extension:reference",
+        "path": "Extension.extension.extension.extension",
+        "sliceName": "reference",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:items.extension:item.extension:reference.url",
+        "path": "Extension.extension.extension.extension.url",
+        "fixedUri": "reference"
+      },
+      {
+        "id": "Extension.extension:items.extension:item.extension:reference.value[x]",
+        "path": "Extension.extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Device",
+              "https://hl7.pt/fhir/StructureDefinition/PT_Medication"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:items.extension:item.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "item"
+      },
+      {
+        "id": "Extension.extension:items.extension:item.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:items.extension:lot",
+        "path": "Extension.extension.extension",
+        "sliceName": "lot",
+        "short": "The lot number of the item or items.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:items.extension:lot.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "lot"
+      },
+      {
+        "id": "Extension.extension:items.extension:lot.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:items.extension:serial",
+        "path": "Extension.extension.extension",
+        "sliceName": "serial",
+        "short": "The serial number of the item.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:items.extension:serial.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "serial"
+      },
+      {
+        "id": "Extension.extension:items.extension:serial.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:items.extension:expiry",
+        "path": "Extension.extension.extension",
+        "sliceName": "expiry",
+        "short": "The expiry date of the item or items.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:items.extension:expiry.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "expiry"
+      },
+      {
+        "id": "Extension.extension:items.extension:expiry.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:items.extension:manufacturingDate",
+        "path": "Extension.extension.extension",
+        "sliceName": "manufacturingDate",
+        "short": "The manufacturingDate of the item or items.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:items.extension:manufacturingDate.url",
+        "path": "Extension.extension.extension.url",
+        "fixedUri": "manufacturingDate"
+      },
+      {
+        "id": "Extension.extension:items.extension:manufacturingDate.value[x]",
+        "path": "Extension.extension.extension.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:items.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "items"
+      },
+      {
+        "id": "Extension.extension:items.value[x]",
+        "path": "Extension.extension.value[x]",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://hl7.pt/fhir/StructureDefinition/InventoryListing-InventoryReport"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

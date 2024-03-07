@@ -1,0 +1,52 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Reporter-InventoryReport",
+  "url": "https://hl7.pt/fhir/StructureDefinition/Reporter-InventoryReport",
+  "version": "1.0",
+  "name": "Reporter",
+  "status": "draft",
+  "experimental": false,
+  "date": "2023-01-16T17:09:42.6652842+00:00",
+  "description": "Who submits the report.",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Basic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "max": "1"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://hl7.pt/fhir/StructureDefinition/Reporter-InventoryReport"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.pt/fhir/StructureDefinition/PT_Practitioner",
+              "https://hl7.pt/fhir/StructureDefinition/PT_Patient",
+              "https://hl7.pt/fhir/StructureDefinition/PT_RelatedPerson",
+              "http://hl7.org/fhir/StructureDefinition/Device"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

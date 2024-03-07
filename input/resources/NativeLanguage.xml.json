@@ -1,0 +1,53 @@
+{
+  "resourceType": "StructureDefinition",
+  "meta": {
+    "lastUpdated": "2021-12-10T12:11:13.184+00:00"
+  },
+  "url": "https://hl7.pt/fhir/StructureDefinition/NativeLanguage",
+  "version": "1.0",
+  "name": "NativeLanguage",
+  "status": "draft",
+  "experimental": false,
+  "date": "2021-12-10",
+  "description": "Extension in Portugal to indicate if the indicated language is the native language",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Practitioner.communication"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension.id",
+        "path": "Extension.id",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://hl7.pt/fhir/StructureDefinition/NativeLanguage"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      },
+      {
+        "id": "Extension.value[x].id",
+        "path": "Extension.value[x].id",
+        "max": "0"
+      }
+    ]
+  }
+}

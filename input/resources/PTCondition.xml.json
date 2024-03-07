@@ -1,0 +1,919 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "c1fc24de-587a-482b-9561-491b79796250",
+  "meta": {
+    "lastUpdated": "2022-11-08T10:44:00.3214389+00:00"
+  },
+  "url": "https://hl7.pt/fhir/StructureDefinition/PT_Condition",
+  "version": "1.0",
+  "name": "PT_Condition",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-11-08T10:47:34.3124993+00:00",
+  "description": "A generic Condition resource for Portugal",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Condition",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Condition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Condition.meta",
+        "path": "Condition.meta"
+      },
+      {
+        "id": "Condition.meta.id",
+        "path": "Condition.meta.id",
+        "max": "0"
+      },
+      {
+        "id": "Condition.meta.versionId",
+        "path": "Condition.meta.versionId",
+        "max": "0"
+      },
+      {
+        "id": "Condition.meta.source",
+        "path": "Condition.meta.source",
+        "max": "0"
+      },
+      {
+        "id": "Condition.meta.profile",
+        "path": "Condition.meta.profile",
+        "max": "0"
+      },
+      {
+        "id": "Condition.meta.security",
+        "path": "Condition.meta.security",
+        "max": "0"
+      },
+      {
+        "id": "Condition.meta.tag",
+        "path": "Condition.meta.tag",
+        "max": "0"
+      },
+      {
+        "id": "Condition.implicitRules",
+        "path": "Condition.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "Condition.language",
+        "path": "Condition.language",
+        "max": "0"
+      },
+      {
+        "id": "Condition.text",
+        "path": "Condition.text",
+        "max": "0"
+      },
+      {
+        "id": "Condition.contained",
+        "path": "Condition.contained",
+        "max": "0"
+      },
+      {
+        "id": "Condition.extension",
+        "path": "Condition.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 0
+      },
+      {
+        "id": "Condition.extension:DiagnosisPriority",
+        "path": "Condition.extension",
+        "sliceName": "DiagnosisPriority",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.pt/fhir/StructureDefinition/DiagnosisPriority"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.extension:ConditionPersistence",
+        "path": "Condition.extension",
+        "sliceName": "ConditionPersistence",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.pt/fhir/StructureDefinition/ConditionPersistence"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.identifier",
+        "path": "Condition.identifier",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "DG1-20; PRB-4"
+          }
+        ]
+      },
+      {
+        "id": "Condition.identifier.id",
+        "path": "Condition.identifier.id",
+        "max": "0"
+      },
+      {
+        "id": "Condition.identifier.type",
+        "path": "Condition.identifier.type",
+        "max": "0"
+      },
+      {
+        "id": "Condition.identifier.value",
+        "path": "Condition.identifier.value",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "DG1-20.1; PRB-4.1"
+          }
+        ]
+      },
+      {
+        "id": "Condition.identifier.period",
+        "path": "Condition.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "Condition.identifier.assigner.id",
+        "path": "Condition.identifier.assigner.id",
+        "max": "0"
+      },
+      {
+        "id": "Condition.identifier.assigner.reference",
+        "path": "Condition.identifier.assigner.reference",
+        "max": "0"
+      },
+      {
+        "id": "Condition.identifier.assigner.type",
+        "path": "Condition.identifier.assigner.type",
+        "max": "0"
+      },
+      {
+        "id": "Condition.identifier.assigner.identifier",
+        "path": "Condition.identifier.assigner.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Condition.identifier.assigner.display",
+        "path": "Condition.identifier.assigner.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "DG1-20.2; PRB-4.2"
+          }
+        ]
+      },
+      {
+        "id": "Condition.clinicalStatus",
+        "path": "Condition.clinicalStatus",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "PRB-14"
+          }
+        ]
+      },
+      {
+        "id": "Condition.clinicalStatus.id",
+        "path": "Condition.clinicalStatus.id",
+        "max": "0"
+      },
+      {
+        "id": "Condition.clinicalStatus.coding.id",
+        "path": "Condition.clinicalStatus.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Condition.clinicalStatus.coding.system",
+        "path": "Condition.clinicalStatus.coding.system",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "PRB-14.3"
+          }
+        ]
+      },
+      {
+        "id": "Condition.clinicalStatus.coding.version",
+        "path": "Condition.clinicalStatus.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Condition.clinicalStatus.coding.code",
+        "path": "Condition.clinicalStatus.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "PRB-14.1"
+          }
+        ]
+      },
+      {
+        "id": "Condition.clinicalStatus.coding.display",
+        "path": "Condition.clinicalStatus.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "PRB-14.2"
+          }
+        ]
+      },
+      {
+        "id": "Condition.clinicalStatus.coding.userSelected",
+        "path": "Condition.clinicalStatus.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Condition.clinicalStatus.text",
+        "path": "Condition.clinicalStatus.text",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "Translation to [PT] of the display field"
+          }
+        ]
+      },
+      {
+        "id": "Condition.verificationStatus",
+        "path": "Condition.verificationStatus",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "PRB-13"
+          }
+        ]
+      },
+      {
+        "id": "Condition.verificationStatus.id",
+        "path": "Condition.verificationStatus.id",
+        "max": "0"
+      },
+      {
+        "id": "Condition.verificationStatus.coding.id",
+        "path": "Condition.verificationStatus.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Condition.verificationStatus.coding.system",
+        "path": "Condition.verificationStatus.coding.system",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "PRB-13.3"
+          }
+        ]
+      },
+      {
+        "id": "Condition.verificationStatus.coding.version",
+        "path": "Condition.verificationStatus.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Condition.verificationStatus.coding.code",
+        "path": "Condition.verificationStatus.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "PRB-13.1"
+          }
+        ]
+      },
+      {
+        "id": "Condition.verificationStatus.coding.display",
+        "path": "Condition.verificationStatus.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "PRB-13.2"
+          }
+        ]
+      },
+      {
+        "id": "Condition.verificationStatus.coding.userSelected",
+        "path": "Condition.verificationStatus.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Condition.verificationStatus.text",
+        "path": "Condition.verificationStatus.text",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "Translation to [PT] of the display field"
+          }
+        ]
+      },
+      {
+        "id": "Condition.category",
+        "path": "Condition.category",
+        "fixedCodeableConcept": {
+          "coding": [
+            {
+              "system": "http://hl7.org/fhir/ValueSet/condition-category"
+            },
+            {
+              "system": "http://terminology.hl7.org/ValueSet/v2-0228"
+            }
+          ]
+        },
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "'problem' if PRB; 'diagnosis' if DG1; PRB-10; DG1-17"
+          }
+        ]
+      },
+      {
+        "id": "Condition.category.id",
+        "path": "Condition.category.id",
+        "max": "0"
+      },
+      {
+        "id": "Condition.category.coding.id",
+        "path": "Condition.category.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Condition.category.coding.system",
+        "path": "Condition.category.coding.system",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "PRB-10.3"
+          }
+        ]
+      },
+      {
+        "id": "Condition.category.coding.version",
+        "path": "Condition.category.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Condition.category.coding.code",
+        "path": "Condition.category.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "PRB-10.1"
+          }
+        ]
+      },
+      {
+        "id": "Condition.category.coding.display",
+        "path": "Condition.category.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "PRB-10.2"
+          }
+        ]
+      },
+      {
+        "id": "Condition.category.coding.userSelected",
+        "path": "Condition.category.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Condition.category.text",
+        "path": "Condition.category.text",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "Translation to [PT] of the display field"
+          }
+        ]
+      },
+      {
+        "id": "Condition.severity.id",
+        "path": "Condition.severity.id",
+        "max": "0"
+      },
+      {
+        "id": "Condition.severity.coding.id",
+        "path": "Condition.severity.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Condition.severity.coding.system",
+        "path": "Condition.severity.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Condition.severity.coding.version",
+        "path": "Condition.severity.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Condition.severity.coding.userSelected",
+        "path": "Condition.severity.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Condition.code",
+        "path": "Condition.code",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "value"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Condition.code.id",
+        "path": "Condition.code.id",
+        "max": "0"
+      },
+      {
+        "id": "Condition.code:code",
+        "path": "Condition.code",
+        "sliceName": "code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "PRB-3; DG1-3; ZID-4"
+          }
+        ]
+      },
+      {
+        "id": "Condition.code:code.id",
+        "path": "Condition.code.id",
+        "max": "0"
+      },
+      {
+        "id": "Condition.code:code.coding.id",
+        "path": "Condition.code.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Condition.code:code.coding.system",
+        "path": "Condition.code.coding.system",
+        "fixedUri": "ICD-10-CM",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "PRB-3.3; DG1-3.3; ZID-4.3"
+          }
+        ]
+      },
+      {
+        "id": "Condition.code:code.coding.version",
+        "path": "Condition.code.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Condition.code:code.coding.code",
+        "path": "Condition.code.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "PRB-3.1; DG1-3.1; ZID-4.1"
+          }
+        ]
+      },
+      {
+        "id": "Condition.code:code.coding.display",
+        "path": "Condition.code.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "PRB-3.2; DG1-3.2; ZID-4.2"
+          }
+        ]
+      },
+      {
+        "id": "Condition.code:code.coding.userSelected",
+        "path": "Condition.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Condition.code:code.text",
+        "path": "Condition.code.text",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "Translation to [PT] of the display field"
+          }
+        ]
+      },
+      {
+        "id": "Condition.code:AbsentOrUnknownProblems",
+        "path": "Condition.code",
+        "sliceName": "AbsentOrUnknownProblems",
+        "short": "Identification of absent or unknown problems",
+        "definition": "Identification of absent or unknown problems",
+        "binding": {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
+              "valueString": "ConditionKind"
+            }
+          ],
+          "strength": "example",
+          "description": "Absent or Unknown Problems",
+          "valueSet": "http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips"
+        }
+      },
+      {
+        "id": "Condition.code:AbsentOrUnknownProblems.id",
+        "path": "Condition.code.id",
+        "max": "0"
+      },
+      {
+        "id": "Condition.code:AbsentOrUnknownProblems.coding.id",
+        "path": "Condition.code.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Condition.code:AbsentOrUnknownProblems.coding.version",
+        "path": "Condition.code.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Condition.code:AbsentOrUnknownProblems.coding.userSelected",
+        "path": "Condition.code.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Condition.bodySite.id",
+        "path": "Condition.bodySite.id",
+        "max": "0"
+      },
+      {
+        "id": "Condition.bodySite.coding.id",
+        "path": "Condition.bodySite.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Condition.bodySite.coding.system",
+        "path": "Condition.bodySite.coding.system",
+        "fixedUri": "http://snomed.info/sct"
+      },
+      {
+        "id": "Condition.bodySite.coding.version",
+        "path": "Condition.bodySite.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Condition.bodySite.coding.userSelected",
+        "path": "Condition.bodySite.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Condition.subject",
+        "path": "Condition.subject",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Group",
+              "https://hl7.pt/fhir/StructureDefinition/PT_Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.subject.id",
+        "path": "Condition.subject.id",
+        "max": "0"
+      },
+      {
+        "id": "Condition.subject.type",
+        "path": "Condition.subject.type",
+        "max": "0"
+      },
+      {
+        "id": "Condition.subject.identifier",
+        "path": "Condition.subject.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Condition.subject.display",
+        "path": "Condition.subject.display",
+        "max": "0",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "Patient/PID-3 c/ SNS; PID-18.1; PID-3 c/ SONHO"
+          }
+        ]
+      },
+      {
+        "id": "Condition.encounter.id",
+        "path": "Condition.encounter.id",
+        "max": "0"
+      },
+      {
+        "id": "Condition.encounter.reference",
+        "path": "Condition.encounter.reference",
+        "max": "0"
+      },
+      {
+        "id": "Condition.encounter.type",
+        "path": "Condition.encounter.type",
+        "max": "0"
+      },
+      {
+        "id": "Condition.encounter.identifier",
+        "path": "Condition.encounter.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Condition.encounter.display",
+        "path": "Condition.encounter.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "Practitioner/PV1-19"
+          }
+        ]
+      },
+      {
+        "id": "Condition.onset[x]",
+        "path": "Condition.onset[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "PRB-7.1; DG1-19"
+          }
+        ]
+      },
+      {
+        "id": "Condition.onset[x].id",
+        "path": "Condition.onset[x].id",
+        "max": "0"
+      },
+      {
+        "id": "Condition.abatement[x]",
+        "path": "Condition.abatement[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "PRB-9.1"
+          }
+        ]
+      },
+      {
+        "id": "Condition.abatement[x].id",
+        "path": "Condition.abatement[x].id",
+        "max": "0"
+      },
+      {
+        "id": "Condition.recordedDate",
+        "path": "Condition.recordedDate",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "DG1-5.1"
+          }
+        ]
+      },
+      {
+        "id": "Condition.recorder",
+        "path": "Condition.recorder",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.pt/fhir/StructureDefinition/PT_Practitioner",
+              "https://hl7.pt/fhir/StructureDefinition/PT_PractitionerRole",
+              "https://hl7.pt/fhir/StructureDefinition/PT_Patient",
+              "https://hl7.pt/fhir/StructureDefinition/PT_RelatedPerson"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.recorder.id",
+        "path": "Condition.recorder.id",
+        "max": "0"
+      },
+      {
+        "id": "Condition.recorder.reference",
+        "path": "Condition.recorder.reference",
+        "max": "0"
+      },
+      {
+        "id": "Condition.recorder.type",
+        "path": "Condition.recorder.type",
+        "max": "0"
+      },
+      {
+        "id": "Condition.recorder.identifier",
+        "path": "Condition.recorder.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Condition.recorder.display",
+        "path": "Condition.recorder.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x-Practitioner",
+            "map": "Practitioner/DG1-16"
+          },
+          {
+            "identity": "HL7v2.x-PractitionerRole",
+            "map": "PractitionerRole/ROL-1.1"
+          },
+          {
+            "identity": "HL7v2.x-Patient",
+            "map": "Patient/PID-3 c/ SNS; PID-18.1; PID-3 c/ SONHO"
+          },
+          {
+            "identity": "HL7v2.x-RelatedPerson",
+            "map": "RelatedPerson/NK1-33.1"
+          }
+        ]
+      },
+      {
+        "id": "Condition.asserter",
+        "path": "Condition.asserter",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.pt/fhir/StructureDefinition/PT_Practitioner",
+              "https://hl7.pt/fhir/StructureDefinition/PT_PractitionerRole",
+              "https://hl7.pt/fhir/StructureDefinition/PT_Patient",
+              "https://hl7.pt/fhir/StructureDefinition/PT_RelatedPerson"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Condition.asserter.id",
+        "path": "Condition.asserter.id",
+        "max": "0"
+      },
+      {
+        "id": "Condition.asserter.reference",
+        "path": "Condition.asserter.reference",
+        "max": "0"
+      },
+      {
+        "id": "Condition.asserter.type",
+        "path": "Condition.asserter.type",
+        "max": "0"
+      },
+      {
+        "id": "Condition.asserter.identifier",
+        "path": "Condition.asserter.identifier",
+        "max": "0"
+      },
+      {
+        "id": "Condition.asserter.display",
+        "path": "Condition.asserter.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x-Practitioner",
+            "map": "Practitioner/DG1-16"
+          },
+          {
+            "identity": "HL7v2.x-PractitionerRole",
+            "map": "PractitionerRole/ROL-1.1"
+          },
+          {
+            "identity": "HL7v2.x-Patient",
+            "map": "Patient/PID-3 c/ SNS; PID-18.1; PID-3 c/ SONHO"
+          },
+          {
+            "identity": "HL7v2.x-RelatedPerson",
+            "map": "RelatedPerson/NK1-33.1"
+          }
+        ]
+      },
+      {
+        "id": "Condition.stage.id",
+        "path": "Condition.stage.id",
+        "max": "0"
+      },
+      {
+        "id": "Condition.stage.summary",
+        "path": "Condition.stage.summary",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "PRB-14"
+          }
+        ]
+      },
+      {
+        "id": "Condition.stage.summary.id",
+        "path": "Condition.stage.summary.id",
+        "max": "0"
+      },
+      {
+        "id": "Condition.stage.summary.coding.id",
+        "path": "Condition.stage.summary.coding.id",
+        "max": "0"
+      },
+      {
+        "id": "Condition.stage.summary.coding.system",
+        "path": "Condition.stage.summary.coding.system",
+        "fixedUri": "http://snomed.info/sct",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "PRB-14.3"
+          }
+        ]
+      },
+      {
+        "id": "Condition.stage.summary.coding.version",
+        "path": "Condition.stage.summary.coding.version",
+        "max": "0"
+      },
+      {
+        "id": "Condition.stage.summary.coding.code",
+        "path": "Condition.stage.summary.coding.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "PRB-14.1"
+          }
+        ]
+      },
+      {
+        "id": "Condition.stage.summary.coding.display",
+        "path": "Condition.stage.summary.coding.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "PRB-14.2"
+          }
+        ]
+      },
+      {
+        "id": "Condition.stage.summary.coding.userSelected",
+        "path": "Condition.stage.summary.coding.userSelected",
+        "max": "0"
+      },
+      {
+        "id": "Condition.stage.summary.text",
+        "path": "Condition.stage.summary.text",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "Translation to [PT] of the display field"
+          }
+        ]
+      },
+      {
+        "id": "Condition.note.id",
+        "path": "Condition.note.id",
+        "max": "0"
+      },
+      {
+        "id": "Condition.note.author[x]",
+        "path": "Condition.note.author[x]",
+        "max": "0"
+      },
+      {
+        "id": "Condition.note.time",
+        "path": "Condition.note.time",
+        "max": "0"
+      },
+      {
+        "id": "Condition.note.text",
+        "path": "Condition.note.text",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "NTE-3"
+          }
+        ]
+      }
+    ]
+  }
+}

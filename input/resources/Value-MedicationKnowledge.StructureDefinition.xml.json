@@ -1,0 +1,61 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Value-MedicationKnowledge",
+  "url": "https://hl7.pt/fhir/StructureDefinition/Value-MedicationKnowledge",
+  "version": "1.0",
+  "name": "Value",
+  "status": "draft",
+  "experimental": false,
+  "date": "2023-08-29T14:30:46.6979114+00:00",
+  "description": "Possible values ​​to be considered in the characteristics of patients in MedicationKnowledge",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "MedicationKnowledge.administrationGuidelines.patientCharacteristics"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "max": "1"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://hl7.pt/fhir/StructureDefinition/Value-MedicationKnowledge"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Quantity"
+          },
+          {
+            "code": "Range"
+          }
+        ]
+      }
+    ]
+  }
+}

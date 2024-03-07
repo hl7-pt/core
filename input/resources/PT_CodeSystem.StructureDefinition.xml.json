@@ -1,0 +1,308 @@
+{
+  "resourceType": "StructureDefinition",
+  "url": "https://hl7.pt/fhir/StructureDefinition/PT_CodeSystem",
+  "version": "1.0",
+  "name": "PT_CodeSystem",
+  "status": "draft",
+  "experimental": false,
+  "date": "2022-04-27T16:27:24.1197755+00:00",
+  "description": "A generic CodeSystem resource for Portugal. It can be used for masterfile situations of specialties.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "CodeSystem",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/CodeSystem",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "CodeSystem.meta",
+        "path": "CodeSystem.meta"
+      },
+      {
+        "id": "CodeSystem.meta.id",
+        "path": "CodeSystem.meta.id",
+        "max": "0"
+      },
+      {
+        "id": "CodeSystem.meta.versionId",
+        "path": "CodeSystem.meta.versionId",
+        "max": "0"
+      },
+      {
+        "id": "CodeSystem.meta.source",
+        "path": "CodeSystem.meta.source",
+        "max": "0"
+      },
+      {
+        "id": "CodeSystem.meta.security",
+        "path": "CodeSystem.meta.security",
+        "max": "0"
+      },
+      {
+        "id": "CodeSystem.meta.tag",
+        "path": "CodeSystem.meta.tag",
+        "max": "0"
+      },
+      {
+        "id": "CodeSystem.implicitRules",
+        "path": "CodeSystem.implicitRules",
+        "max": "0"
+      },
+      {
+        "id": "CodeSystem.language",
+        "path": "CodeSystem.language",
+        "max": "0"
+      },
+      {
+        "id": "CodeSystem.text",
+        "path": "CodeSystem.text",
+        "max": "0"
+      },
+      {
+        "id": "CodeSystem.contained",
+        "path": "CodeSystem.contained",
+        "max": "0"
+      },
+      {
+        "id": "CodeSystem.identifier",
+        "path": "CodeSystem.identifier",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "MFI-1, MFI-2"
+          }
+        ]
+      },
+      {
+        "id": "CodeSystem.identifier.id",
+        "path": "CodeSystem.identifier.id",
+        "max": "0"
+      },
+      {
+        "id": "CodeSystem.identifier.type",
+        "path": "CodeSystem.identifier.type",
+        "max": "0"
+      },
+      {
+        "id": "CodeSystem.identifier.system",
+        "path": "CodeSystem.identifier.system",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "MFI-1.3"
+          }
+        ]
+      },
+      {
+        "id": "CodeSystem.identifier.value",
+        "path": "CodeSystem.identifier.value",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "MFI-1.1, MFI-2.1"
+          }
+        ]
+      },
+      {
+        "id": "CodeSystem.identifier.period",
+        "path": "CodeSystem.identifier.period",
+        "max": "0"
+      },
+      {
+        "id": "CodeSystem.name",
+        "path": "CodeSystem.name",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "MFI-2.2"
+          }
+        ]
+      },
+      {
+        "id": "CodeSystem.title",
+        "path": "CodeSystem.title",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "MFI-2.2"
+          }
+        ]
+      },
+      {
+        "id": "CodeSystem.status",
+        "path": "CodeSystem.status",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "default = active"
+          }
+        ]
+      },
+      {
+        "id": "CodeSystem.experimental",
+        "path": "CodeSystem.experimental",
+        "max": "0"
+      },
+      {
+        "id": "CodeSystem.date",
+        "path": "CodeSystem.date",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "MFE-3"
+          }
+        ]
+      },
+      {
+        "id": "CodeSystem.publisher",
+        "path": "CodeSystem.publisher",
+        "mapping": [
+          {
+            "identity": "HL7v.2x",
+            "map": "MFE-4.3"
+          }
+        ]
+      },
+      {
+        "id": "CodeSystem.contact",
+        "path": "CodeSystem.contact",
+        "max": "0"
+      },
+      {
+        "id": "CodeSystem.copyright",
+        "path": "CodeSystem.copyright",
+        "comment": "Systems are not required to have markdown support, so the text should be readable without markdown processing. The markdown syntax is GFM - see https://github.github.com/gfm/\r\n Sometimes, the copyright differs between the code system and the codes that are included. The copyright statement should clearly differentiate between these when required.\r\n Sometimes, the copyright differs between the code system and the codes that are included. The copyright statement should clearly differentiate between these when required.\r\n Sometimes, the copyright differs between the code system and the codes that are included. The copyright statement should clearly differentiate between these when required.",
+        "max": "0"
+      },
+      {
+        "id": "CodeSystem.hierarchyMeaning",
+        "path": "CodeSystem.hierarchyMeaning",
+        "max": "0"
+      },
+      {
+        "id": "CodeSystem.compositional",
+        "path": "CodeSystem.compositional",
+        "max": "0"
+      },
+      {
+        "id": "CodeSystem.property.id",
+        "path": "CodeSystem.property.id",
+        "max": "0"
+      },
+      {
+        "id": "CodeSystem.property.code",
+        "path": "CodeSystem.property.code",
+        "example": [
+          {
+            "label": "code",
+            "valueCode": "operation"
+          }
+        ]
+      },
+      {
+        "id": "CodeSystem.property.uri",
+        "path": "CodeSystem.property.uri",
+        "max": "0"
+      },
+      {
+        "id": "CodeSystem.property.description",
+        "path": "CodeSystem.property.description",
+        "example": [
+          {
+            "label": "description",
+            "valueString": "Describes an operation action"
+          }
+        ]
+      },
+      {
+        "id": "CodeSystem.property.type",
+        "path": "CodeSystem.property.type",
+        "fixedCode": "Coding"
+      },
+      {
+        "id": "CodeSystem.concept.id",
+        "path": "CodeSystem.concept.id",
+        "max": "0"
+      },
+      {
+        "id": "CodeSystem.concept.code",
+        "path": "CodeSystem.concept.code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "MFE-4.1"
+          }
+        ]
+      },
+      {
+        "id": "CodeSystem.concept.display",
+        "path": "CodeSystem.concept.display",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "MFE-4.2"
+          }
+        ]
+      },
+      {
+        "id": "CodeSystem.concept.property.id",
+        "path": "CodeSystem.concept.property.id",
+        "max": "0"
+      },
+      {
+        "id": "CodeSystem.concept.property.code",
+        "path": "CodeSystem.concept.property.code",
+        "example": [
+          {
+            "label": "code",
+            "valueCode": "operation"
+          }
+        ]
+      },
+      {
+        "id": "CodeSystem.concept.property.value[x]",
+        "path": "CodeSystem.concept.property.value[x]",
+        "type": [
+          {
+            "code": "Coding"
+          }
+        ]
+      },
+      {
+        "id": "CodeSystem.concept.property.value[x].id",
+        "path": "CodeSystem.concept.property.value[x].id",
+        "max": "0"
+      },
+      {
+        "id": "CodeSystem.concept.property.value[x].system",
+        "path": "CodeSystem.concept.property.value[x].system",
+        "binding": {
+          "strength": "required",
+          "description": "FHIR Value set/code system definition for HL7 v2 table 0180 ( REcord Level Event Code)",
+          "valueSet": "http://terminology.hl7.org/ValueSet/v2-0180"
+        }
+      },
+      {
+        "id": "CodeSystem.concept.property.value[x].version",
+        "path": "CodeSystem.concept.property.value[x].version",
+        "max": "0"
+      },
+      {
+        "id": "CodeSystem.concept.property.value[x].code",
+        "path": "CodeSystem.concept.property.value[x].code",
+        "mapping": [
+          {
+            "identity": "HL7v2.x",
+            "map": "MFE-1"
+          }
+        ]
+      },
+      {
+        "id": "CodeSystem.concept.property.value[x].userSelected",
+        "path": "CodeSystem.concept.property.value[x].userSelected",
+        "max": "0"
+      }
+    ]
+  }
+}
