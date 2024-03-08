@@ -4,10 +4,6 @@ Description: "Information about the packaging of the device, i.e. how the device
 Context: DeviceDefinition
 
 
-
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
 * extension contains
     identifier 0..1 and
     type 0..1 and

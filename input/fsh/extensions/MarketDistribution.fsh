@@ -4,9 +4,7 @@ Description: "Indicates where and when the device is available on the market - E
 Context: DeviceDefinition.udiDeviceIdentifier
 
 
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
+
 * extension contains
     marketPeriod 1..1 and
     subJurisdiction 1..1

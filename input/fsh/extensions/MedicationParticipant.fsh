@@ -4,9 +4,6 @@ Description: "Extension that indicates which participants may be part of the dru
 Context: MedicationKnowledge
 
 
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
 * extension contains
     type 0..1 and
     typeReference 0..1 and

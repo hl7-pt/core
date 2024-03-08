@@ -14,6 +14,7 @@ Description: "A generic PlanDefiniton resource for Portugal"
 * action.action ^contentReference = "http://hl7.org/fhir/StructureDefinition/PlanDefinition#PlanDefinition.action"
 
 
-//* action.action.extension[CycleAndDaysOfCycle] only CycleAndDaysOfCycle
+* action.action.extension contains
+    CycleAndDaysOfCycle named CycleAndDaysOfCycle 0..*
 
 * action.action.action ^contentReference = "http://hl7.org/fhir/StructureDefinition/PlanDefinition#PlanDefinition.action"

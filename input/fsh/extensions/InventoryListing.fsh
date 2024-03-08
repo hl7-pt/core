@@ -4,10 +4,7 @@ Description: "An inventory listing section (grouped by any of the attributes)."
 Context: Basic
 
 
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
-* extension ^min = 0
+
 * extension contains
     location 0..1 and
     itemStatus 0..1 and
@@ -20,10 +17,7 @@ Context: Basic
 * extension[countingDateTime] ^short = "The date and time when the items were counted."
 * extension[countingDateTime].value[x] only dateTime
 * extension[items] ^short = "The item or items in this listing."
-* extension[items] ^min = 0
-* extension[items].extension ^slicing.discriminator.type = #value
-* extension[items].extension ^slicing.discriminator.path = "url"
-* extension[items].extension ^slicing.rules = #open
+
 * extension[items].extension contains
     category 0..1 and
     quantity 1..1 and
@@ -37,11 +31,7 @@ Context: Basic
 * extension[items].extension[quantity] ^short = "The quantity of the item or items."
 * extension[items].extension[quantity].value[x] 1..
 * extension[items].extension[quantity].value[x] only Quantity
-* extension[items].extension[item] ^short = "The code or reference to the item type."
-* extension[items].extension[item].extension ^slicing.discriminator.type = #value
-* extension[items].extension[item].extension ^slicing.discriminator.path = "url"
-* extension[items].extension[item].extension ^slicing.rules = #open
-* extension[items].extension[item].extension ^min = 0
+
 * extension[items].extension[item].extension contains
     concept 0..1 and
     reference 0..1
