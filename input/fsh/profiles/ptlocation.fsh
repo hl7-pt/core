@@ -16,7 +16,6 @@ Description: "A generic Location resource for Portugal"
 * address.extension ^slicing.discriminator.path = "url"
 * address.extension ^slicing.rules = #open
 * address.extension contains Address named Parish 0..1
-
 */
 * partOf only Reference(PT_Location)
 * partOf.display ^comment = "Field mapped according to the code that is in the Location.PhysicalType"

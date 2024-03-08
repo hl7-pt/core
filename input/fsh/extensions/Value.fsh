@@ -6,5 +6,4 @@ Context: MedicationKnowledge.administrationGuidelines.patientCharacteristics
 * ^status = #draft
 * ^experimental = false
 * ^date = "2023-08-29T14:30:46.6979114+00:00"
-
 * value[x] only CodeableConcept or Quantity or Range

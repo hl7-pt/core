@@ -11,7 +11,6 @@ Id: PTServiceRequest
 // * extension[patientTransportNeed] ^isModifier = false
 // * extension[statusReason] ^isModifier = false
 * basedOn only Reference(PT_CarePlan)
-
 * category ..1
 * category.coding from $sct (required)
 * category.coding ^binding.description = "SNOMED"

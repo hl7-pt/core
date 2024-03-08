@@ -16,7 +16,6 @@ Description: "A generic RelatedPerson resource for Portugal"
 * identifier.type ^binding.extension[=].valueBoolean = true
 */
 /*
-
 * name.given ^slicing.discriminator.type = #value
 * name.given ^slicing.discriminator.path = "value"
 * name.given ^slicing.rules = #open
@@ -27,6 +26,5 @@ Description: "A generic RelatedPerson resource for Portugal"
 * address.extension ^slicing.rules = #open
 * address.extension contains $Address named Parish 0..1
 */
-
 //* address.country from $iso3166-1-2 (preferred)
 //* address.country ^binding.description = "This value set defines the ISO 3166 Part 1 2-letter codes"

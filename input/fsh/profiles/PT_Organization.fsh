@@ -21,12 +21,7 @@ Description: "A generic Organization resource for Portugal"
 * address.extension ^slicing.discriminator.type = #value
 * address.extension ^slicing.discriminator.path = "url"
 * address.extension ^slicing.rules = #open
-
 * address.extension contains $Address named Parish 0..1
 */
 //* address.use ^short = "work | temp | old | billing - purpose of this address"
-
-
-
 * partOf only Reference(PT_Organization)
-

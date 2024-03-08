@@ -10,6 +10,3 @@ Context: Condition
 * ^date = "2022-01-07"
 * url = "http://hl7.pt/fhir/core/StructureDefinition/ConditionPersistence" (exactly)
 * value[x] only CodeableConcept
-
-
-

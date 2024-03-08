@@ -10,36 +10,21 @@ Context: Device
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
-
 * extension contains
     status 1..1 and
     statusReason 0..* and
     bodyStructure 0..1
-
 * extension[status].value[x] only CodeableConcept
 * extension[status].value[x] from $device-association-status (example)
 * extension[status].value[x] ^binding.description = "The association status of the device."
-
-
-
-
 * extension[statusReason].value[x] only CodeableConcept
-
-
 * extension[bodyStructure].extension ^slicing.discriminator.type = #value
 * extension[bodyStructure].extension ^slicing.discriminator.path = "url"
 * extension[bodyStructure].extension ^slicing.rules = #open
-
 * extension[bodyStructure].extension[concept] ^sliceName = "concept"
-
-
 * extension[bodyStructure].extension[concept].url = "concept" (exactly)
 * extension[bodyStructure].extension[concept].value[x] only CodeableConcept
-
-
 * extension[bodyStructure].extension[reference] ^sliceName = "reference"
-
-
 * extension[bodyStructure].extension[reference].url = "reference" (exactly)
 * extension[bodyStructure].extension[reference].value[x] only Reference(BodyStructure)
 */

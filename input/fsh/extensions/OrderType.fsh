@@ -7,8 +7,4 @@ Context: MedicationRequest
 * ^status = #draft
 * ^experimental = false
 * ^date = "2022-02-18"
-
 * value[x] only CodeableConcept
-
-
-

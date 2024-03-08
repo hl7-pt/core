@@ -20,10 +20,4 @@ Id: PTTask
 * insurance only Reference(PT_Coverage)
 * input.type.coding from PractitionerRole (example)
 * input.type.coding ^binding.description = "This example value set defines a set of codes that can be used to indicate the role of a Practitioner."
-
-
-
-
-
-
 * input.value[x] only Reference

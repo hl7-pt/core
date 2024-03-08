@@ -8,7 +8,6 @@ Description: "A generic Medication resource for Portugal"
 * ^version = "1.0"
 * ^status = #draft
 * ^experimental = false
-
 /*
 * identifier.system ^slicing.discriminator.type = #value
 * identifier.system ^slicing.discriminator.path = "value"
@@ -27,7 +26,6 @@ Description: "A generic Medication resource for Portugal"
 * code ^slicing.discriminator.type = #value
 * code ^slicing.discriminator.path = "coding.system"
 * code ^slicing.rules = #open
-
 * code contains
     GLINTT 0..1 and
     CHNM 0..1 and
@@ -49,13 +47,8 @@ Description: "A generic Medication resource for Portugal"
 * code[ATC].coding.system = "https://whocc.no/atc/" (exactly)
 */
 * manufacturer only Reference(PT_Organization)
-
-
 * form.coding.system = "https://www.edqm.eu/" (exactly)
-
 * ingredient.item[x] only CodeableConcept
-
-
 /*
 // WARNING: The following Mapping may be incomplete since the original PT_Medication
 // StructureDefinition was missing the mapping entry for HL7v2.4.
@@ -67,7 +60,6 @@ Source: PT_Medication
 * code[GLINTT].coding.system -> "RXO-1.3 / RXO-1.6, RXC-2.3, RXE-2.3, RXD-2.3, RXG-4.3, RXA-5.3"
 * code[GLINTT].coding.code -> "RXO-1.1 / RXO-1.4, RXC-2.1, RXE-2.1, RXD-2.1, RXG-4.1, RXA-5.1"
 * code[GLINTT].coding.display -> "RXO-1.2 / RXO-1.5, RXC-2.2, RXE-2.2, RXD-2.2, RXG-4.2, RXA-5.2"
-
 // WARNING: The following Mapping may be incomplete since the original PT_Medication
 // StructureDefinition was missing the mapping entry for HL7v2.4-Supplementary.
 // Please review this and add the following properties as necessary: Target, Title, Description
@@ -79,7 +71,6 @@ Source: PT_Medication
 * code[GLINTT].coding.code -> "RXO-24.1, RXC-7.1, RXE-31.1, RXD-25.1"
 * code[GLINTT].coding.display -> "RXO-24.2, RXC-7.2, RXE-31.2, RXD-25.2"
 * ingredient.item[x].coding.system -> "RXO-24.3, RXC-7.3, RXE-31.3, RXD-25.3"
-
 // WARNING: The following Mapping may be incomplete since the original PT_Medication
 // StructureDefinition was missing the mapping entry for HL7v2.x.
 // Please review this and add the following properties as necessary: Target, Title, Description
@@ -106,7 +97,6 @@ Source: PT_Medication
 * ingredient.strength -> "RXO-1 (dose/form) - If the dose is not sent on the RXO-1, it will be the RXO-18 + RXO-19; RXC-2 (dose/form) - If the dose is not sent on the RXC-2, it will be the RXC-5 + RXC-6; RXE-2 (dose/form) - If the dose is not sent on the RXE-2, it will be the RXE-25 + RXE-26; RXD-2 (dose/form) - If the dose is not sent on the RXD-2, it will be the RXD-16 + RXD-17; RXG-4 (dose/form) - If the dose is not sent on the RXG-4, it will be the RXG-17 + RXG-18; RXA-5 (dose/form) - If the dose is not sent on the RXA-5, it will be the RXA-13 + RXA-14"
 * batch.lotNumber -> "RXD-18, RXG-19, RXA-15"
 * batch.expirationDate -> "RXD-19, RXG-20, RXA-16"
-
 // WARNING: The following Mapping may be incomplete since the original PT_Medication
 // StructureDefinition was missing the mapping entry for HL7v2.x-Supplementary.
 // Please review this and add the following properties as necessary: Target, Title, Description
@@ -124,5 +114,4 @@ Source: PT_Medication
 * code[ATC].coding.display -> "RXO-24.2, RXC-7.2, RXE-31.2, RXD-25.2"
 * ingredient.item[x].coding.code -> "RXO-24.1, RXC-7.1, RXE-31.1, RXD-25.1"
 * ingredient.item[x].coding.display -> "RXO-24.2, RXC-7.2, RXE-31.2, RXD-25.2"
-
 */

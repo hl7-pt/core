@@ -30,7 +30,6 @@ Description: "A generic Patient resource for Portugal"
 * name.given ^slicing.discriminator.path = "value"
 * name.given ^slicing.rules = #open
 * name.given[firstName] ^sliceName = "firstName"
-
 * name.given[middleName] ^sliceName = "middleName"
 */
 * deceased[x] ^slicing.discriminator.type = #type
@@ -38,7 +37,6 @@ Description: "A generic Patient resource for Portugal"
 * deceased[x] ^slicing.rules = #open
 * deceasedBoolean only boolean
 * deceasedBoolean ^sliceName = "deceasedBoolean"
-
 * deceasedDateTime only dateTime
 * deceasedDateTime ^sliceName = "deceasedDateTime"
 /*
@@ -47,14 +45,8 @@ Description: "A generic Patient resource for Portugal"
 * address.extension ^slicing.rules = #open
 * address.extension contains $Address named Parish 0..1
 */
-
-
-
 //* address.country from $iso3166-1-2 (preferred)
-
-
 * maritalStatus.coding.system ^code.system = "http://hl7.org/fhir/ValueSet/marital-status"
-
 * multipleBirth[x] ^slicing.discriminator.type = #type
 * multipleBirth[x] ^slicing.discriminator.path = "$this"
 * multipleBirth[x] ^slicing.rules = #open

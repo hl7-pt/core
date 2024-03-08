@@ -7,9 +7,5 @@ Context: MedicationRequest
 * ^version = "1.0"
 * ^status = #draft
 * ^date = "2022-02-04"
-
 * value[x] only CodeableConcept
-
-
 * valueCodeableConcept.coding.system = "http://snomed.info/sct" (exactly)
-

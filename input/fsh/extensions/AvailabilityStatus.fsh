@@ -7,8 +7,6 @@ Context: Device
 * ^experimental = false
 * ^date = "2023-03-02T19:59:05.0729171+00:00"
 * . ..1
-
 * value[x] only CodeableConcept
 //* valueCodeableConcept from $device-availability-status (extensible)
 //* valueCodeableConcept ^binding.description = "The availability status of the device."
-

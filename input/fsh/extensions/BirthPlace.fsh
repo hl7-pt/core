@@ -9,11 +9,8 @@ Context: Patient
 * ^experimental = false
 * ^date = "2021-10-28T16:28:03.5050045+00:00"
 * url = "http://hl7.pt/fhir/core/StructureDefinition/BirthPlace" (exactly)
-
 /*
 * value[x] only Address
-
-
 * valueAddress.city = "http://ine.pt" (exactly)
 * valueAddress.state ^code.system = "http://ine.pt"
 * valueAddress.country from $iso3166-1-2 (extensible)
