@@ -4,8 +4,8 @@
 Mapping: HL7v2.x-for-PT_MedicationRequest
 Id: HL7v2.x
 Source: PT_MedicationRequest
-//* identifier.value -> "ORC-2.1; ORC-3.1"
-//* identifier.assigner.display -> "ORC-2.2; ORC-3.2"
+* identifier.value -> "ORC-2.1; ORC-3.1"
+* identifier.assigner.display -> "ORC-2.2; ORC-3.2"
 * status -> "ORC-1"
 * statusReason -> "ORC-16"
 * statusReason.coding.system -> "ORC-16.3"
@@ -21,8 +21,8 @@ Source: PT_MedicationRequest
 * reasonCode.coding.system -> "RXO-20.3, RXE-27.3"
 * reasonCode.coding.code -> "RXO-20.1, RXE-27.1"
 * reasonCode.coding.display -> "RXO-20.2, RXE-27.2"
-//* groupIdentifier.value -> "ORC-4.1, RXE-15"
-//* groupIdentifier.assigner.display -> "ORC-4.2"
+* groupIdentifier.value -> "ORC-4.1, RXE-15"
+* groupIdentifier.assigner.display -> "ORC-4.2"
 * note.text -> "NTE-3"
 * dosageInstruction.text -> "ORC-7.7, RXO-6.2, RXE-1.7, RXE-21.2"
 * dosageInstruction.additionalInstruction -> "RXO-7, RXE-7"

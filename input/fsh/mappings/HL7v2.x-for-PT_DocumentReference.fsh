@@ -5,14 +5,14 @@ Mapping: HL7v2.x-for-PT_DocumentReference
 Id: HL7v2.x
 Source: PT_DocumentReference
 * meta.lastUpdated -> "TXA-8; OBX-14"
-/*
+
 * masterIdentifier -> "TXA-12; OBX-4"
 * masterIdentifier.value -> "TXA-12.1; OBX-4"
 * masterIdentifier.assigner.display -> "TXA-12.2"
 * identifier -> "TXA-16; OBX-3"
 * identifier.system -> "OBX-3.3"
 * identifier.value -> "TXA-16; OBX-3.1"
-*/
+
 * status -> "TXA-19; OBX-11"
 * docStatus -> "TXA-17; OBX-11"
 * type -> "TXA-2; OBX-3"

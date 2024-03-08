@@ -5,8 +5,8 @@ Mapping: HL7v2.x-for-PT_LocationMF
 Id: HL7v2.x
 Source: PT_LocationMF
 * meta.lastUpdated -> "MFI-4.1"
-//* identifier.period.start -> "LDP-7"
-//* identifier.period.end -> "MFE-3 (if MFE-1 = MDC or MDL); LDP-8"
+* identifier.period.start -> "LDP-7"
+* identifier.period.end -> "MFE-3 (if MFE-1 = MDC or MDL); LDP-8"
 * status -> "Based on MFE-1"
 * description -> "LOC-2 or LOC-1.9; LDP-1.9; LCC-1.9; LCH-1.9"
 * type -> "LOC-3; LDP-4"

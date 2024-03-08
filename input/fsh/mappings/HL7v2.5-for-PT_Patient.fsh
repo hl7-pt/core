@@ -4,8 +4,8 @@
 Mapping: HL7v2.5-for-PT_Patient
 Id: HL7v2.5
 Source: PT_Patient
-//* address.period.start -> "PID-11.13"
-//* address.period.end -> "PID-11.14"
+* address.period.start -> "PID-11.13"
+* address.period.end -> "PID-11.14"
 * contact.telecom.value -> "NK1-5.12"
-//* contact.address.period.start -> "NK1-4.13"
-//* contact.address.period.end -> "NK1-4.14"
+* contact.address.period.start -> "NK1-4.13"
+* contact.address.period.end -> "NK1-4.14"

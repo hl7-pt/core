@@ -5,10 +5,8 @@ Context: Patient
 
 
 
-/*
 * value[x] only Address
 * valueAddress.city = "http://ine.pt" (exactly)
 * valueAddress.state ^code.system = "http://ine.pt"
 * valueAddress.country from $iso3166-1-2 (extensible)
 * valueAddress.country ^binding.description = "This value set defines the ISO 3166 Part 1 2-letter codes"
-*/

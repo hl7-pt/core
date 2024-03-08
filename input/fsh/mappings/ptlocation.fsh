@@ -6,12 +6,12 @@ Mapping: HL7v2.xf-for-PT_LOCATION
 Id: HL7v2.x
 Source: PT_Location
 * meta.lastUpdated -> "MFI-4.1"
-//* identifier.type.coding.system -> "MFI-1.3"
-//* identifier.type.coding.code -> "MFI-1.1"
-//* identifier.type.coding.display -> "MFI-1.2"
-//* identifier.period.start -> "LDP-7"
-//* identifier.period.end -> "LDP-8"
-//* identifier.assigner.display -> "Organization/LOC-1.11; LDP-1.11; LCC-1.11; LCH-1.11; AIL-3.11; PV1-3.11; PV1-6.11; PV1-11.11; PV1-42.11; PV1-43.11; ORC-13.11"
+* identifier.type.coding.system -> "MFI-1.3"
+* identifier.type.coding.code -> "MFI-1.1"
+* identifier.type.coding.display -> "MFI-1.2"
+* identifier.period.start -> "LDP-7"
+* identifier.period.end -> "LDP-8"
+* identifier.assigner.display -> "Organization/LOC-1.11; LDP-1.11; LCC-1.11; LCH-1.11; AIL-3.11; PV1-3.11; PV1-6.11; PV1-11.11; PV1-42.11; PV1-43.11; ORC-13.11"
 * status -> "default - active (*in update)"
 * description -> "LOC-2 (*in update)"
 * type -> "Still no mappings (*in update)"
@@ -19,7 +19,7 @@ Source: PT_Location
 //* telecom.value[Email] -> "LOC-6.4; LDP-11.4"
 //* telecom.value[Contact] -> "LOC-6.7 / LOC-6.12; LDP-11.7 / LDP-11.12"
 * telecom.use -> "LOC-6.2; LDP-11.2"
-/*
+
 * address.line -> "LOC-5.1"
 * address.city -> "LOC-5.3"
 * address.district -> "LOC-5.8"
@@ -28,7 +28,7 @@ Source: PT_Location
 * address.country -> "LOC-5.6"
 * address.period.start -> "LOC-5.13"
 * address.period.end -> "LOC-5.14"
-*/
+
 * managingOrganization.display -> "Organization/EVN-7; MSH-6"
 * hoursOfOperation.daysOfWeek -> "LDP-10.1 & LDP-10.2"
 * hoursOfOperation.openingTime -> "LDP-10.3"
@@ -39,14 +39,14 @@ Source: PT_Location
 Mapping: HL7v2.x-Ordem-for-PT_Location
 Id: HL7v2.x-Ordem-for-PT-Location
 Source: PT_Location
-//* identifier.use -> "x.3, x.2, x.1, x.8, x.7, x.4 (quando versão HL7 v2.4), x.10 (quando versão HL7 v2.5+)"
+* identifier.use -> "x.3, x.2, x.1, x.8, x.7, x.4 (quando versão HL7 v2.4), x.10 (quando versão HL7 v2.5+)"
 // WARNING: The following Mapping may be incomplete since the original PT_Location
 // StructureDefinition was missing the mapping entry for HL7v2.x-1.
 // Please review this and add the following properties as necessary: Target, Title, Description
 Mapping: HL7v2.x-1-for-PT_Location
 Id: HL7v2.x-1-for-PT-Location
 Source: PT_Location
-//* identifier.value -> "MFE-2; MFE-4.1"
+* identifier.value -> "MFE-2; MFE-4.1"
 * name -> "LOC / LDP / LCC / LCH -1.6, 1.9, 1.10/1.4 (*in update)"
 // WARNING: The following Mapping may be incomplete since the original PT_Location
 // StructureDefinition was missing the mapping entry for HL7v2.x-2.
@@ -54,7 +54,7 @@ Source: PT_Location
 Mapping: HL7v2.x-2-for-PT_Location
 Id: HL7v2.x-2-for-PT-Location
 Source: PT_Location
-//* identifier.value -> "LOC / LDP / LCC / LCH-1.1, 1.2, 1.3, 1.4, 1.7, 1.8, 1.10"
+* identifier.value -> "LOC / LDP / LCC / LCH-1.1, 1.2, 1.3, 1.4, 1.7, 1.8, 1.10"
 * name -> "AIL / PV1-3.6, 3.9, 3.10/3.4 (*in update)"
 // WARNING: The following Mapping may be incomplete since the original PT_Location
 // StructureDefinition was missing the mapping entry for HL7v2.x-3.
@@ -62,7 +62,7 @@ Source: PT_Location
 Mapping: HL7v2.x-3-for-PT_Location
 Id: HL7v2.x-3-for-PT-Location
 Source: PT_Location
-//* identifier.value -> "AIL/PV1-3.1, 3.2, 3.3, 3.4, 3.7, 3.8, 3.10"
+* identifier.value -> "AIL/PV1-3.1, 3.2, 3.3, 3.4, 3.7, 3.8, 3.10"
 * name -> "PV1-6/11/42/43.6, 6/11/42/43.9, 6/11/42/43.10, 6/11/42/43.4 (*in update)"
 // WARNING: The following Mapping may be incomplete since the original PT_Location
 // StructureDefinition was missing the mapping entry for HL7v2.x-4.
@@ -70,14 +70,14 @@ Source: PT_Location
 Mapping: HL7v2.x-4-for-PT_Location
 Id: HL7v2.x-4-for-PT-Location
 Source: PT_Location
-//* identifier.value -> "PV1-6/11/42/43.1, 6/11/42/43.2, 6/11/42/43.3, 6/11/42/43.4, 6/11/42/43.7, 6/11/42/43.8, 6/11/42/43.10"
+* identifier.value -> "PV1-6/11/42/43.1, 6/11/42/43.2, 6/11/42/43.3, 6/11/42/43.4, 6/11/42/43.7, 6/11/42/43.8, 6/11/42/43.10"
 // WARNING: The following Mapping may be incomplete since the original PT_Location
 // StructureDefinition was missing the mapping entry for HL7v2.x-5.
 // Please review this and add the following properties as necessary: Target, Title, Description
 Mapping: HL7v2.x-5-for-PT_Location
 Id: HL7v2.x-5-for-PT-Location
 Source: PT_Location
-//* identifier.value -> "ORC-13.1, 13.2, 13.3, 13.4, 13.7, 13.8, 13.10"
+* identifier.value -> "ORC-13.1, 13.2, 13.3, 13.4, 13.7, 13.8, 13.10"
 // WARNING: The following Mapping may be incomplete since the original PT_Location
 // StructureDefinition was missing the mapping entry for HL7v2.x-WARD.
 // Please review this and add the following properties as necessary: Target, Title, Description

@@ -4,4 +4,4 @@
 Mapping: numberOrder-official
 Id: numberOrder-official
 Source: PT_Patient
-//* identifier.use -> "SNS (HC), BI/CC (CZ), Passport (PPN), NIF (TAX), NISS (SS), NP (MR), NS (PI)"
+* identifier.use -> "SNS (HC), BI/CC (CZ), Passport (PPN), NIF (TAX), NISS (SS), NP (MR), NS (PI)"

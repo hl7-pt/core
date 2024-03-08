@@ -5,14 +5,14 @@ Id: PTCondition
 Description: "A generic Condition resource for Portugal"
 
 
-/*
+
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
 * extension contains
     DiagnosisPriority named DiagnosisPriority 0..1 and
     ConditionPersistence named ConditionPersistence 0..1
-*/
+
 * category ^fixedCodeableConcept.coding[0].system = "http://hl7.org/fhir/ValueSet/condition-category"
 * category ^fixedCodeableConcept.coding[+].system = "http://terminology.hl7.org/ValueSet/v2-0228"
 * severity.coding.system = "http://snomed.info/sct" (exactly)

@@ -8,5 +8,5 @@ Description: "A generic Message Header resource for Portugal"
 * event[x] only Coding
 * sender only Reference(Organization or PT_Practitioner or PT_PractitionerRole)
 * enterer only Reference(PT_Practitioner or PT_PractitionerRole)
-//* enterer.identifier.type from $v2-0203 (extensible)
+* enterer.identifier.type from $v2-0203 (extensible)
 * response.details only Reference(PT_OperationOutcome)

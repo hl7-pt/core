@@ -4,9 +4,9 @@
 Mapping: HL7v2.x-for-PT_CodeSystem
 Id: HL7v2.x
 Source: PT_CodeSystem
-//* identifier -> "MFI-1, MFI-2"
-//* identifier.system -> "MFI-1.3"
-//* identifier.value -> "MFI-1.1, MFI-2.1"
+* identifier -> "MFI-1, MFI-2"
+* identifier.system -> "MFI-1.3"
+* identifier.value -> "MFI-1.1, MFI-2.1"
 * name -> "MFI-2.2"
 * title -> "MFI-2.2"
 * status -> "default = active"

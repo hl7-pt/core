@@ -4,7 +4,7 @@
 Mapping: HL7v2.x-for-PT_ServiceRequest
 Id: HL7v2.x
 Source: PT_ServiceRequest
-//* extension[patientTransportNeed] -> "OBR.41"
+* extension[patientTransportNeed] -> "OBR.41"
 * identifier -> "ORC2; ORC3"
 * basedOn -> "ORC.8"
 * requisition -> "ORC.4"
@@ -12,8 +12,8 @@ Source: PT_ServiceRequest
 * category -> "ORC.4.4"
 * priority -> "ORC.7.6; OBR.5"
 * doNotPerform -> "ORC.1" "When ORC.1='CA'"
-//* doNotPerform.extension[notPerformReason] -> "ORC.16" "When ORC.1='CA'"
-//* doNotPerform.extension[notPerformDecider] -> "ORC.12" "When ORC.1='CA'"
+* doNotPerform.extension[notPerformReason] -> "ORC.16" "When ORC.1='CA'"
+* doNotPerform.extension[notPerformDecider] -> "ORC.12" "When ORC.1='CA'"
 * code -> "OBR.4"
 * orderDetail -> "NTE.3" "NTE ao nivel do ORC"
 * quantity[x] -> "ORC.7.1"

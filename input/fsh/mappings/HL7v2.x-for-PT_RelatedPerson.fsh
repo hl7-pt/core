@@ -4,11 +4,11 @@
 Mapping: HL7v2.x-for-PT_RelatedPerson
 Id: HL7v2.x
 Source: PT_RelatedPerson
-//* identifier.type.coding.code -> "NK1-33.5"
-//* identifier.value -> "NK1-33.1"
-//* identifier.period.start -> "NK1-33.7"
-//* identifier.period.end -> "NK1-33.8"
-//* identifier.assigner.display -> "NK1-33.4"
+* identifier.type.coding.code -> "NK1-33.5"
+* identifier.value -> "NK1-33.1"
+* identifier.period.start -> "NK1-33.7"
+* identifier.period.end -> "NK1-33.8"
+* identifier.assigner.display -> "NK1-33.4"
 * patient.display -> "PID-3 c/ SNS; PID-18.1; PID-3 c/ SONHO"
 * relationship -> "NK1-3; NK1-7"
 * relationship.coding.system -> "NK1-3.3; NK1-7.3"

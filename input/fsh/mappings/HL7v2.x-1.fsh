@@ -4,4 +4,4 @@
 Mapping: HL7v2.x-1
 Id: HL7v2.x-1
 Source: PT_LocationMF
-//* identifier.value -> "MFI-2.1; MFE-2; MFE-4.1"
+* identifier.value -> "MFI-2.1; MFE-2; MFE-4.1"
