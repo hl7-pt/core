@@ -2,11 +2,11 @@ Profile: PT_RelatedPerson
 Parent: RelatedPerson
 Id: 52d49cef-b06f-4aa7-859d-26a002df32c1
 Description: "A generic RelatedPerson resource for Portugal"
-* ^meta.lastUpdated = "2022-11-08T10:46:58.910888+00:00"
-* ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_RelatedPerson"
-* ^version = "1.1"
-* ^status = #draft
-* ^experimental = false
+
+
+
+
+
 * ^date = "2022-11-08T10:47:34.3124993+00:00"
 /*
 * identifier.type from $v2-0203 (extensible)

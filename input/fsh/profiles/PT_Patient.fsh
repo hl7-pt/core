@@ -2,11 +2,11 @@ Profile: PT_Patient
 Parent: Patient
 Id: 176c7c2b-865c-4942-9bd6-cfaa04678d10
 Description: "A generic Patient resource for Portugal"
-* ^meta.lastUpdated = "2022-09-23T13:12:21.4069091+00:00"
-* ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_Patient"
-* ^version = "1.2"
-* ^status = #draft
-* ^experimental = false
+
+
+
+
+
 * ^date = "2022-09-23T13:12:30.5461445+00:00"
 // * extension ^slicing.discriminator.type = #value
 // * extension ^slicing.discriminator.path = "url"

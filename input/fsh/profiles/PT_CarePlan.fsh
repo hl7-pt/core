@@ -1,17 +1,16 @@
 Profile: PT_CarePlan
 Parent: CarePlan
 Id: PTCarePlan
-* ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_CarePlan"
-* ^version = "1.2"
-* ^status = #draft
-* ^experimental = false
+
+
+
+
 * ^date = "2022-07-01T15:28:30.3911673+00:00"
 //* identifier.type.coding 1..1
 //* identifier.type.coding from $sct (required)
 * basedOn ..1
 * category ..1
 * category.coding from $sct (required)
-* category.coding ^binding.description = "SNOMED"
 * title 1..
 * subject only Reference(PT_Patient)
 * encounter only Reference(PT_Encounter)

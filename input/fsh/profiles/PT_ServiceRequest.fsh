@@ -1,9 +1,9 @@
 Profile: PT_ServiceRequest
 Parent: ServiceRequest
 Id: PTServiceRequest
-* ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_ServiceRequest"
-* ^version = "1.3"
-* ^status = #draft
+
+
+
 * ^date = "2023-09-01T13:24:34.6850843+00:00"
 // * extension contains
 //    PatientTransportNeed named patientTransportNeed 0..1 and
@@ -14,11 +14,12 @@ Id: PTServiceRequest
 * category ..1
 * category.coding from $sct (required)
 * category.coding ^binding.description = "SNOMED"
+/*
 * doNotPerform.extension contains
     NotPerformReason named notPerformReason 0..1 and
     NotPerformDecider named notPerformDecider 0..1
-* doNotPerform.extension[notPerformReason] ^isModifier = false
-* doNotPerform.extension[notPerformDecider] ^isModifier = false
+
+*/
 * code.coding from $sct (required)
 * quantity[x] only Quantity
 * subject only Reference(PT_Patient)

@@ -1,0 +1,13 @@
+{
+    "package-id" : "hl7.fhir.pt.core",
+    "title" : "HL7 PT Core (FHIR R4)", 
+    "canonical" : "http://hl7.pt/fhir/core", 
+    "introduction" : "The introduction that should appear in the FHIR IG registry",
+    "list" : [{
+     "version" : "current",
+     "desc" : "Continuous Integration Build (latest in version control)",
+     "path" : "http://hl7.pt/fhir/core",
+     "status" : "ci-build",
+     "current" : true
+    }]
+   }

@@ -1,11 +1,11 @@
 Profile: PT_Task
 Parent: Task
 Id: PTTask
-* ^meta.lastUpdated = "2023-03-07T12:02:24.9263795+00:00"
-* ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_Task"
-* ^version = "1.1"
-* ^status = #draft
-* ^experimental = false
+
+
+
+
+
 * ^date = "2023-03-07T12:02:35.3976323+00:00"
 // * extension ^slicing.discriminator.type = #value
 // * extension ^slicing.discriminator.path = "url"

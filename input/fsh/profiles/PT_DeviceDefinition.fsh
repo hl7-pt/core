@@ -2,10 +2,10 @@ Profile: PT_DeviceDefinition
 Parent: DeviceDefinition
 Id: PTDeviceDefinition
 Description: "A generic DeviceDefinition resource for Portugal"
-* ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_DeviceDefinition"
-* ^version = "1.0"
-* ^status = #draft
-* ^experimental = false
+
+
+
+
 * ^date = "2023-03-07T15:44:35.2774536+00:00"
 /*
 // * extension ^slicing.discriminator.type = #value
@@ -24,5 +24,5 @@ Description: "A generic DeviceDefinition resource for Portugal"
 * udiDeviceIdentifier.extension ^slicing.discriminator.type = #value
 * udiDeviceIdentifier.extension ^slicing.discriminator.path = "url"
 * udiDeviceIdentifier.extension ^slicing.rules = #open
-* udiDeviceIdentifier.extension contains MarketDistribution named marketDistribution 0..*
-* udiDeviceIdentifier.extension[marketDistribution] ^isModifier = false
+//* udiDeviceIdentifier.extension contains MarketDistribution named marketDistribution 0..*
+//* udiDeviceIdentifier.extension[marketDistribution] ^isModifier = false

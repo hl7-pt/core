@@ -2,11 +2,11 @@ Profile: PT_Location
 Parent: Location
 Id: PTLocation
 Description: "A generic Location resource for Portugal"
-* ^meta.lastUpdated = "2021-12-20T11:59:51.992+00:00"
-* ^url = "https://hl7.pt/fhir/StructureDefinition/PT_Location"
-* ^version = "1.0"
-* ^status = #draft
-* ^experimental = false
+
+
+
+
+
 * status ^comment = "*The mapping for this field is being updated."
 * name ^comment = "*The mapping for this field is being updated."
 * description ^comment = "*The mapping for this field is being updated."

@@ -3,11 +3,11 @@ Profile: PT_Medication
 Parent: Medication
 Id: c56e2fb3-2322-4e99-931c-50d99668edfa
 Description: "A generic Medication resource for Portugal"
-* ^meta.lastUpdated = "2022-02-03T15:24:32.035+00:00"
-* ^url = "https://hl7.pt/fhir/StructureDefinition/PT_Medication"
-* ^version = "1.0"
-* ^status = #draft
-* ^experimental = false
+
+
+
+
+
 /*
 * identifier.system ^slicing.discriminator.type = #value
 * identifier.system ^slicing.discriminator.path = "value"

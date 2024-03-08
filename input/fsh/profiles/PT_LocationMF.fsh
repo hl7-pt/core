@@ -2,11 +2,11 @@ Profile: PT_LocationMF
 Parent: Location
 Id: PTLocationMF
 Description: "A resource for MasterFile about Locations"
-* ^meta.lastUpdated = "2023-02-17T12:18:55.1860004+00:00"
-* ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_LocationMF"
-* ^version = "1.1"
-* ^status = #draft
-* ^experimental = false
+
+
+
+
+
 * ^date = "2023-02-17T12:19:08.9570243+00:00"
 * status ^comment = "*The mapping for this field is being updated."
 * name ^comment = "*The mapping for this field is being updated."
@@ -23,5 +23,5 @@ Description: "A resource for MasterFile about Locations"
 * hoursOfOperation.extension ^slicing.discriminator.type = #value
 * hoursOfOperation.extension ^slicing.discriminator.path = "url"
 * hoursOfOperation.extension ^slicing.rules = #open
-* hoursOfOperation.extension contains NotAvailableTime named notAvailableTime 0..*
-* hoursOfOperation.extension[notAvailableTime] ^isModifier = false
+//* hoursOfOperation.extension contains NotAvailableTime named notAvailableTime 0..*
+//* hoursOfOperation.extension[notAvailableTime] ^isModifier = false

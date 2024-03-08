@@ -2,11 +2,11 @@ Profile: PT_MedicationRequest
 Parent: MedicationRequest
 Id: 17e19b6f-8e82-4c55-948e-85e02764fc9b
 Description: "A generic MedicationRequest resource for Portugal"
-* ^meta.lastUpdated = "2022-12-16T08:22:26.5554099+00:00"
-* ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_MedicationRequest"
-* ^version = "1.4"
-* ^status = #draft
-* ^experimental = false
+
+
+
+
+
 * ^date = "2022-12-16T12:26:45.013628+00:00"
 /*
 // * extension ^slicing.discriminator.type = #value

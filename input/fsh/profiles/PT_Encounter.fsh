@@ -2,11 +2,11 @@ Profile: PT_Encounter
 Parent: Encounter
 Id: PTEncounter
 Description: "A generic Encounter resource for Portugal"
-* ^meta.lastUpdated = "2022-01-13T09:36:30.207+00:00"
-* ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_Encounter"
-* ^version = "1.0"
-* ^status = #draft
-* ^experimental = false
+
+
+
+
+
 * ^date = "2022-01-13T07:42:42.8276395+00:00"
 * statusHistory ^comment = "The current status is always found in the current version of the resource, not the status history.\r\n\r\n*Note: this field will be filled in case of episode search"
 * classHistory ^comment = "*Note: this field will be filled in case of episode search"

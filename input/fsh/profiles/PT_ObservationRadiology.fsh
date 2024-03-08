@@ -2,10 +2,10 @@ Profile: PT_ObservationRadiology
 Parent: Observation
 Id: PTObservationRadiology
 Description: "Resource for representing observation results produced by diagnostic procedures"
-* ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_ObservationRadiology"
-* ^version = "1.1"
-* ^status = #draft
-* ^experimental = false
+
+
+
+
 * ^date = "2022-11-08T10:47:34.3124993+00:00"
 * category.coding.code = #imaging (exactly)
 * code.coding.system = "https://loinc.org/" (exactly)

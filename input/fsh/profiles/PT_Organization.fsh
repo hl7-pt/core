@@ -3,11 +3,11 @@ Profile: PT_Organization
 Parent: Organization
 Id: 6e9480b2-6dc1-4fff-a828-6aa231411647
 Description: "A generic Organization resource for Portugal"
-* ^meta.lastUpdated = "2021-12-27T17:28:42.548+00:00"
-* ^url = "https://hl7.pt/fhir/StructureDefinition/PT_Organization"
-* ^version = "1.0"
-* ^status = #draft
-* ^experimental = false
+
+
+
+
+
 * ^date = "2021-12-27T17:15:26.4961614Z"
 //* identifier.type from Hl7VSIdentifierType (extensible)
 * name 1..

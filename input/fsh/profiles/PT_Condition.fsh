@@ -1,13 +1,13 @@
 
 Profile: PT_Condition
 Parent: Condition
-Id: c1fc24de-587a-482b-9561-491b79796250
+Id: PTCondition
 Description: "A generic Condition resource for Portugal"
-* ^meta.lastUpdated = "2022-11-08T10:44:00.3214389+00:00"
-* ^url = "https://hl7.pt/fhir/StructureDefinition/PT_Condition"
-* ^version = "1.0"
-* ^status = #draft
-* ^experimental = false
+
+
+
+
+
 /*
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"

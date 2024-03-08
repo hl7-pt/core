@@ -2,10 +2,10 @@ Profile: PT_LocationWarehouse
 Parent: Location
 Id: PTLocationWarehouse
 Description: "This profile is still under analysis, so it should be used with caution."
-* ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_LocationWarehouse"
-* ^version = "1.0"
-* ^status = #draft
-* ^experimental = false
+
+
+
+
 * ^date = "2023-01-26T12:40:01.8055471+00:00"
 // * extension ^slicing.discriminator.type = #value
 // * extension ^slicing.discriminator.path = "url"

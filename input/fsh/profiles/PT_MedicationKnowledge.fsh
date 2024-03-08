@@ -2,11 +2,11 @@ Profile: PT_MedicationKnowledge
 Parent: MedicationKnowledge
 Id: dc90ae74-e9fc-47fc-b8ff-963588bf26be
 Description: "A generic MedicationKnowledge resource for Portugal"
-* ^meta.lastUpdated = "2023-08-29T14:30:23.8852906+00:00"
-* ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_MedicationKnowledge"
-* ^version = "1.4"
-* ^status = #draft
-* ^experimental = false
+
+
+
+
+
 * ^date = "2023-08-29T14:30:46.6979114+00:00"
 /*
 // * extension contains
