@@ -21,10 +21,9 @@ Source: PT_MessageHeader
 * reason.coding.code -> "EVN-4"
 * response.identifier -> "MSA-2"
 * response.code -> "MSA-1"
-/*
+
 * response.details -> "MSA-3; ERR-3"
 * response.details.reference -> "ERR-3.1"
 * response.details.identifier.system -> "ERR-3.3"
 * response.details.identifier.value -> "ERR-3.1"
 * response.details.display -> "ERR-8"
-*/

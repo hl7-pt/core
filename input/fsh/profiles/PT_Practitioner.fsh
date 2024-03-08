@@ -7,13 +7,6 @@ Description: "A generic Practitioner resource for Portugal"
 * extension contains
   Nationality named Nationality 0..1 and
   Death named Death 0..1
-/*
-* name.given ^slicing.discriminator.type = #value
-* name.given ^slicing.discriminator.path = "value"
-* name.given ^slicing.rules = #open
-* name.given[firstName] ^sliceName = "firstName"
-* name.given[middleName] ^sliceName = "middleName"
-*/
 
 * address.extension contains PTAddress named Parish 0..1
 * address.country from $iso3166-1-2 (preferred)

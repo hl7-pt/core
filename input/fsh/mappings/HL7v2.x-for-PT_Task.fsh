@@ -4,14 +4,13 @@
 Mapping: HL7v2.x-for-PT_Task
 Id: HL7v2.x
 Source: PT_Task
-/*
+
 * identifier -> "ORC-2, ORC-3, ORC-8"
 * identifier.value -> "ORC-2.1, ORC-3.1, ORC-8.1"
 * identifier.assigner.display -> "ORC-2.2, ORC-3.2, ORC-8.2"
 * groupIdentifier -> "ORC-4, RXE-15"
 * groupIdentifier.value -> "ORC-4.1, RXE-15.1"
 * groupIdentifier.assigner.display -> "ORC-4.2"
-*/
 * status -> "ORC-1"
 * statusReason -> "ORC-16"
 * statusReason.coding.system -> "ORC-16.3"

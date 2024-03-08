@@ -46,7 +46,7 @@ Source: PT_MedicationRequest
 * dosageInstruction.method.coding.code -> "RXR-4.1"
 * dosageInstruction.method.coding.display -> "RXR-4.2"
 * dosageInstruction.method.text -> "Translation to [PT] of the display field"
-/*
+
 * dosageInstruction.doseAndRate.doseQuantity.value -> "RXO-2.1, RXE-3"
 * dosageInstruction.doseAndRate.doseQuantity.unit -> "RXO-4.2, RXE-5.2"
 * dosageInstruction.doseAndRate.doseQuantity.system -> "RXC-4.3, RXE-5.3"
@@ -59,14 +59,14 @@ Source: PT_MedicationRequest
 * dosageInstruction.doseAndRate.doseRange.high.unit -> "RXO-4.2, RXE-5.2"
 * dosageInstruction.doseAndRate.doseRange.high.system -> "RXO-4.3, RXE-5.3"
 * dosageInstruction.doseAndRate.doseRange.high.code -> "RXO-4.1, RXE-5.1"
-* dosageInstruction.doseAndRate.rate[x].value -> "RXO-21, RXE-23"
-* dosageInstruction.doseAndRate.rate[x].unit -> "RXO-22.2, RXE-24.2"
-* dosageInstruction.doseAndRate.rate[x].system -> "RXO-22.3, RXE-24.3"
-* dosageInstruction.doseAndRate.rate[x].code -> "RXO-22.1, RXE-24.1"
+//* dosageInstruction.doseAndRate.rate[x].value -> "RXO-21, RXE-23"
+//* dosageInstruction.doseAndRate.rate[x].unit -> "RXO-22.2, RXE-24.2"
+//* dosageInstruction.doseAndRate.rate[x].system -> "RXO-22.3, RXE-24.3"
+//* dosageInstruction.doseAndRate.rate[x].code -> "RXO-22.1, RXE-24.1"
 * dosageInstruction.maxDosePerPeriod -> "RXO-23, RXE-19"
 * dosageInstruction.maxDosePerAdministration.value -> "RXO-23.1, RXE-19.1"
 * dosageInstruction.maxDosePerAdministration.code -> "RXO-23.2, RXE-19.2"
-*/
+
 * dispenseRequest.initialFill.quantity.unit -> "RXE-11.2"
 * dispenseRequest.initialFill.quantity.system -> "RXE-11.3"
 * dispenseRequest.initialFill.quantity.code -> "RXE-11.1"

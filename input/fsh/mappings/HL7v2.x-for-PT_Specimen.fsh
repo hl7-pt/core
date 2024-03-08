@@ -4,10 +4,10 @@
 Mapping: HL7v2.x-for-PT_Specimen
 Id: HL7v2.x
 Source: PT_Specimen
-/*
+
 * identifier.value -> "SPM-2.1.1"
 * identifier.assigner.display -> "SPM-2.1.2"
-*/
+
 * accessionIdentifier -> "SAC-1 or SAC-2"
 * status -> "SPM-20"
 * type -> "SPM-4, SPM-5 (Modifier)"
