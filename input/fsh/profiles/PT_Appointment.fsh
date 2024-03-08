@@ -1,6 +1,6 @@
 Profile: PT_Appointment
 Parent: Appointment
-Id: PT_Appointment
+Id: PTAppointment
 Description: "A generic Appointment resource for Portugal"
 * ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_Appointment"
 * ^version = "1.0"

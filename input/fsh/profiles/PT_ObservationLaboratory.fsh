@@ -1,6 +1,6 @@
 Profile: PT_ObservationLaboratory
 Parent: Observation
-Id: PT_ObservationLaboratory
+Id: PTObservationLaboratory
 Description: "Resource to represent observation results produced by laboratory tests"
 * ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_ObservationLaboratory"
 * ^version = "1.1"

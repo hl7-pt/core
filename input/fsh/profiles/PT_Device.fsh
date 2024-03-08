@@ -1,6 +1,6 @@
 Profile: PT_Device
 Parent: $Device
-Id: PT_Device
+Id: PTDevice
 Description: "A generic Device resource for Portugal"
 * ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_Device"
 * ^version = "1.0"

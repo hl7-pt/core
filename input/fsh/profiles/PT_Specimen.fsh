@@ -1,6 +1,6 @@
 Profile: PT_Specimen
 Parent: Specimen
-Id: PT_Specimen
+Id: PTSpecimen
 Description: "A generic Specimen resource for Portugal"
 * ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_Specimen"
 * ^version = "1.1"

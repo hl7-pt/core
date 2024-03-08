@@ -12,6 +12,6 @@ Context: Condition
 * value[x] only CodeableConcept
 
 
-* value[x].coding.system from $v2-0359 (preferred)
-* value[x].coding.system ^binding.description = "FHIR Value set/code system definition for HL7 v2 table 0359 ( Diagnosis priority)"
+* valueCodeableConcept.coding.system from $v2-0359 (preferred)
+* valueCodeableConcept.coding.system ^binding.description = "FHIR Value set/code system definition for HL7 v2 table 0359 ( Diagnosis priority)"
 

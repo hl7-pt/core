@@ -11,6 +11,6 @@ Context: MedicationDispense
 * value[x] only CodeableConcept
 
 
-* value[x].coding.system from $v2-0136 (required)
-* value[x].coding.system ^binding.description = "FHIR Value set/code system definition for HL7 v2 table 0136 ( Y/N Indicator)"
+* valueCodeableConcept.coding.system from $v2-0136 (required)
+* valueCodeableConcept.coding.system ^binding.description = "FHIR Value set/code system definition for HL7 v2 table 0136 ( Y/N Indicator)"
 

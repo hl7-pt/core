@@ -1,6 +1,6 @@
 Profile: PT_ObservationVitalSigns
 Parent: Observation
-Id: PT_ObservationVitalSigns
+Id: PTObservationVitalSigns
 Description: "Resource for observation results related to vital signs"
 * ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_ObservationVitalSigns"
 * ^version = "1.0"

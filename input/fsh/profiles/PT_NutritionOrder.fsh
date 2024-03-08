@@ -1,6 +1,6 @@
 Profile: PT_NutritionOrder
 Parent: NutritionOrder
-Id: PT_NutritionOrder
+Id: PTNutritionOrder
 * ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_NutritionOrder"
 * ^version = "1.1"
 * ^status = #draft

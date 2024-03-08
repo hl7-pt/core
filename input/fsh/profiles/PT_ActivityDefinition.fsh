@@ -1,6 +1,6 @@
 Profile: PT_ActivityDefinition
 Parent: ActivityDefinition
-Id: PT_ActivityDefinition
+Id: PTActivityDefinition
 * ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_ActivityDefinition"
 * ^version = "1.2"
 * ^status = #draft

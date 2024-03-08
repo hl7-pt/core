@@ -1,6 +1,6 @@
 Profile: PT_Coverage
 Parent: Coverage
-Id: PT_Coverage
+Id: PTCoverage
 Description: "A generic Coverage resource for Portugal"
 * ^meta.lastUpdated = "2022-11-08T10:46:36.3860422+00:00"
 * ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_Coverage"

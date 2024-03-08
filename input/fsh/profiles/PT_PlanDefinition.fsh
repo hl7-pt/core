@@ -1,6 +1,6 @@
 Profile: PT_PlanDefinition
 Parent: PlanDefinition
-Id: PT_PlanDefinition
+Id: PTPlanDefinition
 Description: "A generic PlanDefiniton resource for Portugal"
 * ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_PlanDefinition"
 * ^version = "1.2"

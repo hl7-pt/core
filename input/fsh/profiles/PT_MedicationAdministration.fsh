@@ -1,6 +1,6 @@
 Profile: PT_MedicationAdministration
 Parent: MedicationAdministration
-Id: PT_MedicationAdministration
+Id: PTMedicationAdministration
 Description: "A generic MedicationAdministration resource for Portugal"
 * ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_MedicationAdministration"
 * ^version = "1.0"

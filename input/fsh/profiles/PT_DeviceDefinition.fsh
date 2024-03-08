@@ -1,6 +1,6 @@
 Profile: PT_DeviceDefinition
 Parent: DeviceDefinition
-Id: PT_DeviceDefinition
+Id: PTDeviceDefinition
 Description: "A generic DeviceDefinition resource for Portugal"
 * ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_DeviceDefinition"
 * ^version = "1.0"

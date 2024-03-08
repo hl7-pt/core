@@ -1,6 +1,6 @@
 Profile: PT_Task
 Parent: Task
-Id: PT_Task
+Id: PTTask
 * ^meta.lastUpdated = "2023-03-07T12:02:24.9263795+00:00"
 * ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_Task"
 * ^version = "1.1"

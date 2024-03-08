@@ -11,5 +11,5 @@ Context: MedicationRequest
 * value[x] only CodeableConcept
 
 
-* value[x].coding.system = "http://snomed.info/sct" (exactly)
+* valueCodeableConcept.coding.system = "http://snomed.info/sct" (exactly)
 

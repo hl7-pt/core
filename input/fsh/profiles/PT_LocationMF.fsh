@@ -1,6 +1,6 @@
 Profile: PT_LocationMF
 Parent: Location
-Id: PT_LocationMF
+Id: PTLocationMF
 Description: "A resource for MasterFile about Locations"
 * ^meta.lastUpdated = "2023-02-17T12:18:55.1860004+00:00"
 * ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_LocationMF"

@@ -1,6 +1,6 @@
 Profile: PT_DiagnosticReportRadiology
 Parent: DiagnosticReport
-Id: PT_DiagnosticReportRadiology
+Id: PTDiagnosticReportRadiology
 * ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_DiagnosticReportRadiology"
 * ^version = "1.0"
 * ^status = #draft

@@ -1,5 +1,6 @@
 Profile: PT_PractitionerRole
 Parent: PractitionerRole
+Id: PTPractitionerRole
 Description: "A generic PractitionerRole resource for Portugal"
 * ^meta.lastUpdated = "2021-12-20T11:47:58.198+00:00"
 * ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_PractitionerRole"
@@ -22,5 +23,4 @@ Description: "A generic PractitionerRole resource for Portugal"
 
 
 * location only Reference(PT_Location)
-* telecom.use from $v2-0201 (required)
-* telecom.use ^short = "ASN | WPN - purpose of this contact point"
+//* telecom.use from $v2-0201 (required)

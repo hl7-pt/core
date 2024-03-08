@@ -1,6 +1,6 @@
 Profile: PT_CarePlan
 Parent: CarePlan
-Id: PT_CarePlan
+Id: PTCarePlan
 * ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_CarePlan"
 * ^version = "1.2"
 * ^status = #draft

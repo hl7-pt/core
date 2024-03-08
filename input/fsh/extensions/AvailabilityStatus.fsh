@@ -9,6 +9,6 @@ Context: Device
 * . ..1
 
 * value[x] only CodeableConcept
-* value[x] from $device-availability-status (extensible)
-* value[x] ^binding.description = "The availability status of the device."
+//* valueCodeableConcept from $device-availability-status (extensible)
+//* valueCodeableConcept ^binding.description = "The availability status of the device."
 

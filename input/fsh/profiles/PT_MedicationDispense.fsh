@@ -1,6 +1,6 @@
 Profile: PT_MedicationDispense
 Parent: MedicationDispense
-Id: PT_MedicationDispense
+Id: PTMedicationDispense
 Description: "A generic MedicationDispense resource for Portugal"
 * ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_MedicationDispense"
 * ^version = "1.1"

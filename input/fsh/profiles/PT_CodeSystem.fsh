@@ -1,6 +1,6 @@
 Profile: PT_CodeSystem
 Parent: CodeSystem
-Id: PT_CodeSystem
+Id: PTCodeSystem
 Description: "A generic CodeSystem resource for Portugal. It can be used for masterfile situations of specialties."
 * ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_CodeSystem"
 * ^version = "1.0"

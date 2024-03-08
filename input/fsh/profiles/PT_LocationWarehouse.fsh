@@ -1,6 +1,6 @@
 Profile: PT_LocationWarehouse
 Parent: Location
-Id: PT_LocationWarehouse
+Id: PTLocationWarehouse
 Description: "This profile is still under analysis, so it should be used with caution."
 * ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_LocationWarehouse"
 * ^version = "1.0"

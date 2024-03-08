@@ -1,6 +1,6 @@
 Profile: PT_InventoryReport_Basic
 Parent: Basic
-Id: PT_InventoryReport_Basic
+Id: PTInventoryReportBasic
 Description: "Creation of the InventoryReport resource present in the R5 version of FHIR through the Basic resource"
 * ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_InventoryReport_Basic"
 * ^version = "1.1"

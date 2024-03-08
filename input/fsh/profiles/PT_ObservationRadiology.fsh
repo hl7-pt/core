@@ -1,6 +1,6 @@
 Profile: PT_ObservationRadiology
 Parent: Observation
-Id: PT_ObservationRadiology
+Id: PTObservationRadiology
 Description: "Resource for representing observation results produced by diagnostic procedures"
 * ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_ObservationRadiology"
 * ^version = "1.1"
@@ -18,10 +18,5 @@ Description: "Resource for representing observation results produced by diagnost
 * effectivePeriod only Period
 * effectivePeriod ^sliceName = "effectivePeriod"
 * value[x] only string
-* value[x] ^slicing.discriminator.type = #type
-* value[x] ^slicing.discriminator.path = "$this"
-* value[x] ^slicing.rules = #open
-* valueString only string
-* valueString ^sliceName = "valueString"
 * bodySite.coding.system = "https://snomed.info/sct" (exactly)
 * method.coding.system = "https://snomed.info/sct" (exactly)

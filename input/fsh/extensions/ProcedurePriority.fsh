@@ -10,8 +10,8 @@ Context: Procedure
 * ^date = "2022-01-21"
 
 * value[x] only CodeableConcept
-* value[x] from $v2-0418 (preferred)
-* value[x] ^binding.description = "FHIR Value set/code system definition for HL7 v2 table 0418 ( Procedure priority)"
+* valueCodeableConcept from $v2-0418 (preferred)
+* valueCodeableConcept ^binding.description = "FHIR Value set/code system definition for HL7 v2 table 0418 ( Procedure priority)"
 
 
 

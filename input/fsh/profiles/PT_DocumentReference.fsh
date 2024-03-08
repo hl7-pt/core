@@ -1,6 +1,6 @@
 Profile: PT_DocumentReference
 Parent: DocumentReference
-Id: PT_DocumentReference
+Id: PTDocumentReference
 Description: "A generic DocumentReference resource for Portugal"
 * ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_DocumentReference"
 * ^version = "1.0"

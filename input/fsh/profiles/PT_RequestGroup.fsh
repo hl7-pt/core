@@ -1,6 +1,6 @@
 Profile: PT_RequestGroup
 Parent: RequestGroup
-Id: PT_RequestGroup
+Id: PTRequestGroup
 Description: "A generic RequestGroup resource for Portugal"
 * ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_RequestGroup"
 * ^version = "1.1"

@@ -1,6 +1,6 @@
 Profile: PT_Procedure
 Parent: Procedure
-Id: PT_Procedure
+Id: PTProcedure
 Description: "A generic Procedure resource for Portugal"
 * ^meta.lastUpdated = "2022-01-21T09:47:48.654+00:00"
 * ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_Procedure"

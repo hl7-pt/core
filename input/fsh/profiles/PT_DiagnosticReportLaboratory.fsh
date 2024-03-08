@@ -1,6 +1,6 @@
 Profile: PT_DiagnosticReportLaboratory
 Parent: DiagnosticReport
-Id: PT_DiagnosticReportLaboratory
+Id: PTDiagnosticReportLaboratory
 * ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_DiagnosticReportLaboratory"
 * ^version = "1.0"
 * ^status = #draft

@@ -1,6 +1,6 @@
 Profile: PT_ServiceRequest
 Parent: ServiceRequest
-Id: PT_ServiceRequest
+Id: PTServiceRequest
 * ^url = "http://hl7.pt/fhir/core/StructureDefinition/PT_ServiceRequest"
 * ^version = "1.3"
 * ^status = #draft
