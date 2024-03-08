@@ -7,12 +7,12 @@ Mapping: HL7v2.xf-for-PT_LOCATION
 Id: HL7v2.x
 Source: PT_Location
 * meta.lastUpdated -> "MFI-4.1"
-* identifier.type.coding.system -> "MFI-1.3"
-* identifier.type.coding.code -> "MFI-1.1"
-* identifier.type.coding.display -> "MFI-1.2"
-* identifier.period.start -> "LDP-7"
-* identifier.period.end -> "LDP-8"
-* identifier.assigner.display -> "Organization/LOC-1.11; LDP-1.11; LCC-1.11; LCH-1.11; AIL-3.11; PV1-3.11; PV1-6.11; PV1-11.11; PV1-42.11; PV1-43.11; ORC-13.11"
+//* identifier.type.coding.system -> "MFI-1.3"
+//* identifier.type.coding.code -> "MFI-1.1"
+//* identifier.type.coding.display -> "MFI-1.2"
+//* identifier.period.start -> "LDP-7"
+//* identifier.period.end -> "LDP-8"
+//* identifier.assigner.display -> "Organization/LOC-1.11; LDP-1.11; LCC-1.11; LCH-1.11; AIL-3.11; PV1-3.11; PV1-6.11; PV1-11.11; PV1-42.11; PV1-43.11; ORC-13.11"
 * status -> "default - active (*in update)"
 * description -> "LOC-2 (*in update)"
 * type -> "Still no mappings (*in update)"
@@ -77,7 +77,7 @@ Source: PT_Location
 Mapping: HL7v2.x-4-for-PT_Location
 Id: HL7v2.x-4-for-PT-Location
 Source: PT_Location
-* identifier.value -> "PV1-6/11/42/43.1, 6/11/42/43.2, 6/11/42/43.3, 6/11/42/43.4, 6/11/42/43.7, 6/11/42/43.8, 6/11/42/43.10"
+//* identifier.value -> "PV1-6/11/42/43.1, 6/11/42/43.2, 6/11/42/43.3, 6/11/42/43.4, 6/11/42/43.7, 6/11/42/43.8, 6/11/42/43.10"
 
 // WARNING: The following Mapping may be incomplete since the original PT_Location
 // StructureDefinition was missing the mapping entry for HL7v2.x-5.
@@ -85,7 +85,7 @@ Source: PT_Location
 Mapping: HL7v2.x-5-for-PT_Location
 Id: HL7v2.x-5-for-PT-Location
 Source: PT_Location
-* identifier.value -> "ORC-13.1, 13.2, 13.3, 13.4, 13.7, 13.8, 13.10"
+//* identifier.value -> "ORC-13.1, 13.2, 13.3, 13.4, 13.7, 13.8, 13.10"
 
 // WARNING: The following Mapping may be incomplete since the original PT_Location
 // StructureDefinition was missing the mapping entry for HL7v2.x-WARD.

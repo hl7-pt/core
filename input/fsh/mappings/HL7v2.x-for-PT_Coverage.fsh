@@ -4,9 +4,9 @@
 Mapping: HL7v2.x-for-PT_Coverage
 Id: HL7v2.x
 Source: PT_Coverage
-* identifier -> "IN1-2"
-* identifier.system -> "IN1-2.3"
-* identifier.value -> "IN1-2.1"
+//* identifier -> "IN1-2"
+//* identifier.system -> "IN1-2.3"
+//* identifier.value -> "IN1-2.1"
 * status -> "IN1-45, but if this HL7 field is not sent, pay attention to the period element. When you only have period.start, should be \"active\". When it has passed (period.end), should be \"cancelled\"."
 * type -> "IN1-15"
 * type.coding.code -> "IN1-15.1"

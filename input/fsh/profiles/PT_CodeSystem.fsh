@@ -1,4 +1,4 @@
-/*
+
 Profile: PT_CodeSystem
 Parent: CodeSystem
 Id: PTCodeSystem
@@ -13,4 +13,3 @@ Description: "A generic CodeSystem resource for Portugal. It can be used for mas
 * concept.property.value[x] only Coding
 * concept.property.value[x].system from $v2-0180 (required)
 * concept.property.value[x].system ^binding.description = "FHIR Value set/code system definition for HL7 v2 table 0180 ( REcord Level Event Code)"
-*/

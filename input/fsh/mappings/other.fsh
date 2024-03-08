@@ -2,7 +2,7 @@
 // WARNING: The following Mapping may be incomplete since the original PT_Organization
 // StructureDefinition was missing the mapping entry for HL7v2.x.
 // Please review this and add the following properties as necessary: Target, Title, Description
-Mapping: HL7v2.x
+Mapping: HL7v2.x-for-PT-Organization
 Id: HL7v2.x
 Source: PT_Organization
 * identifier.type -> "XON-7; IN1-3.5; ORC-21.7"
@@ -38,7 +38,7 @@ Source: PT_Organization
 // WARNING: The following Mapping may be incomplete since the original PT_AllergyIntolerance
 // StructureDefinition was missing the mapping entry for HL7v2.x.
 // Please review this and add the following properties as necessary: Target, Title, Description
-Mapping: HL7v2.x
+Mapping: HL7v2.x-for-PT-AllergyIntolerance
 Id: HL7v2.x
 Source: PT_AllergyIntolerance
 * identifier.value -> "IAM-7"
@@ -80,6 +80,7 @@ Source: PT_AllergyIntolerance
 * lastOccurrence -> "IAM-20"
 * reaction.substance.coding.code -> "IAM-3.1; IAM-3.4"
 * reaction.substance.coding.display -> "IAM-3.2; IAM-3.5"
+/*
 * reaction.substance[DCIPT].coding.system -> "IAM-3.3; AL1-3.3"
 * reaction.substance[DCIPT].coding.code -> "IAM-3.1; AL1-3.1"
 * reaction.substance[DCIPT].coding.display -> "IAM-3.2; Al1-3.2"
@@ -92,27 +93,14 @@ Source: PT_AllergyIntolerance
 * reaction.substance[INFARMED].coding.system -> "IAM-3.3; AL1-3.3"
 * reaction.substance[INFARMED].coding.code -> "IAM-3.1; AL1-3.1"
 * reaction.substance[INFARMED].coding.display -> "IAM-3.2; Al1-3.2"
+*/
 * reaction.manifestation.coding.system -> "IAM-5.3"
 * reaction.manifestation.coding.display -> "IAM-5.2"
 * reaction.severity -> "IAM-4"
-
-// WARNING: The following Mapping may be incomplete since the original PT_AllergyIntolerance
-// StructureDefinition was missing the mapping entry for Hl7v2.x.
-// Please review this and add the following properties as necessary: Target, Title, Description
-Mapping: Hl7v2.x
-Id: Hl7v2.x
-Source: PT_AllergyIntolerance
 * asserter.identifier.value -> "IAM-15.1"
 * reaction.manifestation.coding.code -> "IAM-5.1"
 * reaction.manifestation.text -> "IAM-5.2"
 * reaction.onset -> "IAM-11; AL1-6"
-
-// WARNING: The following Mapping may be incomplete since the original PT_AllergyIntolerance
-// StructureDefinition was missing the mapping entry for HL7v.2x.
-// Please review this and add the following properties as necessary: Target, Title, Description
-Mapping: HL7v.2x
-Id: HL7v.2x
-Source: PT_AllergyIntolerance
 * reaction.substance.coding.system -> "IAM-3.3; IAM-3.6"
 
 
@@ -121,7 +109,7 @@ Source: PT_AllergyIntolerance
 // WARNING: The following Mapping may be incomplete since the original PT_Condition
 // StructureDefinition was missing the mapping entry for HL7v2.x.
 // Please review this and add the following properties as necessary: Target, Title, Description
-Mapping: HL7v2.x
+Mapping: HL7v2.x-for-PT-Condition
 Id: HL7v2.x
 Source: PT_Condition
 * identifier -> "DG1-20; PRB-4"
@@ -171,8 +159,8 @@ Source: PT_Condition
 // WARNING: The following Mapping may be incomplete since the original PT_Condition
 // StructureDefinition was missing the mapping entry for HL7v2.x-PractitionerRole.
 // Please review this and add the following properties as necessary: Target, Title, Description
-Mapping: HL7v2.x-PractitionerRole
-Id: HL7v2.x-PractitionerRole
+Mapping: HL7v2.x-Condition-PractitionerRole
+Id: HL7v2.x-Condition-PractitionerRole
 Source: PT_Condition
 * recorder.display -> "PractitionerRole/ROL-1.1"
 * asserter.display -> "PractitionerRole/ROL-1.1"
@@ -189,8 +177,8 @@ Source: PT_Condition
 // WARNING: The following Mapping may be incomplete since the original PT_Condition
 // StructureDefinition was missing the mapping entry for HL7v2.x-RelatedPerson.
 // Please review this and add the following properties as necessary: Target, Title, Description
-Mapping: HL7v2.x-RelatedPerson
-Id: HL7v2.x-RelatedPerson
+Mapping: HL7v2.x-Condition-RelatedPerson
+Id: HL7v2.x-Condition-RelatedPerson
 Source: PT_Condition
 * recorder.display -> "RelatedPerson/NK1-33.1"
 * asserter.display -> "RelatedPerson/NK1-33.1"
