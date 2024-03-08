@@ -1,5 +1,5 @@
-Extension: Identifier
-Id: Identifier
+Extension: MedIdentifier
+Id: MedIdentifier
 Context: MedicationKnowledge
 
 

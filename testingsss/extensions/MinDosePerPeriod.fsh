@@ -1,6 +1,6 @@
 Extension: MinDosePerPeriod
 Id: MinDosePerPeriod
-Context: MedicationKnowledge.administrationGuidelines.dosage.dosage
+Context: MedicationKnowledge.administrationGuidelines.dosage
 
 
 

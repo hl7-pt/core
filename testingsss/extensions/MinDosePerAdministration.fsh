@@ -1,6 +1,6 @@
 Extension: MinDosePerAdministration
 Id: MinDosePerAdministration
-Context: MedicationKnowledge.administrationGuidelines.dosage.dosage
+Context: MedicationKnowledge.administrationGuidelines.dosage
 
 
 
