@@ -5,10 +5,10 @@ Mapping: HL7v2.x-for-PT_DiagnosticReportLaboratory
 Id: HL7v2.x
 Source: PT_DiagnosticReportLaboratory
 * identifier -> "OBR-2, OBR-3"
-* identifier.type.coding.code -> "OBR-2 = PLAC"
-* identifier.type.coding.code -> "OBR-3 = FILL"
-* identifier.value -> "OBR-2.1; OBR-3.1"
-* identifier.assigner.display -> "OBR-2.2; OBR-3.2"
+//* identifier.type.coding.code -> "OBR-2 = PLAC"
+//* identifier.type.coding.code -> "OBR-3 = FILL"
+//* identifier.value -> "OBR-2.1; OBR-3.1"
+//* identifier.assigner.display -> "OBR-2.2; OBR-3.2"
 * status -> "OBR-25"
 * category -> "OBR-24"
 * code -> "OBR-4"

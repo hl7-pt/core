@@ -4,7 +4,7 @@
 Mapping: HL7v2.x-for-PT_MedicationDispense
 Id: HL7v2.x
 Source: PT_MedicationDispense
-* identifier.value -> "ORC-2 or ORC-8; ORC-3 (secondary)"
+//* identifier.value -> "ORC-2 or ORC-8; ORC-3 (secondary)"
 * status -> "ORC-1"
 * statusReason[x] -> "ORC-16"
 * medication[x].reference -> "Medication/RXD-2"

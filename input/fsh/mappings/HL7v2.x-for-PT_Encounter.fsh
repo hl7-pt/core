@@ -5,6 +5,7 @@ Mapping: HL7v2.x-for-PT_Encounter
 Id: HL7v2.x
 Source: PT_Encounter
 * meta.lastUpdated -> "EVN-2"
+/*
 * identifier.use -> "if MRG-5.1 or MRG-6.1 = old"
 * identifier.type.coding.code -> "PV1-19.5; PV1-50.5"
 * identifier.type.text -> "Translation to [PT] of the display field"
@@ -12,6 +13,7 @@ Source: PT_Encounter
 * identifier.period.start -> "PV1-19.7; PV1-50.7"
 * identifier.period.end -> "PV1-19.8; PV1-50.8"
 * identifier.assigner.display -> "PV1-19.4; PV1-50.4"
+*/
 * status -> "ADT^A01, ADT^A04 = 'arrived'; ADT^A02 = 'in-progress'; ADT^A03 = 'finished'; ADT^A08 (if PV1-2 = URG) = 'triaged'; ADT^A11, ADT^A13 = 'canceled'; ADT^A12 = 'entered-in-error';"
 * class -> "PV1-2"
 * class.code -> "PV1-2"
@@ -45,14 +47,14 @@ Source: PT_Encounter
 * diagnosis.use.coding.code -> "DG1-6"
 * diagnosis.use.text -> "Translation to [PT] of the display field"
 * diagnosis.rank -> "DG1-15"
-* hospitalization.preAdmissionIdentifier -> "PV1-5"
-* hospitalization.preAdmissionIdentifier.type -> "PV1-5.5"
-* hospitalization.preAdmissionIdentifier.type.coding.code -> "PV1-5.5"
-* hospitalization.preAdmissionIdentifier.type.text -> "Translation to [PT] of the display field"
-* hospitalization.preAdmissionIdentifier.value -> "PV1-5.1"
-* hospitalization.preAdmissionIdentifier.period.start -> "PV1-5.7"
-* hospitalization.preAdmissionIdentifier.period.end -> "PV1-5.8"
-* hospitalization.preAdmissionIdentifier.assigner.display -> "PV1-5.4"
+//* hospitalization.preAdmissionIdentifier -> "PV1-5"
+//* hospitalization.preAdmissionIdentifier.type -> "PV1-5.5"
+//* hospitalization.preAdmissionIdentifier.type.coding.code -> "PV1-5.5"
+//* hospitalization.preAdmissionIdentifier.type.text -> "Translation to [PT] of the display field"
+//* hospitalization.preAdmissionIdentifier.value -> "PV1-5.1"
+//* hospitalization.preAdmissionIdentifier.period.start -> "PV1-5.7"
+//* hospitalization.preAdmissionIdentifier.period.end -> "PV1-5.8"
+//* hospitalization.preAdmissionIdentifier.assigner.display -> "PV1-5.4"
 * hospitalization.admitSource -> "PV1-14"
 * hospitalization.admitSource.coding.code -> "PV1-14"
 * hospitalization.admitSource.text -> "Translation to [PT] of the display field"

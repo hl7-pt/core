@@ -42,7 +42,7 @@ Source: PT_Location
 Mapping: HL7v2.x-Ordem-for-PT_Location
 Id: HL7v2.x-Ordem-for-PT-Location
 Source: PT_Location
-* identifier.use -> "x.3, x.2, x.1, x.8, x.7, x.4 (quando versão HL7 v2.4), x.10 (quando versão HL7 v2.5+)"
+//* identifier.use -> "x.3, x.2, x.1, x.8, x.7, x.4 (quando versão HL7 v2.4), x.10 (quando versão HL7 v2.5+)"
 
 // WARNING: The following Mapping may be incomplete since the original PT_Location
 // StructureDefinition was missing the mapping entry for HL7v2.x-1.
@@ -50,7 +50,7 @@ Source: PT_Location
 Mapping: HL7v2.x-1-for-PT_Location
 Id: HL7v2.x-1-for-PT-Location
 Source: PT_Location
-* identifier.value -> "MFE-2; MFE-4.1"
+//* identifier.value -> "MFE-2; MFE-4.1"
 * name -> "LOC / LDP / LCC / LCH -1.6, 1.9, 1.10/1.4 (*in update)"
 
 // WARNING: The following Mapping may be incomplete since the original PT_Location
@@ -59,7 +59,7 @@ Source: PT_Location
 Mapping: HL7v2.x-2-for-PT_Location
 Id: HL7v2.x-2-for-PT-Location
 Source: PT_Location
-* identifier.value -> "LOC / LDP / LCC / LCH-1.1, 1.2, 1.3, 1.4, 1.7, 1.8, 1.10"
+//* identifier.value -> "LOC / LDP / LCC / LCH-1.1, 1.2, 1.3, 1.4, 1.7, 1.8, 1.10"
 * name -> "AIL / PV1-3.6, 3.9, 3.10/3.4 (*in update)"
 
 // WARNING: The following Mapping may be incomplete since the original PT_Location
@@ -68,7 +68,7 @@ Source: PT_Location
 Mapping: HL7v2.x-3-for-PT_Location
 Id: HL7v2.x-3-for-PT-Location
 Source: PT_Location
-* identifier.value -> "AIL/PV1-3.1, 3.2, 3.3, 3.4, 3.7, 3.8, 3.10"
+//* identifier.value -> "AIL/PV1-3.1, 3.2, 3.3, 3.4, 3.7, 3.8, 3.10"
 * name -> "PV1-6/11/42/43.6, 6/11/42/43.9, 6/11/42/43.10, 6/11/42/43.4 (*in update)"
 
 // WARNING: The following Mapping may be incomplete since the original PT_Location

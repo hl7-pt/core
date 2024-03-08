@@ -4,8 +4,8 @@
 Mapping: HL7v2.x-for-PT_MedicationRequest
 Id: HL7v2.x
 Source: PT_MedicationRequest
-* identifier.value -> "ORC-2.1; ORC-3.1"
-* identifier.assigner.display -> "ORC-2.2; ORC-3.2"
+//* identifier.value -> "ORC-2.1; ORC-3.1"
+//* identifier.assigner.display -> "ORC-2.2; ORC-3.2"
 * status -> "ORC-1"
 * statusReason -> "ORC-16"
 * statusReason.coding.system -> "ORC-16.3"
@@ -21,8 +21,8 @@ Source: PT_MedicationRequest
 * reasonCode.coding.system -> "RXO-20.3, RXE-27.3"
 * reasonCode.coding.code -> "RXO-20.1, RXE-27.1"
 * reasonCode.coding.display -> "RXO-20.2, RXE-27.2"
-* groupIdentifier.value -> "ORC-4.1, RXE-15"
-* groupIdentifier.assigner.display -> "ORC-4.2"
+//* groupIdentifier.value -> "ORC-4.1, RXE-15"
+//* groupIdentifier.assigner.display -> "ORC-4.2"
 * note.text -> "NTE-3"
 * dosageInstruction.text -> "ORC-7.7, RXO-6.2, RXE-1.7, RXE-21.2"
 * dosageInstruction.additionalInstruction -> "RXO-7, RXE-7"
@@ -30,8 +30,8 @@ Source: PT_MedicationRequest
 * dosageInstruction.additionalInstruction.coding.code -> "RXO-7.1, RXE-7.1"
 * dosageInstruction.additionalInstruction.coding.display -> "RXO-7.2, RXE-7.2"
 * dosageInstruction.additionalInstruction.text -> "If only available - RXO-7.2, RXE-7.2"
-* dosageInstruction.timing.event[start] -> "ORC-7.4, RXE-1.4"
-* dosageInstruction.timing.event[end] -> "ORC-7.5, RXE-1.5"
+//* dosageInstruction.timing.event[start] -> "ORC-7.4, RXE-1.4"
+//* dosageInstruction.timing.event[end] -> "ORC-7.5, RXE-1.5"
 * dosageInstruction.timing.repeat.timeOfDay -> "ORC-7.2.2, RXE-1.2.2"
 * dosageInstruction.timing.code -> "ORC-7.2, RXE-1.2"
 * dosageInstruction.timing.code.coding.code -> "ORC-7.2.1, RXE-1.2.1"
@@ -46,6 +46,7 @@ Source: PT_MedicationRequest
 * dosageInstruction.method.coding.code -> "RXR-4.1"
 * dosageInstruction.method.coding.display -> "RXR-4.2"
 * dosageInstruction.method.text -> "Translation to [PT] of the display field"
+/*
 * dosageInstruction.doseAndRate.doseQuantity.value -> "RXO-2.1, RXE-3"
 * dosageInstruction.doseAndRate.doseQuantity.unit -> "RXO-4.2, RXE-5.2"
 * dosageInstruction.doseAndRate.doseQuantity.system -> "RXC-4.3, RXE-5.3"
@@ -65,6 +66,7 @@ Source: PT_MedicationRequest
 * dosageInstruction.maxDosePerPeriod -> "RXO-23, RXE-19"
 * dosageInstruction.maxDosePerAdministration.value -> "RXO-23.1, RXE-19.1"
 * dosageInstruction.maxDosePerAdministration.code -> "RXO-23.2, RXE-19.2"
+*/
 * dispenseRequest.initialFill.quantity.unit -> "RXE-11.2"
 * dispenseRequest.initialFill.quantity.system -> "RXE-11.3"
 * dispenseRequest.initialFill.quantity.code -> "RXE-11.1"

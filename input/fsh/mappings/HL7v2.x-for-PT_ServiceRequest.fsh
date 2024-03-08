@@ -4,7 +4,7 @@
 Mapping: HL7v2.x-for-PT_ServiceRequest
 Id: HL7v2.x
 Source: PT_ServiceRequest
-* extension[patientTransportNeed] -> "OBR.41"
+//* extension[patientTransportNeed] -> "OBR.41"
 * identifier -> "ORC2; ORC3"
 * basedOn -> "ORC.8"
 * requisition -> "ORC.4"

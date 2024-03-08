@@ -4,4 +4,4 @@
 Mapping: Patient.Contact-HL7v2.x
 Id: Patient.Contact-HL7v2.x
 Source: PT_Patient
-* contact.address.extension[Parish].value[x] -> "NK1-4.9"
+//* contact.address.extension[Parish].value[x] -> "NK1-4.9"

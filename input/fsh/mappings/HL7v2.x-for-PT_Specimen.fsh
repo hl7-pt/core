@@ -4,8 +4,10 @@
 Mapping: HL7v2.x-for-PT_Specimen
 Id: HL7v2.x
 Source: PT_Specimen
+/*
 * identifier.value -> "SPM-2.1.1"
 * identifier.assigner.display -> "SPM-2.1.2"
+*/
 * accessionIdentifier -> "SAC-1 or SAC-2"
 * status -> "SPM-20"
 * type -> "SPM-4, SPM-5 (Modifier)"
@@ -31,8 +33,8 @@ Source: PT_Specimen
 * collection.bodySite.coding.code -> "SPM-8/10.1, SPM-9.1"
 * collection.bodySite.coding.display -> "SPM-8/10.2, SPM-9.2"
 * container.identifier -> "SAC-3"
-* container.identifier.value -> "SAC-3.1"
-* container.identifier.assigner.display -> "SAC-3.2"
+//* container.identifier.value -> "SAC-3.1"
+//* container.identifier.assigner.display -> "SAC-3.2"
 * container.type -> "SPM-27"
 * container.type.coding.system -> "SPM-27.3"
 * container.type.coding.code -> "SPM-27.1"

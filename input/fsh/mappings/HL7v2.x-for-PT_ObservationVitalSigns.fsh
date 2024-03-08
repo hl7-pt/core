@@ -4,7 +4,7 @@
 Mapping: HL7v2.x-for-PT_ObservationVitalSigns
 Id: HL7v2.x
 Source: PT_ObservationVitalSigns
-* identifier.value -> "OBX-21; OBX-3 + OBX-4"
+//* identifier.value -> "OBX-21; OBX-3 + OBX-4"
 * status -> "OBX-11"
 * code -> "OBX-3"
 * code.coding.system -> "OBX-3.3"

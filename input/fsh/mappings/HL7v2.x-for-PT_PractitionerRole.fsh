@@ -5,10 +5,10 @@ Mapping: HL7v2.x-for-PT_PractitionerRole
 Id: HL7v2.x
 Source: PT_PractitionerRole
 * identifier -> "PRD-7; ROL-1"
-* identifier.type.coding.code -> "PRD-7.2"
-* identifier.system -> "ROL-1.2"
-* identifier.value -> "PRD-7.1; ROL-1.1"
-* identifier.period.end -> "PRD-7.4"
+//* identifier.type.coding.code -> "PRD-7.2"
+//* identifier.system -> "ROL-1.2"
+//* identifier.value -> "PRD-7.1; ROL-1.1"
+//* identifier.period.end -> "PRD-7.4"
 * active -> "STF-7"
 * period -> "PRA-5.4; PRD-8/9; STF-12/13; ORG-9; ROL-5.1/6.1"
 * period.start -> "PRD-8; STF-12; ORG-9.1; ROL-5.1"

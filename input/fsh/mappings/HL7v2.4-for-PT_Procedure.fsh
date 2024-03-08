@@ -5,4 +5,4 @@ Mapping: HL7v2.4-for-PT_Procedure
 Id: HL7v2.4
 Source: PT_Procedure
 * identifier -> "PR1-3"
-* identifier.value -> "PR1-3.1"
+//* identifier.value -> "PR1-3.1"

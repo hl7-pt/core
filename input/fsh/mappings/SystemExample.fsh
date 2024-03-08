@@ -4,4 +4,4 @@
 Mapping: SystemExample
 Id: SystemExample
 Source: PT_RelatedPerson
-* identifier.system -> "if NNU -> system SPMS"
+//* identifier.system -> "if NNU -> system SPMS"

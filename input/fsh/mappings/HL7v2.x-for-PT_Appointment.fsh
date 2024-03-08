@@ -4,7 +4,7 @@
 Mapping: HL7v2.x-for-PT_Appointment
 Id: HL7v2.x
 Source: PT_Appointment
-* identifier.value -> "SCH-1, SCH-2, SCH-4, SCH-5, SCH-26"
+//* identifier.value -> "SCH-1, SCH-2, SCH-4, SCH-5, SCH-26"
 * status -> "SCH-25"
 * cancelationReason -> "IF status = cancelled"
 * cancelationReason.coding.code -> "SCH-6"

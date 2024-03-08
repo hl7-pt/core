@@ -5,5 +5,5 @@ Mapping: HL7v2.5-for-PT_Procedure
 Id: HL7v2.5
 Source: PT_Procedure
 * identifier -> "PR1-19"
-* identifier.value -> "PR1-19.1"
-* identifier.assigner.display -> "PR1-19.2"
+//* identifier.value -> "PR1-19.1"
+//* identifier.assigner.display -> "PR1-19.2"
