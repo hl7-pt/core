@@ -4,11 +4,7 @@ Id: PTCoverage
 Description: "A generic Coverage resource for Portugal"
 
 
-
-// * extension ^slicing.discriminator.type = #value
-// * extension ^slicing.discriminator.path = "url"
-// * extension ^slicing.rules = #open
-// // * extension contains EconomicInsufficiency named EconomicInsufficiency 0..1
+* extension contains EconomicInsufficiency named EconomicInsufficiency 0..1
 * policyHolder only Reference(PT_Patient or PT_RelatedPerson or PT_Organization)
 * subscriber only Reference(PT_Patient or PT_RelatedPerson)
 * beneficiary only Reference(PT_Patient)

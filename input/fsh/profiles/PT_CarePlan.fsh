@@ -4,8 +4,8 @@ Id: PTCarePlan
 Description: "A generic CarePlan resource for Portugal"
 
 
-//* identifier.type.coding 1..1
-//* identifier.type.coding from snomed-ct-vs (required)
+* identifier.type.coding 1..1
+* identifier.type.coding from snomed-ct-vs (required)
 * basedOn ..1
 * category ..1
 * category.coding from snomed-ct-vs (required)

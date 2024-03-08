@@ -8,5 +8,4 @@ Description: "A generic ActivityDefinition resource for Portugal"
 * participant.extension ^slicing.discriminator.type = #value
 * participant.extension ^slicing.discriminator.path = "url"
 * participant.extension ^slicing.rules = #open
-//* participant.extension contains TypeReference named TypeReference 0..1
-//* participant.extension[TypeReference] ^isModifier = false
+* participant.extension contains TypeReference named TypeReference 0..1
