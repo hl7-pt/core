@@ -12,7 +12,7 @@ Id: PTServiceRequest
 // * extension[statusReason] ^isModifier = false
 * basedOn only Reference(PT_CarePlan)
 * category ..1
-* category.coding from $sct (required)
+* category.coding from snomed-ct-vs (required)
 * category.coding ^binding.description = "SNOMED"
 /*
 * doNotPerform.extension contains
@@ -20,7 +20,7 @@ Id: PTServiceRequest
     NotPerformDecider named notPerformDecider 0..1
 
 */
-* code.coding from $sct (required)
+* code.coding from snomed-ct-vs (required)
 * quantity[x] only Quantity
 * subject only Reference(PT_Patient)
 * encounter 1..
@@ -29,7 +29,7 @@ Id: PTServiceRequest
 * requester only Reference(Device or PT_Practitioner or PT_PractitionerRole)
 * performer only Reference(Organization or CareTeam or HealthcareService or PT_Patient or Device or RelatedPerson or PT_Practitioner or PT_PractitionerRole)
 * locationReference only Reference(PT_Location)
-* reasonCode.coding from $sct (required)
+* reasonCode.coding from snomed-ct-vs (required)
 * reasonReference only Reference(Observation or DiagnosticReport or DocumentReference or PT_Condition)
 * specimen only Reference(PT_Specimen)
 * note.author[x] only Reference

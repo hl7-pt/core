@@ -7,10 +7,10 @@ Id: PTCarePlan
 
 * ^date = "2022-07-01T15:28:30.3911673+00:00"
 //* identifier.type.coding 1..1
-//* identifier.type.coding from $sct (required)
+//* identifier.type.coding from snomed-ct-vs (required)
 * basedOn ..1
 * category ..1
-* category.coding from $sct (required)
+* category.coding from snomed-ct-vs (required)
 * title 1..
 * subject only Reference(PT_Patient)
 * encounter only Reference(PT_Encounter)
