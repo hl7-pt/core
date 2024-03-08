@@ -6,4 +6,4 @@ Context: Basic
 
 * value[x] 1..
 * value[x] only code
-//* valueCode from $inventoryreport-counttype (required)
+* valueCode from $inventoryreport-counttype (required)

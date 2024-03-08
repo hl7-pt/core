@@ -4,5 +4,4 @@ Description: "The name used to display by default when the device is referenced.
 Context: Device
 
 
-* . ..1
 * value[x] only string

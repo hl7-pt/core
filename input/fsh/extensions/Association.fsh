@@ -14,9 +14,10 @@ Context: Device
 * extension[status].value[x] from $device-association-status (example)
 * extension[status].value[x] ^binding.description = "The association status of the device."
 * extension[statusReason].value[x] only CodeableConcept
-* extension[bodyStructure].extension ^slicing.discriminator.type = #value
-* extension[bodyStructure].extension ^slicing.discriminator.path = "url"
-* extension[bodyStructure].extension ^slicing.rules = #open
+
+* extension[bodyStructure].extension contains
+    concept 0..* and
+    reference 0..1
 * extension[bodyStructure].extension[concept] ^sliceName = "concept"
 * extension[bodyStructure].extension[concept].url = "concept" (exactly)
 * extension[bodyStructure].extension[concept].value[x] only CodeableConcept

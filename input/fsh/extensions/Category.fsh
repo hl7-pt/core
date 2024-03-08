@@ -5,5 +5,5 @@ Context: Device
 
 
 * value[x] only CodeableConcept
-//* valueCodeableConcept from $device-category (example)
-//* valueCodeableConcept ^binding.description = "The association state of the device."
+* valueCodeableConcept from $device-category (example)
+* valueCodeableConcept ^binding.description = "The association state of the device."
