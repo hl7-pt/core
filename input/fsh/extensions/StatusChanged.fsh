@@ -5,8 +5,4 @@ Context: MedicationRequest
 
 
 
-
-
-* ^date = "2022-02-01T12:12:17.3628131+00:00"
-
 * value[x] only dateTime

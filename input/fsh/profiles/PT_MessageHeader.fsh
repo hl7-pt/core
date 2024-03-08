@@ -5,9 +5,6 @@ Description: "A generic Message Header resource for Portugal"
 
 
 
-
-
-* ^date = "2021-11-12T12:02:37.8328535Z"
 * event[x] only Coding
 * sender only Reference(Organization or PT_Practitioner or PT_PractitionerRole)
 * enterer only Reference(PT_Practitioner or PT_PractitionerRole)

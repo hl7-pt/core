@@ -4,8 +4,6 @@ Description: "Devices may be associated with one or more categories. - Extension
 Context: Device
 
 
-
-* ^date = "2023-03-02T19:59:05.0729171+00:00"
 * value[x] only CodeableConcept
 //* valueCodeableConcept from $device-category (example)
 //* valueCodeableConcept ^binding.description = "The association state of the device."

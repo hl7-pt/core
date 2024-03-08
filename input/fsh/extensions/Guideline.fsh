@@ -4,8 +4,6 @@ Description: "Information aimed at providing directions for the usage of this mo
 Context: DeviceDefinition
 
 
-
-* ^date = "2023-03-07T15:44:35.2774536+00:00"
 * . ..1
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"

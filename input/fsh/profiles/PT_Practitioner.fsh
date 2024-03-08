@@ -5,9 +5,6 @@ Description: "A generic Practitioner resource for Portugal"
 
 
 
-
-
-* ^date = "2021-12-10T12:12:16.5423396+00:00"
 // * extension ^slicing.discriminator.type = #value
 // * extension ^slicing.discriminator.path = "url"
 // * extension ^slicing.rules = #open

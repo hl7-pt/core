@@ -1,7 +1,7 @@
 Profile: PT_ActivityDefinition
 Parent: ActivityDefinition
 Id: PTActivityDefinition
-
+Description: "A generic ActivityDefinition resource for Portugal"
 * author ..1
 * editor ..1
 * reviewer ..1

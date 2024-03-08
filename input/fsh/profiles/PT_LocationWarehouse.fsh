@@ -4,9 +4,6 @@ Id: PTLocationWarehouse
 Description: "This profile is still under analysis, so it should be used with caution."
 
 
-
-
-* ^date = "2023-01-26T12:40:01.8055471+00:00"
 // * extension ^slicing.discriminator.type = #value
 // * extension ^slicing.discriminator.path = "url"
 // * extension ^slicing.rules = #open

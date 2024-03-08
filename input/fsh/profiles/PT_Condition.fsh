@@ -5,9 +5,6 @@ Id: PTCondition
 Description: "A generic Condition resource for Portugal"
 
 
-
-
-
 /*
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"

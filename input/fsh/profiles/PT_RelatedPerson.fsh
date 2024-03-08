@@ -5,9 +5,6 @@ Description: "A generic RelatedPerson resource for Portugal"
 
 
 
-
-
-* ^date = "2022-11-08T10:47:34.3124993+00:00"
 /*
 * identifier.type from $v2-0203 (extensible)
 * identifier.type ^binding.extension[0].url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName"

@@ -5,7 +5,4 @@ Context: Practitioner.communication
 
 
 
-
-
-* ^date = "2021-12-10"
 * value[x] only boolean

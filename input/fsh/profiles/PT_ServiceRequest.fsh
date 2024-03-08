@@ -1,10 +1,9 @@
 Profile: PT_ServiceRequest
 Parent: ServiceRequest
 Id: PTServiceRequest
+Description: "A generic ServiceRequest resource for Portugal"
 
 
-
-* ^date = "2023-09-01T13:24:34.6850843+00:00"
 // * extension contains
 //    PatientTransportNeed named patientTransportNeed 0..1 and
 //    $request-statusReason named statusReason 0..*
@@ -18,7 +17,6 @@ Id: PTServiceRequest
 * doNotPerform.extension contains
     NotPerformReason named notPerformReason 0..1 and
     NotPerformDecider named notPerformDecider 0..1
-
 */
 * code.coding from snomed-ct-vs (required)
 * quantity[x] only Quantity

@@ -5,9 +5,6 @@ Description: "A resource for MasterFile about Locations"
 
 
 
-
-
-* ^date = "2023-02-17T12:19:08.9570243+00:00"
 * status ^comment = "*The mapping for this field is being updated."
 * name ^comment = "*The mapping for this field is being updated."
 * description ^comment = "*The mapping for this field is being updated."

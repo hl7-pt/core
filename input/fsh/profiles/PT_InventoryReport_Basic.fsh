@@ -4,9 +4,6 @@ Id: PTInventoryReportBasic
 Description: "Creation of the InventoryReport resource present in the R5 version of FHIR through the Basic resource"
 
 
-
-
-* ^date = "2023-01-19T14:15:18.04356+00:00"
 /*
 // * extension ^slicing.discriminator.type = #value
 // * extension ^slicing.discriminator.path = "url"

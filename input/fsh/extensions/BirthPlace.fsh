@@ -5,10 +5,6 @@ Context: Patient
 
 
 
-
-
-* ^date = "2021-10-28T16:28:03.5050045+00:00"
-
 /*
 * value[x] only Address
 * valueAddress.city = "http://ine.pt" (exactly)

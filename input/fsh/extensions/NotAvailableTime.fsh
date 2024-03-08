@@ -2,7 +2,6 @@ Extension: NotAvailableTime
 Id: NotAvailableTime
 Context: Location.hoursOfOperation
 
-* ^date = "2023-02-17T12:19:08.9570243+00:00"
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

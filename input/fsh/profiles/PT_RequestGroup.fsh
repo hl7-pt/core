@@ -4,9 +4,6 @@ Id: PTRequestGroup
 Description: "A generic RequestGroup resource for Portugal"
 
 
-
-
-* ^date = "2023-01-16T17:20:13.3776524+00:00"
 // * extension ^slicing.discriminator.type = #value
 // * extension ^slicing.discriminator.path = "url"
 // * extension ^slicing.rules = #open

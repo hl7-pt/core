@@ -4,8 +4,6 @@ Description: "The status of the device itself - whether it is switched on, or ac
 Context: Device
 
 
-
-* ^date = "2023-03-02T19:59:05.0729171+00:00"
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

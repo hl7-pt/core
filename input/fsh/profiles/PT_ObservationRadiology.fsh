@@ -4,9 +4,6 @@ Id: PTObservationRadiology
 Description: "Resource for representing observation results produced by diagnostic procedures"
 
 
-
-
-* ^date = "2022-11-08T10:47:34.3124993+00:00"
 * category.coding.code = #imaging (exactly)
 * code.coding.system = "https://loinc.org/" (exactly)
 * effective[x] only dateTime or Period

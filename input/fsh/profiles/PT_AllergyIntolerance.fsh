@@ -3,7 +3,6 @@ Profile: PT_AllergyIntolerance
 Parent: AllergyIntolerance
 Id: d20e6bbe-dfd8-4df7-8060-9446ceb892f0
 Description: "A generic AllergiesIntolerance resource for Portugal"
-
 /*
 * code ^slicing.discriminator.type = #value
 * code ^slicing.discriminator.path = "system"

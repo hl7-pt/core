@@ -3,9 +3,6 @@ Id: StorageGuideline
 Context: MedicationKnowledge
 
 
-
-
-* ^date = "2022-11-15T16:23:17.8822304+00:00"
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

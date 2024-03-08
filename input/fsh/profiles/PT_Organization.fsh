@@ -6,9 +6,6 @@ Description: "A generic Organization resource for Portugal"
 
 
 
-
-
-* ^date = "2021-12-27T17:15:26.4961614Z"
 //* identifier.type from Hl7VSIdentifierType (extensible)
 * name 1..
 /*

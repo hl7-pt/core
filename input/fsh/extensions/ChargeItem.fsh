@@ -4,8 +4,6 @@ Description: "Billing code or reference associated with the device - Extension c
 //Context: DeviceDefinition
 
 
-
-* ^date = "2023-03-07T15:44:35.2774536+00:00"
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

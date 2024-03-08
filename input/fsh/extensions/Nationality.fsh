@@ -5,9 +5,6 @@ Context: Patient, Practitioner
 
 
 
-
-
-* ^date = "2021-10-28T00:00:00+01:00"
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

@@ -4,9 +4,6 @@ Id: PTMedicationAdministration
 Description: "A generic MedicationAdministration resource for Portugal"
 
 
-
-
-* ^date = "2022-12-19T15:59:27.786581+00:00"
 /*
 // * extension ^slicing.discriminator.type = #value
 // * extension ^slicing.discriminator.path = "url"

@@ -34,9 +34,7 @@ Source: PT_Organization
 * address.country -> "IN1-5.6; ORC-22.6"
 * address.period.start -> "IN1-5.12.1 / IN1-5.13.1; ORC-22.12.1 / ORC-22.13.1"
 * address.period.end -> "IN1-5.12.2 / IN1-5.14.1; ORC-22.12.2 / ORC-22.14.1"
-
 */
-
 
 // WARNING: The following Mapping may be incomplete since the original PT_AllergyIntolerance
 // StructureDefinition was missing the mapping entry for HL7v2.x.
@@ -109,8 +107,6 @@ Source: PT_AllergyIntolerance
 * reaction.substance.coding.system -> "IAM-3.3; IAM-3.6"
 
 
-
-
 // WARNING: The following Mapping may be incomplete since the original PT_Condition
 // StructureDefinition was missing the mapping entry for HL7v2.x.
 // Please review this and add the following properties as necessary: Target, Title, Description
@@ -153,7 +149,6 @@ Source: PT_Condition
 * stage.summary.coding.display -> "PRB-14.2"
 * stage.summary.text -> "Translation to [PT] of the display field"
 * note.text -> "NTE-3"
-
 // WARNING: The following Mapping may be incomplete since the original PT_Condition
 // StructureDefinition was missing the mapping entry for HL7v2.x-Practitioner.
 // Please review this and add the following properties as necessary: Target, Title, Description
@@ -162,7 +157,6 @@ Id: HL7v2.x-Practitioner
 Source: PT_Condition
 * recorder.display -> "Practitioner/DG1-16"
 * asserter.display -> "Practitioner/DG1-16"
-
 // WARNING: The following Mapping may be incomplete since the original PT_Condition
 // StructureDefinition was missing the mapping entry for HL7v2.x-PractitionerRole.
 // Please review this and add the following properties as necessary: Target, Title, Description
@@ -171,7 +165,6 @@ Id: HL7v2.x-Condition-PractitionerRole
 Source: PT_Condition
 * recorder.display -> "PractitionerRole/ROL-1.1"
 * asserter.display -> "PractitionerRole/ROL-1.1"
-
 // WARNING: The following Mapping may be incomplete since the original PT_Condition
 // StructureDefinition was missing the mapping entry for HL7v2.x-Patient.
 // Please review this and add the following properties as necessary: Target, Title, Description
@@ -180,7 +173,6 @@ Id: HL7v2.x-Patient
 Source: PT_Condition
 * recorder.display -> "Patient/PID-3 c/ SNS; PID-18.1; PID-3 c/ SONHO"
 * asserter.display -> "Patient/PID-3 c/ SNS; PID-18.1; PID-3 c/ SONHO"
-
 // WARNING: The following Mapping may be incomplete since the original PT_Condition
 // StructureDefinition was missing the mapping entry for HL7v2.x-RelatedPerson.
 // Please review this and add the following properties as necessary: Target, Title, Description
@@ -189,6 +181,4 @@ Id: HL7v2.x-Condition-RelatedPerson
 Source: PT_Condition
 * recorder.display -> "RelatedPerson/NK1-33.1"
 * asserter.display -> "RelatedPerson/NK1-33.1"
-
-
 

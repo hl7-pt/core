@@ -5,9 +5,6 @@ Description: "A generic MedicationKnowledge resource for Portugal"
 
 
 
-
-
-* ^date = "2023-08-29T14:30:46.6979114+00:00"
 /*
 // * extension contains
     Identifier named Identifier 0..* and

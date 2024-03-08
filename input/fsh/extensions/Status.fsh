@@ -4,8 +4,6 @@ Description: "The status of the inventory check or notification - whether this i
 Context: Basic
 
 
-
-* ^date = "2023-01-16T17:14:40.6511784+00:00"
 * value[x] 1..
 * value[x] only code
 * valueCode from $inventoryreport-status (required)

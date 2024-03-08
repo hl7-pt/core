@@ -4,9 +4,6 @@ Id: PTObservationLaboratory
 Description: "Resource to represent observation results produced by laboratory tests"
 
 
-
-
-* ^date = "2022-11-08T10:47:34.3124993+00:00"
 * category.coding.code = #laboratory (exactly)
 * code.coding.system = "https://loinc.org/" (exactly)
 * effective[x] only dateTime or Period

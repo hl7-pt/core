@@ -4,8 +4,6 @@ Description: "Extension that indicates which participants may be part of the dru
 Context: MedicationKnowledge
 
 
-
-* ^date = "2023-01-10T11:15:44.1843212+00:00"
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

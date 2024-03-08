@@ -4,9 +4,6 @@ Id: PTTask
 
 
 
-
-
-* ^date = "2023-03-07T12:02:35.3976323+00:00"
 // * extension ^slicing.discriminator.type = #value
 // * extension ^slicing.discriminator.path = "url"
 // * extension ^slicing.rules = #open

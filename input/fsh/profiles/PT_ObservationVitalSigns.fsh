@@ -4,9 +4,6 @@ Id: PTObservationVitalSigns
 Description: "Resource for observation results related to vital signs"
 
 
-
-
-* ^date = "2022-11-22T15:58:42.2591837+00:00"
 * category.coding.code = #vital-signs (exactly)
 * code.coding.system = "https://loinc.org/" (exactly)
 * effective[x] only dateTime or instant

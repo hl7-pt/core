@@ -5,9 +5,6 @@ Description: "A generic Coverage resource for Portugal"
 
 
 
-
-
-* ^date = "2022-11-08T10:47:34.3124993+00:00"
 // * extension ^slicing.discriminator.type = #value
 // * extension ^slicing.discriminator.path = "url"
 // * extension ^slicing.rules = #open

@@ -5,6 +5,3 @@ Description: "A generic OperationOutcome resource for Portugal"
 
 
 
-
-
-* ^date = "2021-12-10"

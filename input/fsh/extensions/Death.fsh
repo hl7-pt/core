@@ -5,9 +5,6 @@ Context: Practitioner
 
 
 
-
-
-* ^date = "2021-12-10"
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

@@ -1,10 +1,9 @@
 Profile: PT_NutritionOrder
 Parent: NutritionOrder
 Id: PTNutritionOrder
+Description: "A generic NutritionOrder resource for Portugal"
 
 
-
-* ^date = "2022-09-14T10:57:40.7701575+00:00"
 * patient only Reference(PT_Patient)
 * encounter only Reference(PT_Encounter)
 * orderer only Reference(PT_Practitioner or PT_PractitionerRole)

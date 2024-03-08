@@ -5,9 +5,6 @@ Description: "A generic PractitionerRole resource for Portugal"
 
 
 
-
-
-* ^date = "2021-12-20"
 //* identifier.type from $v2-0203 (extensible)
 * practitioner only Reference(PT_Practitioner)
 * code ^slicing.discriminator.type = #pattern

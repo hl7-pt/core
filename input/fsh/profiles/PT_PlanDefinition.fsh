@@ -4,9 +4,6 @@ Id: PTPlanDefinition
 Description: "A generic PlanDefiniton resource for Portugal"
 
 
-
-
-* ^date = "2022-07-01T15:36:15.8090853+00:00"
 /*
 * action.extension ^slicing.discriminator.type = #value
 * action.extension ^slicing.discriminator.path = "url"

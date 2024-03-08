@@ -4,8 +4,6 @@ Description: "Identifier associated with the regulatory documentation of a set o
 Context: DeviceDefinition
 
 
-
-* ^date = "2023-03-07T15:44:35.2774536+00:00"
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

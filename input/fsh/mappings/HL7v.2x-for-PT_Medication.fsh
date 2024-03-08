@@ -1,5 +1,4 @@
 
-
 // WARNING: The following Mapping may be incomplete since the original PT_Medication
 // StructureDefinition was missing the mapping entry for HL7v2.4.
 // Please review this and add the following properties as necessary: Target, Title, Description
@@ -11,7 +10,6 @@ Source: PT_Medication
 //* code[GLINTT].coding.system -> "RXO-1.3 / RXO-1.6, RXC-2.3, RXE-2.3, RXD-2.3, RXG-4.3, RXA-5.3"
 //* code[GLINTT].coding.code -> "RXO-1.1 / RXO-1.4, RXC-2.1, RXE-2.1, RXD-2.1, RXG-4.1, RXA-5.1"
 //* code[GLINTT].coding.display -> "RXO-1.2 / RXO-1.5, RXC-2.2, RXE-2.2, RXD-2.2, RXG-4.2, RXA-5.2"
-
 // WARNING: The following Mapping may be incomplete since the original PT_Medication
 // StructureDefinition was missing the mapping entry for HL7v2.4-Supplementary.
 // Please review this and add the following properties as necessary: Target, Title, Description
@@ -23,7 +21,6 @@ Source: PT_Medication
 * code[GLINTT].coding.code -> "RXO-24.1, RXC-7.1, RXE-31.1, RXD-25.1"
 * code[GLINTT].coding.display -> "RXO-24.2, RXC-7.2, RXE-31.2, RXD-25.2"
 * ingredient.item[x].coding.system -> "RXO-24.3, RXC-7.3, RXE-31.3, RXD-25.3"
-
 // WARNING: The following Mapping may be incomplete since the original PT_Medication
 // StructureDefinition was missing the mapping entry for HL7v2.x.
 // Please review this and add the following properties as necessary: Target, Title, Description
@@ -70,4 +67,3 @@ Source: PT_Medication
 */
 * ingredient.item[x].coding.code -> "RXO-24.1, RXC-7.1, RXE-31.1, RXD-25.1"
 * ingredient.item[x].coding.display -> "RXO-24.2, RXC-7.2, RXE-31.2, RXD-25.2"
-

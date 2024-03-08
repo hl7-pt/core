@@ -5,9 +5,6 @@ Context: Coverage
 
 
 
-
-
-* ^date = "2022-01-07"
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

@@ -5,8 +5,4 @@ Context: Condition
 
 
 
-
-
-* ^date = "2022-01-07"
-
 * value[x] only CodeableConcept

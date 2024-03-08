@@ -4,7 +4,4 @@ Description: "Extension to indicate when the task should be performed - Extensio
 Context: Task
 
 
-
-
-* ^date = "2023-03-07T12:02:35.3976323+00:00"
 * value[x] only Period

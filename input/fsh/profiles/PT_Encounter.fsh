@@ -5,9 +5,6 @@ Description: "A generic Encounter resource for Portugal"
 
 
 
-
-
-* ^date = "2022-01-13T07:42:42.8276395+00:00"
 * statusHistory ^comment = "The current status is always found in the current version of the resource, not the status history.\r\n\r\n*Note: this field will be filled in case of episode search"
 * classHistory ^comment = "*Note: this field will be filled in case of episode search"
 * type from $v2-0007 (example)

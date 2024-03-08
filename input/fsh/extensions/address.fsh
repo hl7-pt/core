@@ -6,9 +6,5 @@ Context: Patient.address, Practitioner.address, Location.address, Organization.a
 
 
 
-
-
-* ^date = "2022-07-05T08:01:17.9432835+00:00"
-
 * value[x] only CodeableConcept
 * valueCodeableConcept.coding.system ^code.system = "http://ine.pt"

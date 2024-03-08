@@ -1,11 +1,9 @@
 Profile: PT_CarePlan
 Parent: CarePlan
 Id: PTCarePlan
+Description: "A generic CarePlan resource for Portugal"
 
 
-
-
-* ^date = "2022-07-01T15:28:30.3911673+00:00"
 //* identifier.type.coding 1..1
 //* identifier.type.coding from snomed-ct-vs (required)
 * basedOn ..1

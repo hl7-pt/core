@@ -4,8 +4,6 @@ Description: "An inventory listing section (grouped by any of the attributes)."
 Context: Basic
 
 
-
-* ^date = "2023-01-16T17:09:42.6652842+00:00"
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

@@ -4,9 +4,6 @@ Id: PTMedicationDispense
 Description: "A generic MedicationDispense resource for Portugal"
 
 
-
-
-* ^date = "2022-12-21T16:15:08.1993021+00:00"
 /*
 // * extension ^slicing.discriminator.type = #value
 // * extension ^slicing.discriminator.path = "url"

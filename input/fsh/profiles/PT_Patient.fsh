@@ -5,9 +5,6 @@ Description: "A generic Patient resource for Portugal"
 
 
 
-
-
-* ^date = "2022-09-23T13:12:30.5461445+00:00"
 // * extension ^slicing.discriminator.type = #value
 // * extension ^slicing.discriminator.path = "url"
 // * extension ^slicing.rules = #open

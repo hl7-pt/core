@@ -5,9 +5,6 @@ Description: "A generic Procedure resource for Portugal"
 
 
 
-
-
-* ^date = "2022-01-21"
 // * extension ^slicing.discriminator.type = #value
 // * extension ^slicing.discriminator.path = "url"
 // * extension ^slicing.rules = #open

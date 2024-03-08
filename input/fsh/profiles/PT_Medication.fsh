@@ -5,9 +5,6 @@ Id: c56e2fb3-2322-4e99-931c-50d99668edfa
 Description: "A generic Medication resource for Portugal"
 
 
-
-
-
 /*
 * identifier.system ^slicing.discriminator.type = #value
 * identifier.system ^slicing.discriminator.path = "value"
