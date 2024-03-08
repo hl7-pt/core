@@ -5,10 +5,10 @@ Description: "A generic Procedure resource for Portugal"
 
 
 
-// * extension ^slicing.discriminator.type = #value
-// * extension ^slicing.discriminator.path = "url"
-// * extension ^slicing.rules = #open
-// // * extension contains ProcedurePriority named ProcedurePriority 0..1
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+* extension contains ProcedurePriority named ProcedurePriority 0..1
 * code.coding.system = "ICD-10-PCS" (exactly)
 * subject only Reference(PT_Patient)
 * encounter only Reference(PT_Encounter)

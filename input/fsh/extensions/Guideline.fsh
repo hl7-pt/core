@@ -4,7 +4,6 @@ Description: "Information aimed at providing directions for the usage of this mo
 Context: DeviceDefinition
 
 
-* . ..1
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open

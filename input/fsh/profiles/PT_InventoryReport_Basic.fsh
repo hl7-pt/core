@@ -4,11 +4,11 @@ Id: PTInventoryReportBasic
 Description: "Creation of the InventoryReport resource present in the R5 version of FHIR through the Basic resource"
 
 
-/*
-// * extension ^slicing.discriminator.type = #value
-// * extension ^slicing.discriminator.path = "url"
-// * extension ^slicing.rules = #open
-// * extension contains
+
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+* extension contains
     Status named status 1..* and
     CountType named countType 1..* and
     OperationType named operationType 0..* and
@@ -18,13 +18,5 @@ Description: "Creation of the InventoryReport resource present in the R5 version
     ReportingPeriod named reportingPeriod 0..* and
     InventoryListing named inventoryListing 0..* and
     Note named note 0..*
-    */
-// * extension[status] ^isModifier = false
-// * extension[countType] ^isModifier = false
-// // * extension[operationType] ^isModifier = false
-// // * extension[operationTypeReason] ^isModifier = false
-// * extension[reportedDateTime] ^isModifier = false
-// // * extension[reporter] ^isModifier = false
-// // * extension[reportingPeriod] ^isModifier = false
-// // * extension[inventoryListing] ^isModifier = false
-// // * extension[note] ^isModifier = false
+    
+

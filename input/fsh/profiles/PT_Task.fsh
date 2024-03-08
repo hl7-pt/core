@@ -4,11 +4,8 @@ Id: PTTask
 
 
 
-// * extension ^slicing.discriminator.type = #value
-// * extension ^slicing.discriminator.path = "url"
-// * extension ^slicing.rules = #open
-// // * extension contains RequestedPeriod named requestedPeriod 0..1
-// * extension[requestedPeriod] ^isModifier = false
+* extension contains RequestedPeriod named requestedPeriod 0..1
+* extension[requestedPeriod] ^isModifier = false
 * focus only Reference(PT_MedicationRequest)
 * for only Reference(PT_Patient)
 * encounter only Reference(PT_Encounter)

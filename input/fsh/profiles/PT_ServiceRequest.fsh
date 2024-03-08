@@ -4,20 +4,18 @@ Id: PTServiceRequest
 Description: "A generic ServiceRequest resource for Portugal"
 
 
-// * extension contains
-//    PatientTransportNeed named patientTransportNeed 0..1 and
-//    $request-statusReason named statusReason 0..*
-// * extension[patientTransportNeed] ^isModifier = false
-// * extension[statusReason] ^isModifier = false
+* extension contains
+   PatientTransportNeed named patientTransportNeed 0..1 and
+   $request-statusReason named statusReason 0..*
 * basedOn only Reference(PT_CarePlan)
 * category ..1
 * category.coding from snomed-ct-vs (required)
 * category.coding ^binding.description = "SNOMED"
-/*
+
 * doNotPerform.extension contains
     NotPerformReason named notPerformReason 0..1 and
     NotPerformDecider named notPerformDecider 0..1
-*/
+
 * code.coding from snomed-ct-vs (required)
 * quantity[x] only Quantity
 * subject only Reference(PT_Patient)

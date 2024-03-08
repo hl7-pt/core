@@ -4,10 +4,8 @@ Description: "The details about the device when it is affixed or inside of a pat
 Context: Device
 
 
-/*
-* extension ^slicing.discriminator.type = #value
-* extension ^slicing.discriminator.path = "url"
-* extension ^slicing.rules = #open
+
+
 * extension contains
     status 1..1 and
     statusReason 0..* and
@@ -25,4 +23,3 @@ Context: Device
 * extension[bodyStructure].extension[reference] ^sliceName = "reference"
 * extension[bodyStructure].extension[reference].url = "reference" (exactly)
 * extension[bodyStructure].extension[reference].value[x] only Reference(BodyStructure)
-*/

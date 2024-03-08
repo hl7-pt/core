@@ -5,7 +5,7 @@ Description: "A generic PractitionerRole resource for Portugal"
 
 
 
-//* identifier.type from $v2-0203 (extensible)
+* identifier.type from $v2-0203 (extensible)
 * practitioner only Reference(PT_Practitioner)
 * code ^slicing.discriminator.type = #pattern
 * code ^slicing.discriminator.path = "$this"
@@ -13,4 +13,4 @@ Description: "A generic PractitionerRole resource for Portugal"
 * code contains healthcareProfessionalRoles 0..*
 * code[healthcareProfessionalRoles].coding from $healthcare-professional-roles-uv-ips (required)
 * location only Reference(PT_Location)
-//* telecom.use from $v2-0201 (required)
+* telecom.use from $v2-0201 (required)
