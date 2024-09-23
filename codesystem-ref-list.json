@@ -1,0 +1,185 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/action-participant-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ActionParticipantType",
+      "title" : "ActionParticipantType",
+      "description" : "The type of participant for the action.",
+      "oids" : ["2.16.840.1.113883.4.642.4.812"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-action-participant-type.html" : "ActionParticipantType"
+    },
+    {
+      "url" : "http://snomed.info/sct",
+      "version" : null,
+      "status" : "active",
+      "name" : "SNOMED_CT",
+      "title" : "SNOMED CT (all versions)",
+      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+      "oids" : ["2.16.840.1.113883.6.96"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role",
+      "ValueSet-snomed-ct-vs.html" : "Snomed Value Set"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/practitioner-role",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "PractitionerRole",
+      "title" : "Practitioner role",
+      "description" : "This example value set defines a set of codes that can be used to indicate the role of a Practitioner.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1132"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-practitioner-role.html" : "Practitioner role"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0007",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "AdmissionType",
+      "title" : "admissionType",
+      "description" : "Code system of concepts specifying the circumstances under which the patient was or will be admitted.  Used in HL7 Version 2.x messaging in the PV1 segment.",
+      "oids" : ["2.16.840.1.113883.18.9"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/6.0.2/ValueSet-v2-0007.html" : "hl7VS-admissionType"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0136",
+      "version" : "2.9",
+      "status" : "active",
+      "name" : "v2.0136",
+      "title" : "v2 Y/N Indicator",
+      "description" : "FHIR Value set/code system definition for HL7 v2 table 0136 ( Y/N Indicator)",
+      "oids" : ["2.16.840.1.113883.18.347"],
+      "uses" : {
+      },
+      "ValueSet-v2-013-vs.html" : "V2 0136 Value Set"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0165",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "AdministrationMethod",
+      "title" : "administrationMethod",
+      "description" : "Code system of concepts  which specify the specific method requested for the administration of the drug or treatment to the patient.  Used in HL7 Version 2.x messaging in the RXR segment.",
+      "oids" : ["2.16.840.1.113883.18.83"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/6.0.2/ValueSet-v2-0165.html" : "hl7VS-administrationMethod"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0180",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "MasterfileActionCode",
+      "title" : "masterfileActionCode",
+      "description" : "HL7-defined code system of concepts specifying an action for a master file record. Used in HL7 Version 2.x messaging in the MFE segment.",
+      "oids" : ["2.16.840.1.113883.18.95"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/6.0.2/ValueSet-v2-0180.html" : "hl7VS-masterfileActionCode"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0201",
+      "version" : "4.0.0",
+      "status" : "active",
+      "name" : "TelecommunicationUse",
+      "title" : "telecommunicationUse",
+      "description" : "HL7-defined code system of concepts for specifying a specific use of a telecommunication number.  Best practice is to use this concept whenever a telecommunication number or access string is specified.  Used in HL7 Version 2.x messaging in the XTN segment.",
+      "oids" : ["2.16.840.1.113883.18.106"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/6.0.2/ValueSet-v2-0201.html" : "hl7VS-telecommunicationUseCode"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "version" : "4.0.0",
+      "status" : "active",
+      "name" : "IdentifierType",
+      "title" : "identifierType",
+      "description" : "HL7-defined code system of concepts specifying type of identifier. Used in HL7 Version 2.x messaging data types CX, PLN, PPN, XCN and XON.",
+      "oids" : ["2.16.840.1.113883.18.108"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/6.0.2/ValueSet-v2-0203.html" : "hl7VS-identifierType"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0335",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "RepeatPattern",
+      "title" : "repeatPattern",
+      "description" : "Code system of concepts used to specify the interval between repeated services.  Used in HL7 Version 2.x messaging in the RI datatype and RPT segment.",
+      "oids" : ["2.16.840.1.113883.18.205"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/6.0.2/ValueSet-v2-0335.html" : "hl7VS-repeatPattern"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0359",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "DiagnosisPriority",
+      "title" : "diagnosisPriority",
+      "description" : "Code system of concepts that identify the significance or priority of the diagnosis code.  Note that the codes are numeric, and the number of the code represents the ordinal priority of the associated diagnosis.  Used in the DG1 segment in HL7 Version 2.x messaging. The predefined codes are the most common, and just a starter set, as the codes are an unbounded list; additional ranked procedures may be signified by incrementing the code value as needed.",
+      "oids" : ["2.16.840.1.113883.18.218"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/6.0.2/ValueSet-v2-0359.html" : "hl7VS-diagnosisPriority"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0418",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ProcedurePriority",
+      "title" : "procedurePriority",
+      "description" : "HL7-defined code system of concepts which specify the significance or priority of a procedure code.  Used in HL7 Version 2 messaging in the PR1 segment.  Note that this is a post-coordinated code system, where additional ordinal priorities are created by incrementing the numericinteger code value as needed.  Only the first 2 ordinal values are predefined in the code system.",
+      "oids" : ["2.16.840.1.113883.18.260"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/6.0.2/ValueSet-v2-0418.html" : "hl7VS-procedurePriority"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0482",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "OrderType",
+      "title" : "orderType",
+      "description" : "HL7-defined code system of concepts specifying whether the order is to be executed in an inpatient setting or an outpatient setting.  Used in HL7 Version 2.x messaging in the ORC segment.",
+      "oids" : ["2.16.840.1.113883.18.307"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/6.0.2/ValueSet-v2-0482.html" : "hl7VS-orderType"
+    },
+    {
+      "url" : "http://unitsofmeasure.org",
+      "version" : "3.0.1",
+      "status" : "active",
+      "name" : "UCUM",
+      "title" : "Unified Code for Units of Measure (UCUM)",
+      "description" : "The Unified Code for Units of Measure (UCUM) is a code system intended to include all units of measures being contemporarily used in international science, engineering, and business. The purpose is to facilitate unambiguous electronic communication of quantities together with their units. The focus is on electronic communication, as opposed to communication between humans. A typical application of The Unified Code for Units of Measure are electronic data interchange (EDI) protocols, but there is nothing that prevents it from being used in other types of machine communication.",
+      "oids" : ["2.16.840.1.113883.6.8"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-duration-units.html" : "Common UCUM Codes for Duration"
+    },
+    {
+      "url" : "urn:iso:std:iso:3166",
+      "version" : "1.0.1",
+      "status" : "active",
+      "name" : "ISO3166Part1",
+      "title" : "ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code",
+      "description" : "ISO 3166-1 establishes codes that represent the current names of countries, dependencies, and other areas of particular geopolitical interest, on the basis of country names obtained from the United Nations.",
+      "oids" : ["1.0.3166.1"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-iso3166-1-2.html" : "Iso 3166 Part 1: 2 Letter Codes"
+    }
+  ]
+}

@@ -1,0 +1,653 @@
+hl7fhirptcore : Validation Results
+=========================================
+
+err = 273, warn = 133, info = 2
+IG Publisher Version: 1.6.26
+Generated Mon Sep 23 13:12:33 UTC 2024. FHIR version 4.0.1 for hl7.fhir.pt.core#0.0.1 (canonical = http://hl7.pt/fhir/core)
+ Build Errors : 28 / 19 / 0
+ /github/workspace/fsh-generated/resources/ImplementationGuide-hl7.fhir.pt.core : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-176c7c2b-865c-4942-9bd6-cfaa04678d10 : 8 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-17e19b6f-8e82-4c55-948e-85e02764fc9b : 14 / 4 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-4d7bbcc0-ea7b-4fbe-b998-07e5fdc77d94 : 3 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-52d49cef-b06f-4aa7-859d-26a002df32c1 : 7 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-63310252-7722-4031-8f01-a2c642d0f2a7 : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-6e9480b2-6dc1-4fff-a828-6aa231411647 : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-7a57737f-db44-48cb-a2e0-9975a4d0d521 : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Association-Device : 3 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-AvailabilityStatus-Device : 3 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Category-Device : 3 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ChargeItem-DeviceDefinition : 1 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ConversionFactor : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-CountType-InventoryReport : 4 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-CycleAndDaysOfCycle : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Death : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DiagnosisPriority : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Diet : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DispenserInstruction : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-DisplayName-Device : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-EconomicInsufficiency : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ExtraAppointment : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Guideline-DeviceDefinition : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-InventoryListing-InventoryReport : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-IsBackup : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-IsSubPotent : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-LocationAct : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MEDreqDevice : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MarketDistribution-DeviceDefiniton : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedIdentifier : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedKnowMinDosePerAdministration : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedMinDosePerPeriod : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-MedicationParticipant : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-NativeLanguage : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-NeedJustification : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-NotAvailableTime : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-NotPerformDecider : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-NotPerformReason : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Note-InventoryReport : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Operation-Device : 8 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-OperationType-InventoryReport : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-OperationTypeReason-InventoryReport : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-OrderType : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PTActivityDefinition : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PTAddress : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PTAppointment : 7 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PTCarePlan : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PTCodeSystem : 3 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PTCondition : 12 / 2 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-PTCoverage : 5 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PTDevice : 3 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PTDeviceDefinition : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PTDiagnosticReportLaboratory : 7 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PTDiagnosticReportRadiology : 7 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PTDocumentReference : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PTEncounter : 6 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PTInventoryReportBasic : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PTLocation : 14 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PTLocationMF : 12 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PTLocationWarehouse : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PTMedicationAdministration : 7 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PTMedicationDispense : 4 / 1 / 2
+ /github/workspace/fsh-generated/resources/StructureDefinition-PTNutritionOrder : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PTObservationLaboratory : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PTObservationRadiology : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PTObservationVitalSigns : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PTOperationOutcome : 3 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PTPlanDefinition : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PTPractitionerRole : 5 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PTProcedure : 4 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PTRequestGroup : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PTServiceRequest : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PTSpecimen : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PTTask : 4 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Packaging-DeviceDefinition : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-PatientTransportNeed : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ProcedurePriority : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ProductType : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Proficiency : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Recorded : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-RegulatedAuthorization : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-RegulatoryIdentifier-DeviceDefinition : 3 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ReportedDateTime-InventoryReport : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Reporter-InventoryReport : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ReportingPeriod-InventoryReport : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-RequestedPeriod : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-SendLabel : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Status-InventoryReport : 3 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-StatusReason : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-StorageGuideline : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-SubPotentReason : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-TypeReference : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-UseContext : 5 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-Value-MedicationKnowledge : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ValueBoolean : 1 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ValueRange : 1 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-a4126b30-e00e-451a-830c-4db050c60cdf : 4 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-a54e3c30-afb4-4bd8-8297-ad40aa181704 : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-ac7bcb60-c472-44c2-8a98-d412e8645c6d : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-c56e2fb3-2322-4e99-931c-50d99668edfa : 5 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-conditionPersistence : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-d20e6bbe-dfd8-4df7-8060-9446ceb892f0 : 2 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-dc90ae74-e9fc-47fc-b8ff-963588bf26be : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-snomed-ct-vs : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-v2-013-vs : 1 / 2 / 1
+</table>
+== n/a ==
+WARNING: ImplementationGuide.url: The canonical URL for an Implementation Guide must point directly to the implementation guide resource, not to the Implementation Guide as a whole
+ERROR: Extension.value: The reference http://hl7.org/fhir/ValueSet/inventoryreport-counttype could not be resolved
+ERROR: Extension.extension.value: The reference http://hl7.org/fhir/ValueSet/device-operation-mode could not be resolved
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/PTTask.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ConversionFactor.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/CycleAndDaysOfCycle.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/LocationAct.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/MEDreqDevice.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/MedIdentifier.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/MedKnowMinDosePerAdministration.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/MedMinDosePerPeriod.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/NeedJustification.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/NotAvailableTime.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/NotPerformDecider.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/OrderType.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/PatientTransportNeed.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/ProductType.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/RegulatedAuthorization.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/StorageGuideline.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/TypeReference.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/UseContext.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+ERROR: /github/workspace/output/StructureDefinition-CountType-InventoryReport-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/span/a at Line 246, column 1546: The link 'inventoryreport-counttype.html' for "inventoryreport-counttype" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CountType-InventoryReport-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/span/a at Line 267, column 591: The link 'inventoryreport-counttype.html' for "inventoryreport-counttype" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CountType-InventoryReport-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/span/a at Line 288, column 373: The link 'inventoryreport-counttype.html' for "inventoryreport-counttype" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CountType-InventoryReport.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 340, column 255: The link 'inventoryreport-counttype.html' for "inventoryreport-counttype" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CountType-InventoryReport.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 379, column 219: The link 'inventoryreport-counttype.html' for "inventoryreport-counttype" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CountType-InventoryReport.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 466, column 255: The link 'inventoryreport-counttype.html' for "inventoryreport-counttype" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-CountType-InventoryReport.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 505, column 219: The link 'inventoryreport-counttype.html' for "inventoryreport-counttype" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Operation-Device-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/span/a at Line 276, column 1536: The link 'device-operation-mode.html' for "device-operation-mode" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Operation-Device-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/span/a at Line 377, column 554: The link 'device-operation-mode.html' for "device-operation-mode" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Operation-Device-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/span/a at Line 501, column 366: The link 'device-operation-mode.html' for "device-operation-mode" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Operation-Device.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 436, column 253: The link 'device-operation-mode.html' for "device-operation-mode" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Operation-Device.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 643, column 219: The link 'device-operation-mode.html' for "device-operation-mode" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Operation-Device.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 917, column 253: The link 'device-operation-mode.html' for "device-operation-mode" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-Operation-Device.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1124, column 219: The link 'device-operation-mode.html' for "device-operation-mode" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PTInventoryReportBasic.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 333, column 428: The link 'inventoryreport-counttype.html' for "inventoryreport-counttype" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PTInventoryReportBasic.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 421, column 392: The link 'inventoryreport-counttype.html' for "inventoryreport-counttype" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PTInventoryReportBasic.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 575, column 394: The link 'inventoryreport-counttype.html' for "inventoryreport-counttype" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PTInventoryReportBasic.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 851, column 428: The link 'inventoryreport-counttype.html' for "inventoryreport-counttype" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PTInventoryReportBasic.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 938, column 392: The link 'inventoryreport-counttype.html' for "inventoryreport-counttype" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PTInventoryReportBasic.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1092, column 394: The link 'inventoryreport-counttype.html' for "inventoryreport-counttype" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PTServiceRequest-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/p/a at Line 408, column 1181: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PTServiceRequest-definitions.html#/html/body/div/div/div/div/div/div/div/table/tr/td/p/a at Line 631, column 965: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PTServiceRequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 682, column 902: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PTServiceRequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 1047, column 904: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PTServiceRequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 2163, column 902: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+ERROR: /github/workspace/output/StructureDefinition-PTServiceRequest.html#/html/body/div/div/div/div/div/div/div/div/div/table/tr/td/a at Line 2528, column 904: The link 'http://hl7.org/fhir/R4/valueset-diagnostic-requests.html' for "here" cannot be resolved
+== fsh-generated/resources/ImplementationGuide-hl7.fhir.pt.core.json ==
+WARNING: ImplementationGuide/hl7.fhir.pt.core: ImplementationGuide: Constraint failed: ig-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+WARNING: ImplementationGuide.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+== fsh-generated/resources/StructureDefinition-176c7c2b-865c-4942-9bd6-cfaa04678d10.json ==
+ERROR: StructureDefinition/176c7c2b-865c-4942-9bd6-cfaa04678d10: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/176c7c2b-865c-4942-9bd6-cfaa04678d10: StructureDefinition.mapping[1]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/176c7c2b-865c-4942-9bd6-cfaa04678d10: StructureDefinition.mapping[2]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/176c7c2b-865c-4942-9bd6-cfaa04678d10: StructureDefinition.mapping[3]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/176c7c2b-865c-4942-9bd6-cfaa04678d10: StructureDefinition.mapping[4]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/176c7c2b-865c-4942-9bd6-cfaa04678d10: StructureDefinition.mapping[5]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/176c7c2b-865c-4942-9bd6-cfaa04678d10: StructureDefinition.mapping[6]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/176c7c2b-865c-4942-9bd6-cfaa04678d10'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-17e19b6f-8e82-4c55-948e-85e02764fc9b.json ==
+ERROR: StructureDefinition/17e19b6f-8e82-4c55-948e-85e02764fc9b: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/17e19b6f-8e82-4c55-948e-85e02764fc9b: StructureDefinition.mapping[1]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/17e19b6f-8e82-4c55-948e-85e02764fc9b: StructureDefinition.mapping[2]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/17e19b6f-8e82-4c55-948e-85e02764fc9b: StructureDefinition.mapping[3]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/17e19b6f-8e82-4c55-948e-85e02764fc9b: StructureDefinition.mapping[4]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/17e19b6f-8e82-4c55-948e-85e02764fc9b: StructureDefinition.mapping[5]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/17e19b6f-8e82-4c55-948e-85e02764fc9b: StructureDefinition.mapping[6]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/17e19b6f-8e82-4c55-948e-85e02764fc9b: StructureDefinition.snapshot.element[44].binding.extension[0]: The extension http:hl7.org/fhir/StructureDefinition/elementdefinition-bindingName could not be found so is not allowed here
+ERROR: StructureDefinition/17e19b6f-8e82-4c55-948e-85e02764fc9b: StructureDefinition.snapshot.element[190].binding.extension[0]: The extension http:hl7.org/fhir/StructureDefinition/elementdefinition-bindingName could not be found so is not allowed here
+WARNING: StructureDefinition/17e19b6f-8e82-4c55-948e-85e02764fc9b: StructureDefinition.snapshot.element[202].fixed.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http:snomed.info/sct' could not be found, so the code cannot be validated
+ERROR: StructureDefinition/17e19b6f-8e82-4c55-948e-85e02764fc9b: StructureDefinition.snapshot.element[227].binding.extension[0]: The extension http:hl7.org/fhir/StructureDefinition/elementdefinition-bindingName could not be found so is not allowed here
+ERROR: StructureDefinition/17e19b6f-8e82-4c55-948e-85e02764fc9b: StructureDefinition.differential.element[16].binding.extension[0]: The extension http:hl7.org/fhir/StructureDefinition/elementdefinition-bindingName could not be found so is not allowed here
+ERROR: StructureDefinition/17e19b6f-8e82-4c55-948e-85e02764fc9b: StructureDefinition.differential.element[59].binding.extension[0]: The extension http:hl7.org/fhir/StructureDefinition/elementdefinition-bindingName could not be found so is not allowed here
+WARNING: StructureDefinition/17e19b6f-8e82-4c55-948e-85e02764fc9b: StructureDefinition.differential.element[64].fixed.ofType(CodeableConcept).coding[0].system: A definition for CodeSystem 'http:snomed.info/sct' could not be found, so the code cannot be validated
+ERROR: StructureDefinition/17e19b6f-8e82-4c55-948e-85e02764fc9b: StructureDefinition.differential.element[75].binding.extension[0]: The extension http:hl7.org/fhir/StructureDefinition/elementdefinition-bindingName could not be found so is not allowed here
+WARNING: StructureDefinition/17e19b6f-8e82-4c55-948e-85e02764fc9b: StructureDefinition.snapshot.element[202].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/17e19b6f-8e82-4c55-948e-85e02764fc9b'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-4d7bbcc0-ea7b-4fbe-b998-07e5fdc77d94.json ==
+ERROR: StructureDefinition/4d7bbcc0-ea7b-4fbe-b998-07e5fdc77d94: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/4d7bbcc0-ea7b-4fbe-b998-07e5fdc77d94: StructureDefinition.mapping[1]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/4d7bbcc0-ea7b-4fbe-b998-07e5fdc77d94'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-52d49cef-b06f-4aa7-859d-26a002df32c1.json ==
+ERROR: StructureDefinition/52d49cef-b06f-4aa7-859d-26a002df32c1: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/52d49cef-b06f-4aa7-859d-26a002df32c1: StructureDefinition.mapping[1]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/52d49cef-b06f-4aa7-859d-26a002df32c1: StructureDefinition.snapshot.element[13].binding.extension[0]: The extension http:hl7.org/fhir/StructureDefinition/elementdefinition-bindingName could not be found so is not allowed here
+ERROR: StructureDefinition/52d49cef-b06f-4aa7-859d-26a002df32c1: StructureDefinition.snapshot.element[13].binding.extension[1]: The extension http:hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding could not be found so is not allowed here
+ERROR: StructureDefinition/52d49cef-b06f-4aa7-859d-26a002df32c1: StructureDefinition.differential.element[0].binding.extension[0]: The extension http:hl7.org/fhir/StructureDefinition/elementdefinition-bindingName could not be found so is not allowed here
+ERROR: StructureDefinition/52d49cef-b06f-4aa7-859d-26a002df32c1: StructureDefinition.differential.element[0].binding.extension[1]: The extension http:hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding could not be found so is not allowed here
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/52d49cef-b06f-4aa7-859d-26a002df32c1'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-63310252-7722-4031-8f01-a2c642d0f2a7.json ==
+ERROR: StructureDefinition/63310252-7722-4031-8f01-a2c642d0f2a7: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/63310252-7722-4031-8f01-a2c642d0f2a7'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-6e9480b2-6dc1-4fff-a828-6aa231411647.json ==
+ERROR: StructureDefinition/6e9480b2-6dc1-4fff-a828-6aa231411647: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/6e9480b2-6dc1-4fff-a828-6aa231411647'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-7a57737f-db44-48cb-a2e0-9975a4d0d521.json ==
+ERROR: StructureDefinition/7a57737f-db44-48cb-a2e0-9975a4d0d521: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/7a57737f-db44-48cb-a2e0-9975a4d0d521'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-Association-Device.json ==
+ERROR: StructureDefinition/Association-Device: StructureDefinition.snapshot.element[7].binding.valueSet: Canonical URL 'http://hl7.org/fhir/device-association-status' does not resolve
+ERROR: StructureDefinition/Association-Device: StructureDefinition.differential.element[5].binding.valueSet: Canonical URL 'http://hl7.org/fhir/device-association-status' does not resolve
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/Association-Device'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-AvailabilityStatus-Device.json ==
+ERROR: StructureDefinition/AvailabilityStatus-Device: StructureDefinition.snapshot.element[4].binding.valueSet: Canonical URL 'http://hl7.org/fhir/device-availability-status' does not resolve
+ERROR: StructureDefinition/AvailabilityStatus-Device: StructureDefinition.differential.element[3].binding.valueSet: Canonical URL 'http://hl7.org/fhir/device-availability-status' does not resolve
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/AvailabilityStatus-Device'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-Category-Device.json ==
+ERROR: StructureDefinition/Category-Device: StructureDefinition.snapshot.element[4].binding.valueSet: Canonical URL 'http://hl7.org/fhir/device-category' does not resolve
+ERROR: StructureDefinition/Category-Device: StructureDefinition.differential.element[3].binding.valueSet: Canonical URL 'http://hl7.org/fhir/device-category' does not resolve
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/Category-Device'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-ChargeItem-DeviceDefinition.json ==
+WARNING: StructureDefinition/ChargeItem-DeviceDefinition: StructureDefinition.context[0]: Review the extension type for ChargeItem-DeviceDefinition: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/ChargeItem-DeviceDefinition'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-ConversionFactor.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/ConversionFactor'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-CountType-InventoryReport.json ==
+ERROR: StructureDefinition/CountType-InventoryReport: StructureDefinition.snapshot.element[4].binding.valueSet: Canonical URL 'http://hl7.org/fhir/ValueSet/inventoryreport-counttype' does not resolve
+ERROR: StructureDefinition/CountType-InventoryReport: StructureDefinition.differential.element[3].binding.valueSet: Canonical URL 'http://hl7.org/fhir/ValueSet/inventoryreport-counttype' does not resolve
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/CountType-InventoryReport'): The Implementation Guide contains no examples for this extension
+ERROR: StructureDefinition.text.div: Hyperlink 'inventoryreport-counttype.html' at 'div/table/tr/td/a' for 'inventoryreport-counttype' does not resolve
+== fsh-generated/resources/StructureDefinition-CycleAndDaysOfCycle.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/CycleAndDaysOfCycle'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-Death.json ==
+ERROR: StructureDefinition/Death: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/Death'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-DiagnosisPriority.json ==
+ERROR: StructureDefinition/DiagnosisPriority: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/DiagnosisPriority'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-Diet.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/Diet'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-DispenserInstruction.json ==
+ERROR: StructureDefinition/DispenserInstruction: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/DispenserInstruction'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-DisplayName-Device.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/DisplayName-Device'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-EconomicInsufficiency.json ==
+ERROR: StructureDefinition/EconomicInsufficiency: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/EconomicInsufficiency'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-ExtraAppointment.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/ExtraAppointment'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-Guideline-DeviceDefinition.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/Guideline-DeviceDefinition'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-InventoryListing-InventoryReport.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/InventoryListing-InventoryReport'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-IsBackup.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/IsBackup'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-IsSubPotent.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/IsSubPotent'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-LocationAct.json ==
+ERROR: StructureDefinition/LocationAct: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/LocationAct'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-MEDreqDevice.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/MEDreqDevice'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-MarketDistribution-DeviceDefiniton.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/MarketDistribution-DeviceDefiniton'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-MedIdentifier.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/MedIdentifier'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-MedKnowMinDosePerAdministration.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/MedKnowMinDosePerAdministration'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-MedMinDosePerPeriod.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/MedMinDosePerPeriod'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-MedicationParticipant.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/MedicationParticipant'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-NativeLanguage.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/NativeLanguage'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-NeedJustification.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/NeedJustification'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-NotAvailableTime.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/NotAvailableTime'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-NotPerformDecider.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/NotPerformDecider'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-NotPerformReason.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/NotPerformReason'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-Note-InventoryReport.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/Note-InventoryReport'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-Operation-Device.json ==
+ERROR: StructureDefinition/Operation-Device: StructureDefinition.snapshot.element[7].binding.valueSet: Canonical URL 'http://hl7.org/fhir/device-operationstatus' does not resolve
+ERROR: StructureDefinition/Operation-Device: StructureDefinition.snapshot.element[12].binding.valueSet: Canonical URL 'http://hl7.org/fhir/device-operation-status-reason' does not resolve
+ERROR: StructureDefinition/Operation-Device: StructureDefinition.snapshot.element[22].binding.valueSet: Canonical URL 'http://hl7.org/fhir/ValueSet/device-operation-mode' does not resolve
+ERROR: StructureDefinition/Operation-Device: StructureDefinition.differential.element[5].binding.valueSet: Canonical URL 'http://hl7.org/fhir/device-operationstatus' does not resolve
+ERROR: StructureDefinition/Operation-Device: StructureDefinition.differential.element[9].binding.valueSet: Canonical URL 'http://hl7.org/fhir/device-operation-status-reason' does not resolve
+ERROR: StructureDefinition/Operation-Device: StructureDefinition.differential.element[17].binding.valueSet: Canonical URL 'http://hl7.org/fhir/ValueSet/device-operation-mode' does not resolve
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/Operation-Device'): The Implementation Guide contains no examples for this extension
+ERROR: StructureDefinition.text.div: Hyperlink 'device-operation-mode.html' at 'div/table/tr/td/a' for 'device-operation-mode' does not resolve
+== fsh-generated/resources/StructureDefinition-OperationType-InventoryReport.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/OperationType-InventoryReport'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-OperationTypeReason-InventoryReport.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/OperationTypeReason-InventoryReport'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-OrderType.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/OrderType'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-PTActivityDefinition.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/PTActivityDefinition'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PTAddress.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/PTAddress'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-PTAppointment.json ==
+ERROR: StructureDefinition/PTAppointment: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTAppointment: StructureDefinition.mapping[1]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTAppointment: StructureDefinition.mapping[2]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTAppointment: StructureDefinition.mapping[3]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTAppointment: StructureDefinition.mapping[4]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTAppointment: StructureDefinition.mapping[5]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/PTAppointment'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PTCarePlan.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/PTCarePlan'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PTCodeSystem.json ==
+ERROR: StructureDefinition/PTCodeSystem: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTCodeSystem: StructureDefinition.mapping[1]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/PTCodeSystem'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PTCondition.json ==
+ERROR: StructureDefinition/PTCondition: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTCondition: StructureDefinition.mapping[1]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTCondition: StructureDefinition.mapping[2]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTCondition: StructureDefinition.mapping[3]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTCondition: StructureDefinition.mapping[4]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTCondition: StructureDefinition.snapshot.element[50].fixed.ofType(CodeableConcept).coding[0].system: The Coding references a value set, not a code system ('http://hl7.org/fhir/ValueSet/condition-category')
+ERROR: StructureDefinition/PTCondition: StructureDefinition.snapshot.element[50].fixed.ofType(CodeableConcept).coding[1].system: The Coding references a value set, not a code system ('http://terminology.hl7.org/ValueSet/v2-0228')
+ERROR: StructureDefinition/PTCondition: StructureDefinition.snapshot.element[86].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips' does not resolve
+ERROR: StructureDefinition/PTCondition: StructureDefinition.differential.element[16].fixed.ofType(CodeableConcept).coding[0].system: The Coding references a value set, not a code system ('http://hl7.org/fhir/ValueSet/condition-category')
+ERROR: StructureDefinition/PTCondition: StructureDefinition.differential.element[16].fixed.ofType(CodeableConcept).coding[1].system: The Coding references a value set, not a code system ('http://terminology.hl7.org/ValueSet/v2-0228')
+ERROR: StructureDefinition/PTCondition: StructureDefinition.differential.element[27].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/ips/ValueSet/absent-or-unknown-problems-uv-ips' does not resolve
+INFORMATION: StructureDefinition/PTCondition: StructureDefinition.snapshot.element[50].fixed.ofType(CodeableConcept): The repeating element has a fixed. The fixed will apply to all the repeats (this has not been clear to all users)
+WARNING: StructureDefinition/PTCondition: StructureDefinition.snapshot.element[50].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/PTCondition'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PTCoverage.json ==
+ERROR: StructureDefinition/PTCoverage: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTCoverage: StructureDefinition.mapping[1]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTCoverage: StructureDefinition.mapping[2]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTCoverage: StructureDefinition.mapping[3]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/PTCoverage'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PTDevice.json ==
+ERROR: PT_Device.extension[[CanonicalType[http://hl7.org/fhir/StructureDefinition/display]]].Device.extension: Element Device.extension: derived max (*) cannot be greater than the base max (1)
+ERROR: PT_Device.extension[[CanonicalType[http://hl7.pt/fhir/core/StructureDefinition/AvailabilityStatus-Device]]].Device.extension: Element Device.extension: derived max (*) cannot be greater than the base max (1)
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/PTDevice'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PTDeviceDefinition.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/PTDeviceDefinition'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PTDiagnosticReportLaboratory.json ==
+ERROR: StructureDefinition/PTDiagnosticReportLaboratory: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTDiagnosticReportLaboratory: StructureDefinition.mapping[1]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTDiagnosticReportLaboratory: StructureDefinition.mapping[2]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTDiagnosticReportLaboratory: StructureDefinition.mapping[3]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTDiagnosticReportLaboratory: StructureDefinition.mapping[4]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTDiagnosticReportLaboratory: StructureDefinition.mapping[5]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/PTDiagnosticReportLaboratory'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PTDiagnosticReportRadiology.json ==
+ERROR: StructureDefinition/PTDiagnosticReportRadiology: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTDiagnosticReportRadiology: StructureDefinition.mapping[1]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTDiagnosticReportRadiology: StructureDefinition.mapping[2]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTDiagnosticReportRadiology: StructureDefinition.mapping[3]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTDiagnosticReportRadiology: StructureDefinition.mapping[4]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTDiagnosticReportRadiology: StructureDefinition.mapping[5]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/PTDiagnosticReportRadiology'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PTDocumentReference.json ==
+ERROR: StructureDefinition/PTDocumentReference: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/PTDocumentReference'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PTEncounter.json ==
+ERROR: StructureDefinition/PTEncounter: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTEncounter: StructureDefinition.mapping[1]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTEncounter: StructureDefinition.mapping[2]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTEncounter: StructureDefinition.mapping[3]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTEncounter: StructureDefinition.mapping[4]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/PTEncounter'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PTInventoryReportBasic.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/PTInventoryReportBasic'): The Implementation Guide contains no examples for this profile
+ERROR: StructureDefinition.text.div: Hyperlink 'inventoryreport-counttype.html' at 'div/table/tr/td/a' for 'inventoryreport-counttype' does not resolve
+== fsh-generated/resources/StructureDefinition-PTLocation.json ==
+ERROR: StructureDefinition/PTLocation: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTLocation: StructureDefinition.mapping[1]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTLocation: StructureDefinition.mapping[2]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTLocation: StructureDefinition.mapping[3]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTLocation: StructureDefinition.mapping[4]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTLocation: StructureDefinition.mapping[5]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTLocation: StructureDefinition.mapping[6]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTLocation: StructureDefinition.mapping[7]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTLocation: StructureDefinition.mapping[8]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTLocation: StructureDefinition.mapping[9]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTLocation: StructureDefinition.mapping[10]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTLocation: StructureDefinition.mapping[11]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTLocation: StructureDefinition.mapping[12]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/PTLocation'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PTLocationMF.json ==
+ERROR: StructureDefinition/PTLocationMF: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTLocationMF: StructureDefinition.mapping[1]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTLocationMF: StructureDefinition.mapping[2]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTLocationMF: StructureDefinition.mapping[3]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTLocationMF: StructureDefinition.mapping[4]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTLocationMF: StructureDefinition.mapping[5]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTLocationMF: StructureDefinition.mapping[6]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTLocationMF: StructureDefinition.mapping[7]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTLocationMF: StructureDefinition.mapping[8]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTLocationMF: StructureDefinition.mapping[9]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTLocationMF: StructureDefinition.mapping[10]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/PTLocationMF'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PTLocationWarehouse.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/PTLocationWarehouse'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PTMedicationAdministration.json ==
+ERROR: StructureDefinition/PTMedicationAdministration: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTMedicationAdministration: StructureDefinition.mapping[1]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTMedicationAdministration: StructureDefinition.mapping[2]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTMedicationAdministration: StructureDefinition.mapping[3]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTMedicationAdministration: StructureDefinition.mapping[4]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTMedicationAdministration: StructureDefinition.mapping[5]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/PTMedicationAdministration'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PTMedicationDispense.json ==
+ERROR: StructureDefinition/PTMedicationDispense: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTMedicationDispense: StructureDefinition.mapping[1]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTMedicationDispense: StructureDefinition.mapping[2]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+INFORMATION: StructureDefinition/PTMedicationDispense: StructureDefinition.snapshot.element[104].mapping[0].map: The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/PTMedicationDispense'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PTNutritionOrder.json ==
+ERROR: StructureDefinition/PTNutritionOrder: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/PTNutritionOrder'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PTObservationLaboratory.json ==
+ERROR: StructureDefinition/PTObservationLaboratory: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/PTObservationLaboratory'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PTObservationRadiology.json ==
+ERROR: StructureDefinition/PTObservationRadiology: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/PTObservationRadiology'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PTObservationVitalSigns.json ==
+ERROR: StructureDefinition/PTObservationVitalSigns: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/PTObservationVitalSigns'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PTOperationOutcome.json ==
+ERROR: StructureDefinition/PTOperationOutcome: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTOperationOutcome: StructureDefinition.mapping[1]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/PTOperationOutcome'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PTPlanDefinition.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/PTPlanDefinition'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PTPractitionerRole.json ==
+ERROR: StructureDefinition/PTPractitionerRole: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTPractitionerRole: StructureDefinition.mapping[1]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTPractitionerRole: StructureDefinition.snapshot.element[57].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/ips/ValueSet/healthcare-professional-roles-uv-ips' does not resolve
+ERROR: StructureDefinition/PTPractitionerRole: StructureDefinition.differential.element[15].binding.valueSet: Canonical URL 'http://hl7.org/fhir/uv/ips/ValueSet/healthcare-professional-roles-uv-ips' does not resolve
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/PTPractitionerRole'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PTProcedure.json ==
+ERROR: StructureDefinition/PTProcedure: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTProcedure: StructureDefinition.mapping[1]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTProcedure: StructureDefinition.mapping[2]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/PTProcedure'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PTRequestGroup.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/PTRequestGroup'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PTServiceRequest.json ==
+ERROR: StructureDefinition/PTServiceRequest: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/PTServiceRequest'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PTSpecimen.json ==
+ERROR: StructureDefinition/PTSpecimen: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/PTSpecimen'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-PTTask.json ==
+ERROR: StructureDefinition/PTTask: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTTask: StructureDefinition.mapping[1]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/PTTask: StructureDefinition.mapping[2]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/PTTask'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-Packaging-DeviceDefinition.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/Packaging-DeviceDefinition'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-PatientTransportNeed.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/PatientTransportNeed'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-ProcedurePriority.json ==
+ERROR: StructureDefinition/ProcedurePriority: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/ProcedurePriority'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-ProductType.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/ProductType'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-Proficiency.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/Proficiency'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-Recorded.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/Recorded'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-RegulatedAuthorization.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/RegulatedAuthorization'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-RegulatoryIdentifier-DeviceDefinition.json ==
+ERROR: StructureDefinition/RegulatoryIdentifier-DeviceDefinition: StructureDefinition.snapshot.element[7].binding.valueSet: Canonical URL 'http://hl7.org/fhir/devicedefinition-regulatory-identifier-type' does not resolve
+ERROR: StructureDefinition/RegulatoryIdentifier-DeviceDefinition: StructureDefinition.differential.element[5].binding.valueSet: Canonical URL 'http://hl7.org/fhir/devicedefinition-regulatory-identifier-type' does not resolve
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/RegulatoryIdentifier-DeviceDefinition'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-ReportedDateTime-InventoryReport.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/ReportedDateTime-InventoryReport'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-Reporter-InventoryReport.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/Reporter-InventoryReport'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-ReportingPeriod-InventoryReport.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/ReportingPeriod-InventoryReport'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-RequestedPeriod.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/RequestedPeriod'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-SendLabel.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/SendLabel'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-Status-InventoryReport.json ==
+ERROR: StructureDefinition/Status-InventoryReport: StructureDefinition.snapshot.element[4].binding.valueSet: Canonical URL 'http://hl7.org/fhir/inventoryreport-status' does not resolve
+ERROR: StructureDefinition/Status-InventoryReport: StructureDefinition.differential.element[3].binding.valueSet: Canonical URL 'http://hl7.org/fhir/inventoryreport-status' does not resolve
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/Status-InventoryReport'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-StatusReason.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/StatusReason'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-StorageGuideline.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/StorageGuideline'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-SubPotentReason.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/SubPotentReason'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-TypeReference.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/TypeReference'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-UseContext.json ==
+ERROR: StructureDefinition/UseContext: StructureDefinition.snapshot.element[7].binding.valueSet: Canonical URL 'http://terminology.hl7.org/CodeSystem/v3-ActCode' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: StructureDefinition/UseContext: StructureDefinition.differential.element[3].binding.valueSet: Canonical URL 'http://terminology.hl7.org/CodeSystem/v3-ActCode' refers to a resource that has the wrong type. Found CodeSystem expecting one of [ValueSet]
+ERROR: StructureDefinition/UseContext: StructureDefinition.differential.element[3].binding: The valueSet reference http://terminology.hl7.org/CodeSystem/v3-ActCode on element Extension.value[x].code points to something that is not a value set (CodeSystem)
+ERROR: StructureDefinition/UseContext: StructureDefinition.snapshot.element[7].binding: The valueSet reference http://terminology.hl7.org/CodeSystem/v3-ActCode on element Extension.value[x].code points to something that is not a value set (CodeSystem)
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/UseContext'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-Value-MedicationKnowledge.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/Value-MedicationKnowledge'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-ValueBoolean.json ==
+WARNING: StructureDefinition/ValueBoolean: StructureDefinition.context[0]: Review the extension type for ValueBoolean: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/ValueBoolean'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-ValueRange.json ==
+WARNING: StructureDefinition/ValueRange: StructureDefinition.context[0]: Review the extension type for ValueRange: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/ValueRange'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-a4126b30-e00e-451a-830c-4db050c60cdf.json ==
+ERROR: StructureDefinition/a4126b30-e00e-451a-830c-4db050c60cdf: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/a4126b30-e00e-451a-830c-4db050c60cdf: StructureDefinition.mapping[1]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/a4126b30-e00e-451a-830c-4db050c60cdf: StructureDefinition.mapping[2]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/a4126b30-e00e-451a-830c-4db050c60cdf'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-a54e3c30-afb4-4bd8-8297-ad40aa181704.json ==
+ERROR: StructureDefinition/a54e3c30-afb4-4bd8-8297-ad40aa181704: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/a54e3c30-afb4-4bd8-8297-ad40aa181704'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-ac7bcb60-c472-44c2-8a98-d412e8645c6d.json ==
+ERROR: StructureDefinition/ac7bcb60-c472-44c2-8a98-d412e8645c6d: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/ac7bcb60-c472-44c2-8a98-d412e8645c6d'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-c56e2fb3-2322-4e99-931c-50d99668edfa.json ==
+ERROR: StructureDefinition/c56e2fb3-2322-4e99-931c-50d99668edfa: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/c56e2fb3-2322-4e99-931c-50d99668edfa: StructureDefinition.mapping[1]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/c56e2fb3-2322-4e99-931c-50d99668edfa: StructureDefinition.mapping[2]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition/c56e2fb3-2322-4e99-931c-50d99668edfa: StructureDefinition.mapping[3]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/c56e2fb3-2322-4e99-931c-50d99668edfa'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-conditionPersistence.json ==
+ERROR: StructureDefinition/conditionPersistence: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/conditionPersistence'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-d20e6bbe-dfd8-4df7-8060-9446ceb892f0.json ==
+ERROR: StructureDefinition/d20e6bbe-dfd8-4df7-8060-9446ceb892f0: StructureDefinition.mapping[0]: Constraint failed: sdf-2: 'Must have at least a name or a uri (or both)'
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/d20e6bbe-dfd8-4df7-8060-9446ceb892f0'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/StructureDefinition-dc90ae74-e9fc-47fc-b8ff-963588bf26be.json ==
+ERROR: StructureDefinition.jurisdiction: The resource must declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+WARNING: StructureDefinition.where(url = 'http://hl7.pt/fhir/core/StructureDefinition/dc90ae74-e9fc-47fc-b8ff-963588bf26be'): The Implementation Guide contains no examples for this profile
+== fsh-generated/resources/ValueSet-snomed-ct-vs.json ==
+ERROR: ValueSet/snomed-ct-vs: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')
+== fsh-generated/resources/ValueSet-v2-013-vs.json ==
+WARNING: ValueSet/v2-013-vs: ValueSet: Constraint failed: vsd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation'
+ERROR: ValueSet/v2-013-vs: ValueSet: Value sets published by HL7 SHALL conform to the ShareableValueSet profile, which says that the element ValueSet.experimental is mandatory, but it is not present
+WARNING: ValueSet.jurisdiction: The resource should declare its jurisdiction to match the package id (hl7.fhir.pt.core, jurisdiction = urn:iso:std:iso:3166#PT instead of or as well as [http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World']) (for Sushi users: in sushi-config.yaml, 'jurisdiction: urn:iso:std:iso:3166#PT "null"')

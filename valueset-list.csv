@@ -1,0 +1,3 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://hl7.pt/fhir/core/ValueSet/snomed-ct-vs,0.0.1,active,,SnomedCTVS,Snomed Value Set,"Includes all codes from SNOMED CT",,"SCT"
+http://hl7.pt/fhir/core/ValueSet/v2-013-vs,0.0.1,active,,v2-013-vs,V2 0136 Value Set,"Includes all codes from V2 0136 ",,"THO (V2)"

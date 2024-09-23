@@ -1,0 +1,47 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "snomed-ct-vs",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet snomed-ct-vs</b></p><a name=\"snomed-ct-vs\"> </a><a name=\"hcsnomed-ct-vs\"> </a><a name=\"snomed-ct-vs-en-US\"> </a><ul><li>Include all codes defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a></li></ul></div>"
+  },
+  "url" : "http://hl7.pt/fhir/core/ValueSet/snomed-ct-vs",
+  "version" : "0.0.1",
+  "name" : "SnomedCTVS",
+  "title" : "Snomed Value Set",
+  "status" : "active",
+  "date" : "2024-09-23T13:09:49+00:00",
+  "publisher" : "HL7 Portugal",
+  "contact" : [{
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://hl7.pt"
+    },
+    {
+      "system" : "email",
+      "value" : "info@hl7.pt"
+    }]
+  },
+  {
+    "name" : "HL7 Portugal",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "geral@hl7.pt",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Includes all codes from SNOMED CT",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct"
+    }]
+  }
+}

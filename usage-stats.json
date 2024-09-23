@@ -1,0 +1,2246 @@
+{
+  "package": "hl7.fhir.pt.core",
+  "version": "0.0.1",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "001",
+  "extensions": [
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/63310252-7722-4031-8f01-a2c642d0f2a7",
+      "title": "BirthPlace",
+      "types": [
+        "Address",
+        "string",
+        "Extension",
+        "code",
+        "code",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "string",
+        "Period"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/Association-Device",
+      "title": "Association",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "Reference",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/AvailabilityStatus-Device",
+      "title": "AvailabilityStatus",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/Category-Device",
+      "title": "Category",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/ChargeItem-DeviceDefinition",
+      "title": "ChargeItem",
+      "types": [
+        "CodeableConcept",
+        "Reference",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "Quantity",
+        "Period",
+        "UsageContext",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/ConversionFactor",
+      "title": "ConversionFactor",
+      "types": [
+        "Quantity"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/CountType-InventoryReport",
+      "title": "CountType",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/CycleAndDaysOfCycle",
+      "title": "CycleAndDaysOfCycle",
+      "types": [
+        "integer",
+        "integer",
+        "dateTime",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/Death",
+      "title": "Death",
+      "types": [
+        "dateTime",
+        "boolean",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/DiagnosisPriority",
+      "title": "DiagnosisPriority",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/Diet",
+      "title": "Diet",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/DispenserInstruction",
+      "title": "DispenserInstruction",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/DisplayName-Device",
+      "title": "DisplayName_Device",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/EconomicInsufficiency",
+      "title": "EconomicInsufficiency",
+      "types": [
+        "boolean",
+        "Period",
+        "string",
+        "Extension",
+        "dateTime",
+        "dateTime",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/ExtraAppointment",
+      "title": "ExtraAppointment",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/Guideline-DeviceDefinition",
+      "title": "Guideline",
+      "types": [
+        "UsageContext",
+        "markdown",
+        "RelatedArtifact",
+        "CodeableConcept",
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/InventoryListing-InventoryReport",
+      "title": "InventoryListing",
+      "types": [
+        "Reference",
+        "CodeableConcept",
+        "dateTime",
+        "CodeableConcept",
+        "Quantity",
+        "CodeableConcept",
+        "Reference",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "string",
+        "string",
+        "dateTime",
+        "dateTime",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/IsBackup",
+      "title": "IsBackup",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/IsSubPotent",
+      "title": "IsSubPotent",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/LocationAct",
+      "title": "LocationAct",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/MEDreqDevice",
+      "title": "MEDreqDevice",
+      "types": [
+        "CodeableConcept",
+        "Reference",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/MarketDistribution-DeviceDefiniton",
+      "title": "MarketDistribution",
+      "types": [
+        "Period",
+        "uri",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/MedIdentifier",
+      "title": "MedIdentifier",
+      "types": [
+        "Identifier"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/MedKnowMinDosePerAdministration",
+      "title": "MedKnowMinDosePerAdministration",
+      "types": [
+        "Quantity"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/MedMinDosePerPeriod",
+      "title": "MedMinDosePerPeriod",
+      "types": [
+        "Ratio"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/MedicationParticipant",
+      "title": "MedicationParticipant",
+      "types": [
+        "code",
+        "Reference",
+        "CodeableConcept",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/NativeLanguage",
+      "title": "NativeLanguage",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/NeedJustification",
+      "title": "NeedJustification",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/NotAvailableTime",
+      "title": "NotAvailableTime",
+      "types": [
+        "string",
+        "Period",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/NotPerformDecider",
+      "title": "NotPerformDecider",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/NotPerformReason",
+      "title": "NotPerformReason",
+      "types": [
+        "Coding"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/Note-InventoryReport",
+      "title": "Note",
+      "types": [
+        "Annotation"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/Operation-Device",
+      "title": "Operation",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "Reference",
+        "CodeableConcept",
+        "Count",
+        "Duration",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/OperationType-InventoryReport",
+      "title": "OperationType",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/OperationTypeReason-InventoryReport",
+      "title": "OperationTypeReason",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/OrderType",
+      "title": "OrderType",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/PTAddress",
+      "title": "PTAddress",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/Packaging-DeviceDefinition",
+      "title": "Packaging",
+      "types": [
+        "Identifier",
+        "CodeableConcept",
+        "integer",
+        "string",
+        "Reference",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/PatientTransportNeed",
+      "title": "PatientTransportNeed",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/ProcedurePriority",
+      "title": "ProcedurePriority",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/ProductType",
+      "title": "ProductType",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/Proficiency",
+      "title": "Proficiency",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/Recorded",
+      "title": "Recorded",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/RegulatedAuthorization",
+      "title": "RegulatedAuthorization",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/RegulatoryIdentifier-DeviceDefinition",
+      "title": "RegulatoryIdentifier",
+      "types": [
+        "code",
+        "string",
+        "uri",
+        "uri",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/ReportedDateTime-InventoryReport",
+      "title": "ReportedDateTime",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/Reporter-InventoryReport",
+      "title": "Reporter",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/ReportingPeriod-InventoryReport",
+      "title": "ReportingPeriod",
+      "types": [
+        "Period"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/RequestedPeriod",
+      "title": "RequestedPeriod",
+      "types": [
+        "Period"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/SendLabel",
+      "title": "SendLabel",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/Status-InventoryReport",
+      "title": "Status",
+      "types": [
+        "code"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/StatusReason",
+      "title": "StatusReason",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/StorageGuideline",
+      "title": "StorageGuideline",
+      "types": [
+        "uri",
+        "Annotation",
+        "Duration",
+        "CodeableConcept",
+        "CodeableConcept",
+        "Quantity",
+        "Range",
+        "Quantity",
+        "Range",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/SubPotentReason",
+      "title": "SubPotentReason",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/TypeReference",
+      "title": "TypeReference",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/UseContext",
+      "title": "UseContext",
+      "types": [
+        "UsageContext",
+        "string",
+        "Extension",
+        "Coding",
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/Value-MedicationKnowledge",
+      "title": "Value",
+      "types": [
+        "CodeableConcept",
+        "Quantity",
+        "Range"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/ValueBoolean",
+      "title": "ValueBoolean",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/ValueRange",
+      "title": "ValueRange",
+      "types": [
+        "Range"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/a4126b30-e00e-451a-830c-4db050c60cdf",
+      "title": "Nationality",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string",
+        "Period",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/a54e3c30-afb4-4bd8-8297-ad40aa181704",
+      "title": "StatusChanged",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://hl7.pt/fhir/core/StructureDefinition/conditionPersistence",
+      "title": "ConditionPersistence",
+      "types": [
+        "CodeableConcept",
+        "string",
+        "Extension",
+        "Coding",
+        "string",
+        "Extension",
+        "uri",
+        "string",
+        "code",
+        "string",
+        "boolean",
+        "string"
+      ]
+    }
+  ],
+  "profiles": {
+    "Patient": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/176c7c2b-865c-4942-9bd6-cfaa04678d10",
+        "title": "PT_Patient"
+      }
+    ],
+    "MedicationRequest": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/17e19b6f-8e82-4c55-948e-85e02764fc9b",
+        "title": "PT_MedicationRequest"
+      }
+    ],
+    "MessageHeader": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/4d7bbcc0-ea7b-4fbe-b998-07e5fdc77d94",
+        "title": "PT_MessageHeader"
+      }
+    ],
+    "RelatedPerson": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/52d49cef-b06f-4aa7-859d-26a002df32c1",
+        "title": "PT_RelatedPerson"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/6e9480b2-6dc1-4fff-a828-6aa231411647",
+        "title": "PT_Organization"
+      }
+    ],
+    "Bundle": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/7a57737f-db44-48cb-a2e0-9975a4d0d521",
+        "title": "PT_Bundle"
+      }
+    ],
+    "ActivityDefinition": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/PTActivityDefinition",
+        "title": "PT_ActivityDefinition"
+      }
+    ],
+    "Appointment": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/PTAppointment",
+        "title": "PT_Appointment"
+      }
+    ],
+    "CarePlan": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/PTCarePlan",
+        "title": "PT_CarePlan"
+      }
+    ],
+    "CodeSystem": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/PTCodeSystem",
+        "title": "PT_CodeSystem"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/PTCondition",
+        "title": "PT_Condition"
+      }
+    ],
+    "Coverage": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/PTCoverage",
+        "title": "PT_Coverage"
+      }
+    ],
+    "Device": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/PTDevice",
+        "title": "PT_Device"
+      }
+    ],
+    "DeviceDefinition": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/PTDeviceDefinition",
+        "title": "PT_DeviceDefinition"
+      }
+    ],
+    "DiagnosticReport": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/PTDiagnosticReportLaboratory",
+        "title": "PT_DiagnosticReportLaboratory"
+      },
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/PTDiagnosticReportRadiology",
+        "title": "PT_DiagnosticReportRadiology"
+      }
+    ],
+    "DocumentReference": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/PTDocumentReference",
+        "title": "PT_DocumentReference"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/PTEncounter",
+        "title": "PT_Encounter"
+      }
+    ],
+    "Basic": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/PTInventoryReportBasic",
+        "title": "PT_InventoryReport_Basic"
+      }
+    ],
+    "Location": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/PTLocation",
+        "title": "PT_Location"
+      },
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/PTLocationMF",
+        "title": "PT_LocationMF"
+      },
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/PTLocationWarehouse",
+        "title": "PT_LocationWarehouse"
+      }
+    ],
+    "MedicationAdministration": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/PTMedicationAdministration",
+        "title": "PT_MedicationAdministration"
+      }
+    ],
+    "MedicationDispense": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/PTMedicationDispense",
+        "title": "PT_MedicationDispense"
+      }
+    ],
+    "NutritionOrder": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/PTNutritionOrder",
+        "title": "PT_NutritionOrder"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/PTObservationLaboratory",
+        "title": "PT_ObservationLaboratory"
+      },
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/PTObservationRadiology",
+        "title": "PT_ObservationRadiology"
+      },
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/PTObservationVitalSigns",
+        "title": "PT_ObservationVitalSigns"
+      }
+    ],
+    "OperationOutcome": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/PTOperationOutcome",
+        "title": "PT_OperationOutcome"
+      }
+    ],
+    "PlanDefinition": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/PTPlanDefinition",
+        "title": "PT_PlanDefinition"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/PTPractitionerRole",
+        "title": "PT_PractitionerRole"
+      }
+    ],
+    "Procedure": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/PTProcedure",
+        "title": "PT_Procedure"
+      }
+    ],
+    "RequestGroup": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/PTRequestGroup",
+        "title": "PT_RequestGroup"
+      }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/PTServiceRequest",
+        "title": "PT_ServiceRequest"
+      }
+    ],
+    "Specimen": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/PTSpecimen",
+        "title": "PT_Specimen"
+      }
+    ],
+    "Task": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/PTTask",
+        "title": "PT_Task"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/ac7bcb60-c472-44c2-8a98-d412e8645c6d",
+        "title": "PT_Practitioner"
+      }
+    ],
+    "Medication": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/c56e2fb3-2322-4e99-931c-50d99668edfa",
+        "title": "PT_Medication"
+      }
+    ],
+    "AllergyIntolerance": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/d20e6bbe-dfd8-4df7-8060-9446ceb892f0",
+        "title": "PT_AllergyIntolerance"
+      }
+    ],
+    "MedicationKnowledge": [
+      {
+        "url": "http://hl7.pt/fhir/core/StructureDefinition/dc90ae74-e9fc-47fc-b8ff-963588bf26be",
+        "title": "PT_MedicationKnowledge"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/display": [
+      "Device"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-identifier": [
+      "MedicationKnowledge"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/medicationdispense-refillsRemaining": [
+      "MedicationDispense"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/request-statusReason": [
+      "ServiceRequest"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/63310252-7722-4031-8f01-a2c642d0f2a7": [
+      "Patient"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/Association-Device": [
+      "Device"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/AvailabilityStatus-Device": [
+      "Device"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/Category-Device": [
+      "Device"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/ChargeItem-DeviceDefinition": [
+      "DeviceDefinition"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/ConversionFactor": [
+      "MedicationKnowledge"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/CountType-InventoryReport": [
+      "Basic"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/CycleAndDaysOfCycle": [
+      "PlanDefinition.action",
+      "PlanDefinition.action.action",
+      "RequestGroup",
+      "RequestGroup.action"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/Death": [
+      "Practitioner"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/DiagnosisPriority": [
+      "Condition"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/Diet": [
+      "MedicationRequest"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/DispenserInstruction": [
+      "MedicationRequest"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/EconomicInsufficiency": [
+      "Coverage"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/ExtraAppointment": [
+      "Appointment"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/Guideline-DeviceDefinition": [
+      "DeviceDefinition"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/InventoryListing-InventoryReport": [
+      "Basic"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/IsBackup": [
+      "Device"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/IsSubPotent": [
+      "MedicationAdministration"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/LocationAct": [
+      "MedicationAdministration"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/MEDreqDevice": [
+      "MedicationRequest"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/MarketDistribution-DeviceDefiniton": [
+      "DeviceDefinition.udiDeviceIdentifier"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/MedKnowMinDosePerAdministration": [
+      "MedicationKnowledge.administrationGuidelines.dosage.dosage"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/MedMinDosePerPeriod": [
+      "MedicationKnowledge.administrationGuidelines.dosage.dosage"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/MedicationParticipant": [
+      "MedicationKnowledge"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/NativeLanguage": [
+      "Practitioner.communication"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/NeedJustification": [
+      "MedicationKnowledge"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/NotAvailableTime": [
+      "Location.hoursOfOperation"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/NotPerformDecider": [
+      "ServiceRequest.doNotPerform"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/NotPerformReason": [
+      "ServiceRequest.doNotPerform"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/Note-InventoryReport": [
+      "Basic"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/Operation-Device": [
+      "Device"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/OperationType-InventoryReport": [
+      "Basic"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/OperationTypeReason-InventoryReport": [
+      "Basic"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/OrderType": [
+      "MedicationRequest"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/PTAddress": [
+      "Location.address",
+      "Organization.address",
+      "Patient.address",
+      "Patient.contact.address",
+      "Practitioner.address",
+      "RelatedPerson.address"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/Packaging-DeviceDefinition": [
+      "DeviceDefinition"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/PatientTransportNeed": [
+      "ServiceRequest"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/ProcedurePriority": [
+      "Procedure"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/ProductType": [
+      "MedicationRequest"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/Proficiency": [
+      "Practitioner.qualification"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/Recorded": [
+      "MedicationAdministration"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/RegulatedAuthorization": [
+      "MedicationDispense",
+      "MedicationKnowledge"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/RegulatoryIdentifier-DeviceDefinition": [
+      "DeviceDefinition"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/ReportedDateTime-InventoryReport": [
+      "Basic"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/Reporter-InventoryReport": [
+      "Basic"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/ReportingPeriod-InventoryReport": [
+      "Basic"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/RequestedPeriod": [
+      "Task"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/SendLabel": [
+      "MedicationDispense"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/Status-InventoryReport": [
+      "Basic"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/StatusReason": [
+      "MedicationAdministration"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/StorageGuideline": [
+      "MedicationKnowledge"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/SubPotentReason": [
+      "MedicationAdministration"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/TypeReference": [
+      "ActivityDefinition.participant"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/UseContext": [
+      "Location"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/Value-MedicationKnowledge": [
+      "MedicationKnowledge.administrationGuidelines.patientCharacteristics"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/ValueBoolean": [
+      "Device.property"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/ValueRange": [
+      "Device.property"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/a4126b30-e00e-451a-830c-4db050c60cdf": [
+      "Patient",
+      "Practitioner"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/a54e3c30-afb4-4bd8-8297-ad40aa181704": [
+      "MedicationRequest"
+    ],
+    "http://hl7.pt/fhir/core/StructureDefinition/conditionPersistence": [
+      "Condition"
+    ],
+    "http:hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http:hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ]
+  }
+}

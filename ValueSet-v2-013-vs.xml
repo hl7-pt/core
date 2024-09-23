@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="v2-013-vs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet v2-013-vs</b></p><a name="v2-013-vs"> </a><a name="hcv2-013-vs"> </a><a name="v2-013-vs-en-US"> </a><ul><li>Include all codes defined in <a href="http://hl7.org/fhir/R4/v2/0136/index.html"><code>http://terminology.hl7.org/CodeSystem/v2-0136</code></a></li></ul></div>
+  </text>
+  <url value="http://hl7.pt/fhir/core/ValueSet/v2-013-vs"/>
+  <version value="0.0.1"/>
+  <name value="v2-013-vs"/>
+  <title value="V2 0136 Value Set"/>
+  <status value="active"/>
+  <date value="2024-09-23T13:09:49+00:00"/>
+  <publisher value="HL7 Portugal"/>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://hl7.pt"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@hl7.pt"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="HL7 Portugal"/>
+    <telecom>
+      <system value="email"/>
+      <value value="geral@hl7.pt"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Includes all codes from V2 0136 "/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+    </include>
+  </compose>
+</ValueSet>

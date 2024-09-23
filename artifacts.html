@@ -1,0 +1,1171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Summary - HL7 PT FHIR Implementation Guide: Example IG Release 1 | STU1 v0.0.1</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/affiliate.css" rel="stylesheet"/>
+<!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/colors.css" rel="stylesheet"/>
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"6"}
+    h3,h4,h5,h6{--heading-prefix:"6.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<div id="project-nav">
+  <a id="affiliate-logo" no-external="true" href="http://hl7.eu">
+    <img height="71" alt="Visit the HL7 affiliate website" src="assets/images/affiliate.png"/>
+  </a>
+</div>
+<div id="family-nav">
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="30" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">HL7 PT FHIR Implementation Guide: Example IG Release 1 | STU1</span>
+            <br/>
+            <span style="display:inline-block;">0.0.1 - STU1
+
+
+
+  <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="background.html">Background</a>
+  </li>
+  <li>
+    <a href="spec.html">Specification</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">HL7 PT FHIR Implementation Guide: Example IG Release 1 | STU1, published by HL7 Portugal. This guide is not an authorized publication; it is the continuous build for version 0.0.1 built by the FHIR (HL7® FHIR® Standard) CI Build. This version is based on the current content of <a href="https://github.com/hl7-pt/core/tree/master">https://github.com/hl7-pt/core/tree/master</a> and changes regularly. See the <a href="http://hl7.pt/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#3">Terminology: Value Sets</a>
+      </li>
+   </ul>
+</div>
+<div xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     xmlns:html="http://www.w3.org/1999/xhtml">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PTActivityDefinition.html"
+                  title="StructureDefinition/PTActivityDefinition">PT_ActivityDefinition</a>
+            </td>
+            <td>
+<p>A generic ActivityDefinition resource for Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-d20e6bbe-dfd8-4df7-8060-9446ceb892f0.html"
+                  title="StructureDefinition/d20e6bbe-dfd8-4df7-8060-9446ceb892f0">PT_AllergyIntolerance</a>
+            </td>
+            <td>
+<p>A generic AllergiesIntolerance resource for Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PTAppointment.html"
+                  title="StructureDefinition/PTAppointment">PT_Appointment</a>
+            </td>
+            <td>
+<p>A generic Appointment resource for Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-7a57737f-db44-48cb-a2e0-9975a4d0d521.html"
+                  title="StructureDefinition/7a57737f-db44-48cb-a2e0-9975a4d0d521">PT_Bundle</a>
+            </td>
+            <td>
+<p>A generic Bundle resource for Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PTCarePlan.html"
+                  title="StructureDefinition/PTCarePlan">PT_CarePlan</a>
+            </td>
+            <td>
+<p>A generic CarePlan resource for Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PTCodeSystem.html"
+                  title="StructureDefinition/PTCodeSystem">PT_CodeSystem</a>
+            </td>
+            <td>
+<p>A generic CodeSystem resource for Portugal. It can be used for masterfile situations of specialties.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PTCondition.html"
+                  title="StructureDefinition/PTCondition">PT_Condition</a>
+            </td>
+            <td>
+<p>A generic Condition resource for Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PTCoverage.html"
+                  title="StructureDefinition/PTCoverage">PT_Coverage</a>
+            </td>
+            <td>
+<p>A generic Coverage resource for Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PTDevice.html"
+                  title="StructureDefinition/PTDevice">PT_Device</a>
+            </td>
+            <td>
+<p>A generic Device resource for Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PTDeviceDefinition.html"
+                  title="StructureDefinition/PTDeviceDefinition">PT_DeviceDefinition</a>
+            </td>
+            <td>
+<p>A generic DeviceDefinition resource for Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PTDiagnosticReportLaboratory.html"
+                  title="StructureDefinition/PTDiagnosticReportLaboratory">PT_DiagnosticReportLaboratory</a>
+            </td>
+            <td>
+<p>A generic DiagnosticReport Laboratory resource for Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PTDiagnosticReportRadiology.html"
+                  title="StructureDefinition/PTDiagnosticReportRadiology">PT_DiagnosticReportRadiology</a>
+            </td>
+            <td>
+<p>A generic DiagnosticReport resource for Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PTDocumentReference.html"
+                  title="StructureDefinition/PTDocumentReference">PT_DocumentReference</a>
+            </td>
+            <td>
+<p>A generic DocumentReference resource for Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PTEncounter.html"
+                  title="StructureDefinition/PTEncounter">PT_Encounter</a>
+            </td>
+            <td>
+<p>A generic Encounter resource for Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PTInventoryReportBasic.html"
+                  title="StructureDefinition/PTInventoryReportBasic">PT_InventoryReport_Basic</a>
+            </td>
+            <td>
+<p>Creation of the InventoryReport resource present in the R5 version of FHIR through the Basic resource</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PTLocation.html"
+                  title="StructureDefinition/PTLocation">PT_Location</a>
+            </td>
+            <td>
+<p>A generic Location resource for Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PTLocationMF.html"
+                  title="StructureDefinition/PTLocationMF">PT_LocationMF</a>
+            </td>
+            <td>
+<p>A resource for MasterFile about Locations</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PTLocationWarehouse.html"
+                  title="StructureDefinition/PTLocationWarehouse">PT_LocationWarehouse</a>
+            </td>
+            <td>
+<p>This profile is still under analysis, so it should be used with caution.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-c56e2fb3-2322-4e99-931c-50d99668edfa.html"
+                  title="StructureDefinition/c56e2fb3-2322-4e99-931c-50d99668edfa">PT_Medication</a>
+            </td>
+            <td>
+<p>A generic Medication resource for Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PTMedicationAdministration.html"
+                  title="StructureDefinition/PTMedicationAdministration">PT_MedicationAdministration</a>
+            </td>
+            <td>
+<p>A generic MedicationAdministration resource for Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PTMedicationDispense.html"
+                  title="StructureDefinition/PTMedicationDispense">PT_MedicationDispense</a>
+            </td>
+            <td>
+<p>A generic MedicationDispense resource for Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-dc90ae74-e9fc-47fc-b8ff-963588bf26be.html"
+                  title="StructureDefinition/dc90ae74-e9fc-47fc-b8ff-963588bf26be">PT_MedicationKnowledge</a>
+            </td>
+            <td>
+<p>A generic MedicationKnowledge resource for Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-17e19b6f-8e82-4c55-948e-85e02764fc9b.html"
+                  title="StructureDefinition/17e19b6f-8e82-4c55-948e-85e02764fc9b">PT_MedicationRequest</a>
+            </td>
+            <td>
+<p>A generic MedicationRequest resource for Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-4d7bbcc0-ea7b-4fbe-b998-07e5fdc77d94.html"
+                  title="StructureDefinition/4d7bbcc0-ea7b-4fbe-b998-07e5fdc77d94">PT_MessageHeader</a>
+            </td>
+            <td>
+<p>A generic Message Header resource for Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PTNutritionOrder.html"
+                  title="StructureDefinition/PTNutritionOrder">PT_NutritionOrder</a>
+            </td>
+            <td>
+<p>A generic NutritionOrder resource for Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PTObservationLaboratory.html"
+                  title="StructureDefinition/PTObservationLaboratory">PT_ObservationLaboratory</a>
+            </td>
+            <td>
+<p>Resource to represent observation results produced by laboratory tests</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PTObservationRadiology.html"
+                  title="StructureDefinition/PTObservationRadiology">PT_ObservationRadiology</a>
+            </td>
+            <td>
+<p>Resource for representing observation results produced by diagnostic procedures</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PTObservationVitalSigns.html"
+                  title="StructureDefinition/PTObservationVitalSigns">PT_ObservationVitalSigns</a>
+            </td>
+            <td>
+<p>Resource for observation results related to vital signs</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PTOperationOutcome.html"
+                  title="StructureDefinition/PTOperationOutcome">PT_OperationOutcome</a>
+            </td>
+            <td>
+<p>A generic OperationOutcome resource for Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-6e9480b2-6dc1-4fff-a828-6aa231411647.html"
+                  title="StructureDefinition/6e9480b2-6dc1-4fff-a828-6aa231411647">PT_Organization</a>
+            </td>
+            <td>
+<p>A generic Organization resource for Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-176c7c2b-865c-4942-9bd6-cfaa04678d10.html"
+                  title="StructureDefinition/176c7c2b-865c-4942-9bd6-cfaa04678d10">PT_Patient</a>
+            </td>
+            <td>
+<p>A generic Patient resource for Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PTPlanDefinition.html"
+                  title="StructureDefinition/PTPlanDefinition">PT_PlanDefinition</a>
+            </td>
+            <td>
+<p>A generic PlanDefiniton resource for Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ac7bcb60-c472-44c2-8a98-d412e8645c6d.html"
+                  title="StructureDefinition/ac7bcb60-c472-44c2-8a98-d412e8645c6d">PT_Practitioner</a>
+            </td>
+            <td>
+<p>A generic Practitioner resource for Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PTPractitionerRole.html"
+                  title="StructureDefinition/PTPractitionerRole">PT_PractitionerRole</a>
+            </td>
+            <td>
+<p>A generic PractitionerRole resource for Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PTProcedure.html"
+                  title="StructureDefinition/PTProcedure">PT_Procedure</a>
+            </td>
+            <td>
+<p>A generic Procedure resource for Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-52d49cef-b06f-4aa7-859d-26a002df32c1.html"
+                  title="StructureDefinition/52d49cef-b06f-4aa7-859d-26a002df32c1">PT_RelatedPerson</a>
+            </td>
+            <td>
+<p>A generic RelatedPerson resource for Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PTRequestGroup.html"
+                  title="StructureDefinition/PTRequestGroup">PT_RequestGroup</a>
+            </td>
+            <td>
+<p>A generic RequestGroup resource for Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PTServiceRequest.html"
+                  title="StructureDefinition/PTServiceRequest">PT_ServiceRequest</a>
+            </td>
+            <td>
+<p>A generic ServiceRequest resource for Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PTSpecimen.html"
+                  title="StructureDefinition/PTSpecimen">PT_Specimen</a>
+            </td>
+            <td>
+<p>A generic Specimen resource for Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PTTask.html"
+                  title="StructureDefinition/PTTask">PT_Task</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Association-Device.html"
+                  title="StructureDefinition/Association-Device">Association</a>
+            </td>
+            <td>
+<p>The details about the device when it is affixed or inside of a patient. - Extension created based on what exists in FHIR Version 5</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-AvailabilityStatus-Device.html"
+                  title="StructureDefinition/AvailabilityStatus-Device">AvailabilityStatus</a>
+            </td>
+            <td>
+<p>The availability of the device - Extension created based on what exists in FHIR Version 5</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-63310252-7722-4031-8f01-a2c642d0f2a7.html"
+                  title="StructureDefinition/63310252-7722-4031-8f01-a2c642d0f2a7">BirthPlace</a>
+            </td>
+            <td>
+<p>Extension for birth place in Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Category-Device.html"
+                  title="StructureDefinition/Category-Device">Category</a>
+            </td>
+            <td>
+<p>Devices may be associated with one or more categories. - Extension created based on what exists in FHIR Version 5</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ChargeItem-DeviceDefinition.html"
+                  title="StructureDefinition/ChargeItem-DeviceDefinition">ChargeItem</a>
+            </td>
+            <td>
+<p>Billing code or reference associated with the device - Extension created based on what exists in FHIR Version 5</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-conditionPersistence.html"
+                  title="StructureDefinition/conditionPersistence">ConditionPersistence</a>
+            </td>
+            <td>
+<p>Extension to Condition Persistence in Portugal. This extension contains the perseverance of a problem (e.g., acute, chronic, etc.). It is necessary to create a table with codes for the correct mapping of this field, associating a system to it</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ConversionFactor.html"
+                  title="StructureDefinition/ConversionFactor">ConversionFactor</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-CountType-InventoryReport.html"
+                  title="StructureDefinition/CountType-InventoryReport">CountType</a>
+            </td>
+            <td>
+<p>Whether the report is about the current inventory count (snapshot) or a differential change in inventory (change).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-CycleAndDaysOfCycle.html"
+                  title="StructureDefinition/CycleAndDaysOfCycle">CycleAndDaysOfCycle</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Death.html" title="StructureDefinition/Death">Death</a>
+            </td>
+            <td>
+<p>[PT] Extension to give information about death</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DiagnosisPriority.html"
+                  title="StructureDefinition/DiagnosisPriority">DiagnosisPriority</a>
+            </td>
+            <td>
+<p>Extension to Diagnosis Priority in Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Diet.html" title="StructureDefinition/Diet">Diet</a>
+            </td>
+            <td>
+<p>Extension to indicate the type of diet of the patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DispenserInstruction.html"
+                  title="StructureDefinition/DispenserInstruction">DispenserInstruction</a>
+            </td>
+            <td>
+<p>Extension indicating whether medication is provided or not</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-DisplayName-Device.html"
+                  title="StructureDefinition/DisplayName-Device">DisplayName_Device</a>
+            </td>
+            <td>
+<p>The name used to display by default when the device is referenced. - Extension created based on what exists in FHIR Version 5</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-EconomicInsufficiency.html"
+                  title="StructureDefinition/EconomicInsufficiency">EconomicInsufficiency</a>
+            </td>
+            <td>
+<p>Extension for Economic Insufficiency in Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ExtraAppointment.html"
+                  title="StructureDefinition/ExtraAppointment">ExtraAppointment</a>
+            </td>
+            <td>
+<p>Extension to identify if the appointment will occur in extra scheduling</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Guideline-DeviceDefinition.html"
+                  title="StructureDefinition/Guideline-DeviceDefinition">Guideline</a>
+            </td>
+            <td>
+<p>Information aimed at providing directions for the usage of this model of device - Extension created based on what exists in FHIR Version 5</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-InventoryListing-InventoryReport.html"
+                  title="StructureDefinition/InventoryListing-InventoryReport">InventoryListing</a>
+            </td>
+            <td>
+<p>An inventory listing section (grouped by any of the attributes).</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-IsBackup.html"
+                  title="StructureDefinition/IsBackup">IsBackup</a>
+            </td>
+            <td>
+<p>Extension to indicate if the device is a backup for use, if there is no free device.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-IsSubPotent.html"
+                  title="StructureDefinition/IsSubPotent">IsSubPotent</a>
+            </td>
+            <td>
+<p>Extension created based on what exists in FHIR Version 5</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-LocationAct.html"
+                  title="StructureDefinition/LocationAct">LocationAct</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-MEDreqDevice.html"
+                  title="StructureDefinition/MEDreqDevice">MEDreqDevice</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-MarketDistribution-DeviceDefiniton.html"
+                  title="StructureDefinition/MarketDistribution-DeviceDefiniton">MarketDistribution</a>
+            </td>
+            <td>
+<p>Indicates where and when the device is available on the market - Extension created based on what exists in FHIR Version 5</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-MedIdentifier.html"
+                  title="StructureDefinition/MedIdentifier">MedIdentifier</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-MedKnowMinDosePerAdministration.html"
+                  title="StructureDefinition/MedKnowMinDosePerAdministration">MedKnowMinDosePerAdministration</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-MedMinDosePerPeriod.html"
+                  title="StructureDefinition/MedMinDosePerPeriod">MedMinDosePerPeriod</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-MedicationParticipant.html"
+                  title="StructureDefinition/MedicationParticipant">MedicationParticipant</a>
+            </td>
+            <td>
+<p>Extension that indicates which participants may be part of the drug flow described in the form</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-a4126b30-e00e-451a-830c-4db050c60cdf.html"
+                  title="StructureDefinition/a4126b30-e00e-451a-830c-4db050c60cdf">Nationality</a>
+            </td>
+            <td>
+<p>Extension for nationality in Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NativeLanguage.html"
+                  title="StructureDefinition/NativeLanguage">NativeLanguage</a>
+            </td>
+            <td>
+<p>Extension in Portugal to indicate if the indicated language is the native language</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NeedJustification.html"
+                  title="StructureDefinition/NeedJustification">NeedJustification</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NotAvailableTime.html"
+                  title="StructureDefinition/NotAvailableTime">NotAvailableTime</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NotPerformDecider.html"
+                  title="StructureDefinition/NotPerformDecider">NotPerformDecider</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-NotPerformReason.html"
+                  title="StructureDefinition/NotPerformReason">NotPerformReason</a>
+            </td>
+            <td>
+<p>Reason to not perform the plan, request, order, task or other action</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Note-InventoryReport.html"
+                  title="StructureDefinition/Note-InventoryReport">Note</a>
+            </td>
+            <td>
+<p>A note associated with the InventoryReport.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Operation-Device.html"
+                  title="StructureDefinition/Operation-Device">Operation</a>
+            </td>
+            <td>
+<p>The status of the device itself - whether it is switched on, or activated, etc. - Extension created based on what exists in FHIR Version 5</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-OperationType-InventoryReport.html"
+                  title="StructureDefinition/OperationType-InventoryReport">OperationType</a>
+            </td>
+            <td>
+<p>What type of operation is being performed - addition or subtraction.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-OperationTypeReason-InventoryReport.html"
+                  title="StructureDefinition/OperationTypeReason-InventoryReport">OperationTypeReason</a>
+            </td>
+            <td>
+<p>The reason for this count - regular count, ad-hoc count, new arrivals, etc.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-OrderType.html"
+                  title="StructureDefinition/OrderType">OrderType</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PTAddress.html"
+                  title="StructureDefinition/PTAddress">PTAddress</a>
+            </td>
+            <td>
+<p>Extension to parish in Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Packaging-DeviceDefinition.html"
+                  title="StructureDefinition/Packaging-DeviceDefinition">Packaging</a>
+            </td>
+            <td>
+<p>Information about the packaging of the device, i.e. how the device is packaged - Extension created based on what exists in FHIR Version 5</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-PatientTransportNeed.html"
+                  title="StructureDefinition/PatientTransportNeed">PatientTransportNeed</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ProcedurePriority.html"
+                  title="StructureDefinition/ProcedurePriority">ProcedurePriority</a>
+            </td>
+            <td>
+<p>Extension to Procedure Priority in Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ProductType.html"
+                  title="StructureDefinition/ProductType">ProductType</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Proficiency.html"
+                  title="StructureDefinition/Proficiency">Proficiency</a>
+            </td>
+            <td>
+<p>Extension to indicate qualification proficiency in Portugal</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Recorded.html"
+                  title="StructureDefinition/Recorded">Recorded</a>
+            </td>
+            <td>
+<p>Extension created based on what exists in FHIR Version 5</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-RegulatedAuthorization.html"
+                  title="StructureDefinition/RegulatedAuthorization">RegulatedAuthorization</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-RegulatoryIdentifier-DeviceDefinition.html"
+                  title="StructureDefinition/RegulatoryIdentifier-DeviceDefinition">RegulatoryIdentifier</a>
+            </td>
+            <td>
+<p>Identifier associated with the regulatory documentation of a set of device models - Extension created based on what exists in FHIR Version 5</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ReportedDateTime-InventoryReport.html"
+                  title="StructureDefinition/ReportedDateTime-InventoryReport">ReportedDateTime</a>
+            </td>
+            <td>
+<p>When the report has been submitted.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Reporter-InventoryReport.html"
+                  title="StructureDefinition/Reporter-InventoryReport">Reporter</a>
+            </td>
+            <td>
+<p>Who submits the report.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ReportingPeriod-InventoryReport.html"
+                  title="StructureDefinition/ReportingPeriod-InventoryReport">ReportingPeriod</a>
+            </td>
+            <td>
+<p>The period the report refers to.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-RequestedPeriod.html"
+                  title="StructureDefinition/RequestedPeriod">RequestedPeriod</a>
+            </td>
+            <td>
+<p>Extension to indicate when the task should be performed - Extension created based on what exists in FHIR Version 5</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SendLabel.html"
+                  title="StructureDefinition/SendLabel">SendLabel</a>
+            </td>
+            <td>
+<p>Extension to inform whether it is necessary to send a label or not</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Status-InventoryReport.html"
+                  title="StructureDefinition/Status-InventoryReport">Status</a>
+            </td>
+            <td>
+<p>The status of the inventory check or notification - whether this is draft (e.g. the report is still pending some updates) or active.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-a54e3c30-afb4-4bd8-8297-ad40aa181704.html"
+                  title="StructureDefinition/a54e3c30-afb4-4bd8-8297-ad40aa181704">StatusChanged</a>
+            </td>
+            <td>
+<p>Extension indicating when the state changed</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-StatusReason.html"
+                  title="StructureDefinition/StatusReason">StatusReason</a>
+            </td>
+            <td>
+<p>Extension created based on what exists in FHIR Version 5</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-StorageGuideline.html"
+                  title="StructureDefinition/StorageGuideline">StorageGuideline</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-SubPotentReason.html"
+                  title="StructureDefinition/SubPotentReason">SubPotentReason</a>
+            </td>
+            <td>
+<p>Extension created based on what exists in FHIR Version 5</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-TypeReference.html"
+                  title="StructureDefinition/TypeReference">TypeReference</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-UseContext.html"
+                  title="StructureDefinition/UseContext">UseContext</a>
+            </td>
+            <td>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-Value-MedicationKnowledge.html"
+                  title="StructureDefinition/Value-MedicationKnowledge">Value</a>
+            </td>
+            <td>
+<p>Possible values ​​to be considered in the characteristics of patients in MedicationKnowledge</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ValueBoolean.html"
+                  title="StructureDefinition/ValueBoolean">ValueBoolean</a>
+            </td>
+            <td>
+<p>True or false indication</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-ValueRange.html"
+                  title="StructureDefinition/ValueRange">ValueRange</a>
+            </td>
+            <td>
+<p>A set of ordered Quantity values defined by a low and high limit.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-snomed-ct-vs.html" title="ValueSet/snomed-ct-vs">Snomed Value Set</a>
+            </td>
+            <td>
+<p>Includes all codes from SNOMED CT</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-v2-013-vs.html" title="ValueSet/v2-013-vs">V2 0136 Value Set</a>
+            </td>
+            <td>
+<p>Includes all codes from V2 0136</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2024+ <a style="color:var(--footer-hyperlink-text-color)" href="http://hl7.pt">HL7 Portugal</a>.  Package hl7.fhir.pt.core#0.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Sep 23, 2024 13:09+0000">2024-09-23</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

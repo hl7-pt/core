@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="3fcbb9ab-52d2-4862-ba28-ef2036ee7409"/>
+  <meta>
+    <lastUpdated value="2024-09-23T13:09:49.768+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://hl7.pt/fhir/core/ValueSet/snomed-ct-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px">This value set cannot be expanded because the terminology server(s) deemed it too costly to do so</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.pt/fhir/core/ValueSet/snomed-ct-vs"/>
+        <version value="0.0.1"/>
+        <name value="SnomedCTVS"/>
+        <title value="Snomed Value Set"/>
+        <status value="active"/>
+        <date value="2024-09-23T13:09:49+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <extension url="http://hl7.org/fhir/StructureDefinition/valueset-toocostly">
+            <valueBoolean value="true"/>
+          </extension>
+          <identifier value="urn:uuid:265f74a5-6205-4148-8821-1beebc7f9175"/>
+          <timestamp value="2024-09-23T13:11:11.863Z"/>
+          <total value="0"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://hl7.pt/fhir/core/ValueSet/v2-013-vs"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p class="res-header-id">
+              <b>Generated Narrative: ValueSet </b>
+            </p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="http://hl7.org/fhir/R4/v2/0136/index.html">codesystem v2 Y/N Indicator v2.9 (CodeSystem)</a>
+            </p>
+            <p>This value set contains 2 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v2-0136-N"> </a>  
+                  <a href="http://hl7.org/fhir/R4/v2/0136/index.html#v2-0136-N">N</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v2-0136</td>
+                <td>No</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="x-http://terminology.hl7.org/CodeSystem/v2-0136-Y"> </a>  
+                  <a href="http://hl7.org/fhir/R4/v2/0136/index.html#v2-0136-Y">Y</a>
+                </td>
+                <td>http://terminology.hl7.org/CodeSystem/v2-0136</td>
+                <td>Yes</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://hl7.pt/fhir/core/ValueSet/v2-013-vs"/>
+        <version value="0.0.1"/>
+        <name value="v2-013-vs"/>
+        <title value="V2 0136 Value Set"/>
+        <status value="active"/>
+        <date value="2024-09-23T13:09:49+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+            <code value="001"/>
+            <display value="World"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:9039cec8-3e3f-428d-915e-81ee296c751e"/>
+          <timestamp value="2024-09-23T13:11:11+00:00"/>
+          <total value="2"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://terminology.hl7.org/CodeSystem/v2-0136|2.9"/>
+          </parameter>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+            <code value="N"/>
+            <display value="No"/>
+          </contains>
+          <contains>
+            <system value="http://terminology.hl7.org/CodeSystem/v2-0136"/>
+            <code value="Y"/>
+            <display value="Yes"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

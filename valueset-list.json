@@ -1,0 +1,22 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.pt/fhir/core/ValueSet/snomed-ct-vs",
+      "version" : "0.0.1",
+      "status" : "active",
+      "name" : "SnomedCTVS",
+      "title" : "Snomed Value Set",
+      "description" : "Includes all codes from SNOMED CT",
+      "systems" : ["http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://hl7.pt/fhir/core/ValueSet/v2-013-vs",
+      "version" : "0.0.1",
+      "status" : "active",
+      "name" : "v2-013-vs",
+      "title" : "V2 0136 Value Set",
+      "description" : "Includes all codes from V2 0136 ",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0136"]
+    }
+  ]
+}

@@ -1,0 +1,221 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/action-participant-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ActionParticipantType",
+      "title" : "ActionParticipantType",
+      "description" : "The type of participant for the action.",
+      "systems" : ["http://hl7.org/fhir/action-participant-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.811"],
+      "sources" : ["2.16.840.1.113883.4.642.3.811"],
+      "uses" : {
+      },
+      "StructureDefinition-MedicationParticipant.html" : "MedicationParticipant"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/duration-units",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "CommonUCUMCodesForDuration",
+      "title" : "Common UCUM Codes for Duration",
+      "description" : "Unified Code for Units of Measure (UCUM). This value set includes all UCUM codes",
+      "systems" : ["http://unitsofmeasure.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.61"],
+      "sources" : ["2.16.840.1.113883.4.642.3.61"],
+      "uses" : {
+      },
+      "StructureDefinition-PTEncounter.html" : "PT_Encounter"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/iso3166-1-2",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "Iso3166-1-2",
+      "title" : "Iso 3166 Part 1: 2 Letter Codes",
+      "description" : "This value set defines the ISO 3166 Part 1 2-letter codes",
+      "systems" : ["urn:iso:std:iso:3166"],
+      "uses" : {
+      },
+      "StructureDefinition-52d49cef-b06f-4aa7-859d-26a002df32c1.html" : "PT_RelatedPerson",
+      "StructureDefinition-a4126b30-e00e-451a-830c-4db050c60cdf.html" : "Nationality",
+      "StructureDefinition-ac7bcb60-c472-44c2-8a98-d412e8645c6d.html" : "PT_Practitioner",
+      "StructureDefinition-63310252-7722-4031-8f01-a2c642d0f2a7.html" : "BirthPlace",
+      "StructureDefinition-176c7c2b-865c-4942-9bd6-cfaa04678d10.html" : "PT_Patient"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/practitioner-role",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "PractitionerRole",
+      "title" : "Practitioner role",
+      "description" : "This example value set defines a set of codes that can be used to indicate the role of a Practitioner.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/practitioner-role",
+        "http://snomed.info/sct"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.439"],
+      "sources" : ["2.16.840.1.113883.4.642.3.439"],
+      "uses" : {
+      },
+      "StructureDefinition-PTTask.html" : "PT_Task",
+      "StructureDefinition-MedicationParticipant.html" : "MedicationParticipant"
+    },
+    {
+      "url" : "http://hl7.pt/fhir/core/ValueSet/snomed-ct-vs",
+      "version" : "0.0.1",
+      "status" : "active",
+      "name" : "SnomedCTVS",
+      "title" : "Snomed Value Set",
+      "description" : "Includes all codes from SNOMED CT",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-PTCarePlan.html" : "PT_CarePlan",
+      "StructureDefinition-PTServiceRequest.html" : "PT_ServiceRequest"
+    },
+    {
+      "url" : "http://hl7.pt/fhir/core/ValueSet/v2-013-vs",
+      "version" : "0.0.1",
+      "status" : "active",
+      "name" : "v2-013-vs",
+      "title" : "V2 0136 Value Set",
+      "description" : "Includes all codes from V2 0136 ",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0136"],
+      "uses" : {
+      },
+      "StructureDefinition-SendLabel.html" : "SendLabel"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0007",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSAdmissionType",
+      "title" : "hl7VS-admissionType",
+      "description" : "Value Set of codes that specify the circumstances under which the patient was or will be admitted.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0007"],
+      "oids" : ["2.16.840.1.113883.21.10"],
+      "sources" : ["2.16.840.1.113883.21.10"],
+      "uses" : {
+      },
+      "StructureDefinition-PTEncounter.html" : "PT_Encounter"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0165",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSAdministrationMethod",
+      "title" : "hl7VS-administrationMethod",
+      "description" : "Value Set of codes that specify the specific method requested for the administration of the drug or treatment to the patient.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0165"],
+      "oids" : ["2.16.840.1.113883.21.95"],
+      "sources" : ["2.16.840.1.113883.21.95"],
+      "uses" : {
+      },
+      "StructureDefinition-17e19b6f-8e82-4c55-948e-85e02764fc9b.html" : "PT_MedicationRequest"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0180",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSMasterfileActionCode",
+      "title" : "hl7VS-masterfileActionCode",
+      "description" : "Concepts specifying an action for a master file record.  Used in HL7 V2.x messaging in the MFE segment.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0180"],
+      "oids" : ["2.16.840.1.113883.21.107"],
+      "sources" : ["2.16.840.1.113883.21.107"],
+      "uses" : {
+      },
+      "StructureDefinition-PTCodeSystem.html" : "PT_CodeSystem"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0201",
+      "version" : "4.0.0",
+      "status" : "active",
+      "name" : "Hl7VSTelecommunicationUseCode",
+      "title" : "hl7VS-telecommunicationUseCode",
+      "description" : "Concepts for specifying a specific use of a telecommunication number.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0201"],
+      "oids" : ["2.16.840.1.113883.21.118"],
+      "sources" : ["2.16.840.1.113883.21.118"],
+      "uses" : {
+      },
+      "StructureDefinition-PTPractitionerRole.html" : "PT_PractitionerRole"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0203",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSIdentifierType",
+      "title" : "hl7VS-identifierType",
+      "description" : "Concepts specifying types of identififiers, as used in person and organization identification datatypes in HL7 Version 2 standards.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0203"],
+      "oids" : ["2.16.840.1.113883.21.120"],
+      "sources" : ["2.16.840.1.113883.21.120"],
+      "uses" : {
+      },
+      "StructureDefinition-PTPractitionerRole.html" : "PT_PractitionerRole",
+      "StructureDefinition-4d7bbcc0-ea7b-4fbe-b998-07e5fdc77d94.html" : "PT_MessageHeader",
+      "StructureDefinition-6e9480b2-6dc1-4fff-a828-6aa231411647.html" : "PT_Organization",
+      "StructureDefinition-52d49cef-b06f-4aa7-859d-26a002df32c1.html" : "PT_RelatedPerson",
+      "StructureDefinition-176c7c2b-865c-4942-9bd6-cfaa04678d10.html" : "PT_Patient"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0335",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSRepeatPattern",
+      "title" : "hl7VS-repeatPattern",
+      "description" : "Value Set of codes that specify the interval between repeated services. See the Comment/Usage Note in the table below, as the table contains both precoordinated codes that may be used in an HL7 field or component and also explanatory patterns i",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0335"],
+      "oids" : ["2.16.840.1.113883.21.217"],
+      "sources" : ["2.16.840.1.113883.21.217"],
+      "uses" : {
+      },
+      "StructureDefinition-17e19b6f-8e82-4c55-948e-85e02764fc9b.html" : "PT_MedicationRequest"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0359",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSDiagnosisPriority",
+      "title" : "hl7VS-diagnosisPriority",
+      "description" : "Concepts that identify the significance or priority of the diagnosis code.  Note that the codes are numeric, and the number of the code represents the ordinal priority of the associated diagnosis.  Used in the DG1 segment in Version 2 messaging.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0359"],
+      "oids" : ["2.16.840.1.113883.21.234"],
+      "sources" : ["2.16.840.1.113883.21.234"],
+      "uses" : {
+      },
+      "StructureDefinition-DiagnosisPriority.html" : "DiagnosisPriority"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0418",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSProcedurePriority",
+      "title" : "hl7VS-procedurePriority",
+      "description" : "Value Set of codes specifying a number that identifies the significance or priority of the procedure code.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0418"],
+      "oids" : ["2.16.840.1.113883.21.277"],
+      "sources" : ["2.16.840.1.113883.21.277"],
+      "uses" : {
+      },
+      "StructureDefinition-ProcedurePriority.html" : "ProcedurePriority"
+    },
+    {
+      "url" : "http://terminology.hl7.org/ValueSet/v2-0482",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "Hl7VSOrderType",
+      "title" : "hl7VS-orderType",
+      "description" : "Value Set of codes that specify whether the order is to be executed in an inpatient setting or an outpatient setting.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v2-0482"],
+      "oids" : ["2.16.840.1.113883.21.323"],
+      "sources" : ["2.16.840.1.113883.21.323"],
+      "uses" : {
+      },
+      "StructureDefinition-17e19b6f-8e82-4c55-948e-85e02764fc9b.html" : "PT_MedicationRequest"
+    }
+  ]
+}

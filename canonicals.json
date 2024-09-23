@@ -1,0 +1,737 @@
+[
+  {
+    "id" : "hl7.fhir.pt.core",
+    "type" : "ImplementationGuide",
+    "url" : "http://hl7.pt/fhir/core/ImplementationGuide/hl7.fhir.pt.core",
+    "version" : "0.0.1",
+    "name" : "hl7fhirptcore"
+  },
+  {
+    "id" : "176c7c2b-865c-4942-9bd6-cfaa04678d10",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/176c7c2b-865c-4942-9bd6-cfaa04678d10",
+    "version" : "0.0.1",
+    "name" : "PT_Patient"
+  },
+  {
+    "id" : "17e19b6f-8e82-4c55-948e-85e02764fc9b",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/17e19b6f-8e82-4c55-948e-85e02764fc9b",
+    "version" : "0.0.1",
+    "name" : "PT_MedicationRequest"
+  },
+  {
+    "id" : "4d7bbcc0-ea7b-4fbe-b998-07e5fdc77d94",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/4d7bbcc0-ea7b-4fbe-b998-07e5fdc77d94",
+    "version" : "0.0.1",
+    "name" : "PT_MessageHeader"
+  },
+  {
+    "id" : "52d49cef-b06f-4aa7-859d-26a002df32c1",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/52d49cef-b06f-4aa7-859d-26a002df32c1",
+    "version" : "0.0.1",
+    "name" : "PT_RelatedPerson"
+  },
+  {
+    "id" : "63310252-7722-4031-8f01-a2c642d0f2a7",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/63310252-7722-4031-8f01-a2c642d0f2a7",
+    "version" : "0.0.1",
+    "name" : "BirthPlace"
+  },
+  {
+    "id" : "6e9480b2-6dc1-4fff-a828-6aa231411647",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/6e9480b2-6dc1-4fff-a828-6aa231411647",
+    "version" : "0.0.1",
+    "name" : "PT_Organization"
+  },
+  {
+    "id" : "7a57737f-db44-48cb-a2e0-9975a4d0d521",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/7a57737f-db44-48cb-a2e0-9975a4d0d521",
+    "version" : "0.0.1",
+    "name" : "PT_Bundle"
+  },
+  {
+    "id" : "Association-Device",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/Association-Device",
+    "version" : "0.0.1",
+    "name" : "Association"
+  },
+  {
+    "id" : "AvailabilityStatus-Device",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/AvailabilityStatus-Device",
+    "version" : "0.0.1",
+    "name" : "AvailabilityStatus"
+  },
+  {
+    "id" : "Category-Device",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/Category-Device",
+    "version" : "0.0.1",
+    "name" : "Category"
+  },
+  {
+    "id" : "ChargeItem-DeviceDefinition",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/ChargeItem-DeviceDefinition",
+    "version" : "0.0.1",
+    "name" : "ChargeItem"
+  },
+  {
+    "id" : "ConversionFactor",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/ConversionFactor",
+    "version" : "0.0.1",
+    "name" : "ConversionFactor"
+  },
+  {
+    "id" : "CountType-InventoryReport",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/CountType-InventoryReport",
+    "version" : "0.0.1",
+    "name" : "CountType"
+  },
+  {
+    "id" : "CycleAndDaysOfCycle",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/CycleAndDaysOfCycle",
+    "version" : "0.0.1",
+    "name" : "CycleAndDaysOfCycle"
+  },
+  {
+    "id" : "Death",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/Death",
+    "version" : "0.0.1",
+    "name" : "Death"
+  },
+  {
+    "id" : "DiagnosisPriority",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/DiagnosisPriority",
+    "version" : "0.0.1",
+    "name" : "DiagnosisPriority"
+  },
+  {
+    "id" : "Diet",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/Diet",
+    "version" : "0.0.1",
+    "name" : "Diet"
+  },
+  {
+    "id" : "DispenserInstruction",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/DispenserInstruction",
+    "version" : "0.0.1",
+    "name" : "DispenserInstruction"
+  },
+  {
+    "id" : "DisplayName-Device",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/DisplayName-Device",
+    "version" : "0.0.1",
+    "name" : "DisplayName_Device"
+  },
+  {
+    "id" : "EconomicInsufficiency",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/EconomicInsufficiency",
+    "version" : "0.0.1",
+    "name" : "EconomicInsufficiency"
+  },
+  {
+    "id" : "ExtraAppointment",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/ExtraAppointment",
+    "version" : "0.0.1",
+    "name" : "ExtraAppointment"
+  },
+  {
+    "id" : "Guideline-DeviceDefinition",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/Guideline-DeviceDefinition",
+    "version" : "0.0.1",
+    "name" : "Guideline"
+  },
+  {
+    "id" : "InventoryListing-InventoryReport",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/InventoryListing-InventoryReport",
+    "version" : "0.0.1",
+    "name" : "InventoryListing"
+  },
+  {
+    "id" : "IsBackup",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/IsBackup",
+    "version" : "0.0.1",
+    "name" : "IsBackup"
+  },
+  {
+    "id" : "IsSubPotent",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/IsSubPotent",
+    "version" : "0.0.1",
+    "name" : "IsSubPotent"
+  },
+  {
+    "id" : "LocationAct",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/LocationAct",
+    "version" : "0.0.1",
+    "name" : "LocationAct"
+  },
+  {
+    "id" : "MEDreqDevice",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/MEDreqDevice",
+    "version" : "0.0.1",
+    "name" : "MEDreqDevice"
+  },
+  {
+    "id" : "MarketDistribution-DeviceDefiniton",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/MarketDistribution-DeviceDefiniton",
+    "version" : "0.0.1",
+    "name" : "MarketDistribution"
+  },
+  {
+    "id" : "MedIdentifier",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/MedIdentifier",
+    "version" : "0.0.1",
+    "name" : "MedIdentifier"
+  },
+  {
+    "id" : "MedKnowMinDosePerAdministration",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/MedKnowMinDosePerAdministration",
+    "version" : "0.0.1",
+    "name" : "MedKnowMinDosePerAdministration"
+  },
+  {
+    "id" : "MedMinDosePerPeriod",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/MedMinDosePerPeriod",
+    "version" : "0.0.1",
+    "name" : "MedMinDosePerPeriod"
+  },
+  {
+    "id" : "MedicationParticipant",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/MedicationParticipant",
+    "version" : "0.0.1",
+    "name" : "MedicationParticipant"
+  },
+  {
+    "id" : "NativeLanguage",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/NativeLanguage",
+    "version" : "0.0.1",
+    "name" : "NativeLanguage"
+  },
+  {
+    "id" : "NeedJustification",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/NeedJustification",
+    "version" : "0.0.1",
+    "name" : "NeedJustification"
+  },
+  {
+    "id" : "NotAvailableTime",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/NotAvailableTime",
+    "version" : "0.0.1",
+    "name" : "NotAvailableTime"
+  },
+  {
+    "id" : "NotPerformDecider",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/NotPerformDecider",
+    "version" : "0.0.1",
+    "name" : "NotPerformDecider"
+  },
+  {
+    "id" : "NotPerformReason",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/NotPerformReason",
+    "version" : "0.0.1",
+    "name" : "NotPerformReason"
+  },
+  {
+    "id" : "Note-InventoryReport",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/Note-InventoryReport",
+    "version" : "0.0.1",
+    "name" : "Note"
+  },
+  {
+    "id" : "Operation-Device",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/Operation-Device",
+    "version" : "0.0.1",
+    "name" : "Operation"
+  },
+  {
+    "id" : "OperationType-InventoryReport",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/OperationType-InventoryReport",
+    "version" : "0.0.1",
+    "name" : "OperationType"
+  },
+  {
+    "id" : "OperationTypeReason-InventoryReport",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/OperationTypeReason-InventoryReport",
+    "version" : "0.0.1",
+    "name" : "OperationTypeReason"
+  },
+  {
+    "id" : "OrderType",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/OrderType",
+    "version" : "0.0.1",
+    "name" : "OrderType"
+  },
+  {
+    "id" : "PTActivityDefinition",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/PTActivityDefinition",
+    "version" : "0.0.1",
+    "name" : "PT_ActivityDefinition"
+  },
+  {
+    "id" : "PTAddress",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/PTAddress",
+    "version" : "0.0.1",
+    "name" : "PTAddress"
+  },
+  {
+    "id" : "PTAppointment",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/PTAppointment",
+    "version" : "0.0.1",
+    "name" : "PT_Appointment"
+  },
+  {
+    "id" : "PTCarePlan",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/PTCarePlan",
+    "version" : "0.0.1",
+    "name" : "PT_CarePlan"
+  },
+  {
+    "id" : "PTCodeSystem",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/PTCodeSystem",
+    "version" : "0.0.1",
+    "name" : "PT_CodeSystem"
+  },
+  {
+    "id" : "PTCondition",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/PTCondition",
+    "version" : "0.0.1",
+    "name" : "PT_Condition"
+  },
+  {
+    "id" : "PTCoverage",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/PTCoverage",
+    "version" : "0.0.1",
+    "name" : "PT_Coverage"
+  },
+  {
+    "id" : "PTDevice",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/PTDevice",
+    "version" : "0.0.1",
+    "name" : "PT_Device"
+  },
+  {
+    "id" : "PTDeviceDefinition",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/PTDeviceDefinition",
+    "version" : "0.0.1",
+    "name" : "PT_DeviceDefinition"
+  },
+  {
+    "id" : "PTDiagnosticReportLaboratory",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/PTDiagnosticReportLaboratory",
+    "version" : "0.0.1",
+    "name" : "PT_DiagnosticReportLaboratory"
+  },
+  {
+    "id" : "PTDiagnosticReportRadiology",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/PTDiagnosticReportRadiology",
+    "version" : "0.0.1",
+    "name" : "PT_DiagnosticReportRadiology"
+  },
+  {
+    "id" : "PTDocumentReference",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/PTDocumentReference",
+    "version" : "0.0.1",
+    "name" : "PT_DocumentReference"
+  },
+  {
+    "id" : "PTEncounter",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/PTEncounter",
+    "version" : "0.0.1",
+    "name" : "PT_Encounter"
+  },
+  {
+    "id" : "PTInventoryReportBasic",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/PTInventoryReportBasic",
+    "version" : "0.0.1",
+    "name" : "PT_InventoryReport_Basic"
+  },
+  {
+    "id" : "PTLocation",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/PTLocation",
+    "version" : "0.0.1",
+    "name" : "PT_Location"
+  },
+  {
+    "id" : "PTLocationMF",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/PTLocationMF",
+    "version" : "0.0.1",
+    "name" : "PT_LocationMF"
+  },
+  {
+    "id" : "PTLocationWarehouse",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/PTLocationWarehouse",
+    "version" : "0.0.1",
+    "name" : "PT_LocationWarehouse"
+  },
+  {
+    "id" : "PTMedicationAdministration",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/PTMedicationAdministration",
+    "version" : "0.0.1",
+    "name" : "PT_MedicationAdministration"
+  },
+  {
+    "id" : "PTMedicationDispense",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/PTMedicationDispense",
+    "version" : "0.0.1",
+    "name" : "PT_MedicationDispense"
+  },
+  {
+    "id" : "PTNutritionOrder",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/PTNutritionOrder",
+    "version" : "0.0.1",
+    "name" : "PT_NutritionOrder"
+  },
+  {
+    "id" : "PTObservationLaboratory",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/PTObservationLaboratory",
+    "version" : "0.0.1",
+    "name" : "PT_ObservationLaboratory"
+  },
+  {
+    "id" : "PTObservationRadiology",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/PTObservationRadiology",
+    "version" : "0.0.1",
+    "name" : "PT_ObservationRadiology"
+  },
+  {
+    "id" : "PTObservationVitalSigns",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/PTObservationVitalSigns",
+    "version" : "0.0.1",
+    "name" : "PT_ObservationVitalSigns"
+  },
+  {
+    "id" : "PTOperationOutcome",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/PTOperationOutcome",
+    "version" : "0.0.1",
+    "name" : "PT_OperationOutcome"
+  },
+  {
+    "id" : "PTPlanDefinition",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/PTPlanDefinition",
+    "version" : "0.0.1",
+    "name" : "PT_PlanDefinition"
+  },
+  {
+    "id" : "PTPractitionerRole",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/PTPractitionerRole",
+    "version" : "0.0.1",
+    "name" : "PT_PractitionerRole"
+  },
+  {
+    "id" : "PTProcedure",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/PTProcedure",
+    "version" : "0.0.1",
+    "name" : "PT_Procedure"
+  },
+  {
+    "id" : "PTRequestGroup",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/PTRequestGroup",
+    "version" : "0.0.1",
+    "name" : "PT_RequestGroup"
+  },
+  {
+    "id" : "PTServiceRequest",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/PTServiceRequest",
+    "version" : "0.0.1",
+    "name" : "PT_ServiceRequest"
+  },
+  {
+    "id" : "PTSpecimen",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/PTSpecimen",
+    "version" : "0.0.1",
+    "name" : "PT_Specimen"
+  },
+  {
+    "id" : "PTTask",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/PTTask",
+    "version" : "0.0.1",
+    "name" : "PT_Task"
+  },
+  {
+    "id" : "Packaging-DeviceDefinition",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/Packaging-DeviceDefinition",
+    "version" : "0.0.1",
+    "name" : "Packaging"
+  },
+  {
+    "id" : "PatientTransportNeed",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/PatientTransportNeed",
+    "version" : "0.0.1",
+    "name" : "PatientTransportNeed"
+  },
+  {
+    "id" : "ProcedurePriority",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/ProcedurePriority",
+    "version" : "0.0.1",
+    "name" : "ProcedurePriority"
+  },
+  {
+    "id" : "ProductType",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/ProductType",
+    "version" : "0.0.1",
+    "name" : "ProductType"
+  },
+  {
+    "id" : "Proficiency",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/Proficiency",
+    "version" : "0.0.1",
+    "name" : "Proficiency"
+  },
+  {
+    "id" : "Recorded",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/Recorded",
+    "version" : "0.0.1",
+    "name" : "Recorded"
+  },
+  {
+    "id" : "RegulatedAuthorization",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/RegulatedAuthorization",
+    "version" : "0.0.1",
+    "name" : "RegulatedAuthorization"
+  },
+  {
+    "id" : "RegulatoryIdentifier-DeviceDefinition",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/RegulatoryIdentifier-DeviceDefinition",
+    "version" : "0.0.1",
+    "name" : "RegulatoryIdentifier"
+  },
+  {
+    "id" : "ReportedDateTime-InventoryReport",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/ReportedDateTime-InventoryReport",
+    "version" : "0.0.1",
+    "name" : "ReportedDateTime"
+  },
+  {
+    "id" : "Reporter-InventoryReport",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/Reporter-InventoryReport",
+    "version" : "0.0.1",
+    "name" : "Reporter"
+  },
+  {
+    "id" : "ReportingPeriod-InventoryReport",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/ReportingPeriod-InventoryReport",
+    "version" : "0.0.1",
+    "name" : "ReportingPeriod"
+  },
+  {
+    "id" : "RequestedPeriod",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/RequestedPeriod",
+    "version" : "0.0.1",
+    "name" : "RequestedPeriod"
+  },
+  {
+    "id" : "SendLabel",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/SendLabel",
+    "version" : "0.0.1",
+    "name" : "SendLabel"
+  },
+  {
+    "id" : "Status-InventoryReport",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/Status-InventoryReport",
+    "version" : "0.0.1",
+    "name" : "Status"
+  },
+  {
+    "id" : "StatusReason",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/StatusReason",
+    "version" : "0.0.1",
+    "name" : "StatusReason"
+  },
+  {
+    "id" : "StorageGuideline",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/StorageGuideline",
+    "version" : "0.0.1",
+    "name" : "StorageGuideline"
+  },
+  {
+    "id" : "SubPotentReason",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/SubPotentReason",
+    "version" : "0.0.1",
+    "name" : "SubPotentReason"
+  },
+  {
+    "id" : "TypeReference",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/TypeReference",
+    "version" : "0.0.1",
+    "name" : "TypeReference"
+  },
+  {
+    "id" : "UseContext",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/UseContext",
+    "version" : "0.0.1",
+    "name" : "UseContext"
+  },
+  {
+    "id" : "Value-MedicationKnowledge",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/Value-MedicationKnowledge",
+    "version" : "0.0.1",
+    "name" : "Value"
+  },
+  {
+    "id" : "ValueBoolean",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/ValueBoolean",
+    "version" : "0.0.1",
+    "name" : "ValueBoolean"
+  },
+  {
+    "id" : "ValueRange",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/ValueRange",
+    "version" : "0.0.1",
+    "name" : "ValueRange"
+  },
+  {
+    "id" : "a4126b30-e00e-451a-830c-4db050c60cdf",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/a4126b30-e00e-451a-830c-4db050c60cdf",
+    "version" : "0.0.1",
+    "name" : "Nationality"
+  },
+  {
+    "id" : "a54e3c30-afb4-4bd8-8297-ad40aa181704",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/a54e3c30-afb4-4bd8-8297-ad40aa181704",
+    "version" : "0.0.1",
+    "name" : "StatusChanged"
+  },
+  {
+    "id" : "ac7bcb60-c472-44c2-8a98-d412e8645c6d",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/ac7bcb60-c472-44c2-8a98-d412e8645c6d",
+    "version" : "0.0.1",
+    "name" : "PT_Practitioner"
+  },
+  {
+    "id" : "c56e2fb3-2322-4e99-931c-50d99668edfa",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/c56e2fb3-2322-4e99-931c-50d99668edfa",
+    "version" : "0.0.1",
+    "name" : "PT_Medication"
+  },
+  {
+    "id" : "conditionPersistence",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/conditionPersistence",
+    "version" : "0.0.1",
+    "name" : "ConditionPersistence"
+  },
+  {
+    "id" : "d20e6bbe-dfd8-4df7-8060-9446ceb892f0",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/d20e6bbe-dfd8-4df7-8060-9446ceb892f0",
+    "version" : "0.0.1",
+    "name" : "PT_AllergyIntolerance"
+  },
+  {
+    "id" : "dc90ae74-e9fc-47fc-b8ff-963588bf26be",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.pt/fhir/core/StructureDefinition/dc90ae74-e9fc-47fc-b8ff-963588bf26be",
+    "version" : "0.0.1",
+    "name" : "PT_MedicationKnowledge"
+  },
+  {
+    "id" : "snomed-ct-vs",
+    "type" : "ValueSet",
+    "url" : "http://hl7.pt/fhir/core/ValueSet/snomed-ct-vs",
+    "version" : "0.0.1",
+    "name" : "SnomedCTVS"
+  },
+  {
+    "id" : "v2-013-vs",
+    "type" : "ValueSet",
+    "url" : "http://hl7.pt/fhir/core/ValueSet/v2-013-vs",
+    "version" : "0.0.1",
+    "name" : "v2-013-vs"
+  }
+]
